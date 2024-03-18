@@ -27,7 +27,9 @@ import numpy as np
 
 # Data path
 # CHANGE IF NEEDED
-TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master\\%s.csv'
+TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+# TEMP = 
+TEMP += '\\%s.csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
     """
@@ -73,6 +75,8 @@ def authors_preprocessing(raw_data):
                     , inplace = True) 
 
     # Split author and AuthorOrcid
+    # Code made by Erfan (2019) extracted from
+    # https://stackoverflow.com/questions/57617456/split-pandas-dataframe-column-list-values-to-duplicate-rows
     raw_data.author = raw_data['author'].str.split("|")
     raw_data['AuthorOrcid'] = raw_data['AuthorOrcid'].str.split("|") 
 
@@ -80,6 +84,7 @@ def authors_preprocessing(raw_data):
     raw_data = raw_data.explode('AuthorOrcid').reset_index(drop=True)
     
     # Set the main author for each paper
+    
     raw_data['is_main_author'] = False
 
     a = raw_data.title.values
@@ -172,3 +177,11 @@ if __name__ == '__main__':
     # Check that the surname column really contains surnames
     #   It could happend that an author has a compound name.
     #   Then, half of its name would be in the wrong column
+
+keywords = dict()
+keywords.keys = []
+#keywords = {physics: [], maths: [], ...}
+for keyword in keywords.keys:
+    for title in article.titles.append(conference.title):   # CAREFULL: PD.DATAFRAME APPEND
+        if keyword in title:
+            keywords[keyword].append[title]
