@@ -25,6 +25,10 @@ Code functionality:
 import pandas as pd
 import numpy as np
 
+# Data path
+# CHANGE IF NEEDED
+TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master\\%s.csv'
+
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
     """
     Functionality: retrieve selected rows and columns from a .csv into a pd.DataFrame
@@ -64,7 +68,6 @@ def authors_preprocessing(raw_data):
     Input: Dataframe with 'author' and 'author-orcid' attributes
     Output: Dataframe with a single 'author' and 'author-orcid' per row
     """
-
     # Rename author-orcid to AuthorOrcid
     raw_data.rename(columns = {'author-orcid':'AuthorOrcid'}
                     , inplace = True) 
@@ -101,9 +104,8 @@ def ee_preprocessing(df):
     Output: input pd.DataFrame with clean column ee, according to the
         aboved described functionality
     '''
-    
-    actual_ee = [x if x is np.nan else x.split('|')[-1] for x in df.ee]
-    df.assign(ee = actual_ee)
+    uptodate_ee = [x if x is np.nan else x.split('|')[-1] for x in df.ee]
+    df.assign(ee = uptodate_ee)
 
     return df
 
@@ -116,16 +118,17 @@ if __name__ == '__main__':
                   , 'crossref', 'month', 'year', 'title', 'volume']
     col_proc = ['proceedings', 'booktitle', 'title', 'key', 'year']
 
-    article_raw = feature_extraction('dblp_article.csv'
-                                     , 'dblp_article_header.csv'
+
+    article_raw = feature_extraction(TEMP % 'dblp_article'
+                                     , TEMP % 'dblp_article_header'
                                      , 5000
                                      , col_article)
-    inproc_raw = feature_extraction('dblp_inproceedings.csv'
-                                    , 'dblp_inproceedings_header.csv'
+    inproc_raw = feature_extraction(TEMP % 'dblp_inproceedings'
+                                    , TEMP % 'dblp_inproceedings_header'
                                     , 10000
                                     , col_inproc)
-    proc_raw = feature_extraction('dblp_proceedings.csv'
-                                  , 'dblp_proceedings_header.csv'
+    proc_raw = feature_extraction(TEMP % 'dblp_proceedings'
+                                  , TEMP % 'dblp_proceedings_header'
                                   , 10000
                                   , col_proc)
 
@@ -152,6 +155,9 @@ if __name__ == '__main__':
 
     article = ee_preprocessing(article)
     conference = ee_preprocessing(conference)
+
+    print(article)
+    print(conference)
 
     # TO DO
     # Generate data for citations (at least 3)
