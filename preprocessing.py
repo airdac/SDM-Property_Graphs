@@ -24,11 +24,12 @@ Code functionality:
 
 import pandas as pd
 import numpy as np
+import yake
 
 # Data path
 # CHANGE IF NEEDED
-TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
-# TEMP = 
+# TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+TEMP = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\dblp-to-csv-master'
 TEMP += '\\%s.csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
@@ -59,7 +60,6 @@ def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
                         , header = None)
     
     return selected_data_raw
-
 
 def authors_preprocessing(raw_data):
     """
@@ -114,8 +114,36 @@ def ee_preprocessing(df):
 
     return df
 
-if __name__ == '__main__':
+def keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), numOfKeywords = 4, max_ngram_size = 2, deduplication_threshold = 0.9):
+    """
+    Functionality: Detect keywords from titles of articles using natural a language processing library.
+    Each library has 4 keywords (numOfKeywords) that have a maximum len of 2 words (max_ngram_size). We
+    are very flexible on the keywords (deduplication_threshold is hight) so they may contain duplicated words (ex:
+    'Python' and 'Python System' may be two different keywords).
 
+    Input: Variables from an article (id, title) and dictionaries that store all keywords and valid ones
+        (those that are found in more than 3 articles)
+    Output: Updated dictionaries after considering a new article
+    """
+
+    # Code adapted from Manmohan Singh (2021)
+    # https://towardsdatascience.com/keyword-extraction-process-in-python-with-natural-language-processing-nlp-d769a9069d5c
+    custom_kw_extractor = yake.KeywordExtractor(n=max_ngram_size, dedupLim=deduplication_threshold, top=numOfKeywords, features=None)
+    keywords = custom_kw_extractor.extract_keywords(title)
+
+    # Check if the keyword already exist, otherwise add it to the dict
+    for key in keywords:
+        full_dict.setdefault(key[0], set())
+        full_dict[key[0]].add(id)
+
+        # Return keys that have more than 2 entries
+        if len(dict[key[0]]) > 2:
+            valid_dict[key[0]] = full_dict[key[0]]
+            valid_article.add(id)
+            
+    return dict, valid_dict, valid_article
+
+if __name__ == '__main__':
     # Select articles from metadata to import from each file
     col_article = ['article', 'ee', 'author', 'author-orcid'
                    , 'journal', 'month', 'year', 'title', 'volume']
@@ -145,7 +173,7 @@ if __name__ == '__main__':
     inproc_index = inproc_raw['crossref'].str.contains('conf/', regex=False)
 
     proc_raw = proc_raw.loc[proc_index]
-    inproc_raw = inproc_raw.loc[inproc_index]
+    #inproc_raw = inproc_raw.loc[inproc_index] # THIS MAKES AN ERROR
 
     # Join inproc and proc dataframes: "cross-ref" in inproc is "key" in proc
     # The resulting dataframe has few rows
@@ -154,15 +182,29 @@ if __name__ == '__main__':
                             , 'year' : 'con_year'}, inplace = True) 
     conference_raw = pd.merge(inproc_raw, proc_raw, on = 'crossref')
 
+    # Identify keywords for all article and select the one
+    # that are common in at least 3 articles.
+    dict = {}
+    valid_dict = {}
+    valid_article = set([])
+    
+    for i in range(len(article_raw)):
+        dict, valid_dict, valid_article = keywords(i, article_raw.title.iloc[i], dict, valid_dict, valid_article)
+
+    print('There are', len(valid_dict), 'keywords that are in 3 articles or more')
+
+    keywords = pd.DataFrame(list(valid_dict.items()), columns = ['Keyword', 'Article_id'])
+
+    # Generate keywords for articles that do not have one
+    gen_articles = set(range(0,5000)) - valid_article
+    print(gen_articles)
+
     # Preprocess author and author-orcid columns
     article = authors_preprocessing(article_raw)
     conference = authors_preprocessing(conference_raw)
 
     article = ee_preprocessing(article)
-    conference = ee_preprocessing(conference)
-
-    print(article)
-    print(conference)
+    conference = ee_preprocessing(conference)  
 
     # TO DO
     # Generate data for citations (at least 3)
@@ -178,6 +220,7 @@ if __name__ == '__main__':
     #   It could happend that an author has a compound name.
     #   Then, half of its name would be in the wrong column
 
+"""
 keywords = dict()
 keywords.keys = []
 #keywords = {physics: [], maths: [], ...}
@@ -185,3 +228,4 @@ for keyword in keywords.keys:
     for title in article.titles.append(conference.title):   # CAREFULL: PD.DATAFRAME APPEND
         if keyword in title:
             keywords[keyword].append[title]
+"""
