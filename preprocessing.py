@@ -71,16 +71,16 @@ def authors_preprocessing(raw_data):
     Output: Dataframe with a single 'author' and 'author-orcid' per row
     """
     # Rename author-orcid to AuthorOrcid
-    raw_data.rename(columns = {'author-orcid':'AuthorOrcid'}
+    raw_data.rename(columns = {'author-orcid':'AuthorOrcid', 'author':'full_name'}
                     , inplace = True) 
 
     # Split author and AuthorOrcid
     # Code made by Erfan (2019) extracted from
     # https://stackoverflow.com/questions/57617456/split-pandas-dataframe-column-list-values-to-duplicate-rows
-    raw_data.author = raw_data['author'].str.split("|")
+    raw_data.full_name = raw_data['full_name'].str.split("|")
     raw_data['AuthorOrcid'] = raw_data['AuthorOrcid'].str.split("|") 
 
-    raw_data = raw_data.explode('author').reset_index(drop=True)
+    raw_data = raw_data.explode('full_name').reset_index(drop=True)
     raw_data = raw_data.explode('AuthorOrcid').reset_index(drop=True)
     
     # Set the main author for each paper
@@ -92,9 +92,8 @@ def authors_preprocessing(raw_data):
     raw_data.loc[idx, 'is_main_author'] = True
 
     # Split author into their names and surnames
-    names_raw = raw_data['author'].str.split(" ", n = 1, expand=True)
+    names_raw = raw_data['full_name'].str.split(" ", n = 1, expand=True)
 
-    del raw_data['author']
     raw_data['names'] = names_raw[0]
     raw_data['surname'] = names_raw[1]
 
@@ -114,16 +113,16 @@ def ee_preprocessing(df):
 
     return df
 
-def keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), numOfKeywords = 4, max_ngram_size = 2, deduplication_threshold = 0.9):
+def extract_keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), numOfKeywords = 4, max_ngram_size = 2, deduplication_threshold = 0.9):
     """
-    Functionality: Detect keywords from titles of articles using natural a language processing library.
-    Each library has 4 keywords (numOfKeywords) that have a maximum len of 2 words (max_ngram_size). We
-    are very flexible on the keywords (deduplication_threshold is hight) so they may contain duplicated words (ex:
-    'Python' and 'Python System' may be two different keywords).
+    Functionality: Detect keywords from titles of papers using natural a language processing library.
+    Each paper has 4 keywords (numOfKeywords) that have a maximum len of 2 words (max_ngram_size). We
+    are very flexible on the keywords (deduplication_threshold is hight) so they may contain duplicated words 
+    (ex:'Python' and 'Python System' may be two different keywords).
 
-    Input: Variables from an article (id, title) and dictionaries that store all keywords and valid ones
-        (those that are found in more than 3 articles)
-    Output: Updated dictionaries after considering a new article
+    Input: Variables from a paper (id, title) and dictionaries that store all keywords and valid ones
+        (those that are found in more than 3)
+    Output: Updated dictionaries after considering a new paper
     """
 
     # Code adapted from Manmohan Singh (2021)
@@ -137,11 +136,29 @@ def keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), 
         full_dict[key[0]].add(id)
 
         # Return keys that have more than 2 entries
-        if len(dict[key[0]]) > 2:
+        if len(full_dict[key[0]]) > 2:
             valid_dict[key[0]] = full_dict[key[0]]
             valid_article.add(id)
             
-    return dict, valid_dict, valid_article
+    return full_dict, valid_dict, valid_article
+
+def generate_keywords(dict, all_id, valid_id, n_keywords = 20):
+    """
+    Functionality: Generate a number of keywords and apply them
+        to papers that do not have one
+    Input: ID of all papers and the ones that have an id (valid_id)
+    Output: Dictionary with keywords as keys and id's as values
+    """
+    resting_id = set(all_id) - valid_id
+
+    while len(resting_id) != 0:
+        id = resting_id.pop()
+        val = id % n_keywords
+        random_tag = "Random_tag_" + str(val)
+
+        dict.setdefault(random_tag, set())
+        dict[random_tag].add(id)
+    return dict
 
 if __name__ == '__main__':
     # Select articles from metadata to import from each file
@@ -173,7 +190,7 @@ if __name__ == '__main__':
     inproc_index = inproc_raw['crossref'].str.contains('conf/', regex=False)
 
     proc_raw = proc_raw.loc[proc_index]
-    #inproc_raw = inproc_raw.loc[inproc_index] # THIS MAKES AN ERROR
+    # inproc_raw = inproc_raw.loc[inproc_index] # THIS MAKES AN ERROR
 
     # Join inproc and proc dataframes: "cross-ref" in inproc is "key" in proc
     # The resulting dataframe has few rows
@@ -182,22 +199,23 @@ if __name__ == '__main__':
                             , 'year' : 'con_year'}, inplace = True) 
     conference_raw = pd.merge(inproc_raw, proc_raw, on = 'crossref')
 
-    # Identify keywords for all article and select the one
-    # that are common in at least 3 articles.
-    dict = {}
-    valid_dict = {}
-    valid_article = set([])
+
+    # Extract keywords from titles of papers
+    # consider only the ones that are common in at least 3
+    all_keywords, valid_keywords = {}, {}
+    valid_id = set([])
     
+    # Note: CHANGE "i" FOR THE ID's of each article when those are generated
     for i in range(len(article_raw)):
-        dict, valid_dict, valid_article = keywords(i, article_raw.title.iloc[i], dict, valid_dict, valid_article)
+        all_keywords, valid_keywords, valid_id = extract_keywords(i, article_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
-    print('There are', len(valid_dict), 'keywords that are in 3 articles or more')
+    for i in range(len(conference_raw)):
+        all_keywords, valid_keywords, valid_id = extract_keywords(i, conference_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
-    keywords = pd.DataFrame(list(valid_dict.items()), columns = ['Keyword', 'Article_id'])
+    # Generate artificial keywords for papers that are left
+    valid_keywords = generate_keywords(valid_keywords, range(0, 5000), valid_id)  
 
-    # Generate keywords for articles that do not have one
-    gen_articles = set(range(0,5000)) - valid_article
-    print(gen_articles)
+    keywords = pd.DataFrame(list(valid_keywords.items()), columns = ['Keyword', 'Article_id'])
 
     # Preprocess author and author-orcid columns
     article = authors_preprocessing(article_raw)
@@ -206,11 +224,10 @@ if __name__ == '__main__':
     article = ee_preprocessing(article)
     conference = ee_preprocessing(conference)  
 
+    
     # TO DO
     # Generate data for citations (at least 3)
     # Extract info of conference "title" (such as place or edition)
-    # Generate data for keywords (use a dictionary to have
-    # some keywords that are commonly used and assign them randomly?)
     # change name of ee to DOI 
     # fill NaN
     # Generate edges (they all have a start-end)
@@ -219,13 +236,3 @@ if __name__ == '__main__':
     # Check that the surname column really contains surnames
     #   It could happend that an author has a compound name.
     #   Then, half of its name would be in the wrong column
-
-"""
-keywords = dict()
-keywords.keys = []
-#keywords = {physics: [], maths: [], ...}
-for keyword in keywords.keys:
-    for title in article.titles.append(conference.title):   # CAREFULL: PD.DATAFRAME APPEND
-        if keyword in title:
-            keywords[keyword].append[title]
-"""
