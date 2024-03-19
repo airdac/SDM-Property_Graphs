@@ -24,12 +24,13 @@ Code functionality:
 
 import pandas as pd
 import numpy as np
-import yake
+#import yake        # This module throws an error. Try to create virtual environment
+import re
 
 # Data path
 # CHANGE IF NEEDED
-# TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
-TEMP = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\dblp-to-csv-master'
+TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+#TEMP = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\dblp-to-csv-master'
 TEMP += '\\%s.csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
@@ -110,7 +111,17 @@ def ee_preprocessing(df):
     '''
     uptodate_ee = [x if x is np.nan else x.split('|')[-1] for x in df.ee]
     df.assign(ee = uptodate_ee)
+    df.rename(columns={'ee': 'DOI'})
 
+    return df
+
+def surname_preprocessing(df):
+    name_id = [surname if surname in [None, np.nan] else re.findall('\d+', surname) for surname in df.surname]
+    name_id = ['0001' if id in [[], None, np.nan] else id[0] for id in name_id]
+    df['name_id'] = name_id
+
+    surname = [surname if surname in [None, np.nan, ''] else re.findall('[^(\d|\s)]+', surname)[0] for surname in df.surname]
+    df['surname'] = surname
     return df
 
 def extract_keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), numOfKeywords = 4, max_ngram_size = 2, deduplication_threshold = 0.9):
@@ -190,7 +201,7 @@ if __name__ == '__main__':
     inproc_index = inproc_raw['crossref'].str.contains('conf/', regex=False)
 
     proc_raw = proc_raw.loc[proc_index]
-    # inproc_raw = inproc_raw.loc[inproc_index] # THIS MAKES AN ERROR
+    inproc_raw = inproc_raw.loc[inproc_index] # THIS MAKES AN ERROR
 
     # Join inproc and proc dataframes: "cross-ref" in inproc is "key" in proc
     # The resulting dataframe has few rows
@@ -206,11 +217,11 @@ if __name__ == '__main__':
     valid_id = set([])
     
     # Note: CHANGE "i" FOR THE ID's of each article when those are generated
-    for i in range(len(article_raw)):
-        all_keywords, valid_keywords, valid_id = extract_keywords(i, article_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
+    #for i in range(len(article_raw)):
+    #    all_keywords, valid_keywords, valid_id = extract_keywords(i, article_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
-    for i in range(len(conference_raw)):
-        all_keywords, valid_keywords, valid_id = extract_keywords(i, conference_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
+    #for i in range(len(conference_raw)):
+    #    all_keywords, valid_keywords, valid_id = extract_keywords(i, conference_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
     # Generate artificial keywords for papers that are left
     valid_keywords = generate_keywords(valid_keywords, range(0, 5000), valid_id)  
@@ -222,17 +233,13 @@ if __name__ == '__main__':
     conference = authors_preprocessing(conference_raw)
 
     article = ee_preprocessing(article)
-    conference = ee_preprocessing(conference)  
+    conference = ee_preprocessing(conference)
+
+    article = surname_preprocessing(article)
+    conference = surname_preprocessing(conference)
 
     
     # TO DO
     # Generate data for citations (at least 3)
     # Extract info of conference "title" (such as place or edition)
-    # change name of ee to DOI 
-    # fill NaN
     # Generate edges (they all have a start-end)
-    # Create column to separate the number in the end of some surnames
-    #   When it's none set it to 0001
-    # Check that the surname column really contains surnames
-    #   It could happend that an author has a compound name.
-    #   Then, half of its name would be in the wrong column
