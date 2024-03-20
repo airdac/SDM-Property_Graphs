@@ -24,7 +24,7 @@ Code functionality:
 
 import pandas as pd
 import numpy as np
-#import yake        # This module throws an error. Try to create virtual environment
+import yake        # This module throws an error. Try to create virtual environment
 import re
 
 # Data path
@@ -116,12 +116,15 @@ def ee_preprocessing(df):
     return df
 
 def surname_preprocessing(df):
+    '''
+    '''
     name_id = [surname if surname in [None, np.nan] else re.findall('\d+', surname) for surname in df.surname]
     name_id = ['0001' if id in [[], None, np.nan] else id[0] for id in name_id]
     df['name_id'] = name_id
 
-    surname = [surname if surname in [None, np.nan, ''] else re.findall('[^(\d|\s)]+', surname)[0] for surname in df.surname]
+    surname = [surname if surname in [None, np.nan, ''] else ' '.join(re.findall('[^(\d|\s)]+', surname)) for surname in df.surname]
     df['surname'] = surname
+
     return df
 
 def extract_keywords(id, title, full_dict = {}, valid_dict = {}, valid_article = set(), numOfKeywords = 4, max_ngram_size = 2, deduplication_threshold = 0.9):
@@ -217,11 +220,11 @@ if __name__ == '__main__':
     valid_id = set([])
     
     # Note: CHANGE "i" FOR THE ID's of each article when those are generated
-    #for i in range(len(article_raw)):
-    #    all_keywords, valid_keywords, valid_id = extract_keywords(i, article_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
+    for i in range(len(article_raw)):
+        all_keywords, valid_keywords, valid_id = extract_keywords(i, article_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
-    #for i in range(len(conference_raw)):
-    #    all_keywords, valid_keywords, valid_id = extract_keywords(i, conference_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
+    for i in range(len(conference_raw)):
+        all_keywords, valid_keywords, valid_id = extract_keywords(i, conference_raw.title.iloc[i], all_keywords, valid_keywords, valid_id)
 
     # Generate artificial keywords for papers that are left
     valid_keywords = generate_keywords(valid_keywords, range(0, 5000), valid_id)  
@@ -238,6 +241,10 @@ if __name__ == '__main__':
     article = surname_preprocessing(article)
     conference = surname_preprocessing(conference)
 
+    #article = generate_id(article)
+    #conference = generate_id(conference)
+    print(article)
+    print(conference)
     
     # TO DO
     # Generate data for citations (at least 3)
