@@ -96,7 +96,7 @@
     MERGE (author)-[:REVIEWS {date: row.date}]->(paper) 
                          """) 
 
-    # "cites" edge
+    # "Cites" edge
     # https://drive.google.com/file/d/19U0lTvi4w97lPAMcdvNFLUcvT5LDcM-Z/view?usp=sharing
 
     driver.execute_query("""
@@ -113,3 +113,5 @@
     WHERE row.row.Keyword IS NOT NULL
     MATCH (key:Keyword {tag: row.Keyword}), (paper:Paper {title: row.Keyword})
                          """)  
+
+    # 

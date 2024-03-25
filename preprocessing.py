@@ -350,8 +350,8 @@ if __name__ == "__main__":
         article,
         conference,
     )
-    author_node.to_csv(os.path.join(OUT, r'author_node.csv'))
-
+    author_node = author_node.dropna()
+    author_node.to_csv(os.path.join(OUT, r'author_node.csv'), index=False)
 
     ## Paper node
     paper_node = node_creation(["title", "DOI", "month"], "title", article, conference)
@@ -365,7 +365,8 @@ if __name__ == "__main__":
         random_abstract.append(x)
 
     paper_node["abstract"] = random_abstract
-    paper_node.to_csv(os.path.join(OUT, r'paper_node.csv'))
+    paper_node = paper_node.dropna()
+    paper_node.to_csv(os.path.join(OUT, r'paper_node.csv'), index=False)
 
     ## KEYWORD node
     # Extract Keywords for each article
@@ -387,7 +388,7 @@ if __name__ == "__main__":
     keywords_node = pd.DataFrame(
         list(valid_keywords.items()), columns=["Keyword", "Article_id"]
     )
-    keywords_node.to_csv(os.path.join(OUT, r'keywords_node.csv'))
+    keywords_node.to_csv(os.path.join(OUT, r'keywords_node.csv'), index = False)
 
     # JOURNAL node
     journal_node = node_creation(["journal"], "journal", article)
@@ -397,21 +398,25 @@ if __name__ == "__main__":
         editors.append(random.choice(author_node["full_name"].tolist()))
 
     journal_node["editor"] = editors
-    journal_node.to_csv(os.path.join(OUT, r'journal_node.csv'))
+    journal_node.dropna()
+    journal_node.to_csv(os.path.join(OUT, r'journal_node.csv'), index = False)
 
     # VOLUME node
     volume_node = node_creation(["volume", "year"], "volume", article)
-    volume_node.to_csv(os.path.join(OUT, r'volume_node.csv'))
+    volume_node.dropna()
+    volume_node.to_csv(os.path.join(OUT, r'volume_node.csv'), index = False)
 
     # CONFERENCE node
     conference_node = node_creation(["con_shortname"], "con_shortname", conference)
-    conference_node.to_csv(os.path.join(OUT, r'conference_node.csv'))
+    conference_node.dropna()
+    conference_node.to_csv(os.path.join(OUT, r'conference_node.csv'), index = False)
 
     # EDITION node
     edition_node = node_creation(
         ["edition_title", "edition_year"], "edition_title", conference
     )
-    edition_node.to_csv(os.path.join(OUT, r'edition_node.csv'))
+    edition_node.dropna()
+    edition_node.to_csv(os.path.join(OUT, r'edition_node.csv'), index = False)
 
     ## EDGE creation
     # Reviews edge
@@ -428,21 +433,39 @@ if __name__ == "__main__":
     reviews = generate_reviews(paper_node, author_node, main_author, co_author)
     
     reviews_edge = pd.DataFrame({'paper': paper_node.title, 'reviewers': reviews, 'date': paper_node.month})
-    reviews_edge.to_csv(os.path.join(OUT, r'reviews_edge.csv'))
+    reviews_edge.to_csv(os.path.join(OUT, r'reviews_edge.csv'), index = False)
 
     # Writes & Co_writes edge
     writes_edge = pd.DataFrame(main_author.items(), columns=["paper", "main_author"])
     co_writes_edge = pd.DataFrame(co_author.items(), columns=["paper", "co_author"])
     
-    writes_edge.to_csv(os.path.join(OUT, r'writes_edge.csv'))
-    co_writes_edge.to_csv(os.path.join(OUT, r'co_writes_edge.csv'))
+    writes_edge = writes_edge.dropna()
+    co_writes_edge = co_writes_edge.dropna()
+
+    writes_edge.to_csv(os.path.join(OUT, r'writes_edge.csv'), index = False)
+    co_writes_edge.to_csv(os.path.join(OUT, r'co_writes_edge.csv'), index = False)
     
     # HAS edge
     relation = relation_generation(journal_node.journal, edition_node.edition_title)
     has_edge = pd.DataFrame(data={"journal": journal_node.journal, "volume": relation})
-    has_edge.to_csv(os.path.join(OUT, r'has_edge.csv'))
+    has_edge.to_csv(os.path.join(OUT, r'has_edge.csv'), index = False)
 
     # "Is cited in" edge
     cited_in_edge = relation_generation(paper_node.title)
     cited_in_edge = pd.DataFrame(data={"paper": paper_node.title, "cites": cited_in_edge})
-    cited_in_edge.to_csv(os.path.join(OUT, r'cited_in.csv'))
+    cited_in_edge.to_csv(os.path.join(OUT, r'cited_in.csv'), index = False)
+
+    # "Published in" edge
+    published_in_edge = pd.DataFrame(data = {"paper": article.title, "volume": article.volume})
+    published_in_edge.drop_duplicates(inplace=True)
+    published_in_edge.to_csv(os.path.join(OUT, r'published_in_edge.csv'), index = False)
+
+    # "Is from" edge
+    is_from_edge = pd.DataFrame(data = {"paper": conference.title, "edition": conference.edition_title})
+    is_from_edge.drop_duplicates(inplace=True)
+    is_from_edge.to_csv(os.path.join(OUT, r'is_from_edge.csv'), index = False)
+
+    # From edge 
+    from_edge = pd.DataFrame(data = {"conference": conference.con_shortname, "edition": conference.edition_title})
+    from_edge.drop_duplicates(inplace=True)
+    from_edge.to_csv(os.path.join(OUT, r'from_edge.csv'), index = False)
