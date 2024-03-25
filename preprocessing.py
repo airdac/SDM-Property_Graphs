@@ -34,10 +34,11 @@ random.seed(123)
 
 # Data path
 # CHANGE IF NEEDED
-# TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
-TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
+TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+#TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
 TEMP += "\\%s.csv"
-OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
+#OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
+OUT = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\clean_csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
     """
@@ -130,7 +131,7 @@ def ee_preprocessing(df):
 def surname_preprocessing(df):
     """ """
     name_id = [
-        surname if surname in [None, np.nan] else re.findall("\d+", surname)
+        surname if surname in [None, np.nan] else re.findall(r'\d+', surname)
         for surname in df.surname
     ]
     name_id = ["0001" if id in [[], None, np.nan] else id[0] for id in name_id]
@@ -140,7 +141,7 @@ def surname_preprocessing(df):
         (
             surname
             if surname in [None, np.nan, ""]
-            else " ".join(re.findall("[^(\d|\s)]+", surname))
+            else " ".join(re.findall(r'[^(\d|\s)]+', surname))
         )
         for surname in df.surname
     ]
