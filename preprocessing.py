@@ -34,11 +34,10 @@ random.seed(123)
 
 # Data path
 # CHANGE IF NEEDED
-TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
-# TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
+# TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
 TEMP += "\\%s.csv"
-#OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
-OUT = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\clean_csv'
+OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
     """
