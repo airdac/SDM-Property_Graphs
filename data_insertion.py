@@ -1,11 +1,13 @@
 from neo4j import GraphDatabase
 
 # Note in anaconda: add "neo4j+ssc" so that it works
-URI = "neo4j+ssc://1ed43e37.databases.neo4j.io"
-# URI = "bolt://localhost:7687"
+#URI = "neo4j+ssc://1ed43e37.databases.neo4j.io"
+URI = "bolt://localhost:7687"
 
-AUTH = ("neo4j", "PtH0CEI-e3qEhgQ6lHpKBc1eivelLLjCEIvcZwDaaO4")
-# AUTH = ("neo4j", "123456789")
+#AUTH = ("neo4j", "PtH0CEI-e3qEhgQ6lHpKBc1eivelLLjCEIvcZwDaaO4")
+#AUTH = ("neo4j", "123456789")
+AUTH = ("neo4j", "123456789")
+
 
 # Paths to download from Drive (give everyone access)
 # # Example: https://drive.google.com/file/d/12C5gyKKYOjVumtx0269CFaYpWCH2juNS/view?usp=drive_link
