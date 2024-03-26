@@ -34,10 +34,11 @@ random.seed(123)
 
 # Data path
 # CHANGE IF NEEDED
-# TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
-TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
+TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
+#TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
 TEMP += "\\%s.csv"
-OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
+#OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
+OUT = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\clean_csv'
 
 def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
     """
@@ -130,7 +131,7 @@ def ee_preprocessing(df):
 def surname_preprocessing(df):
     """ """
     name_id = [
-        surname if surname in [None, np.nan] else re.findall("\d+", surname)
+        surname if surname in [None, np.nan] else re.findall(r"\d+", surname)
         for surname in df.surname
     ]
     name_id = ["0001" if id in [[], None, np.nan] else id[0] for id in name_id]
@@ -140,7 +141,7 @@ def surname_preprocessing(df):
         (
             surname
             if surname in [None, np.nan, ""]
-            else " ".join(re.findall("[^(\d|\s)]+", surname))
+            else " ".join(re.findall(r"[^(\d|\s)]+", surname))
         )
         for surname in df.surname
     ]
@@ -160,13 +161,13 @@ def extract_keywords(
     deduplication_threshold=0.9,
 ):
     """
-    Functionality: Detect keywords from titles of papers using natural a language processing library.
-    Each paper has 4 keywords (numOfKeywords) that have a maximum len of 2 words (max_ngram_size). We
-    are very flexible on the keywords (deduplication_threshold is hight) so they may contain duplicated words
+    Functionality: Detect keywords from titles of papers using a natural language processing library.
+    Each paper has 4 keywords (numOfKeywords) that have a maximum length of 2 words (max_ngram_size). We
+    are very flexible on the keywords (deduplication_threshold is high) so they may contain duplicated words
     (ex:'Python' and 'Python System' may be two different keywords).
 
-    Input: Variables from a paper (id, title) and dictionaries that store all keywords and valid ones
-        (those that are found in more than 3)
+    Input: Variables from a paper (id, title) and dictionaries that store all keywords and valid keywords
+        (those that are found in more than 3 papers)
     Output: Updated dictionaries after considering a new paper
     """
 
@@ -180,17 +181,19 @@ def extract_keywords(
     )
     keywords = custom_kw_extractor.extract_keywords(title)
 
-    # Check if the keyword already exist, otherwise add it to the dict
+    # Check if the keyword already exists, otherwise add it to the dict
     for key in keywords:
         full_dict.setdefault(key[0], set())
         full_dict[key[0]].add(id)
 
         # Return keys that have more than 2 entries
-        if len(full_dict[key[0]]) > 2:
+        if len(full_dict[key[0]]) == 3:
             valid_dict[key[0]] = full_dict[key[0]]
+        elif len(full_dict[key[0]]) > 3:
             valid_article.add(id)
 
     return full_dict, valid_dict, valid_article
+
 
 
 def generate_keywords(dict, all_id, valid_id, n_keywords=20):
@@ -240,12 +243,12 @@ def generate_reviews(paper_node, author_node, main_author, co_author):
     return all_reviews
 
 def node_creation(col_name, col_id, df1, df2=pd.DataFrame()):
-    df1_subset = df1[col_name].copy()
+    df1_subset = df1[col_name]
 
     if df2.empty:
         node = df1_subset.drop_duplicates(subset=col_id)
     else:
-        df2_subset = df2[col_name].copy()
+        df2_subset = df2[col_name]
         node_raw = pd.concat([df1_subset, df2_subset], ignore_index=True)
         node = node_raw.drop_duplicates(subset=col_id)
     return node
@@ -275,7 +278,16 @@ def relation_generation(df1, df2 = pd.DataFrame(), min_rel = 1, max_rel = 5):
                             
     return all_relations
 
+
+############################################################################################################
+# Main
+############################################################################################################
+
 if __name__ == "__main__":
+    ############################################################################################################
+    # Read data
+    ############################################################################################################´
+
     # Select articles from metadata to import from each file
     col_article = [
         "article",
@@ -313,7 +325,11 @@ if __name__ == "__main__":
     proc_raw = feature_extraction(
         TEMP % "dblp_proceedings", TEMP % "dblp_proceedings_header", 5000, col_proc
     )
-
+    
+    ############################################################################################################
+    # Preprocessing
+    ############################################################################################################
+    
     # Select from inproc papers that are from a conference
     # Select from proc conferences
     # They are identified by the the fact that their key starts with "conf/"
@@ -342,13 +358,16 @@ if __name__ == "__main__":
     article = surname_preprocessing(article)
     conference = surname_preprocessing(conference)
 
+    ############################################################################################################
     ### Creation of nodes
+    ############################################################################################################
+
     ## AUTHOR node
     author_node = node_creation(
         ["full_name", "names", "surname", "AuthorOrcid", "name_id"],
         "full_name",
         article,
-        conference,
+        conference
     )
     author_node = author_node.dropna()
     author_node.to_csv(os.path.join(OUT, r'author_node.csv'), index=False)
@@ -361,7 +380,7 @@ if __name__ == "__main__":
     for i in range(len(paper_node)):
         # Extracted from https://stackoverflow.com/questions/18834636/random-word-generator-python
         letters = string.ascii_letters
-        x = "".join(random.sample(letters, 10))
+        x = "".join(random.sample(letters, 100))
         random_abstract.append(x)
 
     paper_node["abstract"] = random_abstract
@@ -386,7 +405,7 @@ if __name__ == "__main__":
     valid_keywords = generate_keywords(valid_keywords, paper_node.index, valid_id)
 
     keywords_node = pd.DataFrame(
-        list(valid_keywords.items()), columns=["Keyword", "Article_id"]
+        valid_keywords.items(), columns=["Keyword", "Article_id"]
     )
     keywords_node.to_csv(os.path.join(OUT, r'keywords_node.csv'), index = False)
 
@@ -395,7 +414,7 @@ if __name__ == "__main__":
     
     editors = []
     for i in range(len(journal_node)):
-        editors.append(random.choice(author_node["full_name"].tolist()))
+        editors.append(random.choice(author_node["full_name"]))
 
     journal_node["editor"] = editors
     journal_node.dropna()
