@@ -31,8 +31,9 @@ import string
 import os
 
 random.seed(123)
+np.random.seed(123)
 
-# Data path
+# Data paths
 # CHANGE IF NEEDED
 TEMP = 'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master'
 #TEMP = "D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv"
@@ -217,17 +218,17 @@ def generate_keywords(dict, all_id, valid_id, n_keywords=20):
 def generate_reviews(paper_node, author_node, main_author, co_author):
     all_reviews, reviews = [None] * len(paper_node), []
 
-    for j in range(0, len(paper_node)):
+    for ind, paper in enumerate(paper_node.index):
         max_iteration = random.randrange(3,10)
         n_iteration = 0
 
         while n_iteration != max_iteration:
-            random_author = random.choice(author_node.full_name.to_list())
-            paper_title = paper_node.title.to_list()[j]
+            random_author = author_node.full_name.sample(1).values[0]
+            paper_title = paper_node.title[paper]
 
             # Check that the author is not the main author or co-writer of the paper.
             try:
-                if random_author not in main_author[paper_title] + co_author[paper_title]:
+                if random_author not in list(main_author[paper_title]) + co_author[paper_title]:
                     reviews.append(random_author)
                     n_iteration += 1
             except KeyError:
@@ -237,7 +238,7 @@ def generate_reviews(paper_node, author_node, main_author, co_author):
                 pass
 
         # When all reviwers for a paper are generated store them and start again  
-        all_reviews[j] = reviews
+        all_reviews[ind] = reviews
         reviews = []
                            
     return all_reviews
@@ -254,24 +255,23 @@ def node_creation(col_name, col_id, df1, df2=pd.DataFrame()):
     return node
 
 def relation_generation(df1, df2 = pd.DataFrame(), min_rel = 1, max_rel = 5):
-    all_relations, relations = [None] * len(df1), []      
-    df1 = df1.to_list()
+    all_relations, relations = [None] * len(df1), []
 
-    for j in range(0, len(df1)):
+    for j, ind in enumerate(df1.index):
         max_iteration = random.randrange(min_rel,max_rel)
         n_iteration = 0
 
         while n_iteration != max_iteration:
-            if df2.empty == True:
-                random_element = random.choice(df1)
+            if df2.empty:
+                random_element = df1.sample(1).values[0]
 
-                if df1[j] != random_element:
+                if df1[ind] != random_element:
                     relations.append(random_element)
                     n_iteration += 1 
             else:
-                random_element = random.choice(df2.to_list())
+                random_element = df2.sample(1).values[0]
                 relations.append(random_element)
-                n_iteration += 1 
+                n_iteration += 1
 
         all_relations[j] = relations
         relations = []
@@ -329,7 +329,7 @@ if __name__ == "__main__":
     ############################################################################################################
     # Preprocessing
     ############################################################################################################
-    
+
     # Select from inproc papers that are from a conference
     # Select from proc conferences
     # They are identified by the the fact that their key starts with "conf/"
@@ -372,7 +372,7 @@ if __name__ == "__main__":
     author_node = author_node.dropna()
     author_node.to_csv(os.path.join(OUT, r'author_node.csv'), index=False)
 
-    ## Paper node
+    ## PAPER node
     paper_node = node_creation(["title", "DOI", "month"], "title", article, conference)
     paper_node.replace(False, "NaN", inplace=True)  # Change False to Nan
     random_abstract = []
@@ -380,7 +380,7 @@ if __name__ == "__main__":
     for i in range(len(paper_node)):
         # Extracted from https://stackoverflow.com/questions/18834636/random-word-generator-python
         letters = string.ascii_letters
-        x = "".join(random.sample(letters, 100))
+        x = "".join(random.choices(letters, k=100))
         random_abstract.append(x)
 
     paper_node["abstract"] = random_abstract
@@ -401,7 +401,7 @@ if __name__ == "__main__":
             valid_id,
         )
 
-    # Generate artificial keywords for papers that are left
+    # Generate artificial keywords for the papers that are left
     valid_keywords = generate_keywords(valid_keywords, paper_node.index, valid_id)
 
     keywords_node = pd.DataFrame(
@@ -414,7 +414,7 @@ if __name__ == "__main__":
     
     editors = []
     for i in range(len(journal_node)):
-        editors.append(random.choice(author_node["full_name"]))
+        editors.append(author_node["full_name"].sample(1).values[0])
 
     journal_node["editor"] = editors
     journal_node.dropna()
@@ -437,8 +437,10 @@ if __name__ == "__main__":
     edition_node.dropna()
     edition_node.to_csv(os.path.join(OUT, r'edition_node.csv'), index = False)
 
-    ## EDGE creation
-    # Reviews edge
+    ############################################################################################################
+    # Creation of edges
+    ############################################################################################################
+    # REVIEWS edge
     all_data = pd.concat([conference, article], ignore_index = True)
 
     co_author, main_author = dict(), dict()
@@ -446,17 +448,19 @@ if __name__ == "__main__":
         n_article = all_data.title[i]
         if all_data.is_main_author[i] == True:
             main_author[n_article] = all_data.full_name[i]
-        else: 
-            co_author[n_article] = all_data.full_name[i]
+
+        else:
+            co_author.setdefault(n_article, []) 
+            co_author[n_article].append(all_data.full_name[i])
 
     reviews = generate_reviews(paper_node, author_node, main_author, co_author)
     
     reviews_edge = pd.DataFrame({'paper': paper_node.title, 'reviewers': reviews, 'date': paper_node.month})
     reviews_edge.to_csv(os.path.join(OUT, r'reviews_edge.csv'), index = False)
 
-    # Writes & Co_writes edge
+    # WRITES & CO_WRITES edges
     writes_edge = pd.DataFrame(main_author.items(), columns=["paper", "main_author"])
-    co_writes_edge = pd.DataFrame(co_author.items(), columns=["paper", "co_author"])
+    co_writes_edge = pd.DataFrame(co_author.items(), columns=["paper", "co_authors"])
     
     writes_edge = writes_edge.dropna()
     co_writes_edge = co_writes_edge.dropna()
@@ -465,26 +469,26 @@ if __name__ == "__main__":
     co_writes_edge.to_csv(os.path.join(OUT, r'co_writes_edge.csv'), index = False)
     
     # HAS edge
-    relation = relation_generation(journal_node.journal, edition_node.edition_title)
+    relation = relation_generation(journal_node.journal, article.volume)    # volume
     has_edge = pd.DataFrame(data={"journal": journal_node.journal, "volume": relation})
     has_edge.to_csv(os.path.join(OUT, r'has_edge.csv'), index = False)
 
-    # "Is cited in" edge
+    # IS_CITED_IN edge
     cited_in_edge = relation_generation(paper_node.title)
     cited_in_edge = pd.DataFrame(data={"paper": paper_node.title, "cites": cited_in_edge})
     cited_in_edge.to_csv(os.path.join(OUT, r'cited_in.csv'), index = False)
 
-    # "Published in" edge
+    # PUBLISHED_IN edge
     published_in_edge = pd.DataFrame(data = {"paper": article.title, "volume": article.volume})
     published_in_edge.drop_duplicates(inplace=True)
     published_in_edge.to_csv(os.path.join(OUT, r'published_in_edge.csv'), index = False)
 
-    # "Is from" edge
+    # IS_FROM edge
     is_from_edge = pd.DataFrame(data = {"paper": conference.title, "edition": conference.edition_title})
     is_from_edge.drop_duplicates(inplace=True)
     is_from_edge.to_csv(os.path.join(OUT, r'is_from_edge.csv'), index = False)
 
-    # From edge 
+    # FROM edge 
     from_edge = pd.DataFrame(data = {"conference": conference.con_shortname, "edition": conference.edition_title})
     from_edge.drop_duplicates(inplace=True)
     from_edge.to_csv(os.path.join(OUT, r'from_edge.csv'), index = False)
