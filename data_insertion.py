@@ -18,7 +18,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     # Author
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///author_node.csv' AS row 
-    MERGE (a:Author {full_names: row.full_name, names: row.names, surname: row.surname, 
+    MERGE (a:Author {full_name: row.full_name, name: row.name, surname: row.surname, 
                          OrcID: row.AuthorOrcid}) 
                          """)
 
@@ -66,14 +66,14 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     # Co-Writes edge
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///co_writes_edge.csv' AS row 
-    MATCH (author:Author {full_names: row.co_author}), (paper:Paper {title: row.paper})
+    MATCH (author:Author {full_name: row.co_author}), (paper:Paper {title: row.paper})
     MERGE (author)-[:CO_WRITES]->(paper) 
                          """) 
     
     # Writes edge
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///writes_edge.csv' AS row 
-    MATCH (author:Author {full_names: row.main_author}), (paper:Paper {title: row.paper})
+    MATCH (author:Author {full_name: row.main_author}), (paper:Paper {title: row.paper})
     MERGE (author)-[:WRITES]->(paper) 
                          """)
 
@@ -108,7 +108,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///reviews_edge.csv' AS row 
     WITH row, split(row.reviewers, ",") AS reviwers
     UNWIND reviwers as reviewers
-    MATCH (author:Author {full_names: reviewers}), (paper:Paper {title: row.paper})
+    MATCH (author:Author {full_name: reviewers}), (paper:Paper {title: row.paper})
     MERGE (author)-[:REVIEWS {date: row.date}]->(paper) 
                          """) 
 
