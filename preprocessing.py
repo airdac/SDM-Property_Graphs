@@ -106,7 +106,7 @@ def authors_preprocessing(raw_data):
     # Split author into their names and surnames
     names_raw = raw_data["full_name"].str.split(" ", n=1, expand=True)
 
-    raw_data["names"] = names_raw[0]
+    raw_data["name"] = names_raw[0]
     raw_data["surname"] = names_raw[1]
 
     return raw_data
@@ -356,7 +356,7 @@ if __name__ == "__main__":
 
     ## AUTHOR node
     author_node = node_creation(
-        ["full_name", "names", "surname", "AuthorOrcid", "name_id"],
+        ["full_name", "name", "surname", "AuthorOrcid", "name_id"],
         "full_name",
         article,
         conference
