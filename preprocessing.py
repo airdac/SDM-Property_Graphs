@@ -70,7 +70,6 @@ def feature_extraction(name_datacsv, name_headers, n_sample, col_names):
 
     return selected_data_raw
 
-
 def authors_preprocessing(raw_data):
     """
     Functionality: splits authors of the same paper in different rows.
@@ -112,7 +111,6 @@ def authors_preprocessing(raw_data):
 
     return raw_data
 
-
 def ee_preprocessing(df):
     """
     Functionality: For each paper, split ee by '|' and only
@@ -127,7 +125,6 @@ def ee_preprocessing(df):
     df.rename(columns={"ee": "DOI"}, inplace=True)
 
     return df
-
 
 def surname_preprocessing(df):
     """ """
@@ -149,7 +146,6 @@ def surname_preprocessing(df):
     df["surname"] = surname
 
     return df
-
 
 def extract_keywords(
     id,
@@ -195,8 +191,6 @@ def extract_keywords(
 
     return full_dict, valid_dict, valid_article
 
-
-
 def generate_keywords(dict, all_id, valid_id, n_keywords=20):
     """
     Functionality: Generate a number of keywords and apply them
@@ -234,8 +228,6 @@ def generate_reviews(paper_node, author_node, main_author, co_author):
             except KeyError:
                 reviews.append(random_author)
                 n_iteration += 1
-            except TypeError:
-                pass
 
         # When all reviwers for a paper are generated store them and start again  
         all_reviews[ind] = reviews
