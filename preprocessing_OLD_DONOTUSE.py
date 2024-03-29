@@ -81,13 +81,26 @@ def authors_preprocessing(raw_data):
     """
     # Rename author-orcid to AuthorOrcid
     raw_data.rename(
-        columns={"author": "author_id"}, inplace=True
+        columns={"author-orcid": "AuthorOrcid", "author": "author_id"}, inplace=True
     )
 
-    # Split author
+    # Split author and AuthorOrcid
     # Code made by Erfan (2019) extracted from
     # https://stackoverflow.com/questions/57617456/split-pandas-dataframe-column-list-values-to-duplicate-rows
     raw_data.author_id = raw_data["author_id"].str.split("|")
+    
+    raw_data["AuthorOrcid"] = raw_data["AuthorOrcid"].str.split("|")
+
+    # Remove orcids that do not match the number of authors
+    raw_data["AuthorOrcid"] = raw_data.apply(
+        lambda row: np.nan if (row["AuthorOrcid"] is np.nan) or (len(row["author_id"]) > 1) else row["AuthorOrcid"][0]
+        , axis = 1)
+    
+    # Remove all but one records of authors with same orcid and similar names (like diminutives)
+    raw_data.drop(
+        raw_data[(raw_data["AuthorOrcid"].notnull())
+                 & (raw_data["AuthorOrcid"].duplicated())].index
+                  , inplace=True)
 
     raw_data['author_id_raw'] = raw_data.author_id # Make a copy before preprocessing
     raw_data = raw_data.explode("author_id").reset_index(drop=True)
@@ -282,6 +295,7 @@ if __name__ == "__main__":
         "article",
         "ee",
         "author",
+        "author-orcid",
         "journal",
         "month",
         "year",
@@ -292,6 +306,7 @@ if __name__ == "__main__":
         "inproceedings",
         "ee",
         "author",
+        "author-orcid",
         "crossref",
         "month",
         "year",
@@ -334,7 +349,7 @@ if __name__ == "__main__":
     )
     conference_raw = pd.merge(inproc_raw, proc_raw, on="crossref")
 
-    # Preprocess author column
+    # Preprocess author and author-orcid columns
     article = authors_preprocessing(article_raw)
     conference = authors_preprocessing(conference_raw)
     conference.rename(columns={"booktitle": "con_shortname"}, inplace=True)
@@ -351,7 +366,7 @@ if __name__ == "__main__":
 
     ## AUTHOR node
     author_node = node_creation(
-        ["author_id", "name", "surname", "name_id"],
+        ["author_id", "name", "surname", "AuthorOrcid", "name_id"],
         "author_id",
         article,
         conference

@@ -26,6 +26,12 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     ''')
 
     driver.execute_query('''
+        CREATE CONSTRAINT Author_OrcID IF NOT EXISTS
+        FOR (a:Author) 
+        REQUIRE a.OrcID IS UNIQUE
+    ''')
+
+    driver.execute_query('''
         CREATE CONSTRAINT Paper_title IF NOT EXISTS
         FOR (a:Paper) 
         REQUIRE a.title IS UNIQUE
@@ -65,7 +71,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     # Author
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///author_node.csv' AS row 
-    MERGE (a:Author {name_id: row.author_id, name: row.name, surname: row.surname}) 
+    MERGE (a:Author {name_id: row.author_id, name: row.name, surname: row.surname, 
+                         OrcID: row.AuthorOrcid}) 
                          """)
 
     # Papers
