@@ -18,6 +18,9 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     # Clear data
     driver.execute_query("MATCH (n) DETACH DELETE n")
 
+    # Remove constraints. ATTENTION: APOC needs to be installed to run this procedure
+    driver.execute_query("CALL apoc.schema.assert({}, {})")
+
     #Create constraints
     driver.execute_query('''
         CREATE CONSTRAINT Author_name_id IF NOT EXISTS
@@ -44,19 +47,19 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     ''')
 
     driver.execute_query('''
-        CREATE CONSTRAINT Volume_id IF NOT EXISTS
+        CREATE CONSTRAINT Conference_title IF NOT EXISTS
         FOR (a:Conference)
         REQUIRE a.title IS UNIQUE
     ''')
 
     driver.execute_query('''
-        CREATE CONSTRAINT Volume_id IF NOT EXISTS
+        CREATE CONSTRAINT Edition_title IF NOT EXISTS
         FOR (a:Edition)
         REQUIRE a.title IS UNIQUE
     ''')
 
     driver.execute_query('''
-        CREATE CONSTRAINT Volume_id IF NOT EXISTS
+        CREATE CONSTRAINT Keyword_tag IF NOT EXISTS
         FOR (a:Keyword)
         REQUIRE a.tag IS UNIQUE
     ''')
@@ -113,7 +116,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///co_writes_edge.csv' AS row 
     MATCH (author:Author {name_id: row.co_author})
     MATCH (paper:Paper {title: row.paper})
-    MERGE (author)-[:CO_WRITES]->(paper)
+    MERGE (author)-[:Co_writes]->(paper)
                          """) 
     
     # Writes edge
@@ -121,7 +124,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///writes_edge.csv' AS row 
     MATCH (author:Author {name_id: row.main_author})
     MATCH (paper:Paper {title: row.paper})
-    MERGE (author)-[:WRITES]->(paper)
+    MERGE (author)-[:Writes]->(paper)
                          """)
 
     # "from" edge
@@ -129,7 +132,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///from_edge.csv' AS row
     MATCH (source:Edition {title: row.edition})
     MATCH (target:Conference {title: row.conference})
-    MERGE (source)-[r: from]->(target)
+    MERGE (source)-[r: From]->(target)
                          """)
     
     # "is from" edge
@@ -137,7 +140,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///is_from_edge.csv' AS row
     MATCH (source: Paper {title: row.paper })
     MATCH (target: Edition {title: row.edition})
-    MERGE (source)-[r: is_from]->(target)
+    MERGE (source)-[r: Is_from]->(target)
                          """) 
     
     # "published_in" edge
@@ -145,16 +148,27 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     LOAD CSV WITH HEADERS FROM 'file:///published_in_edge.csv' AS row
     MATCH (source: Paper {title: row.paper })
     MATCH (target: Volume {id: row.volume})
-    MERGE (source)-[r: published_in]->(target)
+    MERGE (source)-[r: Published_in]->(target)
                          """) 
     
     # Reviews edge
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///reviews_edge.csv' AS row
     MATCH (author:Author {name_id: row.reviewer}), (paper:Paper {title: row.paper})
-    MERGE (author)-[:REVIEWS {date: row.date}]->(paper)
+    MERGE (author)-[:Reviews {date: row.date}]->(paper)
                          """) 
-
-
-
-
+    # "has" edge
+    driver.execute_query("""
+    LOAD CSV WITH HEADERS FROM 'file:///has_edge.csv' AS row
+    MATCH (j:Journal {name: row.journal})
+    MATCH (v:Volume {id: row.volume})
+    MERGE (j)-[r:Has]->(v)
+                         """)
+    
+    # "Cites" edge
+    driver.execute_query("""
+    LOAD CSV WITH HEADERS FROM 'file:///cited_in.csv' AS row 
+    MATCH (source:Paper {title: row.paper})
+    MATCH (target:Paper {title: row.cites})
+    MERGE (source)-[r:Cites]->(target)
+                         """)

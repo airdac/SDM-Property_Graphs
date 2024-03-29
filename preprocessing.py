@@ -466,11 +466,13 @@ if __name__ == "__main__":
     # HAS edge
     relation = relation_generation(journal_node.journal, article.volume)    # volume
     has_edge = pd.DataFrame(data={"journal": journal_node.journal, "volume": relation})
+    has_edge = has_edge.explode('volume')
     has_edge.to_csv(os.path.join(OUT, r'has_edge.csv'), index = False)
 
     # IS_CITED_IN edge
     cited_in_edge = relation_generation(paper_node.title)
     cited_in_edge = pd.DataFrame(data={"paper": paper_node.title, "cites": cited_in_edge})
+    cited_in_edge = cited_in_edge.explode('cites')
     cited_in_edge.to_csv(os.path.join(OUT, r'cited_in.csv'), index = False)
 
     # PUBLISHED_IN edge
