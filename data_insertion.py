@@ -156,7 +156,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     # Reviews edge
     driver.execute_query("""
     LOAD CSV WITH HEADERS FROM 'file:///reviews_edge.csv' AS row
-    MATCH (author:Author {name_id: row.reviewer}), (paper:Paper {title: row.paper})
+    MATCH (author:Author {name_id: row.reviewer})
+    MATCH (paper:Paper {title: row.paper})
     MERGE (author)-[:Reviews {date: row.date}]->(paper)
                          """, database_=db) 
     # "has" edge

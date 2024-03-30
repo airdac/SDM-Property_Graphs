@@ -1,12 +1,11 @@
 # TO DO
-#   ---- How to add properties to edges https://neo4j.com/docs/python-manual/current/query-simple/
-#   ---- How to get cypher query return in python
+# - Add author's affilitations
 
 from neo4j import GraphDatabase
 import pandas as pd
 from string import ascii_letters
 import random
-from os import path
+from pathlib import Path, PureWindowsPath
 
 random.seed(123)
 
@@ -14,9 +13,9 @@ URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
 db = 'neo4j'
 
-#OUT = 'D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv'
-OUT = 'C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import'
-
+#OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
+OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
+OUT = Path(OUT)
 ####################################
 # Generate synthetic data
 ####################################
@@ -32,8 +31,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     )
 
 result = record[0]
-result = list(result.data().values())
-n_reviews = result[0]
+result = result.data().values()
+n_reviews = next(iter(result))
 
 # Generate synthetic review descriptions
 description = []
@@ -44,10 +43,16 @@ for i in range(n_reviews):
     description.append(x)
 
 # Generate synthetic review decisions
-decision = random.choices(['Accepted', 'Not Accepted'], k=n_reviews) 
+decision = random.choices(['Accepted', 'Not Accepted'], k=n_reviews)
 
+# Read reviews_edge.csv
+# We match the properties to edges so that the cypher query be faster
+reviews_edge = pd.read_csv(OUT/'reviews_edge.csv', usecols=['paper', 'reviewer'])
+
+# Write review_param.csv
 review_param = pd.DataFrame({'description': description, 'decision': decision})
-review_param.to_csv(path.join(OUT, r'review_param.csv'), index = False)
+review_param = pd.concat([review_param, reviews_edge], axis=1)
+review_param.to_csv(OUT/'review_param.csv', index = False)
 
 # Set review descriptions and decisions
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
@@ -55,7 +60,9 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 
     records, summary, keys = driver.execute_query('''
         LOAD CSV WITH HEADERS FROM 'file:///review_param.csv' AS row
-        MATCH ()-[r:Review]->()
+        MATCH (author:Author {name_id: row.reviewer})
+        MATCH (paper:Paper {title: row.paper})
+        MATCH (author)-[r:Reviews]->(paper)
         SET r.description = row.description
         SET r.decision = row.decision
         ''', database_=db
