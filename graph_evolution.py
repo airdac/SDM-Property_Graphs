@@ -1,13 +1,16 @@
 # TO DO
-# - Add author's affilitations
+# 
+
 
 from neo4j import GraphDatabase
 import pandas as pd
+import numpy.random
 from string import ascii_letters
 import random
 from pathlib import Path, PureWindowsPath
 
 random.seed(123)
+numpy.random.seed(123)
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
@@ -16,9 +19,11 @@ db = 'neo4j'
 #OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
 OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
 OUT = Path(OUT)
-####################################
-# Generate synthetic data
-####################################
+
+
+######################################
+# Set review descripion and acceptance
+######################################
 
 # Get number of reviews
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
@@ -78,12 +83,46 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         time=summary.result_available_after
     ))
 
-# Add author's affiliation
+########################################
+# Set paper's acceptance
+########################################
+    
+with GraphDatabase.driver(URI, auth=AUTH) as driver:
+    driver.verify_connectivity()
+
+    records, summary, keys = driver.execute_query('''
+        MATCH (paper:Paper)<-[r:Reviews]-()
+        WITH paper, collect(r) AS reviews, count(*) as n_total
+        WITH paper, n_total, size([review in reviews WHERE review.decision = 'Accepted' | review]) AS n_accepted
+        SET paper.acceptance =
+            CASE
+                WHEN n_accepted > n_total - n_accepted THEN 'Yes'
+                ELSE 'No'
+            END
+        ''', database_=db
+    )
+
+    # Loop through results and do something with them
+    for record in records:  
+        print(record.data())  # obtain record as dict
+
+    # Summary information  
+    print("The query '{query}' returned {records_count} records in {time} ms.".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
+
+
+########################################
+# Set author's affiliation
+########################################
+    
 author_ids = pd.read_csv(OUT/'author_node.csv', usecols=['author_id'], delimiter = ',')
 universities = pd.read_csv('us-colleges-and-universities.csv', usecols=['NAME'], delimiter=';')
-universities.rename({'NAME': 'affiliation'}, inplace=True)
-affiliations = pd.concat([author_ids, universities], axis=1)
-affiliations.to_csv(OUT/'affiliations.csv', index=False)
+universities.rename(columns={'NAME': 'affiliation'}, inplace=True)
+author_ids['affiliation'] = universities.affiliation.sample(n=len(author_ids), replace=True).values
+
+author_ids.to_csv(OUT/'affiliations.csv', index=False)
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     driver.verify_connectivity()
