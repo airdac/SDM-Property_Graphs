@@ -1,4 +1,4 @@
-# Semantic_data_1
+# SDM-Property_Graphs
 
 In this project we have been asked to model academic papers, journals, conferences and authors data as a graph in neo4j.
 
