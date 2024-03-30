@@ -1,7 +1,3 @@
-# TO DO
-# 
-
-
 from neo4j import GraphDatabase
 import pandas as pd
 import numpy.random
@@ -63,7 +59,7 @@ review_param.to_csv(OUT/'review_param.csv', index = False)
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     driver.verify_connectivity()
 
-    records, summary, keys = driver.execute_query('''
+    driver.execute_query('''
         LOAD CSV WITH HEADERS FROM 'file:///review_param.csv' AS row
         MATCH (author:Author {name_id: row.reviewer})
         MATCH (paper:Paper {title: row.paper})
@@ -73,16 +69,6 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         ''', database_=db
     )
 
-    # Loop through results and do something with them
-    for record in records:  
-        print(record.data())  # obtain record as dict
-
-    # Summary information  
-    print("The query '{query}' returned {records_count} records in {time} ms.".format(
-        query=summary.query, records_count=len(records),
-        time=summary.result_available_after
-    ))
-
 ########################################
 # Set paper's acceptance
 ########################################
@@ -90,27 +76,17 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     driver.verify_connectivity()
 
-    records, summary, keys = driver.execute_query('''
+    driver.execute_query('''
         MATCH (paper:Paper)<-[r:Reviews]-()
         WITH paper, collect(r) AS reviews, count(*) as n_total
         WITH paper, n_total, size([review in reviews WHERE review.decision = 'Accepted' | review]) AS n_accepted
         SET paper.acceptance =
             CASE
-                WHEN n_accepted > n_total - n_accepted THEN 'Yes'
+                WHEN n_accepted >= n_total - n_accepted THEN 'Yes'
                 ELSE 'No'
             END
         ''', database_=db
     )
-
-    # Loop through results and do something with them
-    for record in records:  
-        print(record.data())  # obtain record as dict
-
-    # Summary information  
-    print("The query '{query}' returned {records_count} records in {time} ms.".format(
-        query=summary.query, records_count=len(records),
-        time=summary.result_available_after
-    ))
 
 
 ########################################
@@ -127,19 +103,9 @@ author_ids.to_csv(OUT/'affiliations.csv', index=False)
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     driver.verify_connectivity()
 
-    records, summary, keys = driver.execute_query('''
+    driver.execute_query('''
         LOAD CSV WITH HEADERS FROM 'file:///affiliations.csv' AS row
         MATCH (author:Author {name_id: row.author_id})
         SET author.affiliation = row.affiliation
         ''', database_=db
     )
-
-    # Loop through results and do something with them
-    for record in records:  
-        print(record.data())  # obtain record as dict
-
-    # Summary information  
-    print("The query '{query}' returned {records_count} records in {time} ms.".format(
-        query=summary.query, records_count=len(records),
-        time=summary.result_available_after
-    ))
