@@ -77,3 +77,30 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         query=summary.query, records_count=len(records),
         time=summary.result_available_after
     ))
+
+# Add author's affiliation
+author_ids = pd.read_csv(OUT/'author_node.csv', usecols=['author_id'], delimiter = ',')
+universities = pd.read_csv('us-colleges-and-universities.csv', usecols=['NAME'], delimiter=';')
+universities.rename({'NAME': 'affiliation'}, inplace=True)
+affiliations = pd.concat([author_ids, universities], axis=1)
+affiliations.to_csv(OUT/'affiliations.csv', index=False)
+
+with GraphDatabase.driver(URI, auth=AUTH) as driver:
+    driver.verify_connectivity()
+
+    records, summary, keys = driver.execute_query('''
+        LOAD CSV WITH HEADERS FROM 'file:///affiliations.csv' AS row
+        MATCH (author:Author {name_id: row.author_id})
+        SET author.affiliation = row.affiliation
+        ''', database_=db
+    )
+
+    # Loop through results and do something with them
+    for record in records:  
+        print(record.data())  # obtain record as dict
+
+    # Summary information  
+    print("The query '{query}' returned {records_count} records in {time} ms.".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
