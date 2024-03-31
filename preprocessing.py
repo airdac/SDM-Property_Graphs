@@ -334,12 +334,14 @@ def generate_citations(papers, min_rel = 10, max_rel = 30):
         max_iteration = random.randrange(min_rel,max_rel)
         paper_title = papers.title[paper]
         paper_year = papers.year[paper]
+        possible_papers = papers.title[papers.year < paper_year]    # A paper can only cite previous papers
+        if possible_papers.empty:
+            continue
 
         while len(relations) < max_iteration:
-            random_paper = papers.title[papers.year <= paper_year].sample(1).iloc[0]    # A paper can only cite previous papers
+            random_paper = possible_papers.sample(1).iloc[0]
             if random_paper == paper_title:
                 continue
-            
             relations.add(random_paper)
 
         all_relations[j] = relations
