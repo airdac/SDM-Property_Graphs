@@ -175,4 +175,5 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         MERGE (source)-[:Cites]->(target)
                             """, database_=db)
     except Exception as e:
+        print('\nException raised:')
         print(e)

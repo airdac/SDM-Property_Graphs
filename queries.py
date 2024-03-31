@@ -9,7 +9,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
         # 1. Find the top 3 most cited papers of each conference.
         records, summary, keys = driver.execute_query('''
-            MATCH (conference:Conference)<-[:From]-(:Edition)<-[:Is_from]-(cited_p:Paper)<-[citation:Cites]-()
+            MATCH (conference:Conference)<-[:From_c]-(:Edition)<-[:Published_in_e]-(cited_p:Paper)<-[citation:Cites]-()
             WITH conference, cited_p, COUNT(citation) as n_citations
             ORDER BY conference, n_citations DESC
             RETURN conference.title AS CONFERENCE, COLLECT(cited_p.title)[..3] AS TOP_CITED_PAPERS
@@ -17,7 +17,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             ''', database_=db
         )
         for record in records:
-            print(record)
+            pass
+            #print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
@@ -27,7 +28,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # have published papers on that conference in, at least, 4 different editions.
         records, summary, keys = driver.execute_query('''
             CALL {
-                MATCH (conference:Conference)<-[:From]-(edition:Edition)<-[:Is_from]-(:Paper)-[:Writes|Co_writes]-(author:Author)
+                MATCH (conference:Conference)<-[:From_c]-(edition:Edition)<-[:Published_in_e]-(:Paper)-[:Writes|Co_writes]-(author:Author)
                 WITH conference.title AS CONFERENCE, author.name_id AS AUTHOR, COUNT(DISTINCT edition) AS EDITIONS
                 WHERE EDITIONS >= 4
                 RETURN CONFERENCE, collect(AUTHOR) AS COMMUNITY
@@ -40,7 +41,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             ''', database_=db
         )
         for record in records:
-            print(record)
+            pass
+            #print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
@@ -49,7 +51,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # 3. Find the impact factors of the journals in your graph.
         # (see https://en.wikipedia.org/wiki/Impact_factor, for the definition of the impact factor).
 
-        # WE ASSUME THAT A PAPER IS ONLY PUBLISHED ONCE TO SIMPLIFY THE QUERY
+        # WE ASSUME THAT A PAPER IS ONLY PUBLISHED ONCE (that is no volumes or editions have any paper in common) TO SIMPLIFY THE QUERY
 
         records, summary, keys = driver.execute_query('''
             MATCH (p:Paper)-[:Published_in_v]->(:Volume)-[:From_j]->(j:Journal)
@@ -64,11 +66,29 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             ''', database_=db
         )
         for record in records:
-            print(record)
+            pass
+            #print(record)
+        print("The query `{query}` returned {records_count} records in {time} ms.".format(
+            query=summary.query, records_count=len(records),
+            time=summary.result_available_after
+        ))
+
+        # 4. Find the h-indexes of the authors in your graph
+        # (see https://en.wikipedia.org/wiki/H-index, for a definition of the h-index metric)
+
+        # WE ASSUME THAT A PAPER IS ONLY PUBLISHED ONCE (that is no volumes or editions have any paper in common) TO SIMPLIFY THE QUERY
+
+        records, summary, keys = driver.execute_query('''
+            ''', database_=db
+        )
+        for record in records:
+            pass
+            #print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
         ))
 
     except Exception as e:
+        print('\nException raised:')
         print(e)
