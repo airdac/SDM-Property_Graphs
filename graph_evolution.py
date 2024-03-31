@@ -23,13 +23,15 @@ OUT = Path(OUT)
 
 # Get number of reviews
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
-    driver.verify_connectivity()
+    try:
 
-    record, _, _ = driver.execute_query('''
-        MATCH ()-[:Reviews]->()
-        RETURN COUNT(*)
-        ''', database_=db
-    )
+        record, _, _ = driver.execute_query('''
+            MATCH ()-[:Reviews]->()
+            RETURN COUNT(*)
+            ''', database_=db
+        )
+    except Exception as e:
+        print(e)
 
 result = record[0]
 result = result.data().values()
@@ -57,36 +59,38 @@ review_param.to_csv(OUT/'review_param.csv', index = False)
 
 # Set review descriptions and decisions
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
-    driver.verify_connectivity()
-
-    driver.execute_query('''
-        LOAD CSV WITH HEADERS FROM 'file:///review_param.csv' AS row
-        MATCH (author:Author {name_id: row.reviewer})
-        MATCH (paper:Paper {title: row.paper})
-        MATCH (author)-[r:Reviews]->(paper)
-        SET r.description = row.description
-        SET r.decision = row.decision
-        ''', database_=db
-    )
+    try:
+        driver.execute_query('''
+            LOAD CSV WITH HEADERS FROM 'file:///review_param.csv' AS row
+            MATCH (author:Author {name_id: row.reviewer})
+            MATCH (paper:Paper {title: row.paper})
+            MATCH (author)-[r:Reviews]->(paper)
+            SET r.description = row.description
+            SET r.decision = row.decision
+            ''', database_=db
+        )
+    except Exception as e:
+        print(e)
 
 ########################################
 # Set paper's acceptance
 ########################################
     
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
-    driver.verify_connectivity()
-
-    driver.execute_query('''
-        MATCH (paper:Paper)<-[r:Reviews]-()
-        WITH paper, collect(r) AS reviews, count(*) as n_total
-        WITH paper, n_total, size([review in reviews WHERE review.decision = 'Accepted' | review]) AS n_accepted
-        SET paper.acceptance =
-            CASE
-                WHEN n_accepted >= n_total - n_accepted THEN 'Yes'
-                ELSE 'No'
-            END
-        ''', database_=db
-    )
+    try:
+        driver.execute_query('''
+            MATCH (paper:Paper)<-[r:Reviews]-()
+            WITH paper, collect(r) AS reviews, count(*) as n_total
+            WITH paper, n_total, size([review in reviews WHERE review.decision = 'Accepted' | review]) AS n_accepted
+            SET paper.acceptance =
+                CASE
+                    WHEN n_accepted >= n_total - n_accepted THEN 'Yes'
+                    ELSE 'No'
+                END
+            ''', database_=db
+        )
+    except Exception as e:
+        print(e)
 
 
 ########################################
@@ -101,11 +105,12 @@ author_ids['affiliation'] = universities.affiliation.sample(n=len(author_ids), r
 author_ids.to_csv(OUT/'affiliations.csv', index=False)
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
-    driver.verify_connectivity()
-
-    driver.execute_query('''
-        LOAD CSV WITH HEADERS FROM 'file:///affiliations.csv' AS row
-        MATCH (author:Author {name_id: row.author_id})
-        SET author.affiliation = row.affiliation
-        ''', database_=db
-    )
+    try:
+        driver.execute_query('''
+            LOAD CSV WITH HEADERS FROM 'file:///affiliations.csv' AS row
+            MATCH (author:Author {name_id: row.author_id})
+            SET author.affiliation = row.affiliation
+            ''', database_=db
+        )
+    except Exception as e:
+        print(e)
