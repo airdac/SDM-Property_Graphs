@@ -42,9 +42,9 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         ''', database_=db)
 
         driver.execute_query('''
-            CREATE CONSTRAINT Volume_id IF NOT EXISTS
+            CREATE CONSTRAINT Volume_title IF NOT EXISTS
             FOR (a:Volume)
-            REQUIRE a.id IS UNIQUE
+            REQUIRE a.title IS UNIQUE
         ''', database_=db)
 
         driver.execute_query('''
@@ -83,13 +83,13 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # Journal
         driver.execute_query("""
         LOAD CSV WITH HEADERS FROM 'file:///journal_node.csv' AS row 
-        MERGE (:Journal {name: row.journal, main_editor: row.editor}) 
+        MERGE (:Journal {title: row.journal, main_editor: row.editor}) 
                             """, database_=db)
 
         # Volume
         driver.execute_query("""
         LOAD CSV WITH HEADERS FROM 'file:///volume_node.csv' AS row 
-        MERGE (:Volume {id: row.volume, year: toInteger(row.year)})
+        MERGE (:Volume {title: row.volume, year: toInteger(row.year)})
                             """, database_=db)
 
         # Conference
@@ -138,8 +138,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # "From_j"
         driver.execute_query("""
         LOAD CSV WITH HEADERS FROM 'file:///from_j_edge.csv' AS row
-        MATCH (v:Volume {name: row.journal})
-        MATCH (j:Journal {id: row.volume})
+        MATCH (v:Volume {title: row.volume})
+        MATCH (j:Journal {title: row.journal})
         MERGE (v)-[:From_j]->(j)
                             """, database_=db)
         
@@ -155,7 +155,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         driver.execute_query("""
         LOAD CSV WITH HEADERS FROM 'file:///published_in_v_edge.csv' AS row
         MATCH (source: Paper {title: row.paper })
-        MATCH (target: Volume {id: row.volume})
+        MATCH (target: Volume {title: row.volume})
         MERGE (source)-[: Published_in_v]->(target)
                             """, database_=db) 
         

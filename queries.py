@@ -51,20 +51,16 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 
         # WE ASSUME THAT A PAPER IS ONLY PUBLISHED ONCE TO SIMPLIFY THE QUERY
 
-        # for each journal:
-        #   count(citations (in volumes of journals of current year -1 or editions of conferences of current year - 1)
-        #       of papers published in (volumes of current year - 2 or current year - 3))
-        #   /
-        #   count(papers published in volumes of journal of (current year -2 or current year - 3))
-        
-        # Steps:
-        #   0. RETURN current year
-        #       RETURN date().year
-        #   0.1 RETURN current year - 2
-        #       RETURN date().year - 2
-        #   1. COUNT(papers published in volumes of journal of current year -2)
         records, summary, keys = driver.execute_query('''
-            
+            MATCH (p:Paper)-[:Published_in_v]->(:Volume)-[:From_j]->(j:Journal)
+            WHERE p.year IN [date().year-2, date().year-3]
+            WITH j.title AS JOURNAL, COUNT(p) AS PUBLICATIONS
+            MATCH (citing_p:Paper)-[:Cites]-(cited_p:Paper)-[:Published_in_v]->(:Volume)-[:From_j]->(j:Journal)
+            WHERE cited_p.year IN [date().year-2, date().year-3]
+                AND citing_p.year = date().year-1
+            WITH JOURNAL, PUBLICATIONS, COUNT(citing_p) AS CITATIONS
+            RETURN JOURNAL, CITATIONS *1.0 / PUBLICATIONS AS IMPACT_FACTOR
+            ORDER BY IMPACT_FACTOR DESC, JOURNAL
             ''', database_=db
         )
         for record in records:

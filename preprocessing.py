@@ -42,7 +42,7 @@ TEMP = Path(TEMP)
 #OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
 OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
 OUT = Path(OUT)
-yearf = date.today().year - 1   # We only get papers from the last 25 years and we balance the data in each year
+yearf = date.today().year   # We only get papers from the last 25 years (current year not included) and we balance the data in each year
 n_years = 25
 
 def csv_full_read(name_datacsv, name_headers, col_names):
@@ -292,28 +292,27 @@ def generate_keywords(dict, all_id, valid_id, n_keywords=20):
     return dict
 
 def generate_reviews(paper_node, author_node, main_author, co_author):
-    all_reviews, reviews = [None] * len(paper_node), []
+    all_reviews, reviews = [None] * len(paper_node), set()
 
     for ind, paper in enumerate(paper_node.index):
         max_iteration = random.randrange(3,10)
-        n_iteration = 0
+        paper_title = paper_node.title[paper]
 
-        while n_iteration != max_iteration:
-            random_author = author_node.author_id.sample(1).values[0]
-            paper_title = paper_node.title[paper]
+        while len(reviews) < max_iteration:
+            random_author = author_node.author_id.sample(1).iloc[0]
 
-            # Check that the author is not the main author or co-writer of the paper.
-            try:
-                if random_author not in list(main_author[paper_title]) + co_author[paper_title]:
-                    reviews.append(random_author)
-                    n_iteration += 1
-            except KeyError:
-                reviews.append(random_author)
-                n_iteration += 1
+            # Check that the author is not the main author or a co-writer of the paper
+            if paper_title in main_author.keys()\
+                and random_author == main_author[paper_title]:
+                continue
+            if paper_title in co_author.keys()\
+                and random_author in co_author[paper_title]:
+                continue
+            reviews.add(random_author)
 
         # When all reviwers for a paper are generated store them and start again  
         all_reviews[ind] = reviews
-        reviews = []
+        reviews = set()
                            
     return all_reviews
 
@@ -328,20 +327,20 @@ def node_creation(col_name, col_id, df1, df2=pd.DataFrame()):
         node = node_raw.drop_duplicates(subset=col_id)
     return node
 
-def relation_generation(df1, df2 = pd.DataFrame(), min_rel = 1, max_rel = 5):
-    all_relations, relations = [None] * len(df1), set()
+def generate_citations(papers, min_rel = 10, max_rel = 30):
+    all_relations, relations = [None] * len(papers), set()
 
-    for j, ind in enumerate(df1.index):
+    for j, paper in enumerate(papers.index):
         max_iteration = random.randrange(min_rel,max_rel)
-        n_iteration = 0
+        paper_title = papers.title[paper]
+        paper_year = papers.year[paper]
 
-        while n_iteration != max_iteration:
-            random_element = df1.sample(1).values[0] if df2.empty else df2.sample(1).values[0]
-            if df2.empty and df1[ind] == random_element:
+        while len(relations) < max_iteration:
+            random_paper = papers.title[papers.year <= paper_year].sample(1).iloc[0]    # A paper can only cite previous papers
+            if random_paper == paper_title:
                 continue
             
-            relations.add(random_element)
-            n_iteration += 1
+            relations.add(random_paper)
 
         all_relations[j] = relations
         relations = set()
@@ -485,7 +484,7 @@ if __name__ == "__main__":
     
     editors = []
     for i in range(len(journal_node)):
-        editors.append(author_node["author_id"].sample(1).values[0])
+        editors.append(author_node["author_id"].sample(1).iloc[0])
 
     journal_node["editor"] = editors
     journal_node.dropna(inplace = True)
@@ -547,7 +546,7 @@ if __name__ == "__main__":
     co_writes_edge.to_csv(OUT/'co_writes_edge.csv', index = False)
     
     # CITES edge
-    cited_in_edge = relation_generation(paper_node.title)
+    cited_in_edge = generate_citations(paper_node)
     cited_in_edge = pd.DataFrame(data={"paper": paper_node.title, "cites": cited_in_edge})
     cited_in_edge = cited_in_edge.explode('cites')
     cited_in_edge.to_csv(OUT/'cites_edge.csv', index = False)
