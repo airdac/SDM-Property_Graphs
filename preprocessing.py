@@ -299,7 +299,7 @@ def generate_reviews(paper_node, author_node, main_author, co_author):
         paper_title = paper_node.title[paper]
 
         while len(reviews) < max_iteration:
-            random_author = author_node.author_id.sample(1).iloc[0]
+            random_author = author_node.author_id.sample(1).iat[0]
 
             # Check that the author is not the main author or a co-writer of the paper
             if paper_title in main_author.keys()\
@@ -339,7 +339,7 @@ def generate_citations(papers, min_rel = 10, max_rel = 30):
             continue
 
         while len(relations) < max_iteration:
-            random_paper = possible_papers.sample(1).iloc[0]
+            random_paper = possible_papers.sample(1).iat[0]
             if random_paper == paper_title:
                 continue
             relations.add(random_paper)
@@ -407,11 +407,9 @@ if __name__ == "__main__":
     inproc_index = inproc_raw["crossref"].str.contains("conf/", regex=False)
 
     proc_raw = proc_raw.loc[proc_index]
-    with pd.option_context("future.no_silent_downcasting", True):   # This line fixes a FutureWarning
-        inproc_raw = inproc_raw.loc[inproc_index].fillna(False).infer_objects(copy=False)
+    inproc_raw = inproc_raw.loc[inproc_index].fillna(False)
 
     # Join inproc and proc dataframes: "cross-ref" in inproc is "key" in proc
-    # The resulting dataframe has few rows
     proc_raw.rename(
         columns={"key": "crossref", "title": "edition_title", "year": "edition_year"},
         inplace=True,
@@ -467,7 +465,7 @@ if __name__ == "__main__":
     for i in range(len(paper_node)):
         all_keywords, valid_keywords, valid_id = extract_keywords(
             paper_node.index[i],
-            paper_node.title.iloc[i],
+            paper_node.title.iat[i],
             all_keywords,
             valid_keywords,
             valid_id,
@@ -486,7 +484,7 @@ if __name__ == "__main__":
     
     editors = []
     for i in range(len(journal_node)):
-        editors.append(author_node["author_id"].sample(1).iloc[0])
+        editors.append(author_node["author_id"].sample(1).iat[0])
 
     journal_node["editor"] = editors
     journal_node.dropna(inplace = True)
