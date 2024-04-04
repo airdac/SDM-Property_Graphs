@@ -79,6 +79,15 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # WE ASSUME THAT A PAPER IS ONLY PUBLISHED ONCE (that is no volumes or editions have any paper in common) TO SIMPLIFY THE QUERY
 
         records, summary, keys = driver.execute_query('''
+            MATCH (a:Author)-[:Writes|Co_writes]->(p:Paper)<-[:Cites]-(:Paper)
+            WITH a.name_id AS author, p.title as p_title, COUNT(*) AS c
+            ORDER BY author, c DESC
+            WITH author, collect({paper:p_title, citations:c}) AS paperCitations, COUNT(p_title) AS n_papers
+            UNWIND range(0, n_papers-1) AS row_number
+            WITH author, paperCitations[row_number]['paper'] as paper, paperCitations[row_number]['citations'] AS citations, row_number
+            WHERE citations >= row_number+1
+            RETURN author, MAX(row_number)+1 AS h_index
+            ORDER BY author
             ''', database_=db
         )
         for record in records:
