@@ -1,0 +1,1593 @@
+paper,co_authors
+Preface.,"['Iñaki Inza', 'Louis Wehenkel', 'Yvan Saeys', 'Yves Van de Peer', 'Jirí Adámek', 'Guo-Qiang Zhang 0001', 'Mao-kang Luo', 'Peter Selinger', 'Prakash Panangaden', 'Moreno Falaschi', 'Santiago Escobar 0001', 'Bart Jacobs 0001', 'Jan J. M. M. Rutten', 'Milad Niqui', 'Vasco Thudichum Vasconcelos', 'Detlef Plump', 'Ian Mackie', 'Ian Mackie', 'Lucília Figueiredo', 'Ruy J. G. B. de Queiroz', 'Guilherme Bittencourt', 'Ruy J. G. B. de Queiroz', 'Andrea Omicini', 'Maria Chiara Meo', 'Ivana Cerná', 'Martin Leucker', 'Marina Lenisa', 'Ugo Montanari', 'John Power', 'Guo-Qiang Zhang 0001', 'Luoshan Xu', 'Qingguo Li', 'Martin Leucker', 'Paul Curzon', 'Detlef Plump', 'Ian Mackie', 'Mao-kang Luo', 'Michael W. Mislove', 'Ying-ming Liu', 'Jochen Pfalzgraf', 'Ulrike Prange', 'Orna Grumberg', 'Ernst-Erich Doberkat', 'Yixiang Chen', 'Ivana Cerná', 'Jan J. M. M. Rutten', 'Ruy J. G. B. de Queiroz']"
+Approximating Mutual Information by Maximum Likelihood Density Ratio Estimation.,"['Masashi Sugiyama', 'Taiji Suzuki', 'Takafumi Kanamori']"
+A Strategy for Making Predictions Under Manipulation.,['Laura E. Brown']
+Keyword Optimization in Sponsored Search via Feature Selection.,['Svetlana Kiritchenko']
+Partial orientation and local structural learning of causal networks for prediction.,"['Cheng Zheng', 'Jianxin Yin', 'Ping He', 'You Zhou 0001', 'Zhi Geng']"
+On the Relationship Between Feature Selection and Classification Accuracy.,"['Gerhard F. Ecker', 'Michael Demel', 'Wilfried N. Gansterer']"
+Unsupervised Feature Selection for Pattern Discovery in Seismic Wavefields.,"['Carsten Riggelsen', 'Frank Scherbaum', 'Matthias Ohrnberger']"
+Design and Analysis of the Causation and Prediction Challenge.,"['André Elisseeff', 'Constantin F. Aliferis', 'Gregory F. Cooper', 'Isabelle Guyon', 'Jean-Philippe Pellet', 'Peter Spirtes']"
+Multi-Source Feature Selection via Geometry-Dependent Covariance Analysis.,['Zheng Zhao 0002']
+"A Bayesian View of Challenges in Feature Selection: Feature Aggregation, Multiple Targets, Redundancy and Interaction.","['András Millinghoffer', 'Csaba Szalai', 'Gábor Hullám', 'Peter Antal']"
+Exploiting tree-based variable importances to selectively identify relevant variables.,"['Pierre Geurts', 'Vân Anh Huynh-Thu']"
+Unsupervised feature selection applied to SPOT5 satellite images indexing.,"['Ivan O. Kyrgyzov', 'Marine Campedel']"
+Transferring Knowledge by Prior Feature Sampling.,"['Victor Eruhimov', 'Vladimir Martyanov']"
+Best Agglomerative Ranked Subset for Feature Selection.,"['José C. Riquelme', 'Roberto Ruiz']"
+Feature Ranking Using Linear SVM.,['Yin-Wen Chang']
+Quality assessment of nonlinear dimensionality reduction based on K-ary neighborhoods.,['Michel Verleysen']
+Recursive Program Schemes and Context-Free Monads.,"['Jirí Velebil', 'Stefan Milius']"
+Compilation of Interaction Nets.,"['Ian Mackie', 'Shinya Sato']"
+Algebraic Semantics for Coalgebraic Logics.,"['Clemens Kupke', 'Dirk Pattinson']"
+Shared Hash Tables in Parallel Model Checking.,['Petr Rockai']
+Correlated Information: A Logic for Multi-Partite Quantum Systems.,['Sonja Smets']
+Modeling Pointer Redirection as Cyclic Term-graph Rewriting.,"['Frédéric Prost', 'Rachid Echahed']"
+Characterizations of Supercontinuous Posets via Scott S-sets and the S-essential Topology.,['Xuxin Mao']
+T,['Hui Kou']
+Towards Behavioral Maude: Behavioral Membership Equational Logic.,['José Meseguer 0001']
+Implementing Nominal Unification.,['Maribel Fernández']
+Macros for Interaction Nets: A Conservative Extension of Interaction Nets.,['Ian Mackie']
+Web Accessibility Evaluation Tools: A Survey and Some Improvements.,"['Jesús Arias-Fisteus', 'Luis Álvarez Álvarez', 'Vicente Luque Centeno']"
+A Case Study in Parallel Verification of Component-Based Systems.,"['Ivana Cerná', 'Jiri Sochor', 'Nikola Benes', 'Pavlína Vareková']"
+Verification of Quantum Protocols with a Probabilistic Model-Checker.,"['Amir M. Tavala', 'Soroosh Nazem']"
+A Higher-Order Calculus for Graph Transformation.,"['Jorge Sousa Pinto', 'Maribel Fernández']"
+From Comodels to Coalgebras: State and Arrays.,['Olha Shkaravska']
+A Short Introduction to Clones.,"['Reinhard Pöschel', 'Sebastian Kerkhoff']"
+From Reversible to Irreversible Computations.,['Thorsten Altenkirch']
+On Monotone Determined Spaces.,['Xiaoquan Xu']
+Default Theories Over Monadic Languages: (Extended Abstract).,['Michael Kaminski']
+Characterizing Consistent Smyth Powerdomains by FS-∧,['Yayan Yuan']
+Service Discovery and Negotiation With COWS.,"['Francesco Tiezzi 0001', 'Rosario Pugliese']"
+A Symbolic Semantics for a Calculus for Service-Oriented Computing.,"['Nobuko Yoshida', 'Rosario Pugliese']"
+A Coalgebraic View of Infinite Trees and Iteration.,"['Jirí Velebil', 'Peter Aczel']"
+Monadic Second-Order Logic and Transitive Closure Logics over Trees.,['Stephan Kepser']
+Bridging the Web Accessibility Divide.,"['I. V. Ramakrishnan', 'Jalal Mahmud', 'Muhammad Asiful Islam', 'Yevgen Borodin']"
+"Notes on Coalgebras, Cofibrations and Concurrency.",['Dirk Pattinson']
+The Implication Problem of Functional Dependencies in Complex-value Databases.,['Sven Hartmann']
+Distributed Partial Order Reduction for Security Protocols.,"['Bert Lisser', 'Muhammad Torabi Dashti']"
+An Algebra for Directed Bigraphs.,['Marino Miculan']
+Modeling concurrent systems specified in a temporal concurrent constraint language-I.,"['Alicia Villanueva', 'Moreno Falaschi']"
+Interaction Nets With Nested Pattern Matching.,['Shinya Sato']
+Towards an awareness-based semantics for security protocol analysis.,"['Luca Viganò 0001', 'Rafael Accorsi']"
+On Functional Dependencies in Advanced Data Models.,['Sven Hartmann']
+Modelling Parallel Quantum Computing Using Transactional Memory.,['Juliana Kaizer Vizzotto']
+A Tableau Method for the Lambek Calculus based on a Matrix Characterization.,['Marcelo da Silva Corrêa']
+Implementing X.,['Steffen van Bakel']
+Two-dimensional linear algebra.,['Martin Hyland']
+Comonadic Notions of Computation.,['Varmo Vene']
+A Coalgebraic Approach to Kleene Algebra with Tests.,['Riccardo Pucella']
+k-Valued Non-Associative Lambek Grammars are Learnable from Function-Argument Structures.,['Denis Béchet']
+Quantifier-free logic for multialgebraic theories.,['Yngve Lamo']
+"(Omega, Xi)-Logic: On the Algebraic Extension of Coalgebraic Specifications.",['Rolf Hennicker']
+Strongly Semicontinuous Lattices.,['Qingyu He']
+Recursive Coalgebras from Comonads.,"['Varmo Vene', 'Venanzio Capretta']"
+Modal Predicates and Co-equations.,['Jirí Rosický']
+The Approximate Correctness of Systems Based on δ-bisimulation.,['Yanfang Ma']
+Rewritings for Polarized Multiplicative and Exponential Proof Structures.,['Virgile Mogbil']
+Rational Unification in 28 Characters.,['Pietro Cenciarelli']
+A Local Graph-rewriting System for Deciding Equality in Sum-product Theories.,"['José Bacelar Almeida', 'Miguel Vilaça']"
+Reasoning with Graphs.,"['Paulo A. S. Veloso', 'Renata P. de Freitas', 'Sheila R. M. Veloso']"
+Parity-OBDDs - a BDD structure for Probabilistic Verification.,['Harald Sack']
+Conditional Doxastic Models: A Qualitative Approach to Dynamic Belief Revision.,['Sonja Smets']
+On Subset Families That Form a Continuous Lattice.,['Zhiwei Zou']
+A Duality Theorem for Quantitative Semantics.,['Yixiang Chen']
+False,['Luoshan Xu']
+Final Coalgebras And a Solution Theorem for Arbitrary Endofunctors.,"['Jirí Velebil', 'Stefan Milius']"
+Monoid-labeled transition systems.,['Tobias Schröder']
+Continuous Functions on Final Coalgebras.,"['Neil Ghani', 'Peter G. Hancock']"
+On a Condition for Semirings to Induce Compact Information Algebras.,['Yongming Li 0001']
+On the Relations between Disjunctive and Linear Logic Programming.,"['Marco Bozzano', 'Maurizio Martelli']"
+Universal Boolean Systems.,['Sylvain Lippi']
+From Varieties of Algebras to Covarieties of Coalgebras.,['Jirí Adámek']
+Large-Scale Parallel Computing on Grids.,['Kees Verstoep']
+Quantum Arrows in Haskell.,"['Antônio Carlos da Rocha Costa', 'Juliana Kaizer Vizzotto']"
+A Programming Language for the Interval Geometric Machine.,"['Graçaliz Pereira Dimuro', 'Renata Hax Sander Reiser']"
+An axiomatics for categories of coalgebras.,['John Power']
+Distributed Branching Bisimulation Reduction of State Spaces.,['Stefan Blom']
+Formal Modelling of PKI Based Authentication.,['Ali Nasrat Haidar']
+Approximations of Modal Logic K.,['Marcelo Finger']
+Generalized Scott Topology on Sets with Families of Pre-orders.,['Li-Gang Wu']
+Generalizing Topological Set Operators.,['Yinbin Lei']
+On automating the extraction of programs from proofs using product types.,"['François Monin', 'Mauricio Ayala-Rincón']"
+An Equivalence between Dependencies in Nested Databases and a Fragment of Propositional Logic.,['Sven Hartmann']
+"Addressed Term Rewriting Systems: Syntax, Semantics, and Pragmatics: Extended Abstract.","['Frédéric Lang', 'Luigi Liquori', 'Pierre Lescanne']"
+On Term Graphs as an Adhesive Category.,['Fabio Gadducci']
+Using Assumptions to Distribute Alternation Free Mu-Calculus Model Checking.,['Lubos Brim']
+A Note on Hyperspaces and Terminal Coalgebras.,['Stephen Watson']
+Generalized Coiteration Schemata.,"['Furio Honsell', 'Marina Lenisa']"
+Completely Precontinuous Posets.,['Xiaoquan Xu']
+Characterizations of Various Continuities of Posets Via Approximated Elements.,['Xuxin Mao']
+On Mobility and Communication.,['Yuxin Deng']
+Attacking fair-exchange protocols: parallel models vs trace models.,['Luigia Carlucci Aiello']
+Information Processing in Convex Operational Theories.,['Howard Barnum']
+Countably Sober Spaces.,['Junmiao Shi']
+A Coalgebraic Representation of Reduction by Cone of Influence.,"['Koki Nishizawa', 'Osamu Takaki']"
+Quasi-continuous Yoneda Complete Quasi-Metric Space.,['Weng Kin Ho']
+The Relationships Between KM-fuzzy Quasi-metric Spaces and the Associated Posets of Formal Balls.,['You Gao']
+Mixing Up Nondeterminism and Probability: a preliminary report.,['Jerry den Hartog']
+An Algebra of Automata That Includes Both Classical and Quantum Entities.,"['Nicoletta Sabadini', 'Robert F. C. Walters']"
+Continuous Prequantale Models of ,"['Qingguo Li', 'Xiangnan Zhou']"
+Abstract interpretation for proving secrecy properties in security protocols.,['Mourad Debbabi']
+Analytical Tableaux for da Costa's Hierarchy of Paraconsistent Logics.,['Milton Augustinis De Castro']
+Strong Joinability Analysis for Graph Transformation Systems in CHR.,['Thom W. Frühwirth']
+"Distribution, Approximation and Probabilistic Model Checking.","['Richard Lassaigne', 'Sylvain Peyronnet', 'Thomas Hérault']"
+Synchronous Multiparty Session Types.,['Nobuko Yoshida']
+Bell States and Negative Sentences in the Distributed Model of Meaning.,['Mehrnoosh Sadrzadeh']
+Merging Hierarchically-Structured Documents in Workflow Systems.,['Éric Badouel']
+A Visual Technique for Web Pages Comparison.,['María Alpuente']
+From SOS Specifications to Structured Coalgebras: How to Make Bisimulation a Congruence.,"['Reiko Heckel', 'Ugo Montanari']"
+A Database Approach to Distributed State Space Generation.,"['Jaco van de Pol', 'Michael Weber 0002', 'Stefan Blom']"
+Modular Games for Coalgebraic Fixed Point Logics.,['Mehrnoosh Sadrzadeh']
+Preface: WoLLIC 2002,"['Luiz Carlos Pereira', 'Ruy J. G. B. de Queiroz']"
+Modularity of Behaviours for Mathematical Operational Semantics.,['Marco Kick']
+Coalgebras for Fuzzy Transition Systems.,['Yixiang Chen']
+Reductions and Saturation Reductions of (Abstract) Knowledge Bases.,['Luoshan Xu']
+On the Semantic Foundations of Probabilistic Synchronous Reactive Programs.,"['Edmund M. Clarke', 'Vasiliki Hartonas-Garmhausen']"
+Algebras of the Extended Probabilistic Powerdomain Monad.,['Xiaodong Jia 0002']
+Comparing Calculi of Explicit Substitutions with Eta-reduction.,"['Flávio L. C. de Moura', 'Mauricio Ayala-Rincón']"
+On Rough Concept Lattices.,['Luoshan Xu']
+Refining and Compressing Abstract Model Checking.,"['Elisa Quintarelli', 'Roberto Giacobazzi']"
+"Design for AJACS, yet another Java constraint programming framework.",['Salvador Abreu']
+A hierarchy of probabilistic system types.,"['Erik P. de Vink', 'Falk Bartels']"
+Deciding Nondeterministic Hierarchy of Deterministic Tree Automata.,['Igor Walukiewicz']
+Parallel and Symbolic Model Checking for Fixpoint Logic with Chop.,['Martin Lange']
+Relating State-Based and Process-Based Concurrency through Linear Logic.,['Iliano Cervesato']
+Formal Contexts for Algebraic Domains.,"['Mengqiao Huang', 'Qingguo Li']"
+Hard combinators.,['Sylvain Lippi']
+Modeling Fresh Names in the ?-calculus Using Abstractions.,"['Marina Lenisa', 'Marino Miculan', 'Roberto Bruni']"
+A Diagrammatic Logic for Object-Oriented Visual Modeling.,['Zinovy Diskin']
+Web Categorisation Using Distance-Based Decision Trees.,"['José Hernández-Orallo', 'M. José Ramírez-Quintana', 'Vicent Estruch']"
+Expressibility of Higher Order Logics.,['Lauri Hella']
+Parallelism and Concurrency in Adhesive High-Level Replacement Systems with Negative Application Conditions.,"['Hartmut Ehrig', 'Leen Lambers', 'Ulrike Prange']"
+Checking Java implementation of a naming architecture using Testera.,['Sarfraz Khurshid']
+Probabilistic confinement in a declarative framework.,"['Chris Hankin', 'Herbert Wiklicky']"
+Quantum Logic in Dagger Kernel Categories.,['Chris Heunen']
+SoftMC 2003: Workshop on Software Model Checking.,"['Scott D. Stoller', 'Willem Visser']"
+Refinement: A Constructive Approach to Formal Software Design for a Secure e-voting Interface.,"['Dominique Méry', 'J. Paul Gibson']"
+Automated validation of distributed software using the IF environment.,"['Marius Bozga', 'Susanne Graf']"
+Space-Reduction Strategies for Model Checking Dynamic Software.,"['Matthew B. Dwyer', 'Radu Iosif', 'Robby']"
+Measurements and Confluence in Quantum Lambda Calculi With Explicit Qubits.,"['Jonathan Grattage', 'Manuel Gadella', 'Pablo Arrighi']"
+Inequational Deduction as Term Graph Rewriting.,"['Barbara König 0001', 'Fabio Gadducci', 'Wolfram Kahl']"
+Symbolic Model Checking of Software.,"['Michael Theobald', 'Nishant Sinha 0001']"
+A Branching Time Logical System for Open Distributed Systems Development.,['T. S. E. Maibaum']
+Computing Probability Bounds for Linear Time Formulas over Concurrent Probabilistic Systems.,"['Gethin Norman', 'Marta Z. Kwiatkowska']"
+Modal Logics for Observation Equivalences.,['Jan Rothe']
+Verification of Web Services with Timed Automata.,"['Gregorio Díaz 0001', 'Juan José Pardo', 'María-Emilia Cambronero', 'Valentín Valero']"
+Some Lessons from Using Static Analysis and Software Model Checking for Bug Finding.,['Madanlal Musuvathi']
+The Duality Theory of General Z-continuous Posets.,['Zhenzhu Yuan']
+"Towards a Quantum Calculus: (Work in Progress, Extended Abstract).",['Simon Perdrix']
+Benchmarking Explicit State Parallel Model Checkers.,"['Michael D. Jones', 'Peter Lamborn', 'Rahul Kumar 0004', 'Tonglaga Bao']"
+"Distributivity for endofunctors, pointed and co-pointed endofunctors, monads and comonads.","['John Power', 'Marina Lenisa']"
+Classical Representations of Qubit Channels.,['Tanner Crowder']
+Reduction Semantics and Formal Analysis of Orc Programs.,['Musab AlTurki']
+Domain Equations Based on Sets with Families of Pre-orders.,['Li-Gang Wu']
+Encapsulation and Dynamic Modularity in the pi-calculus.,"['Damien Pous', 'Daniel Hirschkoff', 'Samuel Hym', 'Tom Hirschowitz']"
+Coalgebraic structure from weak limit preserving functors.,['Tobias Schröder']
+"Choiceless Polynomial Time, Counting and the Cai-Fürer-Immerman Graphs: (Extended Abstract).","['Benjamin Rossman', 'David Richerby']"
+Structured Transition Systems as Lax Coalgebras.,"['Martin Große-Rhode', 'Reiko Heckel']"
+Timed Specification For Web Services Compatibility Analysis.,"['Nawal Guermouche', 'Olivier Perrin 0001']"
+Toy Quantum Categories (Extended Abstract).,['Bob Coecke']
+Parallel Multithreaded Satisfiability Solver: Design and Implementation.,"['Yulik Feldman', 'Ziyad Hanna']"
+"Parallel Model Checking for LTL, CTL*, and Lµ","['Michael Weber 0002', 'Rafal Somla']"
+Distributed Verification of Multi-threaded C++ Programs.,"['Shahid Jabbar', 'Stefan Edelkamp']"
+Substitution in Non-wellfounded Syntax with Variable Binding.,['Tarmo Uustalu']
+Fusion of Pedigreed Preferential Relations.,['Yoshitaka Suzuki']
+Measuring and Evaluating Parallel State-Space Exploration Algorithms.,['Jonathan Ezekiel']
+Representation of FS-domains Based on Closure Spaces.,['Qingguo Li']
+Continuous Domains and their Information System Representation as Logical Systems.,['Ivanosca Andrade da Silva']
+"Requirements, specifications, and minimal refinement.",['Nikos Gorogiannis']
+A Name Abstraction Functor for Named Sets.,['Vincenzo Ciancia']
+Automatically Verifying Concurrent Queue Algorithms.,['Shmuel Sagiv']
+Cut Elimination in a Class of Sequent Calculi for Pure Type Systems.,['Francisco Gutiérrez']
+"Feature-based Modelling of a Complex, Online-Reconfigurable Decision Support Service.",['Tiziana Margaria']
+The Meet-continuity of L-semilattices.,"['Qingguo Li', 'Shuhua Su']"
+A Note on Finitely Derived Information Systems.,"['Petko Valtchev', 'Qingguo Li', 'Robert Godin']"
+Coalgebraic Monads.,"['Federico De Marchi', 'Neil Ghani']"
+Formal Verification of Websites.,"['Salvador Lucas', 'Sonia Flores']"
+Incompleteness of Behavioral Logics.,['Samuel R. Buss']
+Intersection Types and Computational Rules.,"['Franco Barbanera', 'Mariangiola Dezani-Ciancaglini']"
+Gap Embedding for Well-Quasi-Orderings.,['Nachum Dershowitz']
+Controlling Control Flow in Web Applications.,['Robin Henry Message']
+Intensional Properties of Polygraphs.,['Yves Guiraud']
+Synthesis of Optimal Strategies Using HyTech.,"['Franck Cassez', 'Kim Guldstrand Larsen', 'Patricia Bouyer']"
+Distributed Partial Order Reduction of State Spaces.,"['Jirí Simsa', 'Lubos Brim', 'Pavel Moravec 0002']"
+How Iterative are Iterative Algebras?,"['Jirí Velebil', 'Stefan Milius']"
+Natural Deduction for Full S5 Modal Logic with Weak Normalization.,['Lília Ramalho Martins']
+Improving the Quality of Web-based Enterprise Applications with Extended Static Checking: A Case Study.,['Patrice Chalin']
+"A Calculus for Generation, Verification and Refinement of BPEL Specifications.",['John Mullins']
+Algebraic Structure of Web Services.,['Peter Höfner']
+Scenarios and Covert Channels: Another Game...,"['Loïc Hélouët', 'Marc Zeitoun']"
+Categorifying Computations into Components via Arrows as Profunctors.,['Kazuyuki Asada']
+Specification and Analysis of SOC Systems Using COWS: A Finance Case Study.,"['Federico Banti', 'Francesco Tiezzi 0001', 'Rosario Pugliese']"
+Operational Semantics for Reexecution-based Analysis of Logic Programs with Delay Declarations.,"['Baudouin Le Charlier', 'Sabina Rossi']"
+When is a function a fold or an unfold?,"['Jeremy Gibbons', 'Thorsten Altenkirch']"
+Type-Directed Compilation for Multicore Programming.,"['Nobuko Yoshida', 'Vasco Thudichum Vasconcelos']"
+Interface-Based Specification and Verification of Concurrency Controllers.,['Tevfik Bultan']
+Automated Compositional Abstraction Refinement for Concurrent C Programs: A Two-Level Approach.,"['Joël Ouaknine', 'Karen Yorav', 'Sagar Chaki']"
+Functorial Coalgebraic Logic: The Case of Many-sorted Varieties.,['Daniela Petrisan']
+Covarieties and Complete Covarieties.,['Tobias Schröder']
+From Iterative Algebras to Iterative Theories (Extended Abstract).,"['Jirí Velebil', 'Stefan Milius']"
+Lattices of Irreducibly-derived Closed Sets.,['Shuhua Su']
+Denotational Semantics for Probabilistic Refusal Testing.,['Manuel Núñez 0001']
+Quantum Data and Control Made Easier.,"['Michael Lampis', 'Michalis A. Papakyriakou', 'Nikolaos S. Papaspyrou']"
+Towards a Common Semantic Foundation for Use Cases and Task Models.,"['Ferhat Khendek', 'Patrice Chalin']"
+Constructing Formally Verified Reasoners for the ACL Description Logic.,"['José-Antonio Alonso', 'José-Luis Ruiz-Reina', 'María-José Hidalgo']"
+Pauli Measurements are Universal.,['Vincent Danos']
+Information based reasoning about security protocols.,['S. P. Suresh']
+A State Space Distribution Policy Based on Abstract Interpretation.,"['Miguel Valero Espada', 'Simona Orzan']"
+On the Largest Cartesian Closed Category of Stable Domains.,['Xiaoyong Xi']
+Web Sites Repairing through Abduction.,"['Giacomo Terreni', 'Paolo Mancarella']"
+A Cartesian Closed Category of Domains with Almost Algebraic Bases.,['Zhenchao Lyu']
+Confluence Results for a Quantum Lambda Calculus with Measurements.,"['Margherita Zorzi', 'Ugo Dal Lago']"
+Spectre Attacks: Exploiting Speculative Execution.,"['Daniel Gruss', 'Michael Schwarz 0001', 'Mike Hamburg', 'Moritz Lipp', 'Paul Kocher', 'Stefan Mangard', 'Thomas Prescher 0002', 'Werner Haas 0004', 'Yuval Yarom']"
+Meltdown,"['Daniel Gruss', 'Michael Schwarz 0001', 'Mike Hamburg', 'Moritz Lipp', 'Paul Kocher', 'Stefan Mangard', 'Thomas Prescher 0002', 'Werner Haas 0004', 'Yuval Yarom']"
+DARWIN: On the Incremental Migration of Legacy Information Systems,['Michael Stonebraker']
+"Integrating Heterogeneous, Autonomous, Distributed Applications Using the DOM Prototype.","['Joe D. Morrison', 'Mark F. Hornick']"
+Towards a Transaction Management System for DOM.,"['Dimitrios Georgakopoulos', 'M. Tamer Özsu']"
+A 'RISC' Object Model for Object System Interoperation: Concepts and Applications.,['Sandra Heiler']
+Object Data Model Facilities for Multimedia Data Types.,"['Frank Manola', 'Mark F. Hornick']"
+Experiments with Dispatching in a Distributed Object System.,['Farshad Nayeri']
+Object Oriented DBMS as a Generalization of Relational DBMS,['David Beech']
+Inheritance for ADTs (revised),"['Jonathan Bauer', 'Krishna G. Kulkarni', 'Mike Kelley']"
+Object ADTs (with improvements for Value ADTs),"['Jonathan Bauer', 'Krishna G. Kulkarni']"
+Wissensrepräsentation und Maschinelles Lernen,['Werner Emde']
+An Algebraic Characterization of STUF,"['Hans Uszkoreit', 'Udo Pletat']"
+A Combined Symbolic-Empirical Apprach for the Automatic Translation of Compounds,"['Ulrike Rackow', 'Ulrike Schwall']"
+Mengenorientierte Auswertung von Anfragen in der Logikprogrammiersprache PROLOG,['Erich Gehlen']
+Definite Resolution over Constraint Languages,['Markus Höhfeld']
+LILOG-DB: Database Support for Knowledge-Based Systems,"['Bernd Walter', 'Erich Gehlen', 'Michael Ley', 'Thomas Ludwig 0001']"
+Differential Closure Computation for General Horn-Clause Queries,"['Stefan Benzschawel', 'Thomas Ludwig 0001']"
+Implementation Aspects of a Natural Language Understanding System in a Prolog/DB Environment,['Rudi Studer']
+Sort Processing in a Deductive Database System,"['Erich Gehlen', 'Michael Ley']"
+EFTA: A Database Retrieval Algebra for Feature Terms,['Thomas Ludwig 0001']
+Knowledge in Operation,['Udo Pletat']
+Attributive Concept Descriptions with Unions and Complements,['Manfred Schmidt-Schauß']
+PROTOS-L: Towards a Knowledge Base Programming Language,['Stefan Böttcher']
+"On the Interpretation of Equality, Sorts, and Logic Programming",['Udo Pletat']
+Elsaß-Wanderung für Linguisten: Exemplarische Analyse und Repräsentation eines Satzes aus einer Reisebeschreibung,"['Michael Herweg', 'Mohammed Nadjib Khenkhar', 'Simone Pribbenow']"
+Semantics of Logic Programs with Equational Abstract Data Type Specifications,['Udo Pletat']
+A Reusable Lexical Database Tool for Machine Translation,"['Brigitte Bläser', 'Ulrike Schwall']"
+An Approach to Manage Large Inheritance Networks,['Stefan Börner']
+Das Projekt EXCEPT: Expert-System for Computer-Aided Environmental Planning Tasks,['Ulrike Weiland']
+A Formal Operational Semantics for PROLOG III: Using Dynamic Algebras,['Peter H. Schmitt']
+Die Struktur des Lexikons für LILOG,"['Mechthild Rickheit', 'Petra Ludewig']"
+Die Konzeption des EXCEPT-Systems: Ein Überblick,"['Martin Hübner', 'Ulrike Weiland']"
+Fully Persistent B,['Sitaram Lanka']
+Database Snapshots.,['Michel E. Adiba']
+"Die Ontologie und Axiomatik der Wissensbasis von LEU/2 - Erfahrungen, Probleme, Ausblicke","['Gudrun Klose', 'Thomas Pirlein']"
+The Semantics of Asserting and Retracting Clauses to Logic Programs,['Udo Pletat']
+Correctness Proof for the WAM,['Egon Börger']
+Word Order and Focus Projection,['Ingrid Renz']
+Der LILOG-DB Fact Manager: Ein Datenbankkern zur Speicherung variabel strukturierter komplexer Objekte,['Michael Ley']
+Multiword Lexemes: A Monolingual and Contrastive Typology for NLP and MT,"['Jennifer A. Brundage', 'Maren Kresse', 'Ulrike Schwall']"
+Quantitative Analysen zu Wörterbüchern,['Stefan J. Schierholz']
+The LILOG Knowledge Representation System,['Udo Pletat']
+The Gamma-0 n-ary Relational Data Base Interface Specifications of Objects and Operations.,"['E. F. Codd', 'Irving L. Traiger', 'Kenneth L. Deckert']"
+A WAM Extension for Type-Constraint Logic Programming: Specification and Correctness Proof,['Egon Börger']
+Syntaktische Analysevorschläge zur Behandlung von lokalen Präfixverben in einem System für die Generierung von Wegbeschreibungen,['Kai Lebeth']
+Disjunctive Unification,['Jochen Dörre']
+RENDEZVOUS Version 1: An Experimental English Language Query Formulation System for Casual Users of Relational Data Bases.,"['E. F. Codd', 'Jean-Marc Cadiou', 'Nick Roussopoulos', 'Robert S. Arnold']"
+Tableau Calculus for Order Sorted Logic,['Wolfgang Wernecke']
+Sorted Feature Terms and Relational Dependencies,['Roland Seiffert']
+Reasoning for Text Understanding - Knowledge Processing in the 1st LILOG-Prototype,"['Toni Bollinger', 'Ulrich Hedtstück']"
+Zur Syntax pränominaler Elemente in einer kategorialen Unifikationsgrammatik des Deutschen,['Petra Steffens']
+Wissensbasisverwaltung für LILOG,['Manfred Grothaus']
+Index Path Length Evaluation for the Research Storage System of System R.,['Sai Choi Kwan']
+LILOG - Linguistische und logische Methoden für das maschinelle Verstehen des Deutschen - Projektbeschreibung,"['Brigitte Bartsch-Spörl', 'Christian Rohrer', 'Christopher Habel', 'Claus-Rainer Rollinger', 'F. Günthner', 'Otthein Herzog', 'Peter H. Schmitt', 'Petra Steffens', 'Rudi Studer', 'Siegfried Kanngießer']"
+Stepwise Software Development with Algebraic Specifications,['Christoph Beierle']
+The Knowledge Representation Language L,"['Claus-Rainer Rollinger', 'Jochen Dörre', 'Peter H. Schmitt', 'Rudi Studer', 'Udo Pletat']"
+The Stuttgart Type Unification Formalism - User Manual,['Jochen Dörre']
+ILFA Interface Concept,"['Theodor Lettmann', 'Wolfgang Schönfeld']"
+Transactions and Consistency in Distributed Database Systems.,"['Cesare A. Galtieri', 'Irving L. Traiger', 'Jim Gray 0001']"
+Knowledge Representation in LILOG,['Udo Pletat']
+Using Knowledge-Based Methods to Administrate an Access Control System,['Christoph Lingenfelder']
+An Order-Sorted Logic for Knowledge Representation Systems,"['Jörg H. Siekmann', 'Peter H. Schmitt', 'Udo Pletat', 'Ulrich Hedtstück']"
+Database Support for the PROTOS-L System,['Stefan Böttcher']
+Qualitätssicherung durch Programmverifikation und algebraische Methoden in der Softwareentwicklung,"['Christoph Beierle', 'Walter G. Olthoff']"
+Feature Graphs and Abstract Data Types: A Unifying Approach,['Udo Pletat']
+The Many-Valued Theorem Prover ,"['Reiner Hähnle', 'Stefan Gerberding', 'Werner Kernig']"
+Draft Report of the Logic Programming Language PROTOS-L,"['Gregor Meyer', 'Stefan Böttcher']"
+An Order Sorted Predicate Logic with Closely Coupled Taxonomic Information,"['Jörg H. Siekmann', 'Udo Pletat', 'Ulrich Hedtstück']"
+Representation and Reasoning with Attributive Descriptions,['Gert Smolka']
+OSKAR - A PROLOG Programm for Modelling Dimensional Designation and Positional Variation of Objects in Space,['Kai-Uwe Carstensen']
+Extending the Warren Abstract Machine to Polymorphic Order-Sorted Resolution,"['Gregor Meyer', 'Heiner Semle']"
+Textunderstanding in LILOG - Sorts and Reference Objects,"['Hans Uszkoreit', 'Ipke Wachsmuth', 'Rudi Studer']"
+"Projekt ""Elektronische Wörterbücher/Lexika"": Abschlußbericht der Definitionsphase",['M. Wermke']
+Resolution with Feature Unification,['Ulrich Hedtstück']
+Erster EXCEPT-Workshop: Computerunterstützte Umweltverträglichkeitsprüfung,"['D. Eberle', 'D. Marx', 'Jürgen Pietsch', 'P. Klug-Lier', 'R. Zieschank', 'Ulrike Weiland']"
+A Calculus for Order-Sorted Predicate Logic with Sort Literals,['Ulrich Hedtstück']
+Persistente Datenspeicherung in einer logischen Programmiersprache mit relationalen und deduktiven Datenbanken,"['Gregor Meyer', 'Ralph Scheubrein']"
+On Subsumption and Semiunifaction in Feature Algebras,['William C. Rounds']
+Prolog and Natural Language Processing,['Roland Seiffert']
+An Anaphora Resolution Procedure for Machine Translation,['Ulrike Schwall']
+Ein neuer Ansatz zur Integration unterschiedlicher lexikalischer Resourcen,['Wilfried Hötker']
+Modelling Spatial Knowledge on a Linguistic Basis,"['Geoffrey Simmons', 'Kai-Uwe Carstensen']"
+Rule Rewriting Techniken zur globalen Optimierung von FLL-Programmen,['Thomas Ludwig 0001']
+"Presupposition, Anaphora, and Lexical Content.",['Rob A. van der Sandt']
+A Shared Segment and Interprocess Communication Facility for VM/370,['Vera Watson']
+The Algebra of Feature Graph Specifications,['Udo Pletat']
+A Persistent Store for Large Shared Knowledge Bases,"['Robert A. Weida', 'Robert Dionne', 'Sitaram Lanka']"
+Gebietskonstituierende Prozesse,['Simone Pribbenow']
+Slide Search.,"['H. Raymond Strong', 'Irving L. Traiger']"
+Graph Based Extension of the LILOG Inference Engine,['Stefan Bayerl']
+Die Sloppy/Referenzielle Ambiguität: Bildungssyntax oder Diskursrepräsentationstheorie?,['Ulrich Schatz']
+Using a Structured English Query Language as a Data Definition Facility.,['Raymond F. Boyce']
+The Compilation of a High Level Data Language.,['Raymond A. Lorie']
+Finding Scientific Papers with HPSearch and MOPS,['Martin Mundhenk']
+VisBDD - A Webbased Visualization Framework for OBDD Algorithms,"['Harald Sack', 'Volker Schillings']"
+Trust Region Methods for Solving the Optimal Output Feedback Design Problem,['Friedemann Leibfritz']
+Approximation of the Newton Step by a Defect Correction Process,"['Ekkehard W. Sachs', 'Eyal Arian']"
+Polytope Containment and Determination by Linear Probes,"['Peter Gritzmann', 'Victor Klee']"
+tele-TASK - Teleteaching Anywhere Solution Kit,['Volker Schillings']
+On the Complexity of Constructing Optimal OBDD's,['Christoph Meinel']
+Numerical Solution of Control Problems under Uncertainty and Perturbation of Input Data with Applications in Finance,"['M. Böhm', 'Rainer Tichatschke', 'Tim Voetmann']"
+Fast Generation of Random Permutations via Networks Simulation,"['Krzysztof Lorys', 'Miroslaw Kutylowski', 'Przemyslawa Kanarek']"
+Condensing Tensor Product Modules,['Markus Wiegelmann']
+Interprocedural Analysis Based on PDAs,['Helmut Seidl']
+Mod-2-OBDD's: A Generalization of OBDD's and EXOR-Sum-of-Products,['Jordan Gergov']
+A Heuristic for (+)-OBDD Minimization,['Harald Sack']
+Structural Gröbner Basis Detection,['Markus Wiegelmann']
+Do We Really Need Common Variable Orders for Synthesizing OBDDs?,"['Christian Stangier', 'Christoph Meinel', 'Harald Sack']"
+Lagrange-Duality and Partitioning Techniques in Nonconvex Global Optimization,['Reiner Horst']
+Two Program Comprehension Tools for Automatic Parallelization: A Comparative Study,['Christoph W. Keßler']
+Implement Role-Based Access Control with Attribute Certificates,['Wei Zhou 0006']
+Circuit and Decision Tree Complexity of Some Number Theoretic Problems,"['Carsten Damm', 'Igor E. Shparlinski']"
+A Decomposition Algorithm for Optimization over Efficient Sets,"['Nguyen V. Thoai', 'Reiner Horst']"
+On Generic One-Parametric Semi-Infinite Optimization,['Oliver Stein']
+A Branch-and-Bound Decomposition Approach for Solving Quasiconvex-Concave Programs,"['M. Nast', 'Reiner Horst']"
+A Generic Background Dissemination Service for Mobile Ad-Hoc Networks,"['Hannes Frey', 'Johannes K. Lehnert', 'Peter Sturm 0001']"
+Utility Function Programs and Optimization over the Efficient Set in Multiple Objective Decision Making,['Reiner Horst']
+Ordered Binary Decision Diagrams in Electronic Design Automation,['Randal E. Bryant']
+Simultaneous Pseudo-Timestepping for PDE-model Based Optimization Problems,['Volker Schulz 0001']
+Mod-p Decision Diagrams: A Data Structure for Multiple-Valued Functions.,"['Elena Dubrova', 'Harald Sack']"
+Increasing Efficiency of Symbolic Model Checking by Accelerating Dynamic Variable Reordering,['Christoph Meinel']
+External Tangents and Closedness of Cone + Subspace,['Victor Klee']
+Block-Restricted Reordering - Extended Experiments,"['Christoph Meinel', 'Peter Willems']"
+On Graph Models for Communicating Mobiles in Access Areas,['Igor N. Kovalenko']
+On the Reconstruction of Binary Images from Their Discrete Radon Transforms,"['Peter Gritzmann', 'R. J. Gardner']"
+On the Complexity of some Basic Problems in Computational Convexity: 1. Containment Problems,['Victor Klee']
+Linearly Constrained Global Minimization of Functions with Concave Minorants,['Reiner Horst']
+Stochastic Simulation of Markov Modulated Finite-Source Queues,['Oliver Möller']
+WWW.BDD-PORTAL.ORG: An Experimentation Platform for Binary Decision Diagram Algorithms,"['Christoph Meinel', 'Harald Sack']"
+tele-TASK - Teleteaching praxistauglich für den Universitätsalltag,['Volker Schillings']
+Polytope Projection and Projection Polytopes,"['Thomas Burger', 'Victor Klee']"
+Proximal Methods in View of Interior-Point-Strategies,['Rainer Tichatschke']
+Some Heuristics for Generating Tree-like FBDD Types,"['Christoph Meinel', 'Jochen Bern']"
+Propagating Differences: An Efficient New Fixpoint Algorithm for Distributive Constraint Systems,['Helmut Seidl']
+Global Convergence of Inexact Reduced SQP Methods,['Heidi Jäger']
+Scheduling of Virtual Connections in Fast Networks,['Thomas Erlebach']
+Discrete Tomography: Determination of Finite Sets by X-Rays,['R. J. Gardner']
+Determination of Socle Series using the Condensation Method,['Markus Wiegelmann']
+Minkowski Addition of Polytopes: Computational Complexity and Applications to Gröbner Bases,['Peter Gritzmann']
+Succinct Solvers,['Helmut Seidl']
+Interior Proximal Method for Variational Inequalities: Case of Non-paramonotone Operators,['Rainer Tichatschke']
+An Optimal Greedy Algorithm for Wavelength Allocation in Directed Tree Networks,['Thomas Erlebach']
+On Product Connection Theorems for Markov Chains,['Gurami Tsitsiashvili']
+The WWW meets EDA: Usability evaluation of OBDD-heuristics via the Internet,['Christoph Meinel']
+A Decomposition Approach for the Global Minimization of Biconcave Functions over Polytopes,['Reiner Horst']
+Application Driven Variable Reordering and an Example in Reachability Analysis,"['Christoph Meinel', 'Klaus Schwettmann']"
+Convergent Outer Approximation Algorithms for Solving Unary Problems,['Ulrich Raber']
+Linear Sifting of Decision Diagrams,"['Fabio Somenzi', 'Thorsten Theobald']"
+A Branch and Bound Approach for Solving a Class of Generalized Semi-Infinite Programming Problems,['Rainer Tichatschke']
+An EM Algorithm for Platoon Arrival Processes in Discrete Time,['Lothar Breuer']
+State Encodings and OBDD-Sizes,['Thorsten Theobald']
+Functional Quantization and Small Ball Probabilities for Gaussian Processes,['Siegfried Graf 0001']
+Parallel versus Sequential Task-Processing: A New Performance Model in Discrete Time,"['Kasyap Natarajan', 'Norbert Th. Müller']"
+Generalized Semi-Infinite Optimization: A First Order Optimality Condition and Examples,"['Jan-J. Rückmann', 'Oliver Stein']"
+10 Jahre ECCC - Eine Digitale Bibliothek in weltweiter Benutzung,['Volker Klotz']
+Locating Matches of Tree Patterns in Forests,['Helmut Seidl']
+Proximal Interior Point Approach for Solving Convex Semi-infinite Programming Problems,['Rainer Tichatschke']
+Optimal Allocation of Jobs between Heterogeneous Servers in the Retrial MAP/PH/K Queue,"['Lothar Breuer', 'Vladimir Rykov']"
+Scheduling with Incompatible Jobs,"['Hans L. Bodlaender', 'Klaus Jansen']"
+A Lagrangian Method for Solving the Optimal Output Feedback Design Problem,['El-Sayed M. E. Mostafa']
+Upper and Lower Bounds for Certain Graph-Accessability-Problems on Bounded Alternating (omega)-Branching Programs,['Stephan Waack']
+Efficient OBDD-Based Boolean Manipulation in CAD Beyond Current Limits,"['Christoph Meinel', 'Jochen Bern']"
+Forward and Inverse Problems in Modeling of Multiphase Flow and Transport Through Heterogeneos Porous Media,"['Rainer Helmig', 'Subhendu Bikash Hazra', 'Volker Schulz 0001']"
+A Tool for Simulation of Markov Modulated Finite-Source Queueing Systems,['Oliver Möller']
+Symmetric Functions in AC,['Katja Lenz']
+On the Algorithmic Complexity of Minkowski's Reconstruction Theorem,['Peter Gritzmann']
+Integrating Synchronous and Asynchronous Paradigms: The Fork95 Parallel Programming Language,['Helmut Seidl']
+Algorithmic Considerations for +-OBDD Reordering.,['Harald Sack']
+Auxiliary Problem Principle and Proximal Point Methods,['Rainer Tichatschke']
+Largest j-Simplices in n-Polytopes,"['Peter Gritzmann', 'Victor Klee']"
+The Complexity of Detecting Crossingfree Configurations in the Plane,['Klaus Jansen']
+Weak Error Tolerance Criterion in Generalized Proximal Methods,['Rainer Tichatschke']
+Modular Partitioning for Improvement of Image Computation,['Christoph Meinel']
+Convergence Rate of the Augmented Lagrangian SQP Method,['Ekkehard W. Sachs']
+Generalized Coloring for Tree-like Graphs,['Petra Scheffler']
+Proximal Interior Point Approach in Convex Programming,['Rainer Tichatschke']
+Numerical Parameter Identification in Non-isothermal Multiphase Multicomponent Flow through Porous Media,['Volker Schulz 0001']
+Regularized Penalty Method for Parabolic Optimal Control Problems,['Rainer Tichatschke']
+A Unifying Theoretical Background for Some BDD-based Data Structures,['Christoph Meinel']
+Non-quadratic Proximal Regularization with Application to Variational Inequalities in Hilbert Spaces,['Rainer Tichatschke']
+TI-jPACS - eine frei verfügbare leistungsfähige Plattform zur medizinischen Bildverarbeitung und -visualisierung,['Mikail Gevantmakher']
+Computational Design of Optimal Output Feedback Controllers,['Tankred Rautert']
+One Step Further: Integrating Electronic Submission and the Reviewing Process,['Jochen Bern']
+Efficient Analysis and Manipulation of OBDDs can be Extended to Read-once-only Branching Programs,['Jordan Gergov']
+Performance Analysis of SDN Specific Error Procedures: Comparison of Step-by-Step and End-to-End Schemes,['Luciano Lenzini']
+Global Rebuilding of OBDD's - Tunneling Memory Requirement Maxima,"['Christoph Meinel', 'Jochen Bern']"
+Optimal Static Output Feedback Design By Using a Trust Region Interior Point Method,['Friedemann Leibfritz']
+The SPARAMAT Approach to Automatic Comprehension of Sparse Matrix Computations,"['Craig Smith', 'Helmut Seidl']"
+No-Waiting Stations with Special Arrival Processes and Customer Motion,['Vladimir V. Kalashnikov']
+Proximal Methods: Decomposition and Selection,['N. Lehdili']
+IDDS: An Interactive Decentallzed Documentation System,"['Harald Sack', 'Volker Schillings']"
+Function Decomposition and Synthesis Using Linear Sifting,"['Fabio Somenzi', 'Thorsten Theobald']"
+Language Support for Synchronous Parallel Critical Sections,['Helmut Seidl']
+Separating Counting Communication Complexity Classes,"['Christoph Meinel', 'Matthias Krause 0001', 'Stephan Waack']"
+OBDD-based Verification of Communication Protocols - Methods for the Verification of Data Link Protocols,['Christoph Meinel']
+On Helly's Theorem: Algorithms and Extensions,['Peter Gritzmann']
+On the Complexity of some Basic Problems in Computational Convexity: II. Volume and mixed volumes,['Victor Klee']
+Parameter Estimation for BMAPs,['Marco Gilbert']
+Speeding up Variable Reordering of OBDDs.,['Christoph Meinel']
+Efficient Manipulation of FBDDs by Means of a Modified OBDD-Package,['Christoph Meinel']
+Exact XML Type Checking in Polynomial Time.,"['Sebastian Maneth', 'Thomas Perst']"
+"Log-concavity and Inequalities for Chi-square, F and Beta Distributions with Applications in Multiple Comparisons",['Markus Roters']
+An Indefinite Preconditioner for KKT Systems Arising in Optimal Control Problems,['Ekkehard W. Sachs']
+Stochastic Models for Communication Networks with Moving Customers,['Vladimir V. Kalashnikov']
+Computational Complexity of Inner and Outer j-RADII of Polytopes in Finite-Dimensional Normed Spaces,['Victor Klee']
+Some Bounds on Multiparty Communication Complexity of Pointer Jumping,"['Jirí Sgall', 'Stasys Jukna']"
+Constraint Decomposition Algorithms in Global Optimization,['Reiner Horst']
+A Product Theorem for Markov Chains with Application to PF-Queueing Networks,"['Gurami Tsitsiashvili', 'M. A. Osipova', 'N. V. Koliev']"
+The Electronic Colloquium on Computational Complexity (ECCC): A Digital Library in Use,['Jochen Bern']
+An Even Faster Solver for General Systems of Equations,['Helmut Seidl']
+Inductive Counting below LOGSPACE,['Markus Holzer 0001']
+Quantization for Probability Measures with Respect to the Geometric Mean Error,['Siegfried Graf 0001']
+Analysis and Manipulation of Boolean Functions in Terms of Decision Graphs,['Jordan Gergov']
+Stable Methods for Variational Inequalities with Set Valued Monotone Operators,['Rainer Tichatschke']
+On Multiparity Games for Pointer Jumping,['Stasys Jukna']
+Interprocedural Invariants,"['Markus Müller-Olm', 'Varmo Vene']"
+"The Möbius Function, Variations Ranks, and Theta(n)-Bounds on the Modular Communication Complexity of the Undirected Graph Connectivity Problem",['Stephan Waack']
+Lock-Keeper Technology - A New Network Security Solution,"['Feng Cheng 0002', 'Paul Ferring']"
+Cascade: A Simple and Efficient Algorithm for Priority Queues,['Norbert Th. Müller']
+Efficient Boolean Manipulation with OBDD's can be Extended to FBDD's,['Jordan Gergov']
+Case Study: Manipulating xor-OBDDs by Means of Signatures,['Harald Sack']
+A New LP-Bound in Multivariate Lipschitz Optimization: Application to Unconstrained and Linearly Constrained Problems and to Systems of Inequalities,"['Nguyen V. Thoai', 'Reiner Horst']"
+Complexity of Finite-Horizon Markov Decision process Problems.,"['Eric Allender', 'Judy Goldsmith', 'Martin Mundhenk']"
+On Smoothing of Generalized max-Functions via epsilon-Regularization,['Rainer Tichatschke']
+An Adequate Reducibility Concept for Problems Defined in Terms of Ordered Binary Decision Diagrams,['Christoph Meinel']
+On Continuous Deformations of Semi-Infinite Optimization Problems,['Rainer Hettich']
+Accelerating OBDD-Minimization by Means of Structural and Semantical Properties,['Christoph Meinel']
+Distributed Script - A Mobile Application for Multi-hop Ad-hoc Networks,"['Matthias Transier', 'Peter Sturm 0001', 'Wolfgang Effelsberg']"
+On the Expressiveness of Tree Set Operators,['Helmut Seidl']
+On the Joint Distribution Functions of Order Statistics with Reference to Step-up Multiple Test Procedures,"['Helmut Finner', 'Markus Roters']"
+Ordered Binary Decision Diagrams and Their Significance in Computer-Aided Design of VLSI Circuits,['Thorsten Theobald']
+Polynomial Constants are Decidable,['Markus Müller-Olm']
+An Integer Concave Minimization Approach for the Minimum Concave Cost Capacitated Flow Problem on Networks,['Reiner Horst']
+Computational Convexity,['Victor Klee']
+Approximation Algorithms for Register Allocation,['Klaus Jansen']
+Inexact SQP Interior Point Methods and Large Scale Optimal Control Problems,['Friedemann Leibfritz']
+Applying Formal Verification with Protocol Compiler,['Ulrich Holtmann']
+Quantization for Probability Measures in the Prohorov Metric,['Siegfried Graf 0001']
+Xor-OBDDs - a BDD Structure for Probabilistic Verification,['Harald Sack']
+Polytopes in Combinatorial Optimization,['Thomas Burger']
+Medizinische Bildverarbeitung - eine Übersicht,['Mikail Gevantmakher']
+Local Convergence of the Symmetric Rank-One Iteration,['Ekkehard W. Sachs']
+Expressing Uniformity via Oracles,"['Markus Holzer 0001', 'Peter Rossmanith']"
+Design and Implementation of a PHP-based Web Server for the Tele-Lab IT Security,['Michael Schmitt 0002']
+Binary Decision Diagrams and the Multiple Variable Order Problem,"['Christian Stangier', 'Christoph Meinel', 'Gianpiero Cabodi', 'Harald Sack', 'Stefano Quer']"
+A Pre-Dual for the Convolution Algebra D'(Gamma+),['Volker Schmidt']
+An Optimization Algorithm for the MAP/PH/K Queue with Heterogeneous Servers,"['Lothar Breuer', 'Vladimir Rykov']"
+Nonapproximability Results for Partially Observable Markov Decision Processes,"['Judy Goldsmith', 'Martin Mundhenk']"
+Method for Global Optimization of Class of Nonlinear Bilevel Programming Problems,['Paul B. Hermanns']
+Local Encoding Transformations for Optimizing OBDD-Representations of Finite State Machines,['Thorsten Theobald']
+A new Algorithm for Solving the General Quadratic Programming Problem,['Reiner Horst']
+Simultaneous Pseudo-Timestepping for Aerodynamic Shape Optimization Problems with State Constraints,['Volker Schulz 0001']
+Combinational Logic Verification with FBDDs,['Jordan Gergov']
+Speeding Up Symbolic Model Checking by Accelerating Dynamic Variable Reordering,['Christoph Meinel']
+Probabilistic Verification of Multiple-Valued Functions,['Harald Sack']
+Proximal Point Methods in Examples,['Rainer Tichatschke']
+ForkLight: A Control-Synchronous Parallel Programming Language,['Helmut Seidl']
+Improving XOR-Node Placement for (+)-OBDDs,['Harald Sack']
+Boolean Manipulation with Free BDD's - First Experimental Results,"['Christoph Meinel', 'Jochen Bern', 'Jordan Gergov']"
+Separation by Hyperplanes in Finite-Dimensional Vector Spaces Over Archimedean Ordered Fields,['Victor Klee']
+Successive Determination and Verification of Polytopes by their X-Rays,['R. J. Gardner']
+On the Power of Polynomial Bit-Reductions,"['Heribert Vollmer', 'Klaus W. Wagner', 'Thomas Schwentick', 'Ulrich Hertrampf']"
+Cross-Positive Matrices Revisited,"['Peter Gritzmann', 'Victor Klee']"
+The Disjoint Cliques Problem,"['Klaus Jansen', 'Petra Scheffler']"
+Differences in productivity and impact across the different computer science subareas.,"['Jacques Wainer', 'Michael Eckmann', 'Siome Goldenstein']"
+Introduction to differential algebraic equations in vehicle system dynamics,"['Claus Führer', 'Peter Rentrop']"
+PART: a parallel relational toolbox as basis for the optimization and interpretation of parallel queries,"['Erwin Loibl', 'Markus Pawlowski']"
+Reducing rollback overhead in time warp based distributed simulation with optimized incremental state saving,['Herbert Bauer']
+Modular specification of process algebras,['Rob van Glabbeek']
+A deadlock-sensitive congruence for action refinement,['Ursula Goltz']
+Wissensrepräsentation in künstlichen symbolverarbeitenden Systemen,"['Gerhard Dirlich', 'Ulrich Furbach']"
+Iteration theories of synchronization trees,"['Stephen L. Bloom', 'Zoltán Ésik']"
+Remarks on the abstract theory of additive and multiplicative Schwarz algorithms,['Peter Oswald']
+LOLA: a logic language for deductive databases and its implementation,"['Günther Specht', 'Heribert Schütz']"
+Equivalences and refinement,['Ursula Goltz']
+Distributed Systems: A Comprehensive Survey,['Uwe M. Borghoff']
+The MAX system: a tutorial introduction,['Thomas Eisenbarth 0004']
+Mapping a generator for neural network simulators to a transputer system,['Marco Dorigo']
+A simulator for VLIW architectures,['Siegfried Trosch']
+Modelling and performance analysis of a parallel theorem prover,['Manfred R. Jobmann']
+Optimal parallel algorithms for computing recursively defined functions,['Rolf Niedermeier']
+Improved multilevel algorithms for full and sparse grid problems,"['Michael Griebel', 'Stefan Zimmer']"
+An approach to parallel unification using transputers,['Martin Moser']
+Logic oriented program synthesis,"['Christoph Kreitz', 'Gerd Neugebauer']"
+A combination technique for the solution of sparse grid problems,"['Michael Griebel', 'Michael Schneider']"
+Stabilitätsuntersuchung von Differenzenverfahren mit Hilfe der Resultantenalgebra unter Verwendung des REDUCE-Systems,"['Evgenii V. Vorozhtsov', 'Victor G. Ganzha']"
+Quality criteria for partial order semantics of place/transitions nets,['Walter Vogler']
+Fixpoint evaluation with subsumption for probabilistic uncertainty,"['Ulrich Güntzer', 'Werner Kießling']"
+"Assumption, commitment rules for networks of asynchronously communicating agents","['Ketil Stølen', 'Rainer Weber']"
+Development and implementation of a communication protocol: an exercise in FOCUS,['Rainer Weber']
+Performance analysis and optimization of numerically intensive programs,['Ulrich Rüde']
+Element oriented and edge oriented local error estimators for nonconforming finite element methods,['Ronald H. W. Hoppe']
+Branching time and abstraction in bisimulation semantics,['Rob van Glabbeek']
+Numerical standard form for asymptotic two-point boundary value problems,['Peter Rentrop']
+A knowledge and deduction based software retrieval tool,['Siegfried Meggendorfer']
+On confluent semi-commutations: decidability and complexity results,"['Klaus Reinhardt', 'Volker Diekert']"
+Optimal parallelization of Las Vegas algorithms,['Wolfgang Ertel']
+Automatic acquisition of search guiding heuristics,['Wolfgang Ertel']
+On distributed logic simulation using time warp,"['Herbert Bauer', 'Thomas H. Krodel']"
+Envelopes of holomorphy and analytic structure on the spectrum,['Sandra A. Hayes']
+Incorporating prior knowledge in parsimonious networks of locally tuned units,"['Reimar Hofmann', 'Volker Tresp']"
+Fouriertransformation auf dünnen Gittern mit hierarchischen Basen,['Klaus Hallatschek']
+The TPTP problem library,"['Geoff Sutcliffe', 'Theodor Yemenis']"
+Uniform circuits and exclusive read PRAMs,['Peter Rossmanith']
+Using connectionist networks for guiding the search of a theorem prover,['Wolfgang Ertel']
+Theoretical issues concerning the representation of continuous valued input and output data in neural networks,['Till Brychcy']
+The synthesis problem of Petri nets,['Wolfgang Reisig']
+The d-dimensional Helmholtz equationon sparse grids,['Robert Balder']
+StoL - a literate programming in SCHEME,['Daniel Kobler']
+Parallel cache management of a RDBMS,['Markus Pawlowski']
+Composition of spatial relations,['Stefan Högg']
+A new efficient algorithm for embedding an arbitrary binary tree into its optimal hypercube,['Volker Heun']
+Learning heuristics for a theorem prover using back propagation,"['Johann M. Ph. Schumann', 'Wolfgang Ertel']"
+Default reasoning and the qualitative representation of spatial knowledge,['Kai Zimmermann']
+Weakening the weak conditions for self-timed circuits,['Manfred Broy']
+Concept of an integrated trajectory generation system,"['Margit Kinder', 'Martin Eldracher']"
+Corolla partitioning for distributed logic simulation of VLSI circuits,['Herbert Bauer']
+Linear paramodulation modulo equality,"['Steffen Hölldobler', 'Ulrich Furbach']"
+A toolbox for multigrid methods,['Ulrich Rüde']
+Two results on unambiguous circuits,['Peter Rossmanith']
+Development of a distributed min max component,['Max Fuchs']
+Reachability in reversible free-choice systems,['Jörg Desel']
+Transformation systems for program synthesis: Knuth-Bendix completion and fold/unfold,['Ulrich Furbach']
+Leistungsanalyse von verteilten Beobachtungs- und Bewertungswerkzeugen,"['Thomas Bemmerl', 'Thomas Treml']"
+Layout optimization with algebraic multigrid methods,['Ulrich Rüde']
+Flexible classfication in ProObj,"['Dieter Dodenhöft', 'Georg Strobl']"
+Classification of trajectories - extracting invariants with a neural network,['Wilfried Brauer']
+Introduction to the parallel and distributed programming language ParMod-C,"['Michael Friedrich 0001', 'Thomas Schnekenburger']"
+Modal checking for the modal mu-calculus using Gauss elimination,['Dieter Barnard']
+Proof schemata in propositional calculi,['Reinhold Letz']
+Schnellere Berechnung klassischer Matrix-Multiplikationen,['Ulrich Rüde']
+Artificial life: Eine Einführung,['Thomas Laußermair']
+A neural trajectory storage,['Till Brychcy']
+Modular functional modelling of Petri nets with individual tokems,['Thomas Streicher']
+Sorts are nothing but functions: an equational approach to sorts for logic programming,['Ulrich Furbach']
+On the treatment of singularities in the finite element method,['Ulrich Rüde']
+A knowledge-based aproach for design and analysis in mechanical engineering,['Georg Strobl']
+ATLAS: a typed language for algebraic specification,['Karl Meinke']
+Parallel algorithms for slicing based final placement,"['Georg Sigl', 'Henning Spruth']"
+Towards parallelism in a rational database system,"['Hans Obermaier', 'Markus Pawlowski']"
+Auf der Suche nach Parallelität: ein Sprachvergleich ParMod-PM,['Peter Schlenk']
+Faster sorting and routing on grids with diagonals,"['Peter Rossmanith', 'Rolf Niedermeier']"
+"Extrapolation, combination, and sparse grid techniques for elliptic boundary value problems","['Michael Griebel', 'Ulrich Rüde']"
+Database support for problematic knowledge,"['Ulrich Güntzer', 'Werner Kießling']"
+Transformation und Komposition von P/T-Netzen unter Erhaltung wesentlicher Eigenschaften,['Cristian Dimitrovici']
+A graphical user interface for SETHEO: proposal,['Max Moser']
+Divide and conquer algorithms on the hypercube,['Ralph Werchner']
+The efficient solution of fluid dynamics problems by the combination technique,['Veronika Thurner']
+On local refinement higher order methods for elliptic partial differential equations,['Ulrich Rüde']
+PARTHEO: a high performance parallel theorem prover,['Reinhold Letz']
+"Equations, order-sortedness and inheritance in logic programming",['Ulrich Furbach']
+Gauss' adaptive relaxation for the multilevel solution of partial differential equations on sparse grids,['Ulrich Rüde']
+Functional modelling of operating sytem [system] structures by timed higher order stream processing functions,['Manfred Broy']
+FHCL - functions in Horn Clause logic,['Ulrich Furbach']
+Software specification methods from the viewpoint of reusability,"['Siegfried Meggendorfer', 'Zong-Yan Qiu']"
+Numerical simulation of two-dimensional flows by the free Lagrangian method,['Mikhail Yu. Shashkov']
+Unambiguous simulations of auxiliary pushdown automata and circuits,['Rolf Niedermeier']
+Parallelism algebras: a link between process algebras and abstract relation algebras?,['Thomas F. Gritzner']
+Interactive Support for Non-Programmers: The Relational and Network Approaches.,['E. F. Codd']
+Catchment classification by runoff behaviour with self-organizing maps (SOM),"['Markus Casper', 'Ralf Merz', 'Rita Ley']"
+Analysis of projected hydrological behavior of catchments based on signature indices,"['Gayane Grigoryan', 'Günther Heinemann', 'Markus Casper', 'Oliver Gronz', 'Oliver Gutjahr', 'Rita Ley']"
+The Acceptability and the Tolerability of Societal Risks: A Capabilities-based Approach.,['Paolo Gardoni']
+The Rule of Virtue: A Confucian Response to the Ethical Challenges of Technocracy.,"['Qin Zhu', 'Yongmou Liu']"
+Pragmatism and Care in Engineering Ethics.,['William M. Bulleit']
+Mandatory Publications: An Approach to Kill 'Lack of Will' or 'Lack of Skill'?,"['Kewal Krishan', 'Neelam Dehal', 'Tanuj Kanchan']"
+Ethical Research in Delirium: Arguments for Including Decisionally Incapacitated Subjects.,"['Alastair J. D. Macdonald', 'Dimitrios Adamis', 'Finbarr C. Martin']"
+Ethical Issues in Communicating Science.,['Stephanie J. Bird']
+A Multi-level Review of Engineering Ethics Education: Towards a Socio-technical Orientation of Engineering Education for Ethics.,"['Diana Adela Martin', 'Eddie Conlon']"
+"University Teachers During the First Lockdown Due to SARS-CoV-2 in Italy: Stress, Issues and Perceptions of Misconduct.","['Ileana Di Pomponio', 'Margherita Bracci', 'Oronzo Parlangeli', 'Paola Palmitesta', 'Stefano Guidi']"
+Human-Animal Chimera: A Neuro Driven Discussion? Comparison of Three Leading European Research Countries.,['Sabrina Engel-Glatter']
+Distinguishing Characteristics of Corruption Risks in Iranian Construction Projects: A Weighted Correlation Network Analysis.,"['Amos Darko', 'Igor Martek', 'M. Reza Hosseini', 'Mahdi Tahmasebi', 'Saeed Banihashemi']"
+Facilitating Ethical Reflection Among Scientists Using the Ethical Matrix.,"['Ellen-Marie Forsberg', 'Karsten Klint Jensen', 'Kate Millar', 'Peter Sandøe']"
+Applying a Social Constructivist Approach to an Online Course on Ethics of Research.,['Miri Barak']
+Science and Engineering Ethics Enters its Third Decade.,['Stephanie J. Bird']
+Italian Adagio: Every Law has Its Loophole.,"['Giovanni M. Pes', 'Maria Pina Dore']"
+Editors' Overview: Neuroethics: Many Voices and Many Stories.,"['Michael W. Kalichman', 'Stephanie J. Bird']"
+Human Participants in Engineering Research: Notes from a Fledgling Ethics Committee.,"['Sylvia C. Pont', 'Willem-Paul Brinkman']"
+Aspects of Morality and Law Enforcement in Today's Science in Post-Soviet Countries.,"['Jana Kliestikova', 'Maria Misankova', 'Tatiana Corejova', 'Tomas Kliestik']"
+Print Me an Organ? Ethical and Regulatory Issues Emerging from 3D Bioprinting in Medicine.,"['Frédéric Gilbert 0003', 'Susan Dodds', 'Tajanka Mladenovska']"
+Analyzing the Publish-or-Perish Paradigm with Game Theory: The Prisoner's Dilemma and a Possible Escape.,"['Peter Morfeld', 'Thomas C. Erren']"
+Re-skilling the Social Practices: Open Source and Life-Towards a Commons-Based Peer Production in Agro-biotechnology?,['Guido Ruivenkamp']
+Toward a Responsibility-Catering Prioritarian Ethical Theory of Risk.,['Per Wikman-Svahn']
+Connecting Past with Present: A Mixed-Methods Science Ethics Course and its Evaluation.,"['Ioannis T. Pavlidis', 'Malcolm Dcosta', 'Panagiotis Tsiamyrtzis']"
+The Why and How of Enabling the Integration of Social and Ethical Aspects in Research and Development.,"['Patricia Osseweijer', 'Steven M. Flipse']"
+Research Ethics in the Age of Digital Platforms.,"['Antonio Santos-Ortega', 'José Luis Molina', 'Paola Tubaro']"
+The Three Rs of Animal Research: What they Mean for the Institutional Animal Care and Use Committee and Why.,"['Gad Perry', 'Howard J. Curzer', 'Mark C. Wallace']"
+Authorship Issues When Articles are Retracted Due to Research Misconduct and Then Resubmitted.,"['Kathy Partin', 'Taraswi Banerjee']"
+Nonhuman Value: A Survey of the Intrinsic Valuation of Natural and Artificial Nonhuman Entities.,"['Mark Coeckelbergh', 'Seth D. Baum']"
+Agreeing in Ignorance: Mapping the Routinisation of Consent in ICT-Services.,['Thomas Ploug']
+Basing Science Ethics on Respect for Human Dignity.,['Mehmet Aközer']
+Responsibility for Crashes of Autonomous Vehicles: An Ethical Analysis.,['Julian Nida-Rümelin']
+An Analysis of Medical Laboratory Technology Journals' Instructions for Authors.,"['Jelena Omazic', 'Martina Horvat', 'Vesna Supak-Smolcic']"
+Standardising Responsibility? The Significance of Interstitial Spaces.,['Fern Wickson']
+Misconduct and Misbehavior Related to Authorship Disagreements in Collaborative Science.,"['Bryn Williams-Jones', 'Cassidy R. Sugimoto', 'David B. Resnik', 'Elise Smith', 'Min Shi', 'Vincent Larivière', 'Zubin Master']"
+Deliberate Microbial Infection Research Reveals Limitations to Current Safety Protections of Healthy Human Subjects.,"['David L. Evers', 'Jeffrey T. Mason', 'Rebecca K. Mimnall']"
+An Empirical Study on Construction Process Corruption Susceptibility: A Vignette of International Expertise.,"['Emmanuel Kingsford Owusu', 'Erika Pärn', 'Ming Shan']"
+Acclimating International Graduate Students to Professional Engineering Ethics.,"['Greta Gorsuch', 'Katherine A. Austin', 'Thomas Darwin', 'William D. Lawson']"
+"A Survey of Expectations About the Role of Robots in Robot-Assisted Therapy for Children with ASD: Ethical Acceptability, Trust, Sociability, Appearance, and Attachment.","['Bram Vanderborght', 'Cristina Pop 0002', 'Daniel O. David', 'Mark Coeckelbergh', 'Ramona Simut', 'Sebastian Pintea']"
+"This ""Ethical Trap"" Is for Roboticists, Not Robots: On the Issue of Artificial Agent Ethical Decision-Making.","['Keith W. Miller 0001', 'Marty J. Wolf']"
+Relationships Between the Survey of Organizational Research Climate (SORC) and Self-Reported Research Practices.,"['Brian C. Martinson', 'Carol R. Thrush']"
+What do Retraction Notices Reveal About Institutional Investigations into Allegations Underlying Retractions?,"['Lex M. Bouter', 'Natalie Evans', 'Shaoxiong Brian Xu']"
+Authorship Policies at U.S. Doctoral Universities: A Review and Recommendations for Future Policies.,"['Courtney E. Williams', 'George C. Banks', 'Lisa M. Rasmussen', 'Mary M. Hausfeld']"
+AMICAI: A Method Based on Risk Analysis to Integrate Responsible Research and Innovation into the Work of Research and Innovation Practitioners.,"['Christopher Brandl', 'Frank Ole Flemisch', 'Jochen Nelles', 'Katharina Schäfer', 'Martin Frenz', 'Matthias Wille', 'Peter Rasche', 'Verena Nitsch']"
+A Systematic Approach to Engineering Ethics Education.,['Shengli Fu']
+Patent Ethics: The Misalignment of Views Between the Patent System and the Wider Society.,"['Ellen-Marie Forsberg', 'Hanne Marie Nielsen', 'Ingrid Olesen']"
+Empowering Engineering Students in Ethical Risk Management: An Experimental Study.,"['Thierry C. Pauchant', 'Yoann Guntzburger']"
+Ethical Design in the Internet of Things.,"['Maarten Botterman', 'Mariachiara Tallacchini', 'Ricardo Neisse']"
+Ethical Design of Intelligent Assistive Technologies for Dementia: A Descriptive Review.,"['Fabrice Jotterand', 'Marcello Ienca', 'Reto W. Kressig', 'Tenzin Wangmo']"
+Uncovering a New Moral Dilemma of Economic Optimization in Biotechnological Processing.,"['Marek Vochozka', 'Vojtech Stehel']"
+"""Ethics When You Least Expect It"": A Modular Approach to Short Course Data Ethics Instruction.","['Louise Bezuidenhout', 'Robert Quick']"
+Principal Investigators' Priorities and Perceived Barriers and Facilitators When Making Decisions About Conducting Essential Research in the COVID-19 Pandemic.,"['Kari A. Baldwin', 'Samuel V. Bruton', 'Stephanie Solomon Cargill', 'Tristan J. McIntosh']"
+Framework for the Analysis of Nanotechnologies' Impacts and Ethical Acceptability: Basis of an Interdisciplinary Approach to Assessing Novel Technologies.,"['Danielle Tapin', 'Georges-Auguste Legault', 'Jacques Beauvais', 'Jean-Pierre Béland', 'Johane Patenaude', 'Jonathan Genest', 'Louise Bernier', 'Marie-Sol Poirier', 'Patrick Boissy', 'Vanessa Chenel']"
+How to Weigh Values in Value Sensitive Design: A Best Worst Method Approach for the Case of Smart Metering.,"['Behnam Taebi', 'Geerten van de Kaa', 'Ibo van de Poel', 'Jafar Rezaei 0001']"
+The Role of Professional Knowledge in Case-Based Reasoning in Practical Ethics.,"['Claire Gloeckner', 'Rosa Lynn Pinkus']"
+Between Same-Sex Marriages and the Large Hadron Collider : Making Sense of the Precautionary Principle.,['Dan McArthur']
+Self-Driving Cars and Engineering Ethics: The Need for a System Level Analysis.,"['Joseph R. Herkert', 'Keith W. Miller 0001']"
+Biosecurity and Open-Source Biology: The Promise and Peril of Distributed Synthetic Biological Technologies.,['Nicholas G. Evans']
+The Ugly Truth About Ourselves and Our Robot Creations: The Problem of Bias and Social Inequity.,['Jason Borenstein']
+"Methods for Practising Ethics in Research and Innovation: A Literature Review, Critical Analysis and Recommendations.","['David Wright 0003', ""Declan O'Sullivan"", 'Karsten Weber', 'Philip Brey', 'Rowena Rodrigues', 'Wessel Reijers']"
+The Limits of Empowerment: How to Reframe the Role of mHealth Tools in the Healthcare Ecosystem.,['Luciano Floridi']
+Using Participatory Design to Inform the Connected and Open Research Ethics (CORE) Commons.,"['Cinnamon S. Bloss', 'John Harlow', 'Michelle Takemoto', 'Nadir Weibel', 'Rasheed Al Kotob', 'Rubi Linares-Orozco', 'Vincent Chan']"
+Do You Ignore Information Security in Your Journal Website?,"['Mehdi Dadkhah', 'Mohammad Lagzian']"
+Scientific Integrity Principles and Best Practices: Recommendations from a Scientific Integrity Consortium.,"['Andrea Grantham', 'Catherine Woteki', 'Chavonda Jacobs-Young', 'David B. Allison', 'Delia Murphy', 'Dorothea Vafiadis', 'Jessica M. Wyndham', 'Johanna Dwyer', 'Kathryn J. Boor', 'Linda J. Harris', 'Rachelle Hollander', 'Rickey Y. Yada', 'Sarah M. Rovito', 'Stefano Bertuzzi', 'Todd Abraham']"
+Transforming Scientists' Understanding of Science-Society Relations. Stimulating Double-Loop Learning when Teaching RRI.,"['Knut H. Sørensen', 'Maria Bårdsen Hesjedal', 'Roger Strand']"
+"Ensuring the Quality, Fairness, and Integrity of Journal Peer Review: A Possible Role of Editors.",['Susan A. Elmore']
+Protecting Ideas: Ethical and Legal Considerations When a Grant's Principal Investigator Changes.,"['Leonidas G. Koniaris', 'Mary I. Coombs', 'Teresa A. Zimmers']"
+A Buddhist Perspective on Industrial Engineering and the Design of Work.,"['Kenneth H. Funk II', 'Wei-Tau Lee']"
+Public Lab: Community-Based Approaches to Urban and Environmental Health and Justice.,"['Don Blair', 'Hagit Keysar', 'Pablo Rey-Mazón', 'Shannon Dosemagen']"
+A Systematic Literature Review of US Engineering Ethics Interventions.,['Justin L. Hess']
+"Artificial Intelligence and the 'Good Society': the US, EU, and UK approach.","['Corinne Cath', 'Luciano Floridi', 'Mariarosaria Taddeo', 'Sandra Wachter']"
+Viva Delay.,"['Javad Yahaghi', 'Shahryar Sorooshian']"
+SAF: Stakeholders' Agreement on Fairness in the Practice of Machine Learning Development.,['Georgina Curto']
+Energy Communities and the Tensions Between Neoliberalism and Communitarianism.,['Gunter Bombaerts']
+"An Experiential, Game-Theoretic Pedagogy for Sustainability Ethics.","['Jathan Sadowski', 'Kyle Powys Whyte', 'Susan G. Spierre', 'Thomas P. Seager']"
+Engineering Ethics and Identity: Emerging Initiatives in Comparative Perspective.,"['Gary Lee Downey', 'Juan C. Lucena']"
+Prior Publication and Redundancy in Contemporary Science: Are Authors and Editors at the Crossroads?,['Sonia Maria Ramos de Vasconcelos']
+Biobanks and Individual Health Related Findings: from an Obstacle to an Incentive.,"['Jurate Lekstutiene', 'Søren Holm']"
+Exploring Human Values in the Design of a Web-Based QoL-Instrument for People with Mental Health Problems: A Value Sensitive Design Approach.,"['David Buitenweg', 'Ilja L. Bongers', 'Ivo Maathuis', 'Maartje G. H. Niezen']"
+Software Piracy in Research: A Moral Analysis.,['Ryan Marshall Felder']
+Authorship: Few Myths and Misconceptions.,"['Magdy A. Kharoshah', 'Mohammed Madadin', 'Ritesh G. Menezes', 'Savita Lasrado', 'Vijaya Marakala']"
+How Do Chemistry Faculty and Graduate Students Engage in Decision Making on Issues Related to Ethical and Responsible Conduct of Research Including Authorship?,"['Patricia Ann Mabrouk', 'Yiyang Gao']"
+Purple Dragons and Yellow Toadstools a Versatile Exercise for Introducing Students to Negotiated Consensus.,"['Huai Sun', 'India C. Plough']"
+What Rights Do Authors Have?,['Jaime A. Teixeira da Silva']
+The Game Between a Biased Reviewer and His Editor.,"['Jose A. García 0001', 'Rosa Rodríguez-Sánchez']"
+Models with Men and Women: Representing Gender in Dynamic Modeling of Social Systems.,['Erika Palmer']
+Connecting to the Heart: Teaching Value-Based Professional Ethics.,['Roel Snieder']
+"Definition of Research Misconduct: Problem on ""Definition"" or ""User""?",['Viroj Wiwanitkit']
+The Future Ethics of Artificial Intelligence in Medicine: Making Sense of Collaborative Models.,['Torbjørn Gundersen']
+Teaching Engineering Ethics to PhD Students: A Berkeley-Delft Initiative.,['William E. Kastenberg']
+Reengineering Biomedical Translational Research with Engineering Ethics.,['Rahul Uday Nayak']
+A Framework to Move Forward on the Path to Eco-innovation in the Construction Industry: Implications to Improve Firms' Sustainable Orientation.,"['María-del-Val Segarra-Oña', 'Roberto Cervelló-Royo']"
+How Smart are Smart Materials? A Conceptual and Ethical Analysis of Smart Lifelike Materials for the Design of Regenerative Valve Implants.,"['Annelien L. Bredenoord', 'Carlijn V. C. Bouten', 'Karin Jongsma']"
+Why Tu Youyou Makes Less Money Than Zhang Ziyi?,"['Qinghui Suo', 'Yang Liu']"
+"""Broader Impacts"" or ""Responsible Research and Innovation""? A Comparison of Two Criteria for Funding Research in Science and Engineering.",['Michael Davis 0002']
+Epistemic and Non-epistemic Values in Earthquake Engineering.,"['Lorenza Petrini', 'Luca Zanetti']"
+Defining Financial Conflicts and Managing Research Relationships: An Analysis of University Conflict of Interest Committee Decisions.,['Lisa A. Bero']
+Open Centres for Journalology in Universities and Institutions.,['Tanuj Kanchan']
+Institutional Approaches to Research Integrity in Ghana.,"['Arthur Caplan', 'Barbara K. Redman', 'Kyle Ferguson']"
+"Rogelio Daniel Acevedo and Jesús Martínez Frías (eds.): Geoethics in Latin America - The Latin American Studies Book Series, Springer, 2018, 205 pp, ISBN: 978-3-319-75372-0.","[""Lhassan M'Barki"", 'Mohamed Abioui', 'Mohamed Dades', 'Mohammed Benssaou']"
+Honor Killing: Where Pride Defeats Reason.,"['Kewal Krishan', 'Tanuj Kanchan']"
+A Mobilising Concept? Unpacking Academic Representations of Responsible Research and Innovation.,"['Kate Millar', 'Robert D. J. Smith']"
+A Tale of Two Perspectives: Regulation Versus Self-Regulation. A Financial Reporting Approach (from Sarbanes-Oxley) for Research Ethics.,['Vincent Richman']
+Living-Donor Kidney Transplantation in Developing Countries: Walking Sometimes the Tightrope Without a Net...,"['Hadjar Toumi', 'Lamia Kara', 'Mustapha Benmansour', 'Nassim Kazitani', 'Noureddine Bettahar']"
+"Ethics ""Upfront"": Generating an Organizational Framework for a New University of Technology.","['Christine Winberg', 'Penelope Engel-Hills']"
+Scientists Admitting to Plagiarism: A Meta-analysis of Surveys.,['Vanja Pupovac']
+Correction to: Energy Communities and the Tensions Between Neoliberalism and Communitarianism.,['Gunter Bombaerts']
+Incidental Finding of Tumor While Investigating Subarachnoid Hemorrhage: Ethical Considerations and Practical Strategies.,"['Ashish Patel', 'Doniel Drazin', 'George Hanna', 'Kevin Spitler', 'Milos Cekic', 'Ray Chu']"
+Pedagogical Orientations and Evolving Responsibilities of Technological Universities: A Literature Review of the History of Engineering Education.,"['Gianluigi Viscusi', 'Gunter Bombaerts', 'Kyriaki Papageorgiou', 'Maja Horst']"
+Research Misconduct in the Croatian Scientific Community: A Survey Assessing the Forms and Characteristics of Research Misconduct.,"['Snjezana Prijic-Samarzija', 'Vanja Pupovac']"
+Energy Constraints.,['Jessica Smith Rolston']
+Ethics Inside the Black Box: Integrating Science and Technology Studies into Engineering and Public Policy Curricula.,"['Keith Raffel', 'L. Mahadevan', 'Sam Weiss Evans', 'Sheila Jasanoff']"
+A Systematic Review of the 2016 National Academy of Engineering Exemplary Ethics Programs: Revisions to a Coding Framework.,"['Andrew Chung', 'Athena Lin', 'Justin L. Hess']"
+Organizing a Collaborative Development of Technological Design Requirements Using a Constructive Dialogue on Value Profiles: A Case in Automated Vehicle Development.,['Steven Puylaert']
+Editors' Overview: The Emergence of Ecological Ethics.,"['James P. Collins', 'Stephanie J. Bird']"
+Molecular Tumor Boards: Ethical Issues in the New Era of Data Medicine.,"['Christian Hervé', 'Christophe Le Tourneau', 'Guillaume Vogt', 'Henri-Corto Stoeklé', 'Marie-France Mamzer-Bruneel', 'Pierre Laurent-Puig']"
+Guiding Engineering Student Teams' Ethics Discussions with Peer Advising.,"['Magdalena Grohman', 'Marco Tacca', 'Matthew J. Brown', 'Nicholas R. Gans']"
+Blame-Laden Moral Rebukes and the Morally Competent Robot: A Confucian Ethical Perspective.,"['Ruchen Wen', 'Ryan Blake Jackson', 'Tom Williams 0001']"
+"Reordering the ""World of Things"": The Sociotechnical Imaginary of RFID Tagging and New Geographies of Responsibility.",['Ulrike Felt']
+Engineering Ethics Education: A Comparative Study of Japan and Malaysia.,"['Fumihiko Tochinai', 'Hidekazu Kanemitsu']"
+The Perverse Effects of Competition on Scientists' Work and Relationships.,"['Emily A. Ronning', 'Melissa S. Anderson', 'Raymond de Vries']"
+Effectiveness of a responsible conduct of research course: a preliminary study.,"['Michael W. Kalichman', 'Sean T. Powell']"
+Professional Ethics of Software Engineers: An Ethical Framework.,['Yotam Lurie']
+Societal and Ethical Implications of Anti-Spoofing Technologies in Biometrics.,"['Matteo E. Bonfanti', 'Silvia Venier']"
+Using Ethical Reasoning to Amplify the Reach and Resonance of Professional Codes of Conduct in Training Big Data Scientists.,"['Gregory J. Morgan', 'Jeff Collmann', 'Kevin T. FitzGerald', 'Lee Vinsel', 'Lisa M. Dolling', 'Michael Steinmann', 'Rochelle E. Tractenberg']"
+Moral Values Congruence and Miners' Policy Following Behavior: The Role of Supervisor Morality.,"['Hui Lu', 'Ruyin Long', 'Wei Du']"
+"Information and Communication Technologies, Genes, and Peer-Production of Knowledge to Empower Citizens' Health.",['Mariachiara Tallacchini']
+Hype and Public Trust in Science.,['Zubin Master']
+Image Manipulation as Research Misconduct.,['Debra Parrish']
+Correction to: Synthetic Biology and the Translational Imperative.,"['Marc Folcher', 'Marcello Ienca', 'Raheleh Heidari Feidt']"
+Handling Anomalous Data in the Lab: Students' Perspectives on Deleting and Discarding.,['Mikkel Willum Johansen']
+Educating Engineers for the Public Good Through International Internships: Evidence from a Case Study at Universitat Politècnica de València.,"['Carola Calabuig', 'José Javier Sastre']"
+Enabling Posthumous Medical Data Donation: An Appeal for the Ethical Utilisation of Personal Health Data.,"['Luciano Floridi', 'Mariarosaria Taddeo']"
+"How are Editors Selected, Recruited and Approved?",['Jaime A. Teixeira da Silva']
+Scientific Forensics: How the Office of Research Integrity can Assist Institutional Investigations of Research Misconduct During Oversight Review.,['Nancy M. Davidian']
+The Mentor's Role in Fostering Research Integrity Standards Among New Generations of Researchers: A Review of Empirical Studies.,['Kris Dierickx']
+Correction to: Research Misconduct in the Fields of Ethics and Philosophy: Researchers' Perceptions in Spain.,"['Emilio Delgado López-Cózar', 'Ramón A. Feenstra']"
+Is it Suitable for a Journal to Bid for Publishing a Review That is Likely to be Highly Cited?,"['Haiyan Wang', 'Junwen Zhu', 'Weishu Liu 0001']"
+Plagiarism in Student Research: Responsibility of the Supervisors and Suggestions to Ensure Plagiarism Free Research.,"['Neha Baryah', 'Richa Mukhra', 'Tanuj Kanchan']"
+Assessing the Moral Coherence and Moral Robustness of Social Systems: Proof of Concept for a Graphical Models Approach.,['Frauke Hoss']
+Caring in an Algorithmic World: Ethical Perspectives for Designers and Developers in Building AI Algorithms to Fight Fake News.,['Galit Wellner']
+Researchers' Perceptions of Ethical Authorship Distribution in Collaborative Research Teams.,"['Bryn Williams-Jones', 'Cassidy R. Sugimoto', 'David B. Resnik', 'Elena Diller', 'Elise Smith', 'Katie Caudle', 'Min Shi', 'Vincent Larivière', 'Zubin Master']"
+Interlocking Editorships in Scientific Journals.,['Mohammadamin Erfanmanesh']
+Correctness and Completeness of Programming Instructions for Traffic Circulation.,['Matteo Pascucci']
+Towards Transparency by Design for Artificial Intelligence.,"['Christoph Lutz', 'Eduard Fosch-Villaronga', 'Heike Felzmann']"
+Online-Based Approaches to Identify Real Journals and Publishers from Hijacked Ones.,"['Fahime Asadi', 'Kokab Khalili Paji', 'Meisam Asadi', 'Nader Rahbar']"
+Causal Factors Implicated in Research Misconduct: Evidence from ORI Case Files.,"['Michelle Riske-Morris', 'Sebastian R. Diaz', 'Michelle Riske-Morris', 'Sebastian R. Diaz']"
+Faculty Members' Perceptions of Advising Versus Mentoring: Does the Name Matter?,['Sandra L. Titus']
+Using an Ecological Ethics Framework to Make Decisions about the Relocation of Wildlife.,['Kristin Berry']
+Attitudes Toward Pre-implantation Genetic Diagnosis (PGD) for Genetic Disorders Among Potential Users in Malaysia.,"['Latifah Amin', 'Siti Nurani Mohd Nor']"
+Standards of Scientific Conduct: Disciplinary Differences.,"['Michael W. Kalichman', 'Monica Sweet']"
+Collegial Ethics: Supporting Our Colleagues.,['Michael J. Kuhar']
+"A Taxonomy of Ethical, Legal and Social Implications of Wearable Robots: An Expert Perspective.","['Ann-Marie Hughes', 'Eduard Fosch-Villaronga', 'Heike Felzmann']"
+"Knowledge, Attitudes, and Practices of Plagiarism as Reported by Participants Completing the AuthorAID MOOC on Research Writing.",['Martina Mavrinac']
+Survival Ethics in the Real World: The Research University and Sustainable Development.,"['Flordeliz Bugarin', 'Gada F. Kadoda', 'George Middendorf', 'John Tharakan', 'Joseph Fortunak']"
+Towards Establishing Criteria for the Ethical Analysis of Artificial Intelligence.,"['Kathinka Evers', 'Michele Farisco']"
+Fake Identities in Social Network Research: To Be Disclosed?,['Viroj Wiwanitkit']
+The Engineering and Science Issues Test (ESIT): A Discipline-Specific Approach to Assessing Moral Judgment.,"['Julie L. Swann', 'Matthew J. Drake', 'Robert Kirkman']"
+Subsidies to Increase Remote Pollution?,"['Erika Spuchlakova', 'Jana Kliestikova', 'Pavol Kral', 'Tatiana Corejova']"
+A Meta-analytic Comparison of Face-to-Face and Online Delivery in Ethics Instruction: The Case for a Hybrid Approach.,"['E. Michelle Todd', 'Logan L. Watts', 'Megan R. Turner', 'Michael D. Mumford', 'Shane Connelly', 'Tyler J. Mulhearn']"
+Engineers' Moral Responsibility: A Confucian Perspective.,['Shan Jing']
+Autonomy and Fear of Synthetic Biology: How Can Patients' Autonomy Be Enhanced in the Field of Synthetic Biology? A Qualitative Study with Stable Patients.,"['David M. Shaw', 'Isabelle Wienand', 'Milenko Rakic', 'Rebecca Nast']"
+Exploring Ethical Pharmacy Practice in Jordan.,"['Iman A. Basheti', 'Leen B. Fino']"
+Editors' Overview: Topics in the Responsible Management of Research Data.,"['Sara H. Vollmer', 'Stephanie J. Bird']"
+Some Opinions on the Review Process of Research Papers Destined for Publication.,['Omid Mahian']
+"Ethical Considerations Associated with ""Humanitarian Drones"": A Scoping Literature Review.","['Matthew Hunt', 'Ning Wang']"
+Relationship Between Declarations of Conflict of Interests and Reporting Positive Outcomes in Iranian Dental Journals.,"['Nader Navabi', 'Sepehr Pourmonajemzadeh', 'Shahrzad Zoghitavana']"
+The Dawning of the Ethics of Environmental Robots.,['Justin Donhauser']
+Correction to: Biobanks and Individual Health Related Findings: from an Obstacle to an Incentive.,"['Jurate Lekstutiene', 'Søren Holm']"
+Informing Public Perceptions About Climate Change: A 'Mental Models' Approach.,['Wandi Bruine de Bruin']
+"States of Uncertainty, Risk-Benefit Assessment and Early Clinical Research: A Conceptual Investigation.",['Marcel Mertz']
+The Social Construction of Copyright Ethics and Values.,['Sheila Slaughter']
+Abortion of Fetus with Down's Syndrome: India Joins the Worldwide Controversy Surrounding Abortion Laws.,"['Jagadish Rao Padubidri', 'Mohammed Madadin', 'Ritesh G. Menezes', 'Sharath Burugina Nagaraja']"
+When Should We Use Care Robots? The Nature-of-Activities Approach.,['Filippo Santoni de Sio']
+Why Should Nanoscience Students be Taught to be Ethically Competent?,['Mette Ebbesen']
+Distributing Responsibility in the Debate on Sustainable Biofuels.,"['Laurens Landeweerd', 'Patricia Osseweijer']"
+Climate Change and Professional Responsibility: A Declaration of Helsinki for Engineers.,['Rob Lawlor']
+Will CRISPR Germline Engineering Close the Door to an Open Future?,"['Rachel L. Mintz', 'Ruth L. Fischbach']"
+Developing a System for Processing Health Data of Children Using Digitalized Toys: Ethical and Privacy Concerns for the Internet of Things Paradigm.,"['Cristina del Barrio', 'Eloy Portillo', 'Javier Malagón', 'María Luisa Martín Ruiz']"
+Bankruptcy Prevention: New Effort to Reflect on Legal and Social Changes.,"['Lucia Svabova', 'Maria Misankova', 'Tomas Kliestik']"
+Incorporating Global Components into Ethics Education.,['Russell George Thompson']
+Navigating Bioethical Waters: Two Pilot Projects in Problem-Based Learning for Future Bioscience and Biotechnology Professionals.,"['Laura Palucki Blake', 'Matthew J. Drake', 'Robert Kirkman', 'Roberta M. Berry']"
+"Defining Nano, Nanotechnology and Nanomedicine: Why Should It Matter?","['David M. Shaw', 'Priya Satalkar']"
+Obstacles to Widening Biosample Research.,"['Flora Colledge', 'Jakob Passweg']"
+Ethical and Social Aspects of Neurorobotics.,"['Bernd Carsten Stahl', 'Christine Aicardi', 'Fabrice O. Morin', 'Gudrun Klinker', 'Inga Ulnicane', 'Lars Klüver', 'Manuel Guerrero', 'Simisola Akintoye', 'William Knight 0001', 'Yannick Morel']"
+The Potential Dual Use of Online Pharmacies.,['Slawomir Letkiewicz']
+Academic Integrity in a Mandatory Physics Lab: The Influence of Post-Graduate Aspirations and Grade Point Averages.,"['Michael G. Anderson', 'Tricia Bertram Gallant']"
+"Editors' Overview: Experiments, Ethics, and New Technologies.","['Shannon L. Spruit', 'Zoë Robaey']"
+Engineering Students' Views of Corporate Social Responsibility: A Case Study from Petroleum Engineering.,"['Jessica M. Smith', 'Nicole M. Smith']"
+Aruna Shanbaug: Is Her Demise the End of the Road for Legislation on Euthanasia in India?,"['Kewal Krishan', 'Tanuj Kanchan']"
+"Embodiment and Estrangement: Results from a First-in-Human ""Intelligent BCI"" Trial.","['Judy Illes', 'Mark J. Cook', ""Terence J. O'Brien""]"
+"Standards, Double Standards and No Standards.",['Viroj Wiwanitkit']
+Data Mining and Privacy of Social Network Sites' Users: Implications of the Data Mining Problem.,['Yeslam Al-Saggaf']
+Sanitary Worker's Death Unnerves Pakistan's Health Care Ethics to the Core.,"['Mohammed Madadin', 'Ritesh G. Menezes', 'Syed Ather Hussain', 'Syed Bilal Pasha', 'Tooba Fatima Qadir']"
+"A New Experience: The Course of Ethics in Engineering in the Department of Civil Engineering, University of Granada.","['Enrique Hernández-Montes', 'Luisa María Gil-Martín']"
+The Donation of Human Biological Material for Brain Organoid Research: The Problems of Consciousness and Consent.,"['Julian Savulescu', 'Masanori Kataoka', 'Tsutomu Sawai']"
+Standards of Conducts for Biostatisticians and Stem Cell Researchers: A Call for Self-formulated Aspirational Ethics Over Built-in Prohibitive Ethics.,['Mika Suzuki']
+A Professor's Moral Thinking at the Abstract Level Versus The Professor's Moral Thinking in the Real Life Situation (Consistency Problem).,"['Mladen Pecujlija', 'Velibor Ivanisevic']"
+"Aware, Yet Ignorant: Exploring the Views of Early Career Researchers About Funding and Conflicts of Interests in Science.","['Katherine A. McComas', 'Meghnaa Tallapragada']"
+Complex Governance to Cope with Global Environmental Risk: An Assessment of the United Nations Framework Convention on Climate Change.,['Mehmet Y. Tezcan']
+Understanding Engineers' Responsibilities: A Prerequisite to Designing Engineering Education.,['Paolo Gardoni']
+Repentance as Rebuke: Betrayal and Moral Injury in Safety Engineering.,"['Mark D. Layson', 'Sidney W. A. Dekker']"
+Perceptions of Plagiarism by STEM Graduate Students: A Case Study.,"['David Schwieder', 'Denise Beaubien Bennett', 'Melody Royster', 'Michelle Leonard']"
+Dual-Use and Trustworthy? A Mixed Methods Analysis of AI Diffusion Between Civilian and Defense R&D.,"['Stefka Schmid', 'Thea Riebe']"
+Regulation of Stem Cell Technology in Malaysia: Current Status and Recommendations.,"['Nishakanthi Gopalan', 'Siti Nurani Mohd Nor']"
+Users or Students? Privacy in University MOOCS.,['Meg Leta Jones']
+Surrogates and Artificial Intelligence: Why AI Trumps Family.,['Ryan Hubbard']
+The Development of a Literacy-Based Research Integrity Assessment Framework for Graduate Students in Taiwan.,['Yuan-Hsuan Lee 0001']
+Frequency and Type of Conflicts of Interest in the Peer Review of Basic Biomedical Research Funding Applications: Self-Reporting Versus Manual Detection.,"['Scott R. Glisson', 'Stephen A. Gallo']"
+Joint Interaction and Mutual Understanding in Social Robotics.,['Sebastian Schleidgen']
+The Effects of Anti-corruption Campaign on Research Grant Reimbursement: Regression Discontinuity Evidence from China.,"['Donald Lien', 'Li Tang 0005', 'Xiaoou Liu']"
+"From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices.","['Jessica Morley', 'Libby Kinsey', 'Luciano Floridi']"
+"More Education, Less Administration: Reflections of Neuroimagers' Attitudes to Ethics Through the Qualitative Looking Glass.","['Carole Federico', 'Gary H. Glover', 'Judy Illes', 'Kate Tairyan']"
+"Self-Focused Emotions and Ethical Decision-Making: Comparing the Effects of Regulated and Unregulated Guilt, Shame, and Embarrassment.","['Michael D. Mumford', 'Shane Connelly', 'Tristan McIntosh']"
+Ensuring PhD Development of Responsible Conduct of Research Behaviors: Who's Responsible?,['Sandra L. Titus']
+"Leadership, Engineering and Ethical Clashes at Boeing.","['Lisa H. Newton', 'Patricia H. Werhane']"
+Equity in AgeTech for Ageing Well in Technology-Driven Places: The Role of Social Determinants in Designing AI-based Assistive Technologies.,"['Giovanni Rubeis', 'Mei Lang Fang']"
+The Participation and Motivations of Grant Peer Reviewers: A Comprehensive Survey.,"['Lisa A. Thompson', 'Scott R. Glisson', 'Stephen A. Gallo']"
+Awareness of Jordanian Investigators About the Importance of Ethics Review Committees: A Pilot Study.,"['Karem H. Alzoubi', 'Mera Ababneh', 'Omar F. Khabour']"
+The Roles of Implicit Understanding of Engineering Ethics in Student Teams' Discussion.,"['Magdalena Grohman', 'Marco Tacca', 'Matthew J. Brown', 'Nicholas R. Gans']"
+"How Neurotech Start-Ups Envision Ethical Futures: Demarcation, Deferral, Delegation.","['Sebastian M. Pfotenhauer', 'Sophia Knopf']"
+Flagrant Misconduct of Reviewers and Editor: A Case Study.,"['Ranganatha Sitaram', 'Sarah Bütof']"
+"Perceptions of Ethical Climate and Research Pressures in Different Faculties of a University: Cross-Sectional Study at the University of Split, Croatia.","['Domagoj Markovic', 'Mario Malicki', 'Matko Marusic', 'Vedran Katavic']"
+The Responsibilities of Engineers.,"['Justin Smith 0004', 'Paolo Gardoni']"
+Individual and Organizational Predictors of the Ethicality of Graduate Students' Responses to Research Integrity Issues.,['Philip J. Langlais']
+Virtue blindness and hegemony: qualitative evidence of negotiated ethical frameworks in the social language of university research administration.,['Timothy N. Atkinson']
+Ethics of Autonomous Collective Decision-Making: The Caesar Framework.,"['Alessandro Vittorio Papadopoulos', 'Mirgita Frasheri', 'Václav Struhár']"
+Correction: Equity in AgeTech for Ageing Well in Technology-Driven Places: The Role of Social Determinants in Designing AI-based Assistive Technologies.,"['Giovanni Rubeis', 'Mei Lan Fang']"
+"Gender and Age Stereotypes in Robotics for Eldercare: Ethical Implications of Stakeholder Perspectives from Technology Development, Industry, and Nursing.","['Mark Schweda', 'Merle Weßel', 'Niklas Ellerich-Groppe']"
+Keeping Disability in Mind: A Case Study in Implantable Brain-Computer Interface Research.,"['Eran Klein', 'Laura Specker Sullivan', 'Matthew Sample', 'Michelle Pham', 'Paul Tubig', 'Raney Folland', 'Sara Goering', 'Tim Brown']"
+Corporate Social Responsibility Practices of Colombian Companies as Perceived by Industrial Engineering Students.,"['Daniel Andrés La Rotta Forero', 'Juliana Andrea Arias Vergara', 'Juliana Montoya Ardila', 'Silvia Teresa Morales-Gualdrón']"
+A Qualitative Approach to Responsible Conduct of Research (RCR) Training Development: Identification of Metacognitive Strategies.,"['Michael D. Mumford', 'Richard T. Marcy', 'Sydney T. Sevier', 'Vykinta Kligyte', 'Michael D. Mumford', 'Richard T. Marcy', 'Sydney T. Sevier', 'Vykinta Kligyte']"
+Fake/Bogus Conferences: Their Features and Some Subtle Ways to Differentiate Them from Real Ones.,"['Fahime Asadi', 'Mohammad Javad Rezvani', 'Nader Rahbar']"
+"Retraction: The ""Other Face"" of Research Collaboration?","['Guangyuan Hu', 'Li Tang 0005', 'Yang Sui', 'Yuhan Yang']"
+Engineering Ethics Beyond Engineers' Ethics.,['Montse Serra']
+Patients' Awareness About Their Rights: A Study from Coastal South India.,"['Divya Trivedi', 'Mishaal Talish', 'Nithin Kumar', 'Prasanna Mithra', 'Ramesh Holla', 'Tanuj Kanchan', 'Thapar Rekha', 'Vaman Kulkarni']"
+Politics of Science: Unwarranted Encounters.,['Tanuj Kanchan']
+A Comparative Defense of Self-initiated Prospective Moral Answerability for Autonomous Robot harm.,['Ryan Tonkens']
+Characteristics of Peer Review Reports: Editor-Suggested Versus Author-Suggested Reviewers.,"['Jovan Shopovski', 'Monika Bolek']"
+On the (Non-)Rationality of Human Enhancement and Transhumanism.,['David M. Lyreskog']
+Is Human Enhancement also a Personal Matter?,"['Thierry Hurlimann', 'Vincent Menuz']"
+Integrity in Postgraduate Research: The Student Voice.,['Tracey Bretag']
+How Accused Scientists Deal with Scientific Fraud: View from a Different Culture.,['Viroj Wiwanitkit']
+Making Choices: Ethical Decisions in a Global Context.,"['Clyde Briant', 'D. Parthasarathy', 'Hongqin Zhao', 'Julianne Hanavan', 'Min Li', 'N. C. Narayanan', 'Paul Firenze', 'Sheila Bonde']"
+Appropriating Video Surveillance for Art and Environmental Awareness: Experiences from ARTiVIS.,"['Nuno Correia 0001', 'Pedro Ângelo 0001', 'Valentina Nisi']"
+Developing an Online Data Ethics Module Informed by an Ecology of Data Perspective.,"['Thomas A. Litzinger', 'Xiaofeng Tang']"
+Educating Engineering Students to Address Bias and Discrimination Within Their Project Teams.,"['Roland Tormey', 'Siara Isaac']"
+Human Genome Editing and Ethical Considerations.,"['Kewal Krishan', 'Tanuj Kanchan']"
+A Case Study of Teaching Social Responsibility to Doctoral Students in the Climate Sciences.,"['Mirjam Sophia Glessmer', 'Tom Børsen']"
+Moral Polemics of Far-Reaching Economic Consequences of Antibiotics Overuse.,"['Marek Vochozka', 'Petr Suler']"
+Biological Dual-Use Research and Synthetic Biology of Yeast.,"['Angela Cirigliano', 'Carlo Bellecci', 'Michele Lioj', 'Orlando Cenciarelli', 'Pasquale Gaudio', 'Teresa Rinaldi']"
+Privacy versus Public Health? A Reassessment of Centralised and Decentralised Digital Contact Tracing.,['Philippe van Basshuysen']
+Fair Shares: A Preliminary Framework and Case Analyzing the Ethics of Offshoring.,['Cameron Gordon']
+Retracted Publications in the Biomedical Literature from Open Access Journals.,"['Qin-Rui Xing', 'Tao Wang', 'Wei Chen']"
+Bringing the National Security Agency into the Classroom: Ethical Reflections on Academia-Intelligence Agency Partnerships.,"['Colleen S.', 'Gwendolynne Reid', 'Kathleen M. Vogel', 'Paul Jones 0001', 'Sean Streck']"
+The Essential Nature of Sharing in Science.,['Michael J. Zigmond']
+Ambiguity in Ethical Standards: Global Versus Local Science in Explaining Academic Plagiarism.,['Katerina Guba']
+The Autonomy of Science as a Civilian Casualty of Economic Warfare: Inadvertent Censorship of Science Resulting from Unilateral Economic Sanctions.,['Hossein Esmaeili']
+An Ethical Issue Scale for Community Pharmacy Setting (EISP): Development and Validation.,"['Ivana Tadic', 'Mirko Savic', 'Svetlana Stojkov', 'Tatjana Crnjanski']"
+Observations on the Responsible Development and Use of Computational Models and Simulations.,"['Harry Dankowicz', 'Michael C. Loui']"
+"Ethics, Nanobiosensors and Elite Sport: The Need for a New Governance Framework.","['Owen Guy', 'Robert Evans']"
+The Need for Social Ethics in Interdisciplinary Environmental Science Graduate Programs: Results from a Nation-Wide Survey in the United States.,"['Kyle Powys Whyte', ""Michael O'Rourke"", 'Sean Valles', 'Troy E. Hall', 'Zach Piso']"
+Ethics Across the Curriculum: Prospects for Broader (and Deeper) Teaching and Learning in Research and Engineering Ethics.,['Elaine E. Englehardt']
+Promoting Ethics and Integrity in Management Academic Research: Retraction Initiative.,"['Hasnah Binti Haron', 'Liu Yao']"
+Novice Researchers' Views About Online Ethics Education and the Instructional Design Components that May Foster Ethical Practice.,['Miri Barak']
+Trouble in Paradise: Problems in Academic Research Co-authoring.,['Jan L. Youtie']
+To Whistleblow or Not to Whistleblow: Affective and Cognitive Differences in Reporting Peers and Advisors.,"['Cory Higgs', 'Logan M. Steele', 'Megan R. Turner', 'Michael D. Mumford', 'Paul Partlow', 'Shane Connelly', 'Tristan McIntosh']"
+Taking Responsible Innovation to China: The Dalian Port Development Case.,"['Ping Yan', 'Qian Wang']"
+Generalizing on Best Practices in Image Processing: A Model for Promoting Research Integrity - Commentary on: Avoiding Twisted Pixels: Ethical Guidelines for the Appropriate Use and Manipulation of Scientific Digital Images.,['Sara H. Vollmer']
+Journals Can Persuade Authors to Learn Publishing's Ethics.,"['Omid Mahian', 'Somchai Wongwises']"
+Development of Role-Play Scenarios for Teaching Responsible Conduct of Research.,"['C. K. Gunsalus', 'Kerri L. Anderson', 'Michael C. Loui']"
+A Paradigm Shift in the Implementation of Ethics Codes in Construction Organizations in Hong Kong: Towards an Ethical Behaviour.,['Olugbenga Timo Oladinrin']
+Case-Based Knowledge and Ethics Education: Improving Learning and Transfer Through Emotionally Rich Cases.,"['James F. Johnson', 'Lauren N. Harkrider', 'Lynn D. Devenport', 'Michael D. Mumford', 'Shane Connelly', 'Zhanna Bagdasarov']"
+Nuclear Waste Facing the Test of Time: The Case of the French Deep Geological Repository Project.,['Sophie Poirot-Delpech']
+Who Regulates Ethics in the Virtual World?,"['Seema Bawa', 'Seemu Sharma']"
+"Ethical, Legal and Social Issues of Digital Phenotyping as a Future Solution for Present-Day Challenges: A Scoping Review.","['Anamaria Malesevic', 'Anto Cartolovni']"
+Conflict Minerals in Electronic Systems: An Overview and Critique of Legal Initiatives.,"['N. Jordan Jameson', 'Xin Song']"
+A Gendered Approach to Science Ethics for US and UK Physicists.,['Elaine Howard Ecklund']
+Perceptions of Chinese Biomedical Researchers Towards Academic Misconduct: A Comparison Between 2015 and 2010.,"['Harry Hua-Xiang Xia', 'Hua He', 'Ming-Hua Zheng', 'Qing-Jiao Liao', 'Shi-Bing Zhang', 'Xing-Xiang He', 'Yu Bai', 'Yu-Chen Fan', 'Yuan-Yuan Zhang']"
+Practicing Engineering Ethics in Global Context: A Comparative Study of Expert and Novice Approaches to Cross-Cultural Ethical Situations.,['Qin Zhu']
+Ethicist as Designer: A Pragmatic Approach to Ethics in the Lab.,['Scott Robbins']
+Human Decisions in Moral Dilemmas are Largely Described by Utilitarianism: Virtual Car Driving Study Provides Guidelines for Autonomous Driving Vehicles.,"['Anja K. Faulhaber', 'Anke Dittmer', 'Felix Blind', 'Gordon Pipa', 'Leon René Sütfeld', 'Maximilian Alexander Wächter', 'Peter König', 'Silja Timm']"
+Correction: Domain Experts on Dementia-Care Technologies: Mitigating Risk in Design and Implementation.,"['George Demiris', 'Jeffrey Kaye']"
+The Debate on the Moral Responsibilities of Online Service Providers.,['Mariarosaria Taddeo']
+Assessing Graduate Student Progress in Engineering Ethics.,['Michael Davis 0002']
+Conceptual Tools to Inform Course Design and Teaching for Ethical Engineering Engagement for Diverse Student Populations.,"['Corrinne B. Shaw', 'Kate le Roux', 'Malebogo N. Ngoepe']"
+Medical Students' Decisions About Authorship in Disputable Situations: Intervention Study.,"['Dario Sambunjak', 'Darko Hren', 'Matko Marusic']"
+Getting Started: Helping a New Profession Develop an Ethics Program.,['Michael Davis 0002']
+"Solutions to Gender Balance in STEM Fields Through Support, Training, Education and Mentoring: Report of the International Women in Medical Physics and Biomedical Engineering Task Group.","['Eva Bezak', 'Fatimah Ibrahim', 'Gilda A. Barabino', 'Lenka Lhotská', 'Loredana G. Marcu', 'Magdalena Stoeva', 'Monique Frize', 'Virginia Tsapaki']"
+Continuous Evaluation in Ethics Education: A Case Study.,"['James M. DuBois', 'Michael D. Mumford', 'Shane Connelly', 'Tristan McIntosh']"
+Balancing for an Effective Communication in Organizations.,['Shahryar Sorooshian']
+Cognitive Enhancement: Unanswered Questions About Human Psychology and Social Behavior.,"['Sebastian Sattler', 'Wren Boehlen']"
+Animal Models in Forensic Science Research: Justified Use or Ethical Exploitation?,['Marise Heyns']
+Reporting Ethics Committee Approval in Public Administration Research.,['Sara R. Jordan']
+Constructing Productive Engagement: Pre-engagement Tools for Emerging Technologies.,['Haico te Kulve']
+Uninformed Consent: An Offshoot of Illiteracy and Ignorance.,"['Jagadish Rao Padubidri', 'M. Arun', 'Ritesh G. Menezes', 'Sadip Pant']"
+Human Flesh Search Engine and Online Privacy.,['Yang Zhang']
+Definitions and Conceptual Dimensions of Responsible Research and Innovation: A Literature Review.,"['Margus Pedaste', 'Mirjam Burget']"
+Factors Influencing Stakeholders Attitudes Toward Genetically Modified Aedes Mosquito.,['Latifah Amin']
+What Explains Associations of Researchers' Nation of Origin and Scores on a Measure of Professional Decision-Making? Exploring Key Variables and Interpretation of Scores.,"['James M. DuBois', 'Kari A. Baldwin', 'Tammy English']"
+Ethical Issues in Consent for the Reuse of Data in Health Data Platforms.,"['Ilina Singh', 'Mark Sheehan', 'Miranda Mourby', 'Paul Harrison', 'Sophie Walker']"
+The Design of the Internet's Architecture by the Internet Engineering Task Force (IETF) and Human Rights.,['Luciano Floridi']
+Implementation of Clinical Ethics Consultation in German Hospitals.,"['Florian Steger', 'Maximilian Schochow']"
+Contextualizing Security Innovation: Responsible Research and Innovation at the Smart Border?,['Nina Klimburg-Witjes']
+Introducing Survival Ethics into Engineering Education and Practice.,"['Gada F. Kadoda', 'George Middendorf', 'John Tharakan', 'M. Castro-Sitiriche']"
+Learning from Retracted Papers Authored by the Highly Cited Iran-affiliated Researchers: Revisiting Research Policies and a Key Message to Clarivate Analytics.,"['Farid Rahimi', 'Negin Kamali']"
+Ending the Energy-Poverty Nexus: An Ethical Imperative for Just Transitions.,"['Clark A. Miller', 'Jennifer Richter', 'Mary Jane Parmentier', 'Nafeesa Irshad', 'Nalini Chhetri', 'Saurabh Biswas', 'Yiamar Rivera-Matos']"
+Prevalence of Plagiarism in Recent Submissions to the Croatian Medical Journal.,"['Ksenija Bazdaric', 'Lidija Bilic-Zulle', 'Mladen Petrovecki']"
+Important Topics for Fostering Research Integrity by Research Performing and Research Funding Organizations: A Delphi Consensus Study.,"['Guy Widdershoven', 'Joeri Tijdink', 'Krishma Labib', 'Lex M. Bouter', 'Lidwine Mokkink', 'Natalie Evans', 'Rea Roje']"
+The Ethics of Supernumerary Robotic Limbs. An Enactivist Approach.,"['Nathanaël Jarrassé', 'Nicola Di Stefano']"
+Dissolving the Engineering Moral Dilemmas Within the Islamic Ethico-Legal Praxes.,['Abdul Rauf Ambali']
+Google Search as an Additional Source in Systematic Reviews.,"['Marcin Waligora', 'Vilius Dranseika']"
+Responsible Conduct of Human Subjects Research in Islamic Communities.,['Michael W. Kalichman']
+Erratum to: 'Mirroring' the Ethics of Biobanking: What Should We Learn from the Analysis of Consent Documents?,"['Jurate Serepkaite', 'Zivile Valuckiene']"
+"Research in Emergency and Critical Care Settings: Debates, Obstacles and Solutions.","['Hassan Al-Thani', 'Mohammad Asim', 'Rifat Latifi']"
+Professional and Organizational Leadership Role in Ethics Management: Avoiding Reliance on Ethical Codification and Nurturing Ethical Culture.,['Marianne Jennings']
+Just a Cog in the Machine? The Individual Responsibility of Researchers in Nanotechnology is a Duty to Collectivize.,"['Gordon D. Hoople', 'Shannon L. Spruit']"
+The Ethics of Gene Editing from an Islamic Perspective: A Focus on the Recent Gene Editing of the Chinese Twins.,"['Rana Dajani', 'Wael K. Al-Delaimy']"
+Which Framework to Use? A Systematic Review of Ethical Frameworks for the Screening or Evaluation of Health Technology Innovations.,"['Evelyne Mertens', 'Tijs Vandemeulebroucke', 'Yvonne Denier']"
+Classification and Moral Evaluation of Uncertainties in Engineering Modeling.,"['Colleen Murphy', 'Paolo Gardoni']"
+Coding Ethical Decision-Making in Research.,"['Thomas Van Valey', 'Wayne Fuqua']"
+Suggestions to Improve the Comprehensibility of Current Definitions of Scientific Authorship for International Authors.,"['Luca Consoli', 'Mariette A. van den Hoven', 'Mohammad Hosseini']"
+No One Likes a Snitch.,['Barbara K. Redman']
+Ethical Implications of User Perceptions of Wearable Devices.,"['L. H. Segura Anaya', 'Nectar Costadopoulos', 'P. W. C. Prasad']"
+The Ethics of Neuroscience and the Neuroscience of Ethics: A Phenomenological-Existential Approach.,['Christopher J. Frost']
+Can a Robot Be a Good Colleague?,['Sven Nyholm']
+The Effectiveness of Ethics Education: A Quasi-Experimental Field Study.,['Matthew T. Luth']
+Machine Ethics: Do Androids Dream of Being Good People?,"['M. Rosario González', 'Valentin Moreno 0001']"
+Determinants of Citation in Epidemiological Studies on Phthalates: A Citation Analysis.,"['Gerard M. H. Swaen', 'Lex M. Bouter', 'Maurice P. A. Zeegers', 'Miriam J. E. Urlings']"
+A Comparison of the Effects of Ethics Training on International and US Students.,"['James F. Johnson', 'Logan L. Watts', 'Logan M. Steele', 'Michael D. Mumford', 'Shane Connelly', 'T. H. Lee Williams']"
+The Human Right to Water: The Importance of Domestic and Productive Water Rights.,"['Emily Van Houweling', 'Ralph P. Hall']"
+An Ethical (Descriptive) Framework for Judgment of Actions and Decisions in the Construction Industry and Engineering-Part I.,['Omar J. Alkhatib']
+Who Discovered the Binary System and Arithmetic? Did Leibniz Plagiarize Caramuel?,"['Juan Alfonso Lara', 'Juan Ares Casal', 'María-Aurora Martínez']"
+Polish Research Ethics Committees in the European Union System of Assessing Medical Experiments.,['Marek Czarkowski']
+Taiwanese Researchers' Perceptions of Questionable Authorship Practices: An Exploratory Study.,['Sophia Jui-An Pan']
+Social Responsibility in French Engineering Education: A Historical and Sociological Analysis.,['Christelle Didier']
+Civil Engineering at the Crossroads in the Twenty-First Century.,['Francisco Ramírez']
+Practices for Research Integrity Promotion in Research Performing Organisations and Research Funding Organisations: A Scoping Review.,"['Ivan Buljan', 'Joeri Tijdink', 'Krishma Labib', 'Rea Scepanovic']"
+Evolution of Students' Varied Conceptualizations About Socially Responsible Engineering: A Four Year Longitudinal Study.,['Greg Rulifson']
+The Legitimate Name of a Fungal Plant Pathogen and the Ethics of Publication in the Era of Traceability.,"['Francesca Cardinale', 'Giacomo Tamietti', 'Ivan Visentin', 'Paolo Gonthier']"
+Affected Genome Editing Crops: The Consequences of Genome-Edited Babies in China.,['San Yin']
+Editors' Overview: Forbidding Science?,['Stephanie J. Bird']
+Managing Dual Use Technology: It Takes Two to Tango.,['Lalit Kant']
+European Public Deliberation on Brain Machine Interface Technology: Five Convergence Seminars.,['Sven Ove Hansson']
+Ethics Teaching in Higher Education for Principled Reasoning: A Gateway for Reconciling Scientific Practice with Ethical Deliberation.,['Mehmet Aközer']
+Socially Assistive Robots in Aged Care: Ethical Orientations Beyond the Care-Romantic and Technology-Deterministic Gaze.,"['Chris Gastmans', 'Tijs Vandemeulebroucke']"
+Ethical Issues with Simulating the Bridge Problem in VR.,['Scott LaBarge']
+"Ethics in Actor Networks, or: What Latour Could Learn from Darwin and Dewey.",['Philipp Dorstewitz']
+'Do-It-Yourself' Healthcare? Quality of Health and Healthcare Through Wearable Sensors.,"['Melina Breitegger', 'Ângela Guimarães Pereira']"
+Development and Preliminary Validation of a New Measure of Values in Scientific Work.,"['James M. DuBois', 'Kari A. Baldwin', 'Tammy English']"
+The Challenges of Medical Ethics in China: Are Gene-Edited Babies Enough?,"['Xiao Ying Zhang', 'Ying Tang', 'Zeng Jie Ye']"
+ABET Criterion 3.f: How Much Curriculum Content is Enough?,['Matthew W. Ohland']
+The Ethics of Big Data: Current and Foreseeable Issues in Biomedical Contexts.,['Luciano Floridi']
+Promoting Virtue or Punishing Fraud: Mapping Contrasts in the Language of 'Scientific Integrity'.,['Willem Halffman']
+The Importance of Formative Assessment in Science and Engineering Ethics Education: Some Evidence and Practical Advice.,"['Matthew W. Keefer', 'Michael C. Loui', 'Sara E. Wilson']"
+Designing for Care.,"['Giovanni Frigo', 'Rafaela Hillerbrand']"
+A Framework for Ethical Research and Innovation.,"['Andreas Pyka', 'Harold Paredes-Frigolett']"
+Authorship and Publication Practices in the Social Sciences: Historical Reflections on Current Practices.,['Verna Monson']
+Stakeholders' Experiences of Research Integrity Support in Universities: A Qualitative Study in Three European Countries.,"['Emanuele Valenti', 'Guy Widdershoven', 'Ivan Buljan', 'Lex M. Bouter', 'Natalie Evans', 'Raymond de Vries']"
+Enabling Ethical Code Embeddedness in Construction Organizations: A Review of Process Assessment Approach.,['Olugbenga Timo Oladinrin']
+"Introduction: Science, Technology and Human Rights: Lessons Learned from the Right to Water and Sanitation.",['Theresa Harris']
+Exploratory Investigation of Personal Influences on Educators' Engagement in Engineering Ethics and Societal Impacts Instruction.,"['Christopher Swan', 'Daniel W. Knight', 'Madeline Polmear', 'Nathan E. Canney']"
+Teaching Ethics to Engineers: A Socratic Experience.,['M. Rosario González']
+Measuring Sensitivity to Conflicts of Interest: A Preliminary Test of Method.,['Tammy Swenson-Lepper']
+"A Review of the Scientific Misconduct Inquiry Process, Ankara Chamber of Medicine, Turkey.",['Berna Arda']
+Setting Up Spaces for Collaboration in Industry Between Researchers from the Natural and Social Sciences.,"['Patricia Osseweijer', 'Steven M. Flipse']"
+The Ethics of Geoengineering: A Literature Review.,"['Bert Gordijn', 'Patrick Brereton']"
+Identity Theft in the Academic World Leads to Junk Science.,"['Mehdi Dadkhah', 'Mohammad Lagzian']"
+The Walkshop Approach to Science and Technology Ethics.,"['Kamilla Lein Kjølberg', 'Roger Strand']"
+Correction and use of biomedical literature affected by scientific misconduct.,"['Ellen Marks', 'Judith Abrams', 'Justin Northrup', 'Rhonda K. Dailey']"
+Hospital Ethics Committees in Poland.,"['Katarzyna Kaczmarczyk', 'Marek Czarkowski']"
+Effects of Alternative Outcome Scenarios and Structured Outcome Evaluation on Case-Based Ethics Instruction.,"['Chase E. Thiel', 'James F. Johnson', 'Juandre Peacock', 'Lauren N. Harkrider', 'Lynn D. Devenport', 'Michael D. Mumford', 'Shane Connelly', 'Zhanna Bagdasarov']"
+From Paper to Practice; Indexing Systems and Ethical Standards.,['Sarah Masoumi']
+Correction to: Does Proof of Concept Trump All? RRI Dilemmas in Research Practices.,['Harald Throne-Holst']
+Erratum to: The Need for Social Ethics in Interdisciplinary Environmental Science Graduate Programs: Results from a Nation-Wide Survey in the United States.,"['Kyle Powys Whyte', ""Michael O'Rourke"", 'Sean Valles', 'Troy E. Hall', 'Zach Piso']"
+"Correcting the Brain? The Convergence of Neuroscience, Neurotechnology, Psychiatry, and Artificial Intelligence.",['Yasemin J. Erden']
+Domain Experts on Dementia-Care Technologies: Mitigating Risk in Design and Implementation.,"['George Demiris', 'Jeffrey Kaye']"
+A Unique Historical Case to Understand the Present Sustainable Development.,"['Astrid Barona', 'Begoña Etxebarria', 'Estibaliz Diaz-Tena', 'Gorka Gallastegui', 'Naiara Rojo']"
+The Social Nature of Engineering and its Implications for Risk Taking.,['Nafsika Athanassoulis']
+Perceptions of Ethical Problems with Scientific Journal Peer Review: An Exploratory Study.,"['David B. Resnik', 'Shyamal Das Peddada']"
+Ethical Ambiguity in Science.,['Elaine Howard Ecklund']
+Writers Blocked: On the Wrongs of Research Co-authorship and Some Possible Strategies for Improvement.,['David Shaw']
+"The Emergence and Evolution of the Expression ""Conflict of Interests"" in ",['Yves Gingras']
+Measures of Ethics and Social Responsibility Among Undergraduate Engineering Students: Findings from a Longitudinal Study.,"['Carla B. Zoltowski', 'Shiloh James Howland', 'Stephanie A. Claussen']"
+A Comparative Analysis of the Definitions of Autonomous Weapons Systems.,['Mariarosaria Taddeo']
+"Questionable, Objectionable or Criminal? Public Opinion on Data Fraud and Selective Reporting in Science.",['Sean Patrick Roche']
+Adding to the Mix: Integrating ELSI into a National Nanoscale Science and Technology Center.,['David J. Bjornstad']
+Reporting Race and Ethnicity in Genetics Research: Do Journal Recommendations or Resources Matter?,"['Keri Monahan', 'Mildred K. Cho', 'Pamela Sankar']"
+Mind the Gap! How the Digital Turn Upsets Intellectual Property.,['Emanuel-Mihail Socaciu']
+Is Biomedical Research Protected from Predatory Reviewers?,['Jaime A. Teixeira da Silva']
+The Value-Free Ideal of Science: A Useful Fiction? A Review of Non-epistemic Reasons for the Research Integrity Community.,"['Jacopo Ambrosj', 'Kris Dierickx']"
+Compliance with National Ethics Requirements for Human-Subject Research in Non-biomedical Sciences in Brazil: A Changing Culture?,['Sonia M. R. Vasconcelos']
+Ethics and Phishing Experiments.,['Peter R. Finn']
+Publishing as an Indicator of Scientific Research Quality and Ethics: The Case of Law Journals from Moldova.,['Gheorghe Cuciureanu']
+"Corruption: Engineers are Victims, Perpetrators or Both?","['L. Nesic-Grubic', 'Mladen Pecujlija', 'S. Drobnjak']"
+Creating 'Local Publics': Responsibility and Involvement in Decision-Making on Technologies with Local Impacts.,"['Gunter Bombaerts', 'Neelke Doorn', 'Nicole M. A. Huijts', 'Udo Pesch']"
+Interventions for Organizational Climate and Culture in Academia: A Scoping Review.,"['Ivan Buljan', 'Lana Barac', 'Marin Vidak', 'Ruzica Tokalic']"
+Sympathy and Emotions in Academic Research Society.,['Somchai Wongwises']
+A National Collaboration Process: Finnish Engineering Education for the Benefit of People and Environment.,['K. Korhonen-Yrjänheikki']
+"Protecting Human Health and Security in Digital Europe: How to Deal with the ""Privacy Paradox""?","['Bernice Elger', 'Isabell Büschel', 'Rostane Mehdi', 'Yousri Marzouki']"
+Examining the Role of Carbon Capture and Storage Through an Ethical Lens.,"['Justine Lacey', 'Peta Ashworth']"
+Security-by-Experiment: Lessons from Responsible Deployment in Cyberspace.,"['Francien Dechesne', 'Wolter Pieters']"
+Assessing the Preparedness of Research Integrity Officers (RIOs) to Appropriately Handle Possible Research Misconduct Cases.,"['David E. Wright', 'Sandra L. Titus']"
+Research Misconduct in the Fields of Ethics and Philosophy: Researchers' Perceptions in Spain.,"['Emilio Delgado López-Cózar', 'Ramón A. Feenstra']"
+Investigating the Effectiveness of Response Strategies for Vulnerabilities to Corruption in the Chinese Public Construction Sector.,"['Ming Shan', 'Yi Hu', 'Yun Le']"
+"Multiple Authorship in Scientific Manuscripts: Ethical Challenges, Ghost and Guest/Gift Authorship, and the Cultural/Disciplinary Perspective.",['Judit Dobránszki']
+The Food Warden: An Exploration of Issues in Distributing Responsibilities for Safe-by-Design Synthetic Biology Applications.,"['Shannon L. Spruit', 'Zoë Robaey']"
+"A Pragmatic Approach to Ethical Decision-Making in Engineering Practice: Characteristics, Evaluation Criteria, and Implications for Instruction and Assessment.",['Qin Zhu']
+From Treasure to Trash: The Lingering Value of Technological Artifacts.,['Lucy McAllister']
+Should We All be Scientists? Re-thinking Laboratory Research as a Calling.,['Nathaniel A. Warne']
+Continuing Medical Education: A Cross Sectional Study on a Developing Country's Perspective.,"['Gulrayz Ahmed', 'Shaikh Hamiz ul Fawwad', 'Sumayya Naz', 'Syed Arsalan Ali', 'Syeda Aimen Waqar']"
+Issues in Data Management.,['Sharon S. Krag']
+Research and Practice of AI Ethics: A Case Study Approach Juxtaposing Academic Discourse with Organisational Reality.,"['Josephina Antoniou', 'Kevin Macnish', 'Laurence D. Brooks', 'Mark Ryan 0004', 'Tilimbe Jiya']"
+Stakeholder Views of Nanosilver Linings: Macroethics Education and Automated Text Analysis Through Participatory Governance Role Play in a Workshop Format.,"['Justin Stamets', 'Kathleen Eggleson']"
+Can Technological Artefacts Be Moral Agents?,['Martin Peterson']
+Values in University-Industry Collaborations: The Case of Academics Working at Universities of Technology.,['Rafaela Hillerbrand']
+Erratum to: Converging Technologies: A Critical Analysis of Cognitive Enhancement for Public Policy Application.,['Christos Makridis']
+"Mandatory and Self-citation; Types, Reasons, Their Benefits and Disadvantages.","['Arash Karimipour', 'Mohammad Akbari 0003', 'Mohammad Hemmat Esfe', 'Somchai Wongwises']"
+A Survey of Student Opinions on Ethical Design Standards in Taiwan.,"['Ming-Ying Yang', 'Yingying Lee']"
+"A Comparative Empirical Study on Mobile ICT Services, Social Responsibility and the Protection of Children.",['Mónica Martínez-Gómez']
+Use of the Labour-Intensive Method in the Repair of a Rural Road Serving an Indigenous Community in Jocotán (Guatemala).,"['Eutiquio Gallego', 'Francisco Ayuga', 'José María Fuentes', 'Rodrigo Ares']"
+Fast Review Process in Established Journals is Not a Flaw.,"['Omid Mahian', 'Somchai Wongwises']"
+"Neuroscience, Neuropolitics and Neuroethics: The Complex Case of Crime, Deception and fMRI.",['Stuart Henry']
+Assessing Freshman Engineering Students' Understanding of Ethical Behavior.,"['Douglas K. Ludlow', 'Gayla R. Olbricht', 'Hannah M. Nelson', 'Malcolm E. Hays', 'Susan L. Murray']"
+"What Patients, Students and Doctors Think About Permission to Publish Patient Photographs in Academic Journals: A Cross-Sectional Survey in Croatia.","['Andrea Gelemanovic', 'Anita Jukic', 'Dina Simunovic', 'Elizabeth Wager', 'Ivan Buljan', 'Marija Roguljic', 'Matko Marusic', 'Tina Poklepovic Pericic']"
+How can Ethics be Considered as a Criterion for Universities Ranking?,['Zohrehsadat Naji']
+Nuclear Power is Neither Right Nor Wrong: The Case for a Tertium Datur in the Ethics of Technology.,['Rafaela Hillerbrand']
+Uterine Transplant: A Risk to Life or a Chance for Life?,"['Huda Fatima', 'Mohammed Madadin', 'Ritesh G. Menezes', 'Siddhartha Das', 'Stany Wilfred Lobo', 'Syed Ather Hussain']"
+Iranian Academia: Evolution after Revolution and Plagiarism as a Disorder.,"['Sepehr Ghazinoory', 'Soroush Ghazinoori']"
+The University and the Responsible Conduct of Research: Who is Responsible for What?,['Katherine Alfredo']
+A Survey Study on Knowledge and Attitude Toward the Ethics Committee and Research Ethical Practices Among Researchers From Kuwait.,"['Ayesha Akhil', 'Prem Sharma', 'Rashmi Shiju', 'Smitha Thankachan']"
+Ethics in 15 min per Week.,"['Christina E. Hugenschmidt', 'Paul J. Laurienti']"
+Guilt Without Fault: Accidental Agency in the Era of Autonomous Vehicles.,"['Ivar R. Hannikainen', 'Pilar Aguilar']"
+The Frequency of Reporting Ethical Issues in Human Subject Articles Published in Iranian Medical Journals: 2009-2013.,['Parisa Khani']
+The Moral Consideration of Artificial Entities: A Literature Review.,['Jamie Harris']
+Using and Developing Role Plays in Teaching Aimed at Preparing for Social Responsibility.,['Neelke Doorn']
+Standards of Scientific Conduct: Are There Any?,"['Michael W. Kalichman', 'Monica Sweet']"
+Plagiarism in Publications Using the Unpublished Raw Data of Archived Research.,"['Salmia Bnt Beddu', 'Zakaria Che Muda']"
+"Correction to: Medical Students' Acquaintance with Core Concepts, Institutions and Guidelines on Good Scientific Practice: A Pre- and Post-questionnaire Survey.","['Katharina Fuerholzer', 'Maximilian Schochow', 'Richard Peter']"
+Creative Anticipatory Ethical Reasoning with Scenario Analysis and Design Fiction.,['Shannon N. Conley']
+3D Bioprinting Technology: Scientific Aspects and Ethical Issues.,"['Luca Gasperini', 'Rosagemma Ciliberti', 'Sara Patuzzo']"
+How Do Scientists Perceive the Relationship Between Ethics and Science? A Pilot Study of Scientists' Appeals to Values.,"['Bill Bridges', 'Caleb L. Linville', 'James T. Laverty', 'Jonathan Herington', 'Scott Tanona', 'Tyler Garcia']"
+Contentious Problems in Bioscience and Biotechnology: A Pilot Study of an Approach to Ethics Education.,"['Robert J. Butera', 'Roberta M. Berry']"
+Corruption and Internal Fraud in the Turkish Construction Industry.,['Oytun Önder']
+Educational Encounters of the Third Kind.,['M. Rosario González']
+Genetically Engineered Foods and Moral Absolutism: A Representative Study from Germany.,"['Johanna Jauernig', 'Matthias Uhl']"
+Islamic Bioethical Deliberation on the Issue of Newborns with Disorders of Sex Development.,['Siti Nurani Mohd Noor']
+Responsible Learning About Risks Arising from Emerging Biotechnologies.,['Lotte Asveld']
+Philosophical Aspects of Dual Use Technologies.,['Svitlana V. Pustovit']
+Reflexive Principlism as an Effective Approach for Developing Ethical Reasoning in Engineering.,['Jonathan Beever']
+Co-creating Research Integrity Education Guidelines for Research Institutions.,"['Guy Widdershoven', 'Joeri Tijdink', 'Kris Dierickx', 'Krishma Labib', 'Lex M. Bouter', 'Miranda Langendam', 'Natalie Evans', 'Noémie Aubert Bonn', 'Teodora Konach']"
+"Notices and Policies for Retractions, Expressions of Concern, Errata and Corrigenda: Their Importance, Content, and Context.",['Judit Dobránszki']
+Polemics on Ethical Aspects in the Compost Business.,"['Jan Váchal', 'Jaroslav Zák', 'Josef Marousek', 'Katerina Mysková', 'Radka Vanícková', 'Robert Zeman', 'Simona Hasková']"
+The Role of Non-Epistemic Values in Engineering Models.,['Sven Diekmann']
+Defining Information Security.,['Niklas Möller']
+"""Broader Impacts"" or ""Responsible Research and Innovation""?",['Viroj Wiwanitkit']
+Emergency Research without Consent under Polish Law.,['Marek Czarkowski']
+Towards Including End-Users in the Design of Prosthetic Hands: Ethical Analysis of a Survey of Australians with Upper-Limb Difference.,"['Eliza Goddard', 'Gürsel Alici', 'Mary Jean Walker']"
+Academic Information Security Researchers: Hackers or Specialists?,"['Mehdi Dadkhah', 'Mohammad Lagzian']"
+Professionalism Among Chinese Engineers: An Empirical Study.,"['Lina Wei', 'Michael Davis 0002']"
+An Ethical Exploration of Increased Average Number of Authors Per Publication.,"['Hub A. E. Zwart', 'Jonathan Lewis', 'Mohammad Hosseini']"
+Euthanasia: Global Scenario and Its Status in India.,"['Kewal Krishan', 'Puneet Setia', 'Raghvendra Singh Shekhawat', 'Tanuj Kanchan']"
+"Engineering Ethics: Looking Back, Looking Forward.","['Lisa H. Newton', 'Marilyn A. Dyrud', 'Michael Davis 0002', 'Michael S. Pritchard', 'P. Aarne Vesilind', 'Rachelle D. Hollander', 'Richard A. Burgess']"
+Design and Development of a Course in Professionalism and Ethics for CDIO Curriculum in China.,"['Xinlu Xie', 'Yinghui Fan']"
+Perceptions of Pharmacy Graduate Students Toward Research Ethics Education: A Cross-Sectional Study from a Developing Country.,"['Camille Nebeker', 'Karem H. Alzoubi', 'Wesam S. Ahmed']"
+The Convergence of Virtual Reality and Social Networks: Threats to Privacy and Autonomy.,"['David S. Monaghan', ""Fiachra O'Brolcháin"", ""Noel E. O'Connor"", 'Peter Novitzky', 'Tim Jacquemard']"
+Critical Theory as an Approach to the Ethics of Information Security.,"['Helge Janicke', 'Mark Christopher Shaw', 'Neil F. Doherty']"
+Consented Autopsy and the Middle-East.,"['Mohammed Madadin', 'Ritesh G. Menezes', 'Syed Ather Hussain']"
+Building Code Challenging the Ethics Behind Adobe Architecture in North Cyprus.,"['Yonca Hürol', 'Öznem Sahali']"
+Achieving a 'Good AI Society': Comparing the Aims and Progress of the EU and the US.,"['Emmie Hine', 'Francesca Mazzi', 'Huw Roberts', 'Josh Cowls', 'Luciano Floridi', 'Mariarosaria Taddeo']"
+Application of a Sensemaking Approach to Ethics Training in the Physical Sciences and Engineering.,"['Elaine S. Godfrey', 'Ethan P. Waples', 'Michael D. Mumford', 'Richard T. Marcy', 'Sydney T. Sevier', 'Vykinta Kligyte']"
+Context-Relative Norms Determine the Appropriate Type of Consent in Clinical Biobanks: Towards a Potential Solution for the Discrepancy between the General Data Protection Regulation and the European Data Protection Board on Requirements for Consent.,"['M. J. W. Koelemay', 'R. Balm', 'Reza Indrakusuma', 'Shona Kalkman']"
+The Value of 'Traditionality': The Epistemological and Ethical Significance of Non-western Alternatives in Science.,['Mostafa Taqavi']
+"Science, Democracy, and the Right to Research.",['Mark B. Brown']
+The Ethics of Digital Well-Being: A Thematic Review.,"['Luciano Floridi', 'Mariarosaria Taddeo']"
+"Knowledge, Attitudes and Behavioral Intentions of Agricultural Professionals Toward Genetically Modified (GM) Foods: A Case Study in Southwest Iran.","['Hossein Azadi', 'Sedigheh Ghasemi']"
+"Introduction to the Symposium on Sabine Roeser's Risk, Technology, and Moral Emotions.",['Neelke Doorn']
+"Parallel, Embedded or Just Part of the Team: Ethicists Cooperating Within a European Security Research Project.",['S. van der Molen']
+Machine Learning Against Terrorism: How Big Data Collection and Analysis Influences the Privacy-Security Dilemma.,"['G. Mecacci', 'Hugo M. Verhelst']"
+Ethical Considerations when Employing Fake Identities in Online Social Networks for Research.,"['Haya Schulmann', 'Michael Fire', 'Yuval Elovici']"
+Organ Procurement and Social Networks: The End of Confidentiality?,"['Carole Genty', 'Mohamed Dadda', 'Vincent Guilbert']"
+Ethics and Values in Design: A Structured Review and Theoretical Critique.,['Joseph Donia']
+The Leiden Manifesto and Research Assessment.,['Tanuj Kanchan']
+America COMPETES at 5 years: An Analysis of Research-Intensive Universities' RCR Training Plans.,"['Franchesca Nestor', 'Gillian Beach', 'Trisha Phillips']"
+Indexing by Bibliographic Databases of Journals Published in the Developing World.,['Ahmed Waqas']
+P-Hacking: A Wake-Up Call for the Scientific Community.,"['Sachin Sarode', 'Shankargouda Patil', 'Ziad Salameh']"
+Editorial: Shaping Ethical Futures in Brain-Based and Artificial Intelligence Research.,"['Kelly Laas', 'Monika Sziron']"
+Maker Cultures and the Prospects for Technological Action.,['Susana Nascimento']
+Challenges in Collecting Big Data in A Clinical Environment with Vulnerable Population: Lessons Learned from A Study Using A Multi-modal Sensors Platform.,"['Andrea Iaboni', 'Angel He Wang', 'Belkacem Chikhaoui', 'Bing Ye', 'Kristine Newman', 'Lori Schindel Martin', 'Shehroz S. Khan']"
+Environmental Decision Making on Acid Mine Drainage Issues in South Africa: An Argument for the Precautionary Principle.,['T. J. Morodi']
+To Recycle or Not to Recycle? An Intergenerational Approach to Nuclear Fuel Cycles.,['Jan Leen Kloosterman']
+Genetically Engineered Oil Seed Crops and Novel Terrestrial Nutrients: Ethical Considerations.,"['Michael T. Arts', 'Stefanie Colombo']"
+Perceptions of Work-Related Stress and Ethical Misconduct Amongst Non-tenured Researchers in Italy.,"['Margherita Bracci', 'Oronzo Parlangeli', 'Paul M. Liston', 'Stefano Guidi']"
+Non-safety Assessments of Genome-Edited Organisms: Should They be Included in Regulation?,['Bjørn Kåre Myskja']
+Engineering Student's Ethical Awareness and Behavior: A New Motivational Model.,['Diana Bairaktarova']
+Achieving Equity with Predictive Policing Algorithms: A Social Safety Net Perspective.,['Tzu-Wei Hung']
+Developing a Scientific Virtue-Based Approach to Science Ethics Training.,['Robert T. Pennock']
+Ethical Considerations for Volunteer Recruitment of Visual Prosthesis Trials.,['Yu Xia']
+Artificial Intelligence Crime: An Interdisciplinary Analysis of Foreseeable Threats and Solutions.,"['Mariarosaria Taddeo', 'Nikita Aggarwal', 'Thomas C. King']"
+The Karoo Fracking Debate: A Christian Contribution to the World Communities of Faith.,['Gerrit van Tonder']
+The Essential Need for Research Misconduct Allegation Audits.,['Robert Bauchwitz']
+Professional Decision-Making in Research (PDR): The Validity of a New Measure.,"['James M. DuBois', 'Jillon S. Vander Wal', 'John T. Chibnall', 'Kari A. Baldwin', 'Michael D. Mumford', 'Raymond C. Tait']"
+Reflections on Putting AI Ethics into Practice: How Three AI Ethics Approaches Conceptualize Theory and Practice.,['Matthias Braun 0006']
+Towards Improving the Ethics of Ecological Research.,['G. K. D. Crozier']
+The (lack of) Impact of Retraction on Citation Networks.,['David Eichmann']
+Publication Ethics in Biomedical Journals from Countries in Central and Eastern Europe.,"['Ana Marusic', 'Goran Mijaljica', 'Marcin Waligora', 'Mindaugas Broga']"
+Compliance Disengagement in Research: Development and Validation of a New Measure.,"['John Gibbs', 'John T. Chibnall']"
+Artificial Moral Agents: A Survey of the Current Status.,"['Félix Ramos 0001', 'José-Antonio Cervantes', 'Luis-Felipe Rodríguez', 'Salvador Cervantes', 'Sonia López']"
+Perception of Organizational Ethical Climate by University Staff and Students in Medicine and Humanities: A Cross Sectional Study.,"['Anita Lunic', 'Darko Hren', 'Ivan Buljan', 'Marin Vidak', 'Ruzica Tokalic']"
+Grant Review Feedback: Appropriateness and Usefulness.,"['Lisa A. Thompson', 'Scott R. Glisson', 'Stephen A. Gallo']"
+Teaching Ethics to Engineers: Ethical Decision Making Parallels the Engineering Design Process.,['Bridget Bero']
+Clarivate Analytics: Continued Omnia vanitas Impact Factor Culture.,['Sylvain Bernès']
+Analysis of Citations to Biomedical Articles Affected by Scientific Misconduct.,"['Judith Abrams', 'Rhonda K. Dailey']"
+The Ethics of Cloud Computing.,['Luciano Floridi']
+The Ethical Dilemma of Embryonic Stem Cell Research.,"['M. Fawwad Ahmed Hussain', 'Nabeel Manzar', 'Nuzhat Hussain', 'Sajjad Raza']"
+The Role of Culture and Acculturation in Researchers' Perceptions of Rules in Science.,"['James M. DuBois', 'Kari A. Baldwin', 'Tammy English']"
+"Touching at a Distance: Digital Intimacies, Haptic Platforms, and the Ethics of Consent.",['Nathan Rambukkana']
+Calculating Impact Factor: How Bibliographical Classification of Journal Items Affects the Impact Factor of Large and Small Journals.,"['Matko Marusic', 'Mihael Rudes', 'Natasa Kovacic', 'Rajna Golubic']"
+A New Method for a Virtue-Based Responsible Conduct of Research Curriculum: Pilot Test Results.,"['Eric Berling', ""Michael O'Rourke"", 'Robert T. Pennock']"
+A Conflict of Interest Disclosure Policy for ,['Stephanie J. Bird']
+The Role of Engineering Ethics on Concrete Fire Safety.,['Shahryar Sorooshian']
+"Victor Frankenstein's Institutional Review Board Proposal, 1790.",['William L. Gannon']
+Avoiding Empty Rhetoric: Engaging Publics in Debates About Nanotechnologies.,['Susan Dodds']
+‚Mirroring' the Ethics of Biobanking: What Analysis of Consent Documents Can Tell Us?,"['Jurate Serepkaite', 'Zivile Valuckiene']"
+Designing a Good Life: A Matrix for the Technological Mediation of Morality.,['Tsjalling Swierstra']
+A Systems Approach to Understanding and Improving Research Integrity.,"['Dennis M. Gorman', 'Mark Lawley']"
+Digital Technologies for Schizophrenia Management: A Descriptive Review.,"['Fabrice Jotterand', 'Olga Chivilgina']"
+Synthetic Biology and the Translational Imperative.,"['Marc Folcher', 'Marcello Ienca', 'Raheleh Heidari Feidt']"
+Community Heroes and Sleeping Members: Interdependency of the Tenets of Energy Justice.,"['Bozena Ryszawska', 'Erik Laes', 'Gunter Bombaerts', 'Magdalena Rozwadowska', 'Mandi Astola', 'Meiken Hansen', 'Piotr Szymanski', 'Sophie Nyborg']"
+Support for the Development of Technological Innovations: Promoting Responsible Social Uses.,"['Georges-Auguste Legault', 'Johane Patenaude']"
+Operationalizing Ethical Becoming as a Theoretical Framework for Teaching Engineering Design Ethics.,['Justin L. Hess']
+A Proposal to Detect the Double Submission of a Manuscript Sent for Review.,"['Manjur S. Kolhar', 'Safar Bin Bkhit AlMudara']"
+Devices of Responsibility: Over a Decade of Responsible Research and Innovation Initiatives for Nanotechnologies.,"['Diana M. Bowman', 'Douglas K. R. Robinson']"
+Retraction and Research Integrity Education in China.,"['Li Tang 0005', 'Yuhan Yang']"
+"Brain Recording, Mind-Reading, and Neurotechnology: Ethical Issues from Consumer Devices to Brain-Based Speech Decoding.","['Pierre Mégevand', 'Stephen Rainey', 'Stéphanie Martin', 'Éric Fourneret']"
+Teaching Engineering Ethics using BLOCKS Game.,"['Suk Meng Goh', 'Terence Peng Lian Tan']"
+Bridging the Gap Between Ethical Theory and Practice in Medicine: A Constructivist Grounded Theory Study.,"['Ahad Faramarz Gharamaleki', 'Bagher Larijani', 'Mansure Madani', 'Zahra Khazaei']"
+Validity and Reliability of an Instrument for Assessing Case Analyses in Bioengineering Ethics Education.,"['Kevin D. Ashley', 'Rosa Lynn Pinkus']"
+Why Frankenstein is a Stigma Among Scientists.,"['Joey Eschrich', 'Peter Nagy', 'Ruth Wylie']"
+Unethical Admissions: Academic Integrity in Question.,"['Liu Yao', 'Richard Hannis Ansah']"
+Ethical Risk Management Education in Engineering: A Systematic Review.,"['Thierry C. Pauchant', 'Yoann Guntzburger']"
+Social Risk Perceptions of Genetically Modified Foods of Engineers in Training: Application of a Comprehensive Risk Model.,"['Ezatollah Hossein Karami', 'Mostafa Ahmadvand', 'Sedigheh Ghasemi']"
+"Public Perceptions of Ethical, Legal and Social Implications of Pre-implantation Genetic Diagnosis (PGD) in Malaysia.","['Anisah Che Ngah', 'Latifah Amin', 'Siti Nurani Mohd Nor']"
+Critiquing the Reasons for Making Artificial Moral Agents.,['Scott Robbins']
+A Method for Improving the Integrity of Peer Review.,"['Mehdi Dadkhah', 'Mohsen Kahani']"
+A comparison of conflict of interest policies at peer-reviewed journals in different scientific disciplines.,['Jessica S. Ancker']
+Perceptions of Research Integrity Climate in Hungarian Universities: Results from A Survey among Academic Researchers.,['Péter Kakuk']
+"Plagiarism, Cheating and Research Integrity: Case Studies from a Masters Program in Peru.","['Andres M. Carnero', 'Angela M. Bayer', 'Antonio Bernabe-Ortiz', 'Antonio M. Quispe', 'Carlos Canelo-Aybar', 'Eddy R. Segura', 'Edward Mezones-Holguin', 'Edward S. Smith', 'German F. Alvarado', 'Jorge L. Maguiña', 'Kelika A. Konda', 'Percy Mayta-Tristan']"
+Preserving Human-Nature's Interaction for Sustainability: Quran and Sunnah Perspective.,"['Abdul Halim Syihab', 'Asmawati Muhamad']"
+Engineering Social Justice into Traffic Control for Self-Driving Vehicles?,['Tristram McPherson']
+"Obsolete Laws: Economic and Moral Aspects, Case Study - Composting Standards.","['Marek Vochozka', 'Petr Suler']"
+"Design, Development, and Evaluation of an Interactive Simulator for Engineering Ethics Education (SEEE).",['Michael Alfred']
+"Cognitive Enhancement: Methods, Ethics, Regulatory Challenges.",['Nick Bostrom']
+Plagiarism Allegations Account for Most Retractions in Major Latin American/Caribbean Databases.,"['Fernanda Catelani', 'Karina de Albuquerque Rocha', 'Renan Moritz Varnier R. Almeida', 'Sonia M. R. Vasconcelos']"
+Employee-Organization Pro-environmental Values Fit and Pro-environmental Behavior: The Role of Supervisors' Personal Values.,"['Hui Lu', 'Ruyin Long', 'Xia Liu']"
+Acceptability of Neuroscientific Interventions in Education.,"['Janet M. Dubinsky', 'S. Varma']"
+Doing the Right Thing: A Qualitative Investigation of Retractions Due to Unintentional Error.,"['Inez de Beaufort', 'Medard Hilhorst', 'Mohammad Hosseini']"
+Testing Hypotheses on Risk Factors for Scientific Misconduct via Matched-Control Analysis of Papers Containing Problematic Image Duplications.,"['Daniele Fanelli', 'Elisabeth M. Bik', 'Ferric C. Fang', 'Rodrigo Costas 0001']"
+The Ethics of Ironic Science in Its Search for Spoof.,['Maryam Ronagh']
+When Ethics is a Technical Matter: Engineers' Strategic Appeal to Ethical Considerations in Advocating for System Integrity.,"['Orana Sandri', 'Sarah Holdsworth', 'Sarah Maslen']"
+Technology and Parental Responsibility: The Case of the V-Chip.,['Jessica Nihlén Fahlquist']
+The Ethics of Smart Stadia: A Stakeholder Analysis of the Croke Park Project.,"[""Fiachra O'Brolcháin"", 'Simone de Colle']"
+Energy Sovereignty: A Values-Based Conceptual Analysis.,['Eduardo Noboa']
+In Their Own Words: Research Misconduct from the Perspective of Researchers in Malaysian Universities.,"['Latifah Amin', 'Zurina Mahadi']"
+Playing Brains: The Ethical Challenges Posed by Silicon Sentience and Hybrid Intelligence in DishBrain.,"['Georg Starke', 'Stephen R. Milford']"
+Is Online Moral Outrage Outrageous? Rethinking the Indignation Machine.,"['Cristina Voinea', 'Emilian Mihailov']"
+CRISPR and the Rebirth of Synthetic Biology.,"['David M. Shaw', 'Raheleh Heidari']"
+Mentoring for Responsible Research: The Creation of a Curriculum for Faculty to Teach RCR in the Research Environment.,['Michael W. Kalichman']
+Ethical Education in Software Engineering: Responsibility in the Production of Complex Systems.,"['Gonzalo Génova', 'M. Rosario González']"
+The Bioterrorism Threat and Dual-use Biotechnological Research: An Israeli Perspective.,"['Bracha Rager-Zisman', 'David Friedman', 'Eitan Bibi']"
+Reexamining the Ethics of Nuclear Technology.,"['Ilya Kuptsov', 'Victor Kanke', 'Viktor Murogov']"
+Responsible Reporting: Neuroimaging News in the Age of Responsible Research and Innovation.,"['Irja Marije de Jong', 'Jacqueline E. W. Broerse', 'Marlous Arentshorst']"
+Positive Organizational Outcomes Associated with a Penchant for Openness.,['G. Steven McMillan']
+Ethical Concerns About Human Genetic Enhancement in the Malay Science Fiction Novels.,['Noor Munirah Isa']
+Customizable Ethics Settings for Building Resilience and Narrowing the Responsibility Gap: Case Studies in the Socio-Ethical Engineering of Autonomous Systems.,"['Natalia Jevglevskaja', 'Sadjad Soltanzadeh']"
+Good Scientific Practice: Developing a Curriculum for Medical Students in Germany.,"['Katharina Fuerholzer', 'Maximilian Schochow']"
+The Internet as Cognitive Enhancement.,"['Cristina Voinea', 'Emilian Mihailov', 'Julian Savulescu']"
+A Comparative Study on the Information Ethics of Junior High School Students Cognition and Behavior between Taiwan and China: Kaohsiung and Nanjing Regions Used as Examples.,"['Chihchia Chen', 'Jiangjun Gu', 'Wen-Jiuh Chiang']"
+"""I am Primarily Paid for Publishing..."": The Narrative Framing of Societal Responsibilities in Academic Life Science Research.","['Maximilian Fochler', 'Ulrike Felt']"
+Survey on Using Ethical Principles in Environmental Field Research with Place-Based Communities.,"['David A. Sonnenfeld', 'Dianne Quigley', 'Phil Brown', 'Qing Tian', 'Xiaofan Wei']"
+Current Perspectives Regarding Institutional Conflict of Interest.,['Francis L. Macrina']
+Clinical Ethics Consultation in the Transition Countries of Central and Eastern Europe.,"['Marcin Orzechowski', 'Maximilian Schochow']"
+Evolution of Different Dual-use Concepts in International and National Law and Its Implications on Research Ethics and Governance.,"['Johannes Rath', 'Monique Ischi']"
+Empowerment and Conceptual Clarity in Research Integrity.,['Mariette A. van den Hoven']
+The Contribution of Moral Case Deliberation to Teaching RCR to PhD Students.,"['Giulia Inguaggiato', 'Guy Widdershoven', 'Krishma Labib', 'Lex M. Bouter', 'Natalie Evans']"
+Medicines Information and the Regulation of the Promotion of Pharmaceuticals.,"['Joel Lexchin', 'Teresa Leonardo Alves']"
+Refining Value Sensitive Design: A (Capability-Based) Procedural Ethics Approach to Technological Design for Well-Being.,['Dylan Cawthorne']
+Climate Change: Evidence of Human Causes and Arguments for Emissions Reduction.,"['Jacob D. Haqq-Misra', 'Seth D. Baum']"
+"Ethical Challenges in Human Space Missions: A Space Refuge, Scientific Value, and Human Gene Editing for Space.","['Michael J. Reiss', 'Ziba Norman']"
+Implementing the Netherlands Code of Conduct for Scientific Practice - A Case Study.,"['Julian Kinderlerer', 'Patricia Osseweijer']"
+On the Willingness to Report and the Consequences of Reporting Research Misconduct: The Role of Power Relations.,"['Serge P. J. M. Horbach', 'Svenn-Erik Mamelund', 'Willem Halffman']"
+The Importance of Ethics in Modern Universities of Technology.,"['Jeroen van den Hoven', 'Stephanie J. Bird']"
+Improving Epistemological Beliefs and Moral Judgment Through an STS-Based Science Ethics Education Program.,['Hyemin Han']
+Is There an Effective Approach to Deterring Students from Plagiarizing?,"['Lidija Bilic-Zulle', 'Mladen Petrovecki', 'Vedran Frkovic']"
+Emerging ICT for Citizens' Veillance: Theoretical and Practical Insights.,"['Philip Boucher', 'Susana Nascimento']"
+Chemical and Biological Weapons in the 'New Wars'.,['Kai Ilchmann']
+Why and Where to Fund Carbon Capture and Storage.,['Kian Mintz-Woo']
+Performance and Maqasid al-Shari'ah's Pentagon-Shaped Ethical Measurement.,['Walid Mansour']
+Establishing Sensible and Practical Guidelines for Desk Rejections.,"['Helmar Bornemann-Cimenti', 'Jaime A. Teixeira da Silva', 'Vedran Katavic']"
+Towards a Design Toolkit of Informed Consent Models Across Fields: A Systematic Review.,['Philip J. Nickel']
+Attitudes of Agricultural Experts Toward Genetically Modified Crops: A Case Study in Southwest Iran.,"['Kiumars Zarafshani', 'Mansour Ghanian', 'Miranda Kitterlin', 'Omid M. Ghoochani', 'Sheida Jahangiry', 'Steven Van Passel']"
+Human Enhancement and Communication: On Meaning and Shared Understanding.,['Laura Cabrera']
+Institutional Responsibility and the Flawed Genomic Biomarkers at Duke University: A Missed Opportunity for Transparency and Accountability.,"['David F. Ransohoff', 'Gail Geller', 'Thomas Fleming']"
+Authorship and Responsibility in Health Sciences Research: A Review of Procedures for Fairly Allocating Authorship in Multi-Author Studies.,['Elise Smith']
+Engineers' Responsibilities for Global Electronic Waste: Exploring Engineering Student Writing Through a Care Ethics Lens.,['Ryan C. Campbell']
+"Genetic Data, Two-Sided Markets and Dynamic Consent: United States Versus France.","['Guillaume Vogt', 'Henri-Corto Stoeklé', 'Jean-Francois Deleuze', 'Mauro Turrini', 'Philipe Charlier']"
+Experience and Attitudes Toward Informed Consent in Pharmacy Practice Research: Do Pharmacists Care?,['Dusanka Krajnovic']
+Challenges and Opportunities of Lifelog Technologies: A Literature Review and Critical Analysis.,"['Bert Gordijn', ""Fiachra O'Brolcháin"", 'Peter Novitzky', 'Tim Jacquemard']"
+Sustaining Engineering Codes of Ethics for the Twenty-First Century.,['Sharon A. Jones']
+Gender Bias and Conversational Agents: an ethical perspective on Social Robotics.,['Irene Sucameli']
+"Surveillance, Self and Smartphones: Tracking Practices in the Nightlife.",['Tjerk Timan']
+Water Management: Sacrificing Normative Practice Subverting the Traditions of Water Apportionment - 'Whose Justice? Which Rationality?'.,"['Marc J. de Vries', 'Mehdi F. Harandi']"
+Changing the Engineering Student Culture with Respect to Academic Integrity and Ethics.,"['Loreal Camp', 'Tammy VanDeGrift']"
+The Capacity for Ethical Decisions: The Relationship Between Working Memory and Ethical Decision Making.,"['Shane Connelly', 'Zhanna Bagdasarov']"
+Max Power: Implementing the Capabilities Approach to Identify Thresholds and Ceilings in Energy Justice.,['Patrik Baard']
+Authorship Not Taught and Not Caught in Undergraduate Research Experiences at a Research University.,"['Aneri C. Pattani', 'Lauren E. Abbott', 'Patricia Ann Mabrouk']"
+"On the Spot Ethical Decision-Making in CBRN (Chemical, Biological, Radiological or Nuclear Event) Response - Approaches to on the Spot Ethical Decision-Making for First Responders to Large-Scale Chemical Incidents.",['Chaim Rafalowski']
+"Statistical Power, the Belmont Report, and the Ethics of Clinical Trials.",['Sara H. Vollmer']
+A Systemic Analysis of Cheating in an Undergraduate Engineering Mechanics Course.,"['Sam Lee', 'Scott Ouellette', 'Tricia Bertram Gallant']"
+"Ethics-Based Auditing of Automated Decision-Making Systems: Nature, Scope, and Limitations.","['Jessica Morley', 'Luciano Floridi', 'Mariarosaria Taddeo']"
+Mentoring and Research Misconduct: An Analysis of Research Mentoring in Closed ORI Cases.,"['Jered B. Cornelison', 'Sandra L. Titus']"
+Knowledge and Perceptions of Honorary Authorship among Health Care Researchers: Online Cross-sectional Survey Data from the Middle East.,"['Mayis Aldughmi', 'Reema Karasneh']"
+Is it Ethical for Journals to Request Self-citation?,['Somchai Wongwises']
+Are Researchers Willing to Share Their Published Manuscript?,"['Rayan H. M. Alkhawtani', 'Thomas C. Kwee']"
+Scientists' Ethical Obligations and Social Responsibility for Nanotechnology Research.,"['Elizabeth A. Corley', 'Youngjae Kim']"
+"The Ethical Interest of Frankenstein; Or, the Modern Prometheus: A Literature Review 200 Years After Its Publication.","['Irene Cambra-Badii', 'Josep-E. Baños']"
+Implementing Ethics in Healthcare AI-Based Applications: A Scoping Review.,"['Magali Goirand', 'Robyn Clay-Williams']"
+"A Taxonomy for Research Intergrity Training: Design, Conduct, and Improvements in Research Integrity Courses.","['Linda Zollitsch', 'Mariette A. van den Hoven', 'Tom Lindemann']"
+Socio-ethical Education in Nanotechnology Engineering Programmes: A Case Study in Malaysia.,"['Pek Hoon Er', 'Punita Visvanathan']"
+Tri-parent Baby Technology and Preservation of Lineage: An Analysis from the Perspective of Maqasid al-Shari'ah Based Islamic Bioethics.,"['Madiha Baharuddin', 'Noor Naemah Abdul Rahman', 'Shaikh Mohd Saifuddeen']"
+Patient Autonomy and Quality of Care in Telehealthcare.,"['Giovanni Rubeis', 'Maximilian Schochow']"
+"Implementing Biosecurity Education: Approaches, Resources and Programmes.","['Masamichi Minehata', 'Nariyoshi Shinomiya', 'Simon Whitby']"
+Demographic Variables of Corruption in the Chinese Construction Industry: Association Rule Analysis of Conviction Records.,"['Igor Martek', 'M. Reza Hosseini', 'Yao Yu']"
+AWOSE - A Process Model for Incorporating Ethical Analyses in Agile Systems Engineering.,['Thomas Schack']
+"Attitudes and Knowledge About Plagiarism Among University Students: Cross-Sectional Survey at the University of Split, Croatia.","['Ivan Buljan', 'Ivan Jerkovic', 'Ivana Kruzic', 'Zeljana Basic']"
+Enhancing Engineering Ethics: Role Ethics and Corporate Social Responsibility.,"['Jessica M. Smith', 'Nicole M. Smith', 'Qin Zhu']"
+Ethical Guidelines for Structural Interventions to Small-Scale Historic Stone Masonry Buildings.,"['Hülya Yüceer', 'Yonca Hürol']"
+Can Instruction in Engineering Ethics Change Students' Feelings about Professional Responsibility?,['Michael C. Loui']
+Working with Research Integrity - Guidance for Research Performing Organisations: The Bonn PRINTEGER Statement.,"['Bert Heinrichs', 'Carlo Casonato', 'Ellen-Marie Forsberg', 'Frank O. Anthun', 'Giles Birchley', 'Gloria González Fuster', 'Henriette Bout', 'Hub A. E. Zwart', 'Inge Lerouge', 'Ingrid Skjæggestad Jacobsen', 'Jacques Janssen', 'Knut Jørgen Vie', 'Krista Varantola', 'Margit Sutrop', 'Marta Tazewell', 'Matthias Kaiser', 'Mira Zöller', 'Sarah de Rijcke', 'Serge P. J. M. Horbach', 'Sharon Bailey', 'Thomas Saretzki']"
+Researchers' Perceptions of a Responsible Research Climate: A Multi Focus Group Study.,"['H. Roeline Pasman', 'Joeri Tijdink', 'Lex M. Bouter', 'Tamarinde Haven']"
+Exploring the Impact of Tensions in Stakeholder Norms on Designing for Value Change: The Case of Biosafety in Industrial Biotechnology.,"['Linde F. C. Kampers', 'Vítor A. P. Martins dos Santos', 'Zoë Robaey']"
+Erratum to: Prior Publication and Redundancy in Contemporary Science: Are Authors and Editors at the Crossroads?,['Sonia Maria Ramos de Vasconcelos']
+Islamic Perspectives on CRISPR/Cas9-Mediated Human Germline Gene Editing: A Preliminary Discussion.,"['Nurul Atiqah Zulkifli', 'Saadan Man']"
+Questionable Research Practices and Misconduct Among Norwegian Researchers.,"['Johs Hjellbrekke', 'Laura Drivdal', 'Matthias Kaiser', 'Ole Bjørn Rekdal']"
+Fake Journals: Their Features and Some Viable Ways to Distinguishing Them.,"['Mohammad Akbari 0003', 'Mohammad Hemmat Esfe', 'Somchai Wongwises']"
+Assessment of Doctors' Knowledge and Attitudes Towards Confidentiality in Hospital Care.,"['Eloy Girela-Lopez', 'Fernando Labella', 'Pilar Font-Ugalde']"
+Role-Playing Computer Ethics: Designing and Evaluating the Privacy by Design (PbD) Simulation.,"['Donal Heidenblad', 'Katie Shilton', 'Mary Kendig', 'Susan J. Winter']"
+"Imagination, distributed responsibility and vulnerable technological systems: the case of Snorre A.",['Mark Coeckelbergh']
+Case-Based Ethics Instruction: The Influence of Contextual and Individual Factors in Case Content on Ethical Decision-Making.,"['James F. Johnson', 'Lauren N. Harkrider', 'Lynn D. Devenport', 'Michael D. Mumford', 'Shane Connelly', 'Zhanna Bagdasarov']"
+The Societal Readiness Thinking Tool: A Practical Resource for Maturing the Societal Readiness of Research Projects.,"['Astrid Lykke Birkving', 'Emad Yaghmaei', 'Emil Alnor', 'Erich Griessler', 'Ingeborg Meijer', 'Mathias Wullum Nielsen', 'Michael J. Bernstein', 'Mika P. Nieminen', 'Niels Mejlgaard', 'Peter Busch Nicolaisen', 'Peter Novitzky', 'Stefan de Jong', 'Tung Tung Chan', 'Wouter van de Klippe']"
+"Fortifying the Corrective Nature of Post-publication Peer Review: Identifying Weaknesses, Use of Journal Clubs, and Rewarding Conscientious Behavior.","['Jaime A. Teixeira da Silva', 'Judit Dobránszki']"
+Investigating the Underlying Factors of Corruption in the Public Construction Sector: Evidence from China.,"['Kenneth T. W. Yiu', 'Ming Shan', 'Yi Hu', 'Yun Le']"
+How to Handle Co-authorship When Not Everyone's Research Contributions Make It into the Paper.,"['William Bülow', 'Zubin Master']"
+Personal Motivations and Systemic Incentives: Scientists on Questionable Research Practices.,"['Mary Medlin', 'Mitch Brown', 'Samuel V. Bruton']"
+Wired Emotions: Ethical Issues of Affective Brain-Computer Interfaces.,['Steffen Steinert']
+Causal Factors of Corruption in Construction Project Management: An Overview.,"['Emmanuel Kingsford Owusu', 'Ming Shan']"
+A Reflective Account of a Research Ethics Course for an Interdisciplinary Cohort of Graduate Students.,['Joan Siew Ching Lee']
+Protecting people in research: a comparison between biomedical and traffic research.,['Sven Ove Hansson']
+Development of Ethics Education in Science and Technology in Technical Universities in China.,['Qian Wang']
+Researcher Perspectives on Conflicts of Interest: A Qualitative Analysis of Views from Academia.,"['Jensen T. Mecca', 'Kelsey E. Medeiros', 'Michael D. Mumford', 'Shane Connelly', 'Vincent Giorgini']"
+Ethics of Human Enhancement: An Executive Summary.,"['Jesse Steinberg', 'Patrick Lin 0002']"
+Engineering and the Problem of Moral Overload.,"['Ibo van de Poel', 'Jeroen van den Hoven']"
+A 'Knowledge Ecologies' Analysis of Co-designing Water and Sanitation Services in Alaska.,['Zoë Sofoulis']
+A Value Sensitive Scenario Planning Method for Adaptation to Uncertain Future Sea Level Rise.,['Per Wikman-Svahn']
+Healthy and Happy? An Ethical Investigation of Emotion Recognition and Regulation Technologies (ERR) within Ambient Assisted Living (AAL).,"['Kris Vera Hartmann', 'Nadia Primc']"
+"Assessing and Raising Concerns About Duplicate Publication, Authorship Transgressions and Data Errors in a Body of Preclinical Research.","['Andrew Grey', 'Greg Gamble', 'Mark Bolland']"
+Exploring the Gray Area: Similarities and Differences in Questionable Research Practices (QRPs) Across Main Areas of Research.,['Tine Ravn']
+The Intervention of Robot Caregivers and the Cultivation of Children's Capability to Play.,['Yvette Pearson']
+Midstream Modulation in Biotechnology Industry: Redefining What is 'Part of the Job' of Researchers in Industry.,"['Patricia Osseweijer', 'Steven M. Flipse']"
+Productivity of CNPq Researchers from Different Fields in Biomedical Sciences: The Need for Objective Bibliometric Parameters - A Report from Brazil.,"['Amos Olalekan Abolaji', 'Antonia Eliene Duarte', 'Cláudia Sirlene de Oliveira', 'Daniel Henrique Roos', 'Diogo Onofre Souza', 'Jean Paul Kamdem', 'João Batista Teixeira da Rocha', 'Luciana Calabró', 'Luiz Marivando Barros', 'Nilda Vargas Barbosa']"
+Is There a Role for Publication Consultants and How Should Their Contribution be Recognized?,"['Barry McCollum', 'Graham Kendall']"
+Cyberethics and Co-operation in the Information Society.,"['Christian Fuchs 0002', 'Robert M. Bichler']"
+Changes in the Social Responsibility Attitudes of Engineering Students Over Time.,['Nathan E. Canney']
+Research Misconduct Investigations in China's Science Funding System.,"['Li Tang', 'Linan Wang']"
+"Design, Development, and Evaluation of a Second Generation Interactive Simulator for Engineering Ethics Education (SEEE2).",['Michael Alfred']
+Audit of the Informed Consent Process as a Part of a Clinical Research Quality Assurance Program.,['Rebecca Dahl']
+Determining Public Policy and Resource Allocation Priorities for Mitigating Natural Hazards: A Capabilities-based Approach.,['Paolo Gardoni']
+"Economic, Environmental and Moral Acceptance of Renewable Energy: A Case Study - The Agricultural Biogas Plant at Pěčín.","['Marek Vochozka', 'Petr Suler']"
+"The Importance of Defining 'Data' in Data Management Policies - Commentary on: ""Issues in Data Management"".",['Julie Richardson']
+Personalized Medicine in a New Genomic Era: Ethical and Legal Aspects.,"['Maria Shoaib', 'Mohammed Madadin', 'Ritesh G. Menezes', 'Syed Ather Hussain']"
+A Review of the Institute of Medicine's Analysis of using Chimpanzees in Biomedical Research.,['Robert C. Jones']
+Going Public: Good Scientific Conduct.,['Peter Sandøe']
+The Integration and Harmonisation of Secular and Islamic Ethical Principles in Formulating Acceptable Ethical Guidelines for Modern Biotechnology in Malaysia.,"['Anisah Che Ngah', 'Azwira Abdul Aziz', 'Latifah Amin', 'Mashitoh Yaacob', 'Nor Ashikin Mohamed Yusof', 'Nur Asmadayana Hasim', 'Zurina Mahadi']"
+Review of Instructional Approaches in Ethics Education.,"['Logan L. Watts', 'Logan M. Steele', 'Michael D. Mumford', 'Shane Connelly', 'Tyler J. Mulhearn']"
+Science Outside the Lab: Helping Graduate Students in Science and Engineering Understand the Complexities of Science Policy.,"['Jameson M. Wetmore', 'Kiera Reifschneider', 'Michael J. Bernstein']"
+Rethinking the Relationship Between Academia and Industry: Qualitative Case Studies of MIT and Stanford.,['Soaring Hawk']
+Quantification of Conflicts of Interest in an Online Point-of-Care Clinical Support Website.,"['Brian J. Piper', 'Daniel Y. Chung', 'Kaitlyn E. Sternat', 'Stephanie D. Nichols', 'Stephanie S. Tilberry']"
+Intergroup Cooperation in Common Pool Resource Dilemmas.,"['Elizabeth A. Adams', 'Evan Selinger', 'Jathan Sadowski', 'Susan G. Spierre', 'Thomas P. Seager']"
+Bridging the Gap with Clinicians: The Issue of Underrecognition of Pathologists and Radiologists as Scientific Authors in Contemporary Medical Literature.,"['Jelena Dotlic', 'Milica Skender-Gazibara', 'Tatjana Gazibara', 'Tatjana Terzic']"
+Towards Higher Moral and Economic Goals in Renewable Energy.,['Stanislav Skapa']
+Autonomous Cars: In Favor of a Mandatory Ethics Setting.,['Julian F. Müller']
+Facing the Pariah of Science: The Frankenstein Myth as a Social and Ethical Reference for Scientists.,"['Joey Eschrich', 'Peter Nagy', 'Ruth Wylie']"
+Accommodating an Uninvited Guest: Perspectives of Researchers in Switzerland on 'Honorary' Authorship.,"['Priya Satalkar', 'Thomas Perneger']"
+Developing Tools to Counteract and Prevent Suicide Bomber Incidents: A Case Study in Value Sensitive Design.,['Marc Steen']
+The Application of Standards and Recommendations to Clinical Ethics Consultation in Practice: An Evaluation at German Hospitals.,"['Giovanni Rubeis', 'Maximilian Schochow']"
+Expanding Research Integrity: A Cultural-Practice Perspective.,"['Guus Dix', 'Joeri Tijdink', 'Sarah de Rijcke']"
+Evaluating the Pros and Cons of Different Peer Review Policies via Simulation.,"['Gabriel Pui Cheong Fung', 'Jia Zhu 0003', 'Wai-Hung Collin Wong', 'Zhixu Li']"
+"Who, What and Where (WWW) Problems in Scientific Communities.","['Jinlan Nie', 'Wei Liu']"
+A New Science Publishing System for a Budding Science Publishing Crisis.,['Eugenio Hardy']
+"Engaged, Embedded, Enjoined: Science and Technology Studies in the National Science Foundation.",['Edward J. Hackett']
+On Effectiveness and Legitimacy of 'Shaming' as a Strategy for Combatting Climate Change.,['Behnam Taebi']
+Detecting and (Not) Dealing with Plagiarism in an Engineering Paper: Beyond CrossCheck - A Case Study.,"['Yuehong Zhang', 'Zhao-lin Huo']"
+An Analysis on the Research Ethics Cases Managed by the Committee on Publication Ethics (COPE) Between 1997 and 2010.,['Stephen James Wilson']
+Translating the Human Right to Water and Sanitation into Public Policy Reform.,"['Fernanda Dalcanale', 'Georgia Lyn Kayser', 'Jamie Bartram', 'Jocelyn Getgen Kestenbaum', 'Urooj Quezon Amjad']"
+The Conception of Synthetic Entities from a Personalist Perspective.,"['Justo Aznar', 'Lucía Gómez-Tatay']"
+Editors' Overview: Moral Responsibility in Technology and Engineering.,['Neelke Doorn']
+Mental Models: An Alternative Evaluation of a Sensemaking Approach to Ethics Instruction.,"['Ethan P. Waples', 'Meagan E. Brock', 'Michael D. Mumford', 'Sydney T. Sevier', 'Vykinta Kligyte']"
+The Problems with Forbidding Science.,['Lynda L. Pope']
+Should Authors be Requested to Suggest Peer Reviewers?,['Jaime A. Teixeira da Silva']
+A Review of Scientific Ethics Issues Associated with the Recently Approved Drugs for Alzheimer's Disease.,['Nicole Shu Ling Yeo-Teh']
+"An Ethical Framework for the Design, Development, Implementation, and Assessment of Drones Used in Public Healthcare.",['Dylan Cawthorne']
+From Environmental to Ecological Ethics: Toward a Practical Ethics for Ecologists and Conservationists.,['James P. Collins']
+Mobile-Centric Ambient Intelligence in Health- and Homecare - Anticipating Ethical and Legal Challenges.,"['Eleni Kosta', 'Marketta Niemelä', 'Olli Pitkänen']"
+Towards a Richer Debate on Tissue Engineering: A Consideration on the Basis of NEST-Ethics.,"['E. van Leeuwen', 'M. E. C. van Hoek', 'Simone van der Burg', 'W. J. M. Dekkers']"
+What Do Ethical Guidelines for Epidemiology Say About an Ethics Review? A Qualitative Systematic Review.,"['Marcin Waligora', 'Vilius Dranseika']"
+Activist Engineering: Changing Engineering Practice By Deploying Praxis.,"['Margaret S. Wooldridge', 'Thomas E. Princen', 'Walter E. Eagle']"
+Comparison of Engagement with Ethics Between an Engineering and a Business Program.,"['Richard E. Wokutch', 'Steven M. Culver', 'Vinod Lohani']"
+Integrity in Biomedical Research: A Systematic Review of Studies in China.,"['Kris Dierickx', 'Nannan Yi']"
+Designing Games to Teach Ethics.,['Peter A. Lloyd']
+"Ethical Issues in Neuromarketing: ""I Consume, Therefore I am!"".","['Tuna Cakar', 'Yesim Isil Ulman']"
+Detecting Hijacked Journals by Using Classification Algorithms.,"['Mehdi Dadkhah', 'Mohammad Davarpanah Jazi', 'Mona Andoohgin Shahri']"
+How to Design AI for Social Good: Seven Essential Factors.,"['Luciano Floridi', 'Mariarosaria Taddeo', 'Thomas C. King']"
+Smart-Glasses: Exposing and Elucidating the Ethical Issues.,"['Dusan Haustein', 'Laurens Landeweerd']"
+Fairness as Equal Concession: Critical Remarks on Fair AI.,['Ryan van Nood']
+Towards a Systematic Screening Tool for Quality Assurance and Semiautomatic Fraud Detection for Images in the Life Sciences.,"['Katja Ickstadt', 'Lars Koppers']"
+When Public Discourse Mirrors Academic Debate: Research Integrity in the Media.,['Massimiano Bucchi']
+Correction: Community Heroes and Sleeping Members: Interdependency of the Tenets of Energy Justice.,"['Bozena Ryszawska', 'Erik Laes', 'Gunter Bombaerts', 'Magdalena Rozwadowska', 'Mandi Astola', 'Meiken Hansen', 'Piotr Szymanski', 'Sophie Nyborg']"
+Systematic Assessment of Research on Autism Spectrum Disorder (ASD) and Mercury Reveals Conflicts of Interest and the Need for Transparency in Autism Research.,"['Brian S. Hooker', 'Carmen G. Chaigneau', 'David A. Geier', 'Geir Bjørklund', 'James M. Love', 'Janet K. Kern', 'Lisa K. Sykes', 'Mark R. Geier', 'Richard C. Deth']"
+Epistemic Standards for Participatory Technology Assessment: Suggestions Based Upon Well-Ordered Science.,['Zachary Pirtle']
+Maqasid al-Shariah as a Complementary Framework for Conventional Bioethics: Application in Malaysian Assisted Reproductive Technology (ART) Fatwa.,"['Noor Naemah Abdul Rahman', 'Shaikh Mohd Saifuddeen']"
+"Plagiarism, Fake Peer-Review, and Duplication: Predominant Reasons Underlying Retractions of Iran-Affiliated Scientific Papers.","['Farid Rahimi', 'Negin Kamali']"
+"""In Our Own Little World"": Invisibility of the Social and Ethical Dimension of Engineering Among Undergraduate Students.","['Jae Hoon Lim', 'Jerry L. Dahlberg', 'Nickcoy A. Findlater', 'Peter T. Tkacik']"
+"What Do We Teach to Engineering Students: Embedded Ethics, Morality, and Politics.",['Emanuele Ratti']
+Prevalence of Research Misconduct and Questionable Research Practices: A Systematic Review and Meta-Analysis.,"['Yan Kong', 'Yu Xie']"
+"Value Change, Value Conflict, and Policy Innovation: Understanding the Opposition to the Market-Based Economic Dispatch of Electricity Scheme in India Using the Multiple Streams Framework.",['Nihit Goyal']
+Socially Assistive Devices in Healthcare-a Systematic Review of Empirical Evidence from an Ethical Perspective.,"['Christoph Strunck', 'Jochen Vollmann', 'Joschka Haltaufderheide']"
+From Cases to Capacity? A Critical Reflection on the Role of 'Ethical Dilemmas' in the Development of Dual-Use Governance.,"['James Revill', 'Louise Bezuidenhout']"
+Ethical Value-Centric Cybersecurity: A Methodology Based on a Value Graph.,['Josep Domingo-Ferrer']
+Lack of Improvement in Scientific Integrity: An Analysis of WoS Retractions by Chinese Researchers (1997-2016).,['Ying Zhang']
+Educating PhD Students in Research Integrity in Europe.,"['Daniel Pizzolato', 'Kris Dierickx', 'Shila Abdi']"
+RESPONSE_ABILITY A Card-Based Engagement Method to Support Researchers' Ability to Respond to Integrity Issues.,['Ulrike Felt']
+Managerial Preferences in Relation to Financial Indicators Regarding the Mitigation of Global Change.,"['Radka Vanícková', 'Robert Zeman', 'Simona Hasková']"
+The Scientometric Bubble Considered Harmful.,"['Gonzalo Génova', 'Hernán Astudillo']"
+Research Ethics Promotion in Higher Education Institutes.,"['Payman Salamati', 'Zohrehsadat Naji']"
+ATM Card Cloning and Ethical Considerations.,"['Paramjit Kaur', 'Suresh K. Sharma', 'Tanuj Kanchan']"
+Development and Validation of the Survey of Organizational Research Climate (SORC).,"['Brian C. Martinson', 'Carol R. Thrush']"
+Intrinsic Ethics Regarding Integrated Assessment Models for Climate Management.,"['Kenneth J. Davis', 'Klaus Keller', 'Nancy Tuana', 'Seth D. Baum']"
+Beyond Halal: Maqasid al-Shari'ah to Assess Bioethical Issues Arising from Genetically Modified Crops.,"['Lee Wei Chang', 'Siti Hafsyah Idris']"
+Research Ethics Education in the STEM Disciplines: The Promises and Challenges of a Gaming Approach.,"['Elizabeth K. Larsen', 'J. Britt Holbrook', 'Joesph Hoffmann', 'Joseph Oppong', 'Patrick Pluscht']"
+Post-publication Peer Review with an Intention to Uncover Data/Result Irregularities and Potential Research Misconduct in Scientific Research: Vigilantism or Volunteerism?,['Nicole Shu Ling Yeo-Teh']
+Scientists Still Behaving Badly? A Survey Within Industry and Universities.,"['Kris Dierickx', 'Simon Godecharle', 'Steffen Fieuws']"
+Media Portrayal of a Landmark Neuroscience Experiment on Free Will.,"['Valentin Nguyen', 'Veljko Dubljevic', 'Victoria Saigle']"
+Should Manual Driving be (Eventually) Outlawed?,['Julian F. Müller']
+The Normative Orientations of Climate Scientists.,['Hans von Storch']
+The 'Magic Light': A Discussion on Laser Ethics.,['Michael A. Talias']
+The Scientist's Education and a Civic Conscience.,['Kelling J. Donald']
+Driving in the Dark: Designing Autonomous Vehicles for Reducing Light Pollution.,"['Pieter E. Vermaas', 'Taylor Stone']"
+'Blue Whale Challenge': A Game or Crime?,"['Neha Baryah', 'Richa Mukhra', 'Tanuj Kanchan']"
+Proving that China has a Profession of Engineering: A Case Study in Operationalizing a Concept Across a Cultural Divide.,['Michael Davis 0002']
+Correction to: The Moral Consideration of Artificial Entities: A Literature Review.,['Jamie Harris']
+The Necessary Limits to Temptation: The Turnkey Project.,"['Enrique Hernández-Montes', 'Luisa María Gil-Martín']"
+Intervention to Promote Responsible Conduct of Research Mentoring.,['Michael W. Kalichman']
+Relevant Information and Informed Consent in Research: In Defense of the Subjective Standard of Disclosure.,"['Marcin Waligora', 'Vilius Dranseika']"
+Identifying Criteria for the Evaluation of the Implications of Brain Reading for Mental Privacy.,['Pim Haselager']
+Ethical Artificial Intelligence in Chemical Research and Development: A Dual Advantage for Sustainability.,"['Gunter Hermann', 'Jean Christophe Tremblay']"
+Pharmacists' Assessment of the Difficulty and Frequency of Ethical Issues Encountered in Community Pharmacy Settings.,"['Mirko Savic', 'Tatjana Crnjanski']"
+Karl Pearson and Eugenics: Personal Opinions and Scientific Rigor.,['Darcie A. P. Delzell']
+"The Problem Is Not Professional Publishing, But the Publish-or-Perish Culture.",['José Luis de la Vara']
+Teaching Responsible Research and Innovation: A Phronetic Perspective.,"['Ana Marusic', 'Erich Griessler', 'Gema Revuelta', 'Gemma Rodríguez', 'Ivan Buljan', 'Malene Vinther Christensen', 'Mar Carrió', 'Marta Cayetano i Giralt', 'Milena Wuketich', 'Niels Mejlgaard', 'Núria Saladié', 'Roger Strand']"
+Advance Car-Crash Planning: Shared Decision Making between Humans and Autonomous Vehicles.,['David Shaw']
+Understanding Ill-Structured Engineering Ethics Problems Through a Collaborative Learning and Argument Visualization Approach.,['Michael Hoffmann']
+Broadening Ethics Teaching in Engineering: Beyond the Individualistic Approach.,['Henk Zandvoort']
+"Human Embryonic Stem Cell Research: Ethical Views of Buddhist, Hindu and Catholic Leaders in Malaysia.",['Siti Nurani Mohd Noor']
+Technology Development as a Normative Practice: A Meaning-Based Approach to Learning About Values in Engineering - Damming as a Case Study.,"['Marc J. de Vries', 'Mehdi F. Harandi']"
+Using Drones to Study Human Beings: Ethical and Regulatory Issues.,['Kevin C. Elliott']
+Social Freezing in Medical Practice. Experiences and Attitudes of Gynecologists in Germany.,"['Giovanni Rubeis', 'Grit Büchner-Mögling', 'Hansjakob Fries', 'Maximilian Schochow']"
+Developing and Communicating Responsible Data Management Policies to Trainees and Colleagues.,"['Julia Frugoli', 'Michael Kuhar']"
+Back to Basics: Application of the Principles of Bioethics to Heritable Genome Interventions.,['Landon J. Getz']
+A Quantitative Perspective on Ethics in Large Team Science.,"['Ioanna Semendeferi', 'Ioannis T. Pavlidis']"
+Robotic Nudges: The Ethics of Engineering a More Socially Just Human Being.,['Ron Arkin']
+The Problem of Many Hands: Climate Change as an Example.,"['Jessica Nihlén Fahlquist', 'Lambèr M. M. Royakkers', 'Neelke Doorn', 'Sjoerd Zwart']"
+Research Ethics: Researchers Consider How Best to Prevent Misconduct in Research in Malaysian Higher Learning Institutions Through Ethics Education.,"['Latifah Amin', 'Zurina Mahadi']"
+Ecocentrism and Biosphere Life Extension.,['Karim Jebari']
+The Strength of Ethical Matrixes as a Tool for Normative Analysis Related to Technological Choices: The Case of Geological Disposal for Radioactive Waste.,['Céline Kermisch']
+Limited Awareness of the Essences of Certification or Compliance Markings on Medical Devices.,['Xin Ji Alan Tan']
+Differing Perceptions Concerning Research Integrity Between Universities and Industry: A Qualitative Study.,"['Kris Dierickx', 'Simon Godecharle']"
+Performance of Ethical Military Research is Possible: On and Off the Battlefield.,"['John McManus', 'Michael Morris', 'Robert Gerhardt']"
+Strategies for Teaching Professional Ethics to IT Engineering Degree Students and Evaluating the Result.,"['Diego Pérez-López', 'Rafael Minano', 'Ángel Uruburu']"
+Assessing the Organizational Climate for Translational Research with a New Survey Tool.,"['Barbara Hendriks', 'Jens Ambrasat', 'Lisa Liebenau', 'Martin Reinhart', 'Nico Riedel', 'Stephanie Müller-Ohlraun', 'Ulf Toelch', 'Ulrich Dirnagl']"
+"Keeping the ""Human in the Loop"" in the Age of Artificial Intelligence.",['Fabrice Jotterand']
+Ethical and Philosophical Consideration of the Dual-use Dilemma in the Biological Sciences.,['Seumas Miller']
+Contested Technologies and Design for Values: The Case of Shale Gas.,"['Behnam Taebi', 'Eefje Cuppen', 'Marloes Dignum', 'Udo Pesch']"
+Grounds for Ambiguity: Justifiable Bases for Engaging in Questionable Research Practices.,"['Mitch Brown', 'Samuel V. Bruton']"
+Citizen Neuroscience: Brain-Computer Interface Researcher Perspectives on Do-It-Yourself Brain Research.,['Stephanie Naufel']
+The Epistemic Integrity of Scientific Research.,['Laszlo Kosolosky']
+Practices of Responsible Research and Innovation: A Review.,['Mirjam Schuijff']
+Understanding Value Change in the Energy Transition: Exploring the Perspective of Original Institutional Economics.,"['Eefje Cuppen', 'Udo Pesch']"
+Benchmarking Scientific Image Forgery Detectors.,['João P. Cardenuto']
+Realism and Impartiality: Making Sustainability Effective in Decision-Making.,['Miquel Bastons']
+Integrating Value Considerations in the Decision Making for the Design of Biorefineries.,"['Lotte Asveld', 'Mar Palmeros Parada', 'Patricia Osseweijer']"
+Retractions and Rewards in Science: An Open Question for Reviewers and Funders.,"['Michael W. Kalichman', 'Sonia M. R. Vasconcelos']"
+Fictional Film in Engineering Ethics Education: With Miyazaki's The Wind Rises as Exemplar.,['Thomas Taro Lennerfors']
+Can Authorship be Denied for Contract Work?,['Livia Puljak']
+"Perpetuation of Retracted Publications Using the Example of the Scott S. Reuben Case: Incidences, Reasons and Possible Improvements.","['Helmar Bornemann-Cimenti', 'Istvan S. Szilagyi']"
+Science and Engineering Ethics at Springer.,['Stephanie J. Bird']
+A Review of Contemporary Work on the Ethics of Ambient Assisted Living Technologies for People with Dementia.,"['Bert Gordijn', 'Cynthia Chen', ""Dónal O'Mathúna"", ""Fiachra O'Brolcháin"", 'Kate Irving', 'Peter Novitzky', 'Tim Jacquemard']"
+Ethical Issues in Social Science Research Employing Big Data.,"['Michal Wieczorek', 'Mohammad Hosseini']"
+Global Catastrophic Risk and the Drivers of Scientist Attitudes Towards Policy.,['Keith Hyams']
+Editors' Overview Perspectives on Teaching Social Responsibility to Students in Science and Engineering.,"['Michael Deneke', 'Stephanie J. Bird', 'Tom Børsen']"
+Ethical Decision Making in Autonomous Vehicles: The AV Ethics Project.,"['Katherine Evans', 'Nelson de Moura', 'Raja Chatila 0001', 'Stephane Chauvier']"
+AI Moral Enhancement: Upgrading the Socio-Technical System of Moral Engagement.,['Richard Volkman']
+Maqasid al-Shariah as a Complementary Framework to Conventional Bioethics.,"['Noor Munirah Isa', 'Noor Naemah Abdul Rahman', 'Shaikh Mohd Saifuddeen']"
+Hiding Behind Machines: Artificial Agents May Help to Evade Punishment.,"['Matthias Uhl', 'Till Feier']"
+Exploring Why and How Journal Editors Retract Articles: Findings From a Qualitative Study.,['Peter Williams']
+"Scientists' Views on the Ethics, Promises and Practices of Synthetic Biology: A Qualitative Study of Australian Scientific Practice.",['Wendy Rogers']
+A Hippocratic Oath for Mathematicians? Mapping the Landscape of Ethics in Mathematics.,"['James Franklin', 'Maurice Chiodo']"
+The Influence of Disclosure and Ethics Education on Perceptions of Financial Conflicts of Interest.,"['Chris J. N. Lustgraaf', 'Donald F. Sacco', 'Samuel V. Bruton']"
+Unethical Postgraduate Supervision.,"['Javad Yahaghi', 'Shahryar Sorooshian']"
+What Crisis? Management Researchers' Experiences with and Views of Scholarly Misconduct.,['Gary A. Hoover']
+"Social Robotics, Education, and Religion in the Islamic World: An Iranian Perspective.","['Alireza Taheri', 'Azadeh Shariati', 'Minoo Alemi']"
+Should We Aim to Create a Perfect Healthy Utopia? Discussions of Ethical Issues Surrounding the World of Project Itoh's Harmony.,"['Motoki Ohnishi', 'Seiji Bito', 'Taketoshi Okita']"
+"Ethics, Finance, and Automation: A Preliminary Survey of Problems in High Frequency Trading.","['Ben Van Vliet', 'Michael Davis 0002']"
+Some Review Journals Do Not Allow Students to Author Reviews: Is this Ethical?,"['Omid Mahian', 'Somchai Wongwises']"
+"Differences in Biases and Compensatory Strategies Across Discipline, Rank, and Gender Among University Academics.","['Jensen T. Mecca', 'Kelsey E. Medeiros', 'Lynn D. Devenport', 'Michael D. Mumford', 'Shane Connelly', 'Vincent Giorgini']"
+The Boeing 737 MAX: Lessons for Engineering Ethics.,"['Joseph Herkert', 'Keith W. Miller 0001']"
+Engineering Ethics in Puerto Rico: Issues and Narratives.,['William J. Frey']
+Contextual Exceptionalism After Death: An Information Ethics Approach to Post-Mortem Privacy in Health Data Research.,['Marieke Ar Bak']
+"Toward a Dirty Environmental Ethics: From Theoria to Techné - Mark Coeckelbergh: Environmental Skill: Motivation, Knowledge, and the Possibility of a Non-Romantic Environmental Ethics, Routledge, New York, 2015, 218 pp+index, ISBN: 978-1-138-88557-8.",['Tong Li']
+"Medical Students' Acquaintance with Core Concepts, Institutions and Guidelines on Good Scientific Practice: A Pre- and Post-questionnaire Survey.","['Katharina Fuerholzer', 'Maximilian Schochow', 'Richard Peter']"
+Engineering Students as Co-creators in an Ethics of Technology Course.,"['Diana Adela Martin', 'Erik Laes', 'Gunter Bombaerts', 'Karolina Doulougeri', 'Shelly Tsui']"
+Does Proof of Concept Trump All? RRI Dilemmas in Research Practices.,['Harald Throne-Holst']
+Towards a Framework for Research Ethics Education for Physicians in Serbia.,"['Dejan Donev', 'Jelena Dotlic', 'Tatjana Gazibara', 'Vida Jeremic Stojkovic']"
+Should DBS for Psychiatric Disorders be Considered a Form of Psychosurgery? Ethical and Legal Considerations.,"['Laura Cabrera', 'Tyler Gibb']"
+Responses of Authors Accused of Plagiarism by Journal Editors.,['Viroj Wiwanitkit']
+Why Do Firms Implement Responsible Innovation? The Case of Emerging Technologies in South Korea.,['Yeonbae Kim']
+Ethical Modernization: Research Misconduct and Research Ethics Reforms in Korea Following the Hwang Affair.,['Kibeom Park']
+Clinical Trial Application in Europe: What Will Change with the New Regulation?,"['Annagrazia Altavilla', 'Lucia Ruggieri', 'Viviana Giannuzzi']"
+An Online Lab Examination Management System (OLEMS) to Avoid Malpractice.,"['Manjur S. Kolhar', 'Zakaria Mukhtar Gharsseldien']"
+Remembering Vivian Weil.,"['Michael Davis 0002', 'Michael S. Pritchard', 'Rachelle D. Hollander']"
+A global Newton method to compute Nash equilibria.,['Srihari Govindan']
+Ramsey Equilibrium in a Two-Sector Model with Heterogeneous Households.,['Robert A. Becker']
+English auctions and the Stolper-Samuelson theorem.,"['Federico Echenique', 'Juan Dubra']"
+Information acquisition and mutual funds.,['Joel M. Vanden']
+Loss aversion in strategy-proof school-choice mechanisms.,['Vincent Meisner']
+Cultural transmission with incomplete information.,['Sebastiano Della Lena']
+Regret theory: A new foundation.,['Jeeva Somasundaram']
+The feedback effect in two-sided markets with bilateral investments.,"['Deniz Dizdar', 'Nora Szech']"
+Collusion and the organization of delegated expertise.,['Denis Gromb']
+Welfare-improving ambiguity in insurance markets with asymmetric information.,['Roman Kozhan']
+Bilateral commitment.,"['Ludovic Renou', 'Sophie Bade']"
+Public versus private risk sharing.,['Fabrizio Perri']
+On the Markovian efficiency of Bertrand and Cournot equilibria.,['Paola Labrecciosa']
+Dynamic choice in a complex world.,['Murali Agastya']
+Common belief foundations of global games.,"['Muhamet Yildiz', 'Stephen Morris']"
+On multivariate prudence.,"['Diego Nocetti', 'Elyès Jouini']"
+Implications of uncertainty for optimal policies.,['Todd Lensman']
+A general theory of subjective mixtures.,['Paolo Ghirardato']
+Understanding Markov-switching rational expectations models.,"['Roger E. A. Farmer', 'Tao Zha']"
+Rational status quo.,['Itzhak Gilboa']
+Convergence of cultural traits with time-varying self-confidence in the Panebianco (2014) model - A corrigendum.,"['Fabrizio Panebianco', 'Jan-Peter Siedlarek']"
+A fiscal theory of money and bank liquidity provision.,"['Ping He', 'Zehao Liu']"
+Strategic stability in Poisson games.,"['Claudia Meroni', 'Francesco De Sinopoli']"
+What matters in school choice tie-breaking? How competition guides design.,['Itai Ashlagi']
+The demand for information: More heat than light.,"['Jussi Keppo', 'Lones Smith']"
+On trees and logs.,['David Cass']
+Robust option pricing: Hannan and Blackwell meet Black and Scholes.,"['Peter M. DeMarzo', 'Yishay Mansour']"
+The efficiency of competitive mechanisms under private information.,['Rann Smorodinsky']
+Envy freedom and prior-free mechanism design.,"['Nikhil R. Devanur', 'Qiqi Yan']"
+Trust in cohesive communities.,['Juan F. Escobar']
+On the value of persuasion by experts.,['Ricardo Alonso']
+The effect of decision weights in bargaining problems.,['Veronika Köbberling']
+On stable and efficient mechanisms for priority-based allocation problems.,"['Qianfeng Tang', 'Yongchao Zhang']"
+Heterogeneous quantal response equilibrium and cognitive hierarchies.,"['Colin F. Camerer', 'Thomas R. Palfrey']"
+"Multitask principal-agent problems: Optimal contracts, fragility, and effort misallocation.",['Philip Bond']
+Continuous-time games of timing.,"['Nicolas Vieille', 'Rida Laraki']"
+Consumption and bubbles.,['Mark Loewenstein']
+Comparative risk aversion: A formal approach with applications to saving behavior.,"['Arnold Chassagnon', 'François Le Grand']"
+Bayesian beliefs with stochastic monotonicity: An extension of Machina and Schmeidler.,['Simon Grant']
+Continuous unimodal maps in economic dynamics: On easily verifiable conditions for topological chaos.,"['M. Ali Khan', 'Tapan Mitra']"
+Learning and selfconfirming equilibria in network games.,"['Paolo Pin', 'Pierpaolo Battigalli']"
+Pareto efficient combinatorial auctions: Dichotomous preferences without quasilinearity.,['Komal Malik']
+House price dynamics with dispersed information.,['Zheng Song']
+Pareto optima and equilibria when preferences are incompletely known.,['Rose-Anne Dana']
+"Heterogeneity, decentralized trade, and the long-run real effects of inflation.",['Tao Zhu']
+Repeated games with present-biased preferences.,"['Lones Smith', 'Pavlo Prokopovych']"
+Ambiguity aversion and wealth effects.,"['Massimo Marinacci', 'Simone Cerreia-Vioglio']"
+"Lotteries, Sunspots, and Incentive Constraints.","['Edward C. Prescott', 'Timothy J. Kehoe']"
+Money and price posting under private information.,['Mei Dong']
+Information percolation in segmented markets.,"['Gustavo Manso', 'Semyon Malamud']"
+Convex dynamic programming with (bounded) recursive utility.,['Yiannis Vailakis']
+Optimal stopping with private information.,['Thomas Kruse']
+Von Neumann-Morgenstern solutions in the assignment market.,['Marina Núñez']
+Indeterminacy with Non-separable Utility.,['Rosalind L. Bennett']
+Agency-based asset pricing.,"['Lixin Huang', 'Ping He']"
+A new ex-ante efficiency criterion and implications for the probabilistic serial mechanism.,"['Kemal Yildiz', 'Serhat Dogan']"
+"Detectability, duality, and surplus extraction.","['Giuseppe Lopomo', 'Luca Rigotti']"
+Finite-population evolution with rare mutations in asymmetric games.,['Laura K. Hayward']
+Strategic mistakes.,['Karthik A. Sastry']
+Investments as signals of outside options.,['Susanne Goldlücke']
+Regulating collateral-requirements when markets are incomplete.,"['Felix Kubler', 'Susan Schommer']"
+Fuel for economic growth?,['Johan Gars']
+On the informational inefficiency of discriminatory price auctions.,['Matthew O. Jackson']
+Some unpleasant bargaining arithmetic?,['Hülya Eraslan']
+Production Externalities and Urban Configuration.,"['Ping Wang', 'Shin-Kun Peng']"
+The Gini coefficient: Majority voting and social welfare.,['Rafael Salas']
+Uniqueness and stability of equilibrium in economies with two goods.,['Kieran James Walsh']
+Preference for Knowledge.,"['Hung-Chi Chang', 'Wen-Tai Hsu']"
+Robust equilibria under non-common priors.,['Olivier Tercieux']
+"Ambiguity, optimism, and pessimism in adverse selection models.",['Raphaël Giraud']
+Uncertainty and the specificity of human capital.,"['Igor Livshits', 'Martin Gervais']"
+When is multidimensional screening a convex program?,"['Robert J. McCann', 'Young-Heon Kim']"
+On a Class of Stable Random Dynamical Systems: Theory and Applications.,['Rabi Bhattacharya']
+Sunspots and the Business Cycle in a Finance Constrained Economy.,['Jean-Paul Barinci']
+On public good provision mechanisms with dominant strategies and balanced budget.,['Jan-Henrik Steg']
+The refoundation of the symmetric equilibrium in Schumpeterian growth models.,"['Luca Zamparelli', 'Paolo Giordani']"
+Key leaders in social networks.,['Ying-Ju Chen']
+The Core of Large Differentiable TU Games.,['Massimo Marinacci']
+The Value of Information in Production Economies.,['Itzhak Zilcha']
+Optimal accumulation in an endogenous growth setting with human capital.,"['Oliver Paddison', 'Pierre Pestieau']"
+Trading dynamics in decentralized markets with adverse selection.,['Braz Camargo']
+Rationalizable implementation.,"['Olivier Tercieux', 'Stephen Morris']"
+Optimal risk sharing and borrowing constraints in a continuous-time model with limited commitment.,['Yuzhe Zhang']
+"Efficiency, stability, and commitment in senior level job matching markets.",['Zaifu Yang']
+The strategy-proof provision of public goods under congestion and crowding preferences.,['Matthew O. Jackson']
+Bidder collusion.,['Robert C. Marshall']
+"With exhaustible resources, can a developing country escape from the poverty trap?","['Katheline Schubert', 'Tu Anh Nguyen']"
+"Financial frictions, the housing market, and unemployment.","['Nicolas Petrosky-Nadeau', 'William A. Branch']"
+An undominated mechanism for a class of informed principal problems with common values.,['Miltiadis Makris']
+Noncooperative household demand.,['Valérie Lechene']
+Structural Stability Implies Robustness to Bounded Rationality.,['Luca Anderlini']
+Weak cartels and collusion-proof auctions.,"['Jinwoo Kim 0003', 'Yeon-Koo Che']"
+Recursive robust estimation and control without commitment.,['Thomas J. Sargent']
+Competing auctions with endogenous quantities.,"['Benny Moldovanu', 'Xianwen Shi']"
+Marital preferences and stable matching in cultural evolution.,"['Jiabin Wu', 'Victor Hiller']"
+A Spatial-Temporal Model of Human Capital Accumulation.,['Venkatesh Bala']
+Household behavior and the marriage market.,['Daniela Del Boca']
+Targeted search in matching markets.,"['Antonella Tutino', 'Paulina Restrepo-Echavarria']"
+Random utility models with ordered types and domains.,['Miguel A. Ballester']
+Awareness of unawareness: A theory of decision making in the face of ignorance.,['Marie-Louise Vierø']
+On stable and strategy-proof rules in matching markets with contracts.,['Yusuke Kasuya']
+The design of monetary and fiscal policy: A global perspective.,['Stefano Eusepi']
+Stochastic mechanisms in settings without monetary transfers: The regular case.,['Tymofiy Mylovanov']
+Unique monetary equilibrium with inflation in a stationary Bewley-Aiyagari model.,['Tai-Wei Hu']
+Efficient Intertemporal Allocations with Recursive Utility.,"['Raman Uppal', 'Tan Wang']"
+Retrading in market games.,['Sayantan Ghosal']
+The micro economics of group behavior: General characterization.,['Pierre-Andre Chiappori']
+Lifetime consumption and investment: Retirement and constrained borrowing.,['Philip H. Dybvig']
+Credit attribution and collaborative work.,['Saltuk Ozerturk']
+Matching with myopic and farsighted players.,"['P. Jean-Jacques Herings', 'Vincent Vannetelbosch']"
+Large deviations and multinomial probit choice.,['William H. Sandholm']
+Impermanent types and permanent reputations.,"['Mehmet Ekmekci', 'Olivier Gossner']"
+"Public education expenditures, growth and income inequality.",['Lionel Artige']
+Afriat in the lab.,['Paul van Bruggen']
+Bayesian consistent belief selection.,['Takashi Hayashi 0001']
+"Renegotiation-proof contracting, disclosure, and incentives for efficient investment.","['Nina Baranchuk', 'Philip H. Dybvig']"
+Bargaining and competition revisited.,['Takashi Kunimoto']
+Learning about analysts.,['Jesper Rüdiger']
+Efficiency and surplus bounds in Cournot competition.,['Simon P. Anderson']
+"Loss aversion, survival and asset prices.",['Liyan Yang']
+Robust equilibrium outcomes in sequential games under almost common certainty of payoffs.,['Satoru Takahashi']
+Sharing the surplus: An extension of the Shapley value for environments with externalities.,"['David Wettstein', 'Inés Macho-Stadler']"
+Greater downside risk aversion in the large.,['Donald C. Keenan']
+Anonymous monotonic social welfare functions.,"['Jay Sethuraman', 'Rakesh V. Vohra']"
+Government guarantees and financial stability.,"['Elena Carletti', 'Franklin Allen', 'Itay Goldstein']"
+Optimal debt contracts and product market competition with exit and entry.,['Naveen Khanna']
+The direction of innovation.,['Kevin A. Bryan']
+Optimal government policies in models with heterogeneous agents.,['Radim Bohácek']
+Trade and Indeterminacy in a Dynamic General Equilibrium Model.,['Koji Shimomura']
+"General equilibrium, wariness and efficient bubbles.","['Mário R. Páscoa', 'Rodrigo Novinski']"
+Optimal redistributive taxation with both extensive and intensive responses.,"['Etienne Lehmann', 'Laurence Jacquet']"
+Randomized strategies and prospect theory in a dynamic context.,"['David Hobson', 'Vicky Henderson']"
+Redistribution by means of lotteries.,['Stéphane Gauthier']
+Public goods with ambiguity in large economies.,['Yangwei Song']
+The value of a coordination game.,"['Willemien Kets', 'Wouter Kager']"
+A necessary and sufficient condition for non-emptiness of the core of a non-transferable utility game.,['P. Jean-Jacques Herings']
+The dark side of transparency: When hiding in plain sight works.,['Tatiana Mayskaya']
+Learning-by-Doing and the Choice of Technology: The Role of Patience.,['Larry Karp']
+Status Quo Bias in Bargaining: An Extension of the Myerson-Satterthwaite Theorem with an Application to the Coase Theorem.,['Talbot Page']
+Intermediaries and payments instruments.,['James Bullard']
+Rental harmony with roommates.,['Yaron Azrieli']
+Incentive efficient risk sharing in a settlement mechanism.,"['Edward J. Green', 'Hiroshi Fujiki']"
+Building rational cooperation.,['Larry Samuelson']
+Equilibrium selection in global games with strategic complementarities.,"['David M. Frankel', 'Stephen Morris']"
+An experiment on learning in a multiple games environment.,['Veronika Grimm']
+"Money, credit and banking.","['Christopher Waller', 'Gabriele Camera']"
+Existence and Uniqueness of Equilibrium in Distorted Dynamic Economies with Capital and Labor.,"['Leonard J. Mirman', 'Manjira Datta']"
+Filtral preorders and opportunity inequality.,['Stefano Vannucci']
+Social security and risk sharing.,['Piero Gottardi']
+Auctioning and selling positions: A non-cooperative approach to queueing conflicts.,"['Youngsub Chun', 'Yuan Ju']"
+Repeated games with general discounting.,['Jaeok Park']
+Growth Cycles and Market Crashes.,['Michele Boldrin']
+From imitation to collusion: Long-run learning in a low-information environment.,"['Ryan Oprea', 'Simon Weidenholzer', 'Steffen Huck']"
+The strategy of conquest.,"['Marcin Dziubinski', 'Sanjeev Goyal']"
+Justifying social discounting: The rank-discounted utilitarian approach.,['Stéphane Zuber']
+A general characterization of interim efficient mechanisms for independent linear environments.,['Thomas R. Palfrey']
+Stability for best experienced payoff dynamics.,"['Segismundo S. Izquierdo', 'William H. Sandholm']"
+"Search theory, competitive equilibrium, and the Nash bargaining solution.",['In-Koo Cho']
+Fiscal policy under loose commitment.,['Ricardo Nunes']
+Strategic observation with exponential bandits.,['Lucie Ménager']
+On investor preferences and mutual fund separation.,['Philip H. Dybvig']
+Impartial division of a dollar.,"['Hervé Moulin 0001', 'T. Nicolaus Tideman']"
+A monetary theory with non-degenerate distributions.,"['Hongfei Sun', 'Shouyong Shi']"
+Implementation via rights structures.,['Semih Koray']
+Welfare egalitarianism in non-rival environments.,['Yves Sprumont']
+Modeling large societies: Why countable additivity is necessary.,"['Lei Qiao', 'M. Ali Khan', 'Yeneng Sun']"
+Price impact under heterogeneous beliefs and restricted participation.,['Michail Anthropelos']
+Comparing ambiguous urns with different sizes.,"['Erkut Y. Ozbay', 'Huseyin Gulen', 'Yusufcan Masatlioglu']"
+A two-person game of information transmission.,['Nancy L. Stokey']
+A second chance at success: A political economy perspective.,['Tetsuo Ono']
+Optimal auctions with financially constrained buyers.,['Rakesh Vohra']
+The logic of backward induction.,['Robert J. Aumann']
+Attentional role of quota implementation.,['Sergei Mikhalishchev']
+Equilibrium refinement for a model of non-monocentric internal structures of cities: A potential game approach.,['Takashi Akamatsu']
