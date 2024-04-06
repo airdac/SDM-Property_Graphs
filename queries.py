@@ -15,10 +15,10 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             RETURN conference.title AS CONFERENCE, COLLECT(cited_p.title)[..3] AS TOP_CITED_PAPERS
             ORDER BY CONFERENCE
             ''', database_=db
-        )
+                                                      )
         for record in records:
             pass
-            #print(record)
+            # print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
@@ -39,10 +39,10 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             RETURN CONFERENCE, COMMUNITY
             ORDER BY COALESCE(size(COMMUNITY), -1) DESC, CONFERENCE
             ''', database_=db
-        )
+                                                      )
         for record in records:
             pass
-            #print(record)
+            # print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
@@ -64,10 +64,10 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             RETURN JOURNAL, CITATIONS *1.0 / PUBLICATIONS AS IMPACT_FACTOR
             ORDER BY IMPACT_FACTOR DESC, JOURNAL
             ''', database_=db
-        )
+                                                      )
         for record in records:
             pass
-            #print(record)
+            # print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after
@@ -89,10 +89,10 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             RETURN author, MAX(row_number)+1 AS h_index
             ORDER BY author
             ''', database_=db
-        )
+                                                      )
         for record in records:
             pass
-            #print(record)
+            # print(record)
         print("The query `{query}` returned {records_count} records in {time} ms.".format(
             query=summary.query, records_count=len(records),
             time=summary.result_available_after

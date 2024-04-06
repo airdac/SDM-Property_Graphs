@@ -36,14 +36,18 @@ np.random.seed(123)
 
 # Data paths
 # CHANGE IF NEEDED
-TEMP = PureWindowsPath('C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master')
-#TEMP = PureWindowsPath("D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv")
+TEMP = PureWindowsPath(
+    'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master')
+# TEMP = PureWindowsPath("D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv")
 TEMP = Path(TEMP)
-#OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
-OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
+# OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
+OUT = PureWindowsPath(
+    'C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
 OUT = Path(OUT)
-yearf = date.today().year   # We only get papers from the last 25 years (current year not included) and we balance the data in each year
+# We only get papers from the last 25 years (current year not included) and we balance the data in each year
+yearf = date.today().year
 n_years = 25
+
 
 def csv_full_read(name_datacsv, name_headers, col_names):
     """
@@ -73,6 +77,7 @@ def csv_full_read(name_datacsv, name_headers, col_names):
 
     return selected_data_raw
 
+
 def csv_chunk_read(name_datacsv, name_headers, n_sample, col_names, chunksize):
     """
     Functionality: retrieve selected rows and columns from a .csv into a pd.DataFrame
@@ -97,13 +102,13 @@ def csv_chunk_read(name_datacsv, name_headers, n_sample, col_names, chunksize):
         names=headers_col_names,
         index_col=headers_col_names[0],
         usecols=col_names,
-        header=None
-        , chunksize=chunksize
+        header=None, chunksize=chunksize
     )
 
     return selected_data_raw
 
-def article_feature_extraction(name_datacsv, name_headers, col_names, chunksize=100, n_sample=10000, year0 = yearf-n_years, yearf = yearf):
+
+def article_feature_extraction(name_datacsv, name_headers, col_names, chunksize=100, n_sample=10000, year0=yearf-n_years, yearf=yearf):
     '''
         Functionality: get data from years between year0 and yearf
     '''
@@ -111,13 +116,9 @@ def article_feature_extraction(name_datacsv, name_headers, col_names, chunksize=
     years = list(range(year0, yearf))
     year_searched = years.pop()
 
-    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv
-                                , name_headers=TEMP / name_headers
-                                , n_sample=n_sample
-                                , col_names=col_names
-                                , chunksize=chunksize
+    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv, name_headers=TEMP / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
                                 ):
-        
+
         chunk = chunk[chunk.year == year_searched]
         df = pd.concat([df, chunk])
         if len(df[df.year == year_searched]) >= chunksize:
@@ -129,20 +130,18 @@ def article_feature_extraction(name_datacsv, name_headers, col_names, chunksize=
     return df
 
 # We only process papers from conferences we have data from. By filtering at read-time, we get to read more records in a reasonable time.
-def inproc_feature_extraction(name_datacsv, name_headers, col_names, editions, chunksize=100, n_sample=100000, year0 = yearf-n_years, yearf = yearf):
+
+
+def inproc_feature_extraction(name_datacsv, name_headers, col_names, editions, chunksize=100, n_sample=100000, year0=yearf-n_years, yearf=yearf):
     '''
         Functionality: get papers from years between year0 and yearf and most conference editions
     '''
     df = pd.DataFrame()
     years = set(range(year0, yearf))
 
-    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv
-                                , name_headers=TEMP / name_headers
-                                , n_sample=n_sample
-                                , col_names=col_names
-                                , chunksize=chunksize
+    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv, name_headers=TEMP / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
                                 ):
-        
+
         chunk = chunk[chunk.year.isin(years) & chunk.crossref.isin(editions)]
         df = pd.concat([df, chunk])
         new_years = years.copy()
@@ -154,6 +153,7 @@ def inproc_feature_extraction(name_datacsv, name_headers, col_names, editions, c
             break
 
     return df
+
 
 def authors_preprocessing(raw_data):
     """
@@ -174,7 +174,8 @@ def authors_preprocessing(raw_data):
     # https://stackoverflow.com/questions/57617456/split-pandas-dataframe-column-list-values-to-duplicate-rows
     raw_data.author_id = raw_data["author_id"].str.split("|")
 
-    raw_data['author_id_raw'] = raw_data.author_id # Make a copy before preprocessing
+    # Make a copy before preprocessing
+    raw_data['author_id_raw'] = raw_data.author_id
     raw_data = raw_data.explode("author_id").reset_index(drop=True)
 
     # Set the main author for each paper
@@ -193,6 +194,7 @@ def authors_preprocessing(raw_data):
 
     return raw_data
 
+
 def ee_preprocessing(df):
     """
     Functionality: For each paper, split ee by '|' and only
@@ -202,11 +204,13 @@ def ee_preprocessing(df):
     Output: input pd.DataFrame with clean column ee, according to the
         aboved described functionality
     """
-    uptodate_ee = [x if x is np.nan or type(x) == bool else x.split("|")[-1] for x in df.ee]
+    uptodate_ee = [x if x is np.nan or type(
+        x) == bool else x.split("|")[-1] for x in df.ee]
     df.assign(ee=uptodate_ee)
     df.rename(columns={"ee": "DOI"}, inplace=True)
 
     return df
+
 
 def surname_preprocessing(df):
     """ """
@@ -228,6 +232,7 @@ def surname_preprocessing(df):
     df["surname"] = surname
 
     return df
+
 
 def extract_keywords(
     id,
@@ -273,6 +278,7 @@ def extract_keywords(
 
     return full_dict, valid_dict, valid_article
 
+
 def generate_keywords(dict, all_id, valid_id, n_keywords=20):
     """
     Functionality: Generate a number of keywords and apply them
@@ -291,11 +297,12 @@ def generate_keywords(dict, all_id, valid_id, n_keywords=20):
         dict[random_tag].add(id)
     return dict
 
+
 def generate_reviews(paper_node, author_node, main_author, co_author):
     all_reviews, reviews = [None] * len(paper_node), set()
 
     for ind, paper in enumerate(paper_node.index):
-        max_iteration = random.randrange(3,10)
+        max_iteration = random.randrange(3, 10)
         paper_title = paper_node.title[paper]
 
         while len(reviews) < max_iteration:
@@ -303,18 +310,19 @@ def generate_reviews(paper_node, author_node, main_author, co_author):
 
             # Check that the author is not the main author or a co-writer of the paper
             if paper_title in main_author.keys()\
-                and random_author == main_author[paper_title]:
+                    and random_author == main_author[paper_title]:
                 continue
             if paper_title in co_author.keys()\
-                and random_author in co_author[paper_title]:
+                    and random_author in co_author[paper_title]:
                 continue
             reviews.add(random_author)
 
-        # When all reviwers for a paper are generated store them and start again  
+        # When all reviwers for a paper are generated store them and start again
         all_reviews[ind] = reviews
         reviews = set()
-                           
+
     return all_reviews
+
 
 def node_creation(col_name, col_id, df1, df2=pd.DataFrame()):
     df1_subset = df1[col_name]
@@ -327,14 +335,16 @@ def node_creation(col_name, col_id, df1, df2=pd.DataFrame()):
         node = node_raw.drop_duplicates(subset=col_id)
     return node
 
-def generate_citations(papers, min_rel = 10, max_rel = 30):
+
+def generate_citations(papers, min_rel=10, max_rel=30):
     all_relations, relations = [None] * len(papers), set()
 
     for j, paper in enumerate(papers.index):
-        max_iteration = random.randrange(min_rel,max_rel)
+        max_iteration = random.randrange(min_rel, max_rel)
         paper_title = papers.title[paper]
         paper_year = papers.year[paper]
-        possible_papers = papers.title[papers.year < paper_year]    # A paper can only cite previous papers
+        # A paper can only cite previous papers
+        possible_papers = papers.title[papers.year < paper_year]
         if possible_papers.empty:
             continue
 
@@ -346,7 +356,7 @@ def generate_citations(papers, min_rel = 10, max_rel = 30):
 
         all_relations[j] = relations
         relations = set()
-                            
+
     return all_relations
 
 
@@ -357,7 +367,7 @@ def generate_citations(papers, min_rel = 10, max_rel = 30):
 if __name__ == "__main__":
     ############################################################################################################
     # Read data
-    ############################################################################################################´
+    # ´
 
     # Select articles from metadata to import from each file
     col_article = [
@@ -378,24 +388,17 @@ if __name__ == "__main__":
         "title"
     ]
     col_proc = ["proceedings", "booktitle", "title", "key", "year"]
-    
+
     proc_raw = csv_full_read(          # We read all proceedings because there are less than 10,000
-        TEMP / "dblp_proceedings.csv"
-        , TEMP / "dblp_proceedings_header.csv"
-        , col_names=col_proc
+        TEMP / "dblp_proceedings.csv", TEMP / "dblp_proceedings_header.csv", col_names=col_proc
     )
     inproc_raw = inproc_feature_extraction(
-        TEMP / "dblp_inproceedings.csv"
-        , TEMP / "dblp_inproceedings_header.csv"
-        , col_inproc
-        , editions=set(proc_raw.key.unique())
-    )    
-    article_raw = article_feature_extraction(
-        TEMP / "dblp_article.csv"
-        , TEMP / "dblp_article_header.csv"
-        , col_article
+        TEMP / "dblp_inproceedings.csv", TEMP / "dblp_inproceedings_header.csv", col_inproc, editions=set(proc_raw.key.unique())
     )
-    
+    article_raw = article_feature_extraction(
+        TEMP / "dblp_article.csv", TEMP / "dblp_article_header.csv", col_article
+    )
+
     ############################################################################################################
     # Preprocessing
     ############################################################################################################
@@ -411,7 +414,8 @@ if __name__ == "__main__":
 
     # Join inproc and proc dataframes: "cross-ref" in inproc is "key" in proc
     proc_raw.rename(
-        columns={"key": "crossref", "title": "edition_title", "year": "edition_year"},
+        columns={"key": "crossref", "title": "edition_title",
+                 "year": "edition_year"},
         inplace=True,
     )
     conference_raw = pd.merge(inproc_raw, proc_raw, on="crossref")
@@ -428,23 +432,24 @@ if __name__ == "__main__":
     conference = surname_preprocessing(conference)
 
     ############################################################################################################
-    ### Creation of nodes
+    # Creation of nodes
     ############################################################################################################
 
-    ## AUTHOR node
+    # AUTHOR node
     author_node = node_creation(
         ["author_id", "name", "surname", "name_id"],
         "author_id",
         article,
         conference
     )
-    author_node.dropna(inplace = True)
+    author_node.dropna(inplace=True)
     author_node.to_csv(OUT/'author_node.csv', index=False)
 
-    ## PAPER node
-    paper_node = node_creation(["title", "DOI", "year"], "title", article, conference)
+    # PAPER node
+    paper_node = node_creation(
+        ["title", "DOI", "year"], "title", article, conference)
     paper_node.replace(False, "NaN", inplace=True)
-    
+
     # Generate artificial abstracts
     random_abstract = []
     for i in range(len(paper_node)):
@@ -454,10 +459,10 @@ if __name__ == "__main__":
         random_abstract.append(x)
 
     paper_node["abstract"] = random_abstract
-    paper_node.dropna(inplace = True)
+    paper_node.dropna(inplace=True)
     paper_node.to_csv(OUT/'paper_node.csv', index=False)
 
-    ## KEYWORD node
+    # KEYWORD node
     # Extract Keywords for each article
     all_keywords, valid_keywords = {}, {}
     valid_id = set([])
@@ -472,47 +477,50 @@ if __name__ == "__main__":
         )
 
     # Generate artificial keywords for the papers that are left
-    valid_keywords = generate_keywords(valid_keywords, paper_node.index, valid_id)
+    valid_keywords = generate_keywords(
+        valid_keywords, paper_node.index, valid_id)
 
     keywords_node = pd.DataFrame(
         valid_keywords.items(), columns=["Keyword", "Article_id"]
     )
-    keywords_node.to_csv(OUT/'keywords_node.csv', index = False)
+    keywords_node.to_csv(OUT/'keywords_node.csv', index=False)
 
     # JOURNAL node
     journal_node = node_creation(["journal"], "journal", article)
-    
+
     editors = []
     for i in range(len(journal_node)):
         editors.append(author_node["author_id"].sample(1).iat[0])
 
     journal_node["editor"] = editors
-    journal_node.dropna(inplace = True)
-    journal_node.to_csv(OUT/'journal_node.csv', index = False)
+    journal_node.dropna(inplace=True)
+    journal_node.to_csv(OUT/'journal_node.csv', index=False)
 
     # VOLUME node
     volume_node = node_creation(["volume", "year"], "volume", article)
-    volume_node.dropna(inplace = True)
-    volume_node.to_csv(OUT/'volume_node.csv', index = False)
+    volume_node.dropna(inplace=True)
+    volume_node.to_csv(OUT/'volume_node.csv', index=False)
 
     # CONFERENCE node
-    conference_node = node_creation(["con_shortname"], "con_shortname", conference)
-    conference_node.dropna(inplace = True)
-    conference_node.to_csv(OUT/'conference_node.csv', index = False)
+    conference_node = node_creation(
+        ["con_shortname"], "con_shortname", conference)
+    conference_node.dropna(inplace=True)
+    conference_node.to_csv(OUT/'conference_node.csv', index=False)
 
     # EDITION node
     edition_node = node_creation(
         ["edition_title", "edition_year"], "edition_title", conference
     )
-    edition_node.dropna(inplace = True)
-    edition_node.to_csv(OUT/'edition_node.csv', index = False)
+    edition_node.dropna(inplace=True)
+    edition_node.to_csv(OUT/'edition_node.csv', index=False)
 
     ############################################################################################################
     # Creation of edges
     ############################################################################################################
     # REVIEWS edge
     columns_used = ['title', 'author_id', 'is_main_author']
-    all_data = pd.concat([conference[columns_used], article[columns_used]], ignore_index = True)
+    all_data = pd.concat(
+        [conference[columns_used], article[columns_used]], ignore_index=True)
     all_data = all_data[all_data.author_id.isin(author_node.author_id)
                         & all_data.title.isin(paper_node.title)]
 
@@ -523,49 +531,58 @@ if __name__ == "__main__":
             main_author[n_article] = all_data.author_id[i]
 
         else:
-            co_author.setdefault(n_article, []) 
+            co_author.setdefault(n_article, [])
             co_author[n_article].append(all_data.author_id[i])
 
     reviews = generate_reviews(paper_node, author_node, main_author, co_author)
-    
-    reviews_edge = pd.DataFrame({'paper': paper_node.title, 'reviewers': reviews})
+
+    reviews_edge = pd.DataFrame(
+        {'paper': paper_node.title, 'reviewers': reviews})
     reviews_edge = reviews_edge.explode('reviewers')
-    reviews_edge.rename({'reviewers': 'reviewer'}, axis='columns', inplace=True)
-    reviews_edge.to_csv(OUT/'reviews_edge.csv', index = False)
+    reviews_edge.rename({'reviewers': 'reviewer'},
+                        axis='columns', inplace=True)
+    reviews_edge.to_csv(OUT/'reviews_edge.csv', index=False)
 
     # WRITES & CO_WRITES edges
-    writes_edge = pd.DataFrame(main_author.items(), columns=["paper", "main_author"])
-    co_writes_edge = pd.DataFrame(co_author.items(), columns=["paper", "co_authors"])
+    writes_edge = pd.DataFrame(main_author.items(), columns=[
+                               "paper", "main_author"])
+    co_writes_edge = pd.DataFrame(
+        co_author.items(), columns=["paper", "co_authors"])
     co_writes_edge = co_writes_edge.explode('co_authors')
-    co_writes_edge.rename({'co_authors': 'co_author'}, axis = 'columns', inplace = True)
-    
-    writes_edge.dropna(inplace = True)
-    co_writes_edge.dropna(inplace = True)
+    co_writes_edge.rename({'co_authors': 'co_author'},
+                          axis='columns', inplace=True)
 
-    writes_edge.to_csv(OUT/'writes_edge.csv', index = False)
-    co_writes_edge.to_csv(OUT/'co_writes_edge.csv', index = False)
-    
+    writes_edge.dropna(inplace=True)
+    co_writes_edge.dropna(inplace=True)
+
+    writes_edge.to_csv(OUT/'writes_edge.csv', index=False)
+    co_writes_edge.to_csv(OUT/'co_writes_edge.csv', index=False)
+
     # CITES edge
     cited_in_edge = generate_citations(paper_node)
-    cited_in_edge = pd.DataFrame(data={"paper": paper_node.title, "cites": cited_in_edge})
+    cited_in_edge = pd.DataFrame(
+        data={"paper": paper_node.title, "cites": cited_in_edge})
     cited_in_edge = cited_in_edge.explode('cites')
-    cited_in_edge.to_csv(OUT/'cites_edge.csv', index = False)
+    cited_in_edge.to_csv(OUT/'cites_edge.csv', index=False)
 
-    # FROM_C edge 
-    from_edge = pd.DataFrame(data = {"conference": conference.con_shortname, "edition": conference.edition_title})
+    # FROM_C edge
+    from_edge = pd.DataFrame(
+        data={"conference": conference.con_shortname, "edition": conference.edition_title})
     from_edge.drop_duplicates(inplace=True)
-    from_edge.to_csv(OUT/'from_c_edge.csv', index = False)
+    from_edge.to_csv(OUT/'from_c_edge.csv', index=False)
 
     # FROM_J edge
     has_edge = article[['journal', 'volume']].drop_duplicates()
-    has_edge.to_csv(OUT/'from_j_edge.csv', index = False)
-    
+    has_edge.to_csv(OUT/'from_j_edge.csv', index=False)
+
     # PUBLISED_IN_E edge
-    is_from_edge = pd.DataFrame(data = {"paper": conference.title, "edition": conference.edition_title})
+    is_from_edge = pd.DataFrame(
+        data={"paper": conference.title, "edition": conference.edition_title})
     is_from_edge.drop_duplicates(inplace=True)
-    is_from_edge.to_csv(OUT/'published_in_e_edge.csv', index = False)
+    is_from_edge.to_csv(OUT/'published_in_e_edge.csv', index=False)
 
     # PUBLISHED_IN_V edge
-    published_in_edge = pd.DataFrame(data = {"paper": article.title, "volume": article.volume})
+    published_in_edge = pd.DataFrame(
+        data={"paper": article.title, "volume": article.volume})
     published_in_edge.drop_duplicates(inplace=True)
-    published_in_edge.to_csv(OUT/'published_in_v_edge.csv', index = False)
+    published_in_edge.to_csv(OUT/'published_in_v_edge.csv', index=False)
