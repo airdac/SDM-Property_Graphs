@@ -21,4 +21,3 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
     except Exception as e:
         print('\nException raised:')
         print(e)
-        
