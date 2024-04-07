@@ -36,13 +36,14 @@ np.random.seed(123)
 
 # Data paths
 # CHANGE IF NEEDED
-TEMP = PureWindowsPath(
-    'C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master')
+# TEMP = PureWindowsPath('C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master')
 # TEMP = PureWindowsPath("D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv")
+TEMP = '/Users/airdac/Documents/DBLP'
 TEMP = Path(TEMP)
 # OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
-OUT = PureWindowsPath(
-    'C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
+# OUT = PureWindowsPath(
+#    'C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
+OUT = '/Users/airdac/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-1f900707-234f-4bf5-85f5-df387949b63c/import'
 OUT = Path(OUT)
 # We only get papers from the last 25 years (current year not included) and we balance the data in each year
 yearf = date.today().year
@@ -264,22 +265,25 @@ def extract_keywords(
         features=None,
     )
     keywords = custom_kw_extractor.extract_keywords(title)
+    # Some keywords are a single letter
+    keywords = [keyword[0] for keyword in keywords]
+    keywords = [keyword for keyword in keywords if len(keyword)>1] # A few keywords are just a single letter
 
     # Check if the keyword already exists, otherwise add it to the dict
     for key in keywords:
-        full_dict.setdefault(key[0], set())
-        full_dict[key[0]].add(id)
+        full_dict.setdefault(key, set())
+        full_dict[key].add(id)
 
         # Return keys that have more than 2 entries
-        if len(full_dict[key[0]]) == 3:
-            valid_dict[key[0]] = full_dict[key[0]]
-        elif len(full_dict[key[0]]) > 3:
+        if len(full_dict[key]) == 3:
+            valid_dict[key] = full_dict[key]
+        elif len(full_dict[key]) > 3:
             valid_article.add(id)
 
     return full_dict, valid_dict, valid_article
 
 
-def generate_keywords(dict, all_id, valid_id, n_keywords=20):
+def generate_keywords(dict, all_id, valid_id, n_keywords=200):
     """
     Functionality: Generate a number of keywords and apply them
         to papers that do not have one
@@ -296,6 +300,16 @@ def generate_keywords(dict, all_id, valid_id, n_keywords=20):
         dict.setdefault(random_tag, set())
         dict[random_tag].add(id)
     return dict
+
+
+def add_keywords(keywords, population, min_values_len=10, max_values_len=30):
+#    new_dict = {key: {} for key in keywords}
+    new_dict = dict()
+    for key in keywords:
+        k = random.randrange(min_values_len, max_values_len)
+        values = random.sample(population, k=k)
+        new_dict[key] = set(values)
+    return new_dict
 
 
 def generate_reviews(paper_node, author_node, main_author, co_author):
@@ -360,9 +374,9 @@ def generate_citations(papers, min_rel=10, max_rel=30):
     return all_relations
 
 
-############################################################################################################
+####################################################################################################
 # Main
-############################################################################################################
+####################################################################################################
 
 if __name__ == "__main__":
     ############################################################################################################
@@ -465,7 +479,7 @@ if __name__ == "__main__":
     # KEYWORD node
     # Extract Keywords for each article
     all_keywords, valid_keywords = {}, {}
-    valid_id = set([])
+    valid_id = set()
 
     for i in range(len(paper_node)):
         all_keywords, valid_keywords, valid_id = extract_keywords(
@@ -479,11 +493,24 @@ if __name__ == "__main__":
     # Generate artificial keywords for the papers that are left
     valid_keywords = generate_keywords(
         valid_keywords, paper_node.index, valid_id)
-
+    
+    # Add the database community keywords to some papers randomly to be able to run the recommender on setion C
+    db_keywords = ['data management', 'indexing', 'data modeling', 'big data', 'data processing',
+               'data storage', 'data querying']
+    valid_keywords.update(add_keywords(
+        db_keywords, paper_node.index.to_list(), min_values_len=5, max_values_len=30))
+    
+    # Create keyword nodes data
     keywords_node = pd.DataFrame(
-        valid_keywords.items(), columns=["Keyword", "Article_id"]
+        valid_keywords.items(), columns=["keyword", "article"]
     )
-    keywords_node.to_csv(OUT/'keywords_node.csv', index=False)
+    keywords_node = keywords_node.explode('article')
+    paper_titles = paper_node['title'].copy()
+    paper_titles.index = paper_titles.index.astype('object')
+    keywords_node = keywords_node.merge(paper_titles, left_on='article', right_index=True)
+    keywords_node.rename(columns={'title': 'paper'}, inplace=True)
+
+    keywords_node[['keyword', 'paper']].to_csv(OUT/'keywords_node.csv', index=False)
 
     # JOURNAL node
     journal_node = node_creation(["journal"], "journal", article)

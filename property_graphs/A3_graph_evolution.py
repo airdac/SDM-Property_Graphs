@@ -14,9 +14,7 @@ db = 'neo4j'
 
 # OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
 # OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
-OUT = Path('/Users/airdac/Library/Application Support/\
-           Neo4j Desktop/Application/relate-data/dbmss/\
-           dbms-c8c0866b-a55b-44a2-9174-e2748cd0d05a/import')
+OUT = Path('/Users/airdac/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-1f900707-234f-4bf5-85f5-df387949b63c/import')
 OUT = Path(OUT)
 
 

@@ -25,7 +25,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # Create constraints
         driver.execute_query('''
             CREATE CONSTRAINT Author_name_id IF NOT EXISTS
-            FOR (a:Author) 
+            FOR (a:Author)
             REQUIRE a.name_id IS UNIQUE
         ''', database_=db)
 
@@ -108,7 +108,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # Keyword
         driver.execute_query("""
         LOAD CSV WITH HEADERS FROM 'file:///keywords_node.csv' AS row 
-        MERGE (:Keyword {tag: row.Keyword})
+        MERGE (:Keyword {tag: row.keyword})
                             """, database_=db)
 
         # EDGES
@@ -174,6 +174,14 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         MATCH (target:Paper {title: row.cites})
         MERGE (source)-[:Cites]->(target)
                             """, database_=db)
+        
+        # "From_p"
+        driver.execute_query('''
+        LOAD CSV WITH HEADERS FROM 'file:///keywords_node.csv' AS row
+        MATCH (k:Keyword {tag: row.keyword})
+        MATCH (p:Paper {title: row.paper})
+        MERGE (k)-[:From_p]->(p)
+                             ''', database_=db)
     except Exception as e:
         print('\nException raised:')
         print(e)
