@@ -3,7 +3,8 @@ import pandas as pd
 from pathlib import Path
 from query_execution import execute_print_save
 
-OUT = Path('/Users/airdac/Documents/GitHub/SDM-Property_Graphs/B_output')
+OUT = Path(__file__).parent.parent.absolute()/'B_output'
+OUT.mkdir(exist_ok=True)
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")

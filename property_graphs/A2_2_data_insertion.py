@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+from query_execution import execute_print
 
 # Note in anaconda: add "neo4j+ssc" so that it works
 # URI = "neo4j+ssc://1ed43e37.databases.neo4j.io"
@@ -68,10 +69,10 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # Load data
         # NODES
         # Author
-        driver.execute_query("""
+        execute_print(driver, """
         LOAD CSV WITH HEADERS FROM 'file:///author_node.csv' AS row 
         MERGE (:Author {name_id: row.author_id, name: row.name, surname: row.surname}) 
-                            """, database_=db)
+                            """)
 
         # Papers
         driver.execute_query("""

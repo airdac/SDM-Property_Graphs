@@ -7,7 +7,8 @@ URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
 db = 'neo4j'
 
-OUT = Path('/Users/airdac/Documents/GitHub/SDM-Property_Graphs/C_output')
+OUT = Path(__file__).parent.parent.absolute()/'C_output'
+OUT.mkdir(exist_ok=True)
 
 # Run queries
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
