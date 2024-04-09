@@ -267,7 +267,8 @@ def extract_keywords(
     keywords = custom_kw_extractor.extract_keywords(title)
     # Some keywords are a single letter
     keywords = [keyword[0] for keyword in keywords]
-    keywords = [keyword for keyword in keywords if len(keyword)>1] # A few keywords are just a single letter
+    # A few keywords are just a single letter
+    keywords = [keyword for keyword in keywords if len(keyword) > 1]
 
     # Check if the keyword already exists, otherwise add it to the dict
     for key in keywords:
@@ -303,7 +304,7 @@ def generate_keywords(dict, all_id, valid_id, n_keywords=200):
 
 
 def add_keywords(keywords, population, min_values_len=10, max_values_len=30):
-#    new_dict = {key: {} for key in keywords}
+    #    new_dict = {key: {} for key in keywords}
     new_dict = dict()
     for key in keywords:
         k = random.randrange(min_values_len, max_values_len)
@@ -493,24 +494,43 @@ if __name__ == "__main__":
     # Generate artificial keywords for the papers that are left
     valid_keywords = generate_keywords(
         valid_keywords, paper_node.index, valid_id)
-    
+
     # Add the database community keywords to some papers randomly to be able to run the recommender on setion C
     db_keywords = ['data management', 'indexing', 'data modeling', 'big data', 'data processing',
-               'data storage', 'data querying']
+                   'data storage', 'data querying']
     valid_keywords.update(add_keywords(
-        db_keywords, paper_node.index.to_list(), min_values_len=5, max_values_len=30))
-    
+        db_keywords, paper_node.index.to_list(), min_values_len=10, max_values_len=100))
+
+    # Add a db keyword to 99% of papers from the conferences/journals with more than 100 papers:
+    big_conf_journals = {'J. Econ. Theory',
+                         'AISTATS', 'MFPS', 'Comput. Chem. Eng.'}
+    big_conferences_papers = conference.loc[conference.con_shortname.isin(
+        big_conf_journals)]
+    big_journals_papers = article.loc[article.journal.isin(big_conf_journals)]
+    big_conf_journals_papers = pd.concat(
+        [big_conferences_papers['title'], big_journals_papers['title']])
+    papers_to_sample = paper_node.merge(
+        big_conf_journals_papers, left_on='title', right_on='title')
+    papers_to_sample = papers_to_sample.sample(frac=0.99).index
+
+    for paper in papers_to_sample:
+        # key = random.choice(db_keywords)
+        for key in db_keywords:
+            valid_keywords[key].add(paper)
+
     # Create keyword nodes data
     keywords_node = pd.DataFrame(
-        valid_keywords.items(), columns=["keyword", "article"]
+        valid_keywords.items(), columns=["keyword", "paper"]
     )
-    keywords_node = keywords_node.explode('article')
+    keywords_node = keywords_node.explode('paper')
     paper_titles = paper_node['title'].copy()
     paper_titles.index = paper_titles.index.astype('object')
-    keywords_node = keywords_node.merge(paper_titles, left_on='article', right_index=True)
+    keywords_node = keywords_node.merge(
+        paper_titles, left_on='paper', right_index=True)
     keywords_node.rename(columns={'title': 'paper'}, inplace=True)
 
-    keywords_node[['keyword', 'paper']].to_csv(OUT/'keywords_node.csv', index=False)
+    keywords_node[['keyword', 'paper']].to_csv(
+        OUT/'keywords_node.csv', index=False)
 
     # JOURNAL node
     journal_node = node_creation(["journal"], "journal", article)

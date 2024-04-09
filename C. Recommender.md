@@ -38,3 +38,6 @@ WHERE percentage_db_papers >= 0.9
 MERGE (cj)-[:Related_to]->(r)
 ```
 ## 3. Top papers of each conference/journal
+```cypher
+
+```

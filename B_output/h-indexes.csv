@@ -11,7 +11,6 @@ Aad van Moorsel,2
 Aapo Hyvärinen,3
 Aaron Archer,1
 Aaron C. Courville,3
-Aaron Daniels,1
 Aaron Stump,2
 Aart Middeldorp,2
 Aarti Singh,3
@@ -34,10 +33,10 @@ Abigail Ondeck,2
 Abu Nasser Mohammed Abdullah,1
 Abubakar Hassan,1
 Achim Jung,3
-Achim Schwämmle,1
 Adam Cattermole,1
 Adam Chlipala,1
 Adam Craig Pocock,1
+Adam Dominiak,1
 Adam Mazikowski,1
 Adam Rogalewicz,1
 Adam Woznica,1
@@ -148,12 +147,12 @@ Alex Bertei,1
 Alex Buckley,1
 Alex Krizhevsky,1
 Alex Simpson,1
-Alex Suzdaltsev,1
 Alex Villazón,1
 Alex de V. Garcia,1
 Alexander A. Letichevsky,1
 Alexander Clark,1
 Alexander G. Gray,1
+Alexander Gorokhovsky,1
 Alexander Ihler,3
 Alexander J. Smola,4
 Alexander Knapp,1
@@ -177,6 +176,7 @@ Alexandre A. Cezar,1
 Alexandre Chapoutot,1
 Alexandre Frias Faria,1
 Alexandre Goldsztejn,1
+Alexandre Goy 0002,1
 Alexandre Klementiev,1
 Alexandre Lacoste,1
 Alexandre Lemke,1
@@ -192,6 +192,7 @@ Alexandru Baltag,3
 Alexandru Niculescu-Mizil,2
 Alexandru Tatulea-Codrean,1
 Alexey Cherchago,1
+Alexey Solovyev,1
 Alexis Basantis,1
 Alexsandro Oliveira Alexandrino,1
 Alfonso Sandoval Rosas,1
@@ -200,7 +201,7 @@ Alfredo Olivero,2
 Ali A. Babaei-Brojeny,1
 Ali Almansoori,1
 Ali E. Abdallah,1
-Ali Elkamel,3
+Ali Elkamel,2
 Ali Ghodsi 0001,1
 Ali Jalali,1
 Ali Mesbah 0002,2
@@ -258,13 +259,12 @@ Ana Paula Lüdtke Ferreira,1
 Ana Paula Meneguelo,1
 Ana Paula dos Santos Dantas,1
 Ana R. Cavalli,1
-Ana Silva 0001,1
+Ana Silva 0001,2
 Ana Teresa C. Martins,2
 Anamaria Martins Moreira,1
 Anastasis Georgoulas,1
 Anderson Braga de Avila,1
 Anderson G. da Silva,1
-Andis Sofianos,1
 Andras Kemeny,1
 Andre Scedrov,1
 Andrea Asperti,1
@@ -299,10 +299,9 @@ Andreas Kanavos,1
 Andreas Köhler,1
 Andreas Leicher,1
 Andreas P. Streich,1
-Andreas Reischmann,1
 Andreas Roth 0002,1
 Andreas Ruttor,1
-Andreas S. Bommarius,1
+Andreas S. Bommarius,2
 Andreas Stuhlmüller,1
 Andreas Wendemuth,1
 Andreas Zeller,1
@@ -343,7 +342,7 @@ André Elisseeff,1
 André Luiz Pires Guedes,2
 André Müller,1
 André Platzer,3
-André Rauber Du Bois,3
+André Rauber Du Bois,4
 André Takeshi Endo,1
 Andrés Arrigoni,1
 Andrés Bujosa,1
@@ -375,6 +374,7 @@ Ann Q. Gates,1
 Ann-Kathrin Wortmeier,1
 Anna Ingólfsdóttir,2
 Anna Lisa Ferrara,1
+Anna Rubinchik,1
 Anna-Maria Rivas McGowan,1
 Annabelle McIver,3
 Anne Doucet,1
@@ -405,7 +405,6 @@ Antonino Salibra,1
 Antonio Bandera,1
 Antonio Brogi,1
 Antonio Bucciarelli,1
-Antonio Buffo,1
 Antonio Cansado,1
 Antonio Caruso 0002,1
 Antonio Carvalho Júnior,1
@@ -508,7 +507,7 @@ Barnabás Póczos,2
 Barrett R. Bryant,1
 Barry Jay,2
 Bart De Moor,1
-Bart Jacobs 0001,6
+Bart Jacobs 0001,7
 Bart Massey,1
 Bart Preneel,1
 Bart Windels,1
@@ -657,7 +656,6 @@ C.-H. Ho,1
 C.-J. Lin,1
 Cai Y. Ma,1
 Caliane Bastos Borba Costa,1
-Callum Parker,1
 Calum McIntosh,1
 Camil Demetrescu,1
 Camila Araujo,1
@@ -665,12 +663,10 @@ Camille Salinesi,2
 Camilo Rocha,1
 Can Li,2
 Can Pan,1
-Can Tian,1
 Can Xu,1
 Carl A. Gunter,1
 Carl Edward Rasmussen,1
 Carl Smith,1
-Carla I. C. Pinheiro,1
 Carla Negri Lintzmayer,3
 Carla Piazza,2
 Carla Silva Oliveira,1
@@ -697,7 +693,7 @@ Carlos Hoppen,3
 Carlos Lombardi,1
 Carlos M. Carvalho,1
 Carlos Martín-Vide,1
-Carlos Olarte,7
+Carlos Olarte,6
 Carlos Pinzón,1
 Carlos S. Méndez-Blanco,1
 Carolin Denkert,1
@@ -712,7 +708,6 @@ Carsten Führmann,1
 Carsten Riggelsen,1
 Carsten Schmidt 0002,1
 Catharine M. Wyss,1
-Catherine Azzaro-Pantel,1
 Catherine Meadows 0001,1
 Catherine Sotirakou,1
 Catuscia Palamidessi,2
@@ -730,6 +725,7 @@ Changzhang Wang,1
 Chao-Hong Chen,1
 Chaodong Tan,1
 Chaohuan Yang,1
+Charles Jacobsen,1
 Charles Kubicek,1
 Charles Lee,1
 Charles Meyssonnier,1
@@ -737,7 +733,6 @@ Charles Morgan,1
 Charles Sutton,1
 Charles Zhoucheng Zheng,1
 Chavalit Ratanatamskul,1
-Chen Chen,1
 Chen Liu,1
 Chen-Hung Wu,2
 Chen-Tse Tsai,2
@@ -804,7 +799,6 @@ Christophe Gaston,1
 Christophe Joubert,1
 Christophe Lohou,1
 Christophe Ringeissen,1
-Christopher Crick,1
 Christopher D. Manning,2
 Christopher D. Williams,1
 Christopher Hart,1
@@ -857,7 +851,7 @@ Claus Brabrand,1
 Claus Pahl,2
 Claus Reinke,1
 Clayton Scott,1
-Claytone Sikasote,2
+Claytone Sikasote,1
 Clemens Kupke,1
 Clemens Lindscheid,1
 Clemens Schäfer,1
@@ -938,7 +932,6 @@ Dan Fernandes,1
 Dan Hirsch,2
 Dan Roth,2
 Dan Stowell,1
-Dana Gutman,1
 Dana Hughes 0001,1
 Dana S. Scott,3
 Danel Ahman,2
@@ -990,7 +983,7 @@ Daphne Koller,1
 Daria Sorokina,1
 Dario Colazzo,1
 Dario García-García,1
-Dariusz Biernacki,2
+Dariusz Biernacki,3
 Darío Álvarez,1
 Darío Álvarez Gutiérrez,1
 Dave Clarke 0001,1
@@ -1044,7 +1037,7 @@ David Rincón 0002,1
 David Ruiz 0003,1
 David S. Rosenberg,1
 David Saff,1
-David Safránek,5
+David Safránek,6
 David Saleh,1
 David Sands 0001,1
 David Sprunger,2
@@ -1147,7 +1140,7 @@ Donghui Wang,1
 Donghuo Chen,1
 Donglin Niu,1
 Dongryeol Lee,1
-Dongsheng Zhao,1
+Dongsheng Zhao,2
 Dongyue Guo,1
 Dor Kedem,1
 Doris Entner,1
@@ -1186,9 +1179,8 @@ Eduard Cerny,1
 Eduardo Agosin,1
 Eduardo Almentero,1
 Eduardo Bonelli,4
-Eduardo C. Xavier,1
+Eduardo C. Xavier,2
 Eduardo Camponogara,1
-Eduardo Carrera,1
 Eduardo Gildin,1
 Eduardo Kessler Piveta,1
 Eduardo Sany Laber,1
@@ -1261,7 +1253,7 @@ Eric Madelaine,1
 Eric P. Xing,5
 Eric S. Fraga,1
 Eric Van Wyk,2
-Eric von Lieres,1
+Eric von Lieres,2
 Erica Melis,1
 Erick Chastain,1
 Erik Esche,1
@@ -1396,13 +1388,13 @@ Fiona Polack,1
 Fionn Mc Inerney,1
 Flavio Corradini,5
 Flavio Manenti,1
-Florence Clerc,1
 Florence Forbes,1
 Florence Maraninchi,1
 Florence Plateau,1
 Florent Jacquemard,1
 Florian Brandl,1
 Florian Steinke,1
+Flávio Keidi Miyazawa,1
 Francesc Rosselló,1
 Francesca Levi,1
 Francesca Scozzari,3
@@ -1451,7 +1443,6 @@ Frederic Doucet,1
 Frederick H. Lochovsky,1
 Frederik Eaton,1
 Fredrik Dahlqvist,2
-Fredrik Gjertsen,1
 Fredrik Lindblad,1
 Fredrik Nordvall Forsberg,1
 Friedrich Gretz,1
@@ -1476,7 +1467,7 @@ G. Michele Pinna,1
 Gabas Nadine,1
 Gabor Karsai,1
 Gabriel Ciobanu,2
-Gabriel Coutinho,2
+Gabriel Coutinho,3
 Gabriel Ferreira Barros,1
 Gabriel Juhás,1
 Gabriel P. Bischoff,1
@@ -1489,7 +1480,7 @@ Gabriele Lombardi,1
 Gabriele Taentzer,5
 Gade Pandu Rangaiah,1
 Gal Elidan,3
-Ganesh Gopalakrishnan,2
+Ganesh Gopalakrishnan,3
 Ganesh Viswanathan,1
 Gang Niu 0001,1
 Gang Wang 0004,1
@@ -1538,6 +1529,7 @@ Gerardo Rodríguez,1
 Gerardo Rubino,1
 Gerasimos Arvanitis,1
 Gerd Behrmann,1
+Gerelt Tserenjigmid,1
 Gerhard F. Ecker,1
 Gerhard Weiß 0001,1
 Germain Faure,1
@@ -1609,7 +1601,7 @@ Gloria Giraldo,1
 Gloria Lucía Giraldo G.,1
 Gloria Menegaz,1
 Gloria Mercedes Díaz,1
-Glynn Winskel,5
+Glynn Winskel,4
 Go Bong Choi,1
 Gongzheng Lu,1
 Gopal Gupta 0001,1
@@ -1720,7 +1712,6 @@ Han Liu 0001,1
 Han Xiao 0002,1
 Hanako Fukamachi,1
 Hang Zhou,1
-Hanne Marie Kvamsdal,1
 Hanne Riis Nielson,1
 Hanno Lefmann,1
 Hans J. Pasman,1
@@ -1781,7 +1772,6 @@ Henri Maître,1
 Henrik Andersson,2
 Henrik Hulgaard,1
 Henrik Reif Andersen,2
-Henrique A. Matos,1
 Herbert Wiklicky,4
 Herman Geuvers,1
 Hermano Perrelli de Moura,1
@@ -1801,7 +1791,6 @@ Hiroshi Mamitsuka,1
 Hiroshi Motoda,2
 Hiroshi Watanabe 0002,2
 Hiroyoshi Togo,1
-Hisham Abuella,1
 Hoang Vu Nguyen,1
 Hock Kim Tan,1
 Hoese Michel Tornyeviadzi,1
@@ -1871,7 +1860,6 @@ Huodi Chen,1
 Huyen Do,1
 Hyeju Song,1
 Hyekyoung Lee,1
-Hyeng Keun Koo,1
 Hyokun Yun,1
 Hyoungkyun Kim,1
 Hyunglae Lee,1
@@ -1885,7 +1873,7 @@ I. V. Ramakrishnan,1
 Iain Murray 0001,2
 Iain Phillips 0001,1
 Ian J. Goodfellow,1
-Ian Mackie,5
+Ian Mackie,4
 Ian Stark,1
 Ian Willers,1
 Ibrahim Alzamil,1
@@ -1894,7 +1882,7 @@ Ichiro Hasuo,1
 Idelfonso B. R. Nogueira,1
 Iftekhar A. Karimi,2
 Igino Corona,1
-Ignacio E. Grossmann,3
+Ignacio E. Grossmann,4
 Ignasi Sau,1
 Igor Kuralenok,1
 Igor Shikanian,1
@@ -1903,7 +1891,6 @@ Iiro Harjunkoski,3
 Ilaria Castellani,2
 Ilias Garnier,3
 Illés Horváth,2
-Ilwoo Hwang,1
 Ilya Orson Sandoval,1
 Ilya Sutskever,6
 Immo Grabe,1
@@ -1922,7 +1909,7 @@ Inmar E. Givoni,1
 Insup Lee 0001,3
 Inês Lynce,1
 Ioannis Antonoglou,1
-Ioannis Chatzigiannakis,3
+Ioannis Chatzigiannakis,4
 Ioannis E. Livieris,1
 Ioannis G. Tollis,1
 Ioannis Gkioulekas,1
@@ -1930,7 +1917,7 @@ Ioannis K. Kookos,1
 Ioannis Tsamardinos,2
 Ion Petre,1
 Iosif Pappas,1
-Iqbal M. Mujtaba,2
+Iqbal M. Mujtaba,3
 Ira S. Moskowitz,1
 Irek Ulidowski,1
 Irene Lotero,1
@@ -1953,10 +1940,9 @@ Isaque Macalam Saab Lima,1
 Ishan Bajaj,1
 Isidro Ramos,2
 Islame F. C. Fernandes,1
-Israel Abebe Azime,2
+Israel Abebe Azime,1
 István Bíró,1
 István Szita,1
-Ivan Balbuzanov,1
 Ivan Kryven,1
 Ivan Lanese,1
 Ivan O. Kyrgyzov,1
@@ -2048,7 +2034,7 @@ Jan van Katwijk,1
 Jana Dunfield,1
 Janardhan Rao Doppa,1
 Jane E. Sinclair,1
-Jane Hillston,4
+Jane Hillston,3
 Jangwoo Shin,1
 Jannatun Nahar,1
 Jaouad Eddouibi,1
@@ -2073,11 +2059,11 @@ Javier Cámara,2
 Javier Fernández-Blanco,1
 Javier García 0001,1
 Javier López 0001,1
-Javier Marenco,2
+Javier Marenco,1
 Javier Montesa,1
 Javier Oliver 0001,1
 Javier Silvente,1
-Jay H. Lee,3
+Jay H. Lee,4
 Jayme Luiz Szwarcfiter,2
 Jayshan Raghunandan,1
 Jean Bézivin,1
@@ -2116,7 +2102,7 @@ Jeffrey Dean Kelly,1
 Jennifer Ford,1
 Jennifer G. Dy,2
 Jennifer Neville,1
-Jens Abildskov,1
+Jens Abildskov,2
 Jens Dietrich 0001,1
 Jens Forster,1
 Jens Kober,1
@@ -2197,7 +2183,7 @@ Jin Yu,1
 Jin Zhou,1
 Jinbo Xu,1
 Jinbo Yang,1
-Jinfeng Liu 0001,1
+Jinfeng Liu 0001,2
 Jing Chen 0005,1
 Jing Li,1
 Jing Liu 0012,2
@@ -2207,7 +2193,6 @@ Jing Zhao,1
 Jingu Kim,3
 Jingxia Fu,1
 Jingxin Zhang 0002,1
-Jingyi Li,1
 Jingyuan Lv,1
 Jinjin Zhang,1
 Jinsong Zhao,1
@@ -2225,7 +2210,6 @@ Jiyao Gao,1
 Joachim Giesen,1
 Joachim Klein 0001,1
 Joachim M. Buhmann,3
-Joachim Ohser,1
 Joanna Balbus,1
 Joannah I. Otashu,1
 Joaquim Gabarró,1
@@ -2238,11 +2222,11 @@ Joe Hurd,1
 Joel A. Paulson,1
 Joel S. Sokol,1
 Joemon M. Jose,1
-Joerg Oechssler,1
 Joey Tianyi Zhou,1
 Johan A. K. Suykens,1
 Johann Oberleitner,1
 Johanne Cohen,1
+Johannes Jäschke,1
 Johannes Laudenberg,1
 John A. Bogovic,1
 John A. Quinn,1
@@ -2252,9 +2236,9 @@ John C. Platt,1
 John D. Hedengren,2
 John D. Lafferty,1
 John Derrick,3
-John F. O'Hara,1
 John Frith,1
 John Howard Eli Fiskio-Lasseter,1
+John J. J. Chen,1
 John Langford 0001,2
 John M. Colombi,1
 John M. Wassick,2
@@ -2264,8 +2248,8 @@ John Morgan,1
 John Morken,2
 John O'Leary,1
 John Pirie,1
-John Power,10
-John Shawe-Taylor,11
+John Power,9
+John Shawe-Taylor,9
 John W. Fisher III,3
 John Walker Orr,1
 Jonas Buchli,1
@@ -2286,12 +2270,13 @@ Jong Woo Kim,1
 Jongkoo Lim,1
 Joni Helin,1
 Joo H. Kim,1
-Joohyun Shin,3
+Joohyun Shin,2
 Joost Visser 0001,1
 Joost-Pieter Katoen,2
 Jordan Navarro,1
 Jorge Alcalde-Unzu,1
 Jorge Calera-Rubio,1
+Jorge Chebeir,1
 Jorge Julien Rivera Tito,1
 Jorge Petrucio Viana,1
 Jorge R. Vega,1
@@ -2310,7 +2295,7 @@ Joseph A. Goguen,1
 Joseph Gonzalez 0001,1
 Joseph R. Ruthruff,1
 Joseph S. Kong,1
-Joseph Sang-Il Kwon,1
+Joseph Sang-Il Kwon,2
 Joseph Vanderwaart,2
 Josh Wills,1
 Joshua B. Tenenbaum,2
@@ -2320,7 +2305,7 @@ Joshua V. Dillon,1
 Josiah Wong,1
 José A. Carsí,2
 José A. Luceño,1
-José A. Romagnoli,1
+José A. Romagnoli,2
 José Abel Castellanos,1
 José Aguilar 0001,1
 José Antonio Caballero,2
@@ -2341,6 +2326,7 @@ José M. Carmona-Cejudo,1
 José M. Peña 0001,2
 José María Ponce-Ortega,1
 José María Rey Poza,1
+José Matias,1
 José Mauricio Pinto,2
 José Meseguer 0001,7
 José Proença,1
@@ -2425,12 +2411,11 @@ Junghee Lim,1
 Junho Park,1
 Junhui Wang,1
 Junjie Zhou,1
-Junkee Jeon,1
 Junmiao Shi,1
 Junsong Yuan,1
 Junya Honda,1
 Juraj Kolcák,1
-Juraj Labovský,2
+Juraj Labovský,1
 Juraj Niznan,1
 Jurgen J. Vinju,1
 Jurgen Van Gael,1
@@ -2447,7 +2432,7 @@ János Papp,1
 Jérémie Bourdon,1
 Jérémie Salvucci,1
 Jérémy Planul,1
-Jérôme Feret,2
+Jérôme Feret,3
 Jérôme Leroux,1
 Jónathan Heras,1
 Jöran Mielke,1
@@ -2573,7 +2558,6 @@ Koji Nakagawa,1
 Koji Tsuda,1
 Kok Min Ng,2
 Kokichi Futatsugi,2
-Konrad Steiner,1
 Konstantinos Moustakas,2
 Konstantinos Pouliasis,1
 Kosta Dosen,1
@@ -2603,7 +2587,6 @@ Kurt Miller,1
 Kwang Yi,1
 Kyle Teague,1
 Kyoko Osaka,1
-Kyoung Jin Choi,1
 Kyung-Ah Sohn,1
 Kyungoh Choi,1
 Kyungseok Noh,1
@@ -2692,8 +2675,6 @@ Li He,1
 Li Li,1
 Li Qian,1
 Li Wan,1
-Li Yang,1
-Li Yu,1
 Li-Gang Wu,1
 Liam P. Maguire,1
 Liam Paninski,2
@@ -2711,12 +2692,10 @@ Liming Zhao,1
 Limor Fix,2
 Lin Guan,1
 Lin Guo,1
-Lin Li,1
 Lin Li 0001,1
 Lin Li 0056,1
 Lin Shang 0001,1
 Lin Tang,1
-Linan Chen,1
 Linda H. Zhao,1
 Linda Sellie,1
 Lindsay Groves,2
@@ -2787,7 +2766,7 @@ Luciano N. Grippo,1
 Lucília Figueiredo,1
 Ludovic Henrio,1
 Ludovica Luisa Vissat,1
-Ludovít Jelemenský,2
+Ludovít Jelemenský,1
 Ludwig Staiger,1
 Luigi Santocanale,1
 Luigia Carlucci Aiello,1
@@ -2810,11 +2789,10 @@ Lukasz Kaiser,1
 Lukasz Ziarek,1
 Luke Wildman,1
 Luminita Vîta,1
-Luoshan Xu,5
+Luoshan Xu,4
 Lutz Schröder,2
 Luxin Cai,1
 Luís Caires,1
-Luís Domingues,1
 Luís Felipe I. Cunha,1
 Luís M. B. Lopes,1
 Luís Monteiro,1
@@ -2839,7 +2817,6 @@ Madanlal Musuvathi,1
 Maddalena Zacchi,2
 Mads Vanggaard,1
 Magalie Fromont,1
-Magne Hillestad,1
 Magnus Stålhane,1
 Mahdi Mahfouf,1
 Maher Alharby,1
@@ -2906,7 +2883,7 @@ Marco Carbone,2
 Marco Comini,1
 Marco César Goldbarg,1
 Marco Faella,1
-Marco Gribaudo,7
+Marco Gribaudo,6
 Marco Maratea,1
 Marco Matarese,1
 Marco Paviotti,1
@@ -2950,7 +2927,7 @@ Mariangiola Dezani-Ciancaglini,3
 Marianna Nicolosi Asmundo,1
 Mariano Asteasuain,1
 Mariano Martín,4
-Maribel Fernández,9
+Maribel Fernández,10
 Marie Szafranski,1
 Marie-Eve Duprez,1
 Marija Kulas,1
@@ -3022,7 +2999,7 @@ Marta E. Zorrilla,1
 Marta Rukoz,1
 Marta Simeoni,3
 Martand Singhal,1
-Martha A. Grover,1
+Martha A. Grover,2
 Martha White,1
 Martial Hebert,1
 Martijn Hendriks,1
@@ -3044,7 +3021,6 @@ Martin Schmidt 0002,1
 Martin Steffen,3
 Martin Strehler 0001,1
 Martin Tappler,1
-Martin Tomitsch,1
 Martin Zinkevich,1
 Martine Labbé,1
 Martino Trabuio,1
@@ -3081,7 +3057,7 @@ Massimo Idini,1
 Massimo Merro,1
 Massimo Tivoli,2
 Matej Crepinsek,1
-Matej Danko,2
+Matej Danko,1
 Matej Klement,3
 Matej Troják,1
 Mateja Jamnik,1
@@ -3101,7 +3077,7 @@ Matteo Ré,1
 Matteo Sammartino,1
 Matteo Santoro,1
 Matteo Zago,1
-Matthew A. McDonald,1
+Matthew A. McDonald,2
 Matthew B. Blaschko,1
 Matthew Fluet,1
 Matthew Forshaw,5
@@ -3132,7 +3108,7 @@ Mattia Monga,1
 Maurice Clint,1
 Maurice H. ter Beek,2
 Mauricio A. Álvarez,2
-Mauricio Ayala-Rincón,6
+Mauricio Ayala-Rincón,7
 Mauricio Camargo,1
 Mauricio Espinoza,1
 Mauricio Osorio 0001,3
@@ -3153,7 +3129,6 @@ Maximiliano Arias,1
 Maximino Bessa,1
 Maya Stein,1
 Maycon Sambinelli,3
-Md Zobaer Islam,1
 Md. Emdadul Haque,1
 Md. Shahinur Alam,1
 Medard E. Mswahili,1
@@ -3248,7 +3223,6 @@ Michelle Murray,1
 Michelle R. Garfinkel,1
 Michinari Momma,1
 Mieke Massink,2
-Miguel Abreu,1
 Miguel Melo,1
 Miguel Méndez-Garabetti,1
 Miguel Pagano,3
@@ -3275,13 +3249,13 @@ Mila Dalla Preda,2
 Mila E. Majster-Cederbaum,1
 Milan Ceska 0001,1
 Milan Vojvoda,1
+Min Liu,1
 Min Peng,1
 Min Yang,1
 Min Zhang 0002,1
 Min-Hsien Weng,1
 Min-Xia Zhang,1
 Ming Yuan,1
-Ming-Lun Lu,1
 Mingjun Zhong,1
 Mingmin Chi,1
 Mingrui Wu,1
@@ -3291,7 +3265,6 @@ Mingyuan Zhou,1
 Minmin Chen,1
 Minyoung Kim,1
 Mir Saman Pishvaee,1
-Mira Frick,1
 Mircea Ivanescu,1
 Mirco Tribastone,1
 Miriam Garcia Soto,1
@@ -3310,7 +3283,6 @@ Mo Jiang,1
 Moez A. AbdelGawad,1
 Mofetoluwa Adeyemi,1
 Mohaddeseh Roshan,1
-Mohamed Ali Jama,1
 Mohamed Alkatheri,1
 Mohamed Amir Esseghir,1
 Mohamed Ismail,1
@@ -3348,7 +3320,7 @@ Moonjoo Kim 0001,1
 Moreno Falaschi,3
 Morgan Magnin,1
 Morgan T. Kelley,1
-Moritz Grosse-Wentrup,1
+Moritz Grosse-Wentrup,2
 Morten Mørup,1
 Morteza Alamgir,1
 Morteza Haghir Chehreghani,1
@@ -3447,7 +3419,6 @@ Nicola Nostro,1
 Nicolas Cabrignac,1
 Nicolas Gagné,1
 Nicolas Guenot,1
-Nicolas Klein,1
 Nicolas Le Roux,1
 Nicolas Lumineau,1
 Nicolas Munnich,1
@@ -3462,7 +3433,7 @@ Nicolò Cesa-Bianchi,1
 Niels F. W. Voorneveld,2
 Niels van der Weide,1
 Nigel G. Walker,1
-Nigel Thomas,6
+Nigel Thomas,5
 Nihal Pekergin,2
 Nik Swoboda,1
 Niklas Hoppe,1
@@ -3470,18 +3441,17 @@ Nikola Benes,1
 Nikolai Tillmann,1
 Nikolaos Cheimarios,1
 Nikolaos H. Lappas,1
-Nikolaos V. Sahinidis,2
+Nikolaos V. Sahinidis,1
 Nikolay Diakov,1
 Nikolay V. Shilov 0002,1
 Nikos Aréchiga,1
 Nikos Mylonakis,1
 Nil Geisweiller,1
 Nilanjan Roy,1
-Nilay Shah,2
+Nilay Shah,3
 Nilou S. Arden,1
 Nils Jansen 0001,1
 Nils Klarlund,1
-Nina Enaasen Flø,1
 Nino Shervashidze,1
 Nir Piterman,1
 Nirvana Popescu,1
@@ -3490,7 +3460,6 @@ Nishant Dige,1
 Nishant Subramani,1
 Nishanth G. Chemmangattuvalappil,1
 Nixon Sunny,1
-Noa Markfeld,1
 Noah A. Smith,1
 Noah D. Goodman,1
 Noam Zeilberger,1
@@ -3513,7 +3482,6 @@ Octavian Patrascoiu,1
 Octavio Malherbe,1
 Odalric-Ambrym Maillard,2
 Oded Maler,3
-Oded Stark,1
 Odorico Machado Mendizabal,1
 Ofer Arieli,1
 Ofer Dekel,2
@@ -3643,7 +3611,6 @@ Paul Syvreson,1
 Paul Taylor 0002,1
 Paul von Bünau,1
 Paul-André Melliès,2
-Paula Teixeira,1
 Paulo A. S. Veloso,4
 Paulo Borba,2
 Paulo Fernandes 0001,1
@@ -3687,7 +3654,6 @@ Pengyu Hong,1
 Pertti Kellomäki,1
 Peter A. Flach,1
 Peter A. Vanrolleghem,1
-Peter A. Wagner,1
 Peter Aczel,1
 Peter Antal,2
 Peter Baumgartner 0001,1
@@ -3703,7 +3669,6 @@ Peter Habermehl,1
 Peter J. Ramadge,2
 Peter L. Bartlett,1
 Peter McBurney,1
-Peter Menstell,1
 Peter Orchard,1
 Peter Selinger,1
 Peter Spirtes,3
@@ -3719,6 +3684,7 @@ Petr Rockai,1
 Petri Kontkanen,1
 Petri Myllymäki,2
 Petri Selonen,1
+Phablo F. S. Moura,1
 Phil Trinder,1
 Philip J. Scott,2
 Philip S. Mulry,1
@@ -3809,7 +3775,7 @@ Qiao-Le He,1
 Qihong Feng,1
 Qilei Liu,1
 Qinfeng Shi,1
-Qingguo Li,5
+Qingguo Li,6
 Qingsheng Wang,1
 Qingyu He,2
 Qingyun Chen,1
@@ -3826,7 +3792,7 @@ R. Venkatesh,1
 Rachid Echahed,2
 Radoslaw Karwowski,1
 Radu Grosu,1
-Radu Mardare,5
+Radu Mardare,4
 Radu Rugina,1
 Radu Serban,1
 Rafael Accorsi,1
@@ -3879,7 +3845,6 @@ Raphael Fonteneau,1
 Raphael Machado,1
 Raquel Fuentetaja 0001,1
 Rasmus Ejlers Møgelberg,2
-Ratul Lahkar,1
 Raul Lopes 0001,1
 Ravi Sankar Vadali,1
 Raymond S. Smith,1
@@ -3904,7 +3869,6 @@ Renata Wasserman,1
 Renate Klempien-Hinrichs,1
 Renato Neves,1
 Renaud Rioboo,1
-Renee Bowen,1
 Rensheng Wang,1
 René Schenkendorf,1
 René Thiemann,3
@@ -3912,7 +3876,7 @@ Reuben Edwards,1
 Reza Babazadeh,1
 Reza Tavakkoli-Moghaddam,1
 Ricardo Bezerra de Andrade e Silva,3
-Ricardo C. Corrêa,2
+Ricardo C. Corrêa,1
 Ricardo Chavarriaga,1
 Ricardo Fukasawa,1
 Ricardo Honorato-Zimmer,1
@@ -3989,9 +3953,8 @@ Roberto Raggi,1
 Roberto Ruiz,1
 Roberto Virga,1
 Robin Hirsch,1
-Robin Kaarsgaard,3
+Robin Kaarsgaard,2
 Robin N. Banerjee,1
-Robin Piedeleu,1
 Robin R. Murphy,1
 Rocco A. Servedio,1
 Rochish M. Thaokar,1
@@ -4018,7 +3981,8 @@ Roman Pindur,1
 Ron Lavi,1
 Ron van Kesteren,1
 Ronald Middelkoop,1
-Ronald W. Rousseau,1
+Ronald W. Rousseau,2
+Ronald Wolthoff,1
 Ronan Collobert,2
 Ronan Soares,1
 Rong Jin 0001,1
@@ -4050,7 +4014,6 @@ Rueiher Tsaur,1
 Ruggero Lanotte,1
 Rui Gao,1
 Rui M. Castro,1
-Rui M. Filipe,1
 Rui Nian,1
 Rui Qin,1
 Rui Qiu,1
@@ -4075,7 +4038,6 @@ Ryan Prescott Adams,2
 Ryan Rifkin,1
 Ryo Yoshinaka,1
 Ryohei Fujimaki,1
-Ryota Iijima,1
 Ryota Tomioka,1
 Ryutaro Ohta,1
 Rémi Bardenet,1
@@ -4094,7 +4056,6 @@ Saatviga Sudhahar,1
 Sabine Broda,1
 Sabine Glesner,3
 Sabine Kuske,1
-Sabit Ekin,1
 Sabrina De Capitani di Vimercati,1
 Sachio Hirokawa,1
 Sadegh Sadeghipour,1
@@ -4124,7 +4085,6 @@ Sameer Agarwal 0001,1
 Samik Basu 0001,1
 Samir Chouali,1
 Samson Abramsky,2
-Samuel Adeolu Olatunji,1
 Samuel Amaral Junior,1
 Samuel Bustamante,1
 Samuel G. Da Silva,1
@@ -4170,7 +4130,6 @@ Sau Lee,1
 Saurav Singbal,1
 Sava Krstic,1
 Sayan Mukherjee 0001,1
-Sayan Mukherjee 0007,1
 Scott A. Smolka,3
 Scott D. Stoller,1
 Scott Huddleston,1
@@ -4185,7 +4144,6 @@ Sebastian Link,2
 Sebastian Mosbach,1
 Sebastian Niedenführ,1
 Sebastian Nowozin,1
-Sebastian Osterroth,1
 Sebastian Spiegler,1
 Sebastiano Battiato,1
 Sebastián Bustamante 0001,1
@@ -4209,7 +4167,7 @@ Sergio Nocco,1
 Sergio Yovine,2
 Sergiy Bogomolov,1
 Serguei A. Roubtsov,1
-Sergueï Lenglet,2
+Sergueï Lenglet,3
 Seungjin Choi,1
 Seungmoon Choi,1
 Seyed Hamid Reza Pasandideh,1
@@ -4236,7 +4194,6 @@ Sharifah Rafidah Wan Alwi,1
 Sheema Sameen,1
 Sheila Morais de Almeida,1
 Sheila R. M. Veloso,4
-Sheldon Reay,1
 Shenghuo Zhu,1
 Shengkun Jia,1
 Shie Mannor,1
@@ -4354,10 +4311,10 @@ Sorin Iftene,1
 Soroosh Nazem,1
 Sotiris Moschoyiannis,1
 Souad Abderafi,1
-Souvik Roy,1
 Srikanth B. Yoginath,1
 Srikrishna Atluri,1
 Srinivas Palanki,1
+Stanislav Rabinovich,1
 Stanislaw Ambroszkiewicz,1
 Stavros Nousias,1
 Stavros Tripakis,1
@@ -4366,10 +4323,9 @@ Stefan A. Oelmeier,1
 Stefan Blom,1
 Stefan Haar,2
 Stefan Hänsgen,1
-Stefan Krasa,1
 Stefan Kriebel,1
 Stefan Marco Schneider,1
-Stefan Milius,4
+Stefan Milius,3
 Stefan Müller 0009,2
 Stefan Schaal,1
 Stefan Sokolowski,1
@@ -4427,7 +4383,7 @@ Steven Klusener,1
 Steven de Rooij,1
 Stuart M. Stocks,1
 Stuart Mesham,1
-Styliani Avraamidou,1
+Styliani Avraamidou,2
 Stéphan Clémençon,1
 Stéphane Canu,1
 Stéphane Douady,1
@@ -4476,7 +4432,6 @@ Susumu Nishimura,1
 Suttichai Assabumrungrat,1
 Suvrit Sra,1
 Suzanne Aigrain,1
-Svein Olaf Hauger,1
 Sven E. Krüger,1
 Sven Hartmann,2
 Svetha Venkatesh,1
@@ -4520,14 +4475,12 @@ Takafumi Kanamori,1
 Takayuki Ogasawara,1
 Takeshi Nishimura,1
 Tal Hassner,1
-Tal Oron-Gilad,1
 Tam Ruprakobkit,1
 Tamás Kiss,1
 Tamás Éltetö,1
 Tan Wei Jie Chester,1
 Tania Rodríguez-Blanco,1
 Tao Chen 0009,1
-Tao Gu,1
 Tao Xiong,1
 Tao Zha,1
 Taoyong Ni,1
@@ -4545,6 +4498,7 @@ Teemu Roos,1
 Teresa Luu,1
 Terran Lane,1
 Terry Windeatt,1
+Teruki Konishi,1
 Teruya Kobayashi,1
 Tetsuya Sato 0001,2
 Tetsuya Tanioka,1
@@ -4583,10 +4537,9 @@ Thomas Stauner,2
 Thomas Stibor,1
 Thomas Streicher,1
 Thomas T. Hildebrandt,3
-Thomas W. Reps,2
+Thomas W. Reps,1
 Thomas Wahl,1
 Thomas Zylkin,1
-Thor Mejdell,1
 Thore Graepel,1
 Thorsten Altenkirch,1
 Thorsten Joachims,1
@@ -4652,7 +4605,6 @@ Toru Kitagawa,1
 Toshiki Kataoka,1
 Toshiki Sakabe,1
 Traian Serbanuta,1
-Tram Thi Minh Tran,1
 Travis J. Desell,1
 Travis S. Humble,1
 Trevor Darrell,1
@@ -4663,7 +4615,6 @@ Truyen Tran 0001,1
 Tsung-Hsien Chiang,1
 Tsung-Ting Kuo,3
 Tsuyoshi Okita 0002,1
-Tumi Moeng,1
 Tuukka Ahoniemi,2
 Tyler Barker,1
 Tyler Lu,2
@@ -4712,7 +4663,6 @@ Valérie Monfort,1
 Valérie Ménissier-Morain,1
 Vanessa Lago Machado,1
 Vanessa Vidali,1
-Vardit Sarne-Fleischmann,1
 Varmo Vene,3
 Varun Kanade,1
 Vasanthi Damodaran,1
@@ -4740,7 +4690,7 @@ Victor Eruhimov,1
 Victor H. Aguiar,1
 Victor Khomenko,1
 Victor Lage Pessoa,1
-Victor M. Zavala,2
+Victor M. Zavala,3
 Victor Mitrana,1
 Victor N. Emenike,1
 Victor Saquicela,1
@@ -4755,13 +4705,12 @@ Vikky Anand,1
 Vikraman Choudhury,1
 Viktor Schuppan,1
 Viktoria Rojkova,1
-Ville Alopaeus,1
 Ville Karavirta,1
 Vinay A. Juvekar,1
 Vinay Jayaram,1
 Vinay Prasad,1
 Vince D. Calhoun,1
-Vincent Danos,5
+Vincent Danos,4
 Vincent Lemaire 0001,2
 Vincent Picard,1
 Vincent Rahli,1
@@ -4808,7 +4757,6 @@ Walter Vogler,3
 Wanderley Cansanção,1
 Wang Yi 0001,1
 Wanzhong Zhao,1
-Waqar Ahmad,1
 Washington de Carvalho Segundo,2
 Wasiu A. Oladosu,1
 Wayne A. Jansen,1
@@ -4817,10 +4765,10 @@ Wee Sun Lee,1
 Wei Bian,1
 Wei Chu,1
 Wei Dai,1
-Wei Duan,1
 Wei Shu,1
 Wei Sun,1
 Wei Xiong Shang,1
+Wei Yang,1
 Wei Yao,1
 Wei Yin,1
 Wei-Fan Chiang,1
@@ -4829,10 +4777,11 @@ Wei-Shih Lin,2
 Weidong Tian,1
 Weihua Gao,1
 Weijun Qin,1
+Weiwei Wu,1
+Wenbo Zhu,1
 Wendelin Serwe,1
-Wenfeng Zhang,2
+Wenfeng Zhang,3
 Weng Kin Ho,4
-Wenli Zhao,1
 Wensheng Zhou,1
 Wenxue Hu,1
 Werner Stephan 0001,1
@@ -4873,7 +4822,7 @@ Xi Wu 0005,1
 Xia Ning,1
 Xiang Zhang,1
 Xianghong Li,1
-Xiangnan Zhou,2
+Xiangnan Zhou,1
 Xiangzhong Xie,1
 Xianmin Zhang,1
 Xianzhong Long,1
@@ -4917,7 +4866,6 @@ Xinyun Zhou,1
 Xiong-Wei Ni,1
 Xiuling Fan,1
 Xu Xu,1
-Xuan Wang,1
 Xudong Zeng,1
 Xudong Zhang,1
 Xuechong Guan,1
@@ -4925,9 +4873,7 @@ Xuegang Hu,1
 Xueguang Wu,1
 Xuepu Cao,1
 Xuesu Xiao,1
-Xuetao Mao,1
 Xueyuan Zhou,1
-Xunan Jia,1
 Xuxin Mao,2
 Y-Lan Boureau,1
 Y. Wang,1
@@ -4935,7 +4881,6 @@ Ya-Hsuan Chang,2
 Yachao Dong,1
 Yacine Benguerba,1
 Yacine Jernite,1
-Yael Edan,1
 Yair Weiss,1
 Yajing Zhao,1
 Yakubu Mandafiya John,1
@@ -4993,6 +4938,7 @@ Ying Wu 0001,1
 Ying-Ju Chen,1
 Ying-ming Liu,1
 Yingdong Li,1
+Yinghua Feng,1
 Yingjun Dai,1
 Yinglong Li,1
 Yingxiang Liu,1
@@ -5036,7 +4982,6 @@ You Gao,1
 You Zhou 0001,1
 Young-Seob Jeong,1
 Yu Gao,1
-Yu Hen Hu,1
 Yu Yang 0003,1
 Yu Yang 0013,1
 Yu Zhou,1
@@ -5066,6 +5011,7 @@ Yuki Shigeta,1
 Yuki Tamura,1
 Yulei Luo,1
 Yuliia Orlova,1
+Yulin Li,1
 Yun-Shan Fu,1
 Yung-Kyun Noh,1
 Yunshan Zhu,1
@@ -5079,7 +5025,6 @@ Yuxuan Zhu,1
 Yuzhi Wan,1
 Yvan Saeys,1
 Yves Bertot,1
-Yves Le Yaouanq,1
 Yves Lepage,1
 Yves Métivier,1
 Yves Van de Peer,1
@@ -5103,7 +5048,7 @@ Zhe Wu 0004,1
 Zhemei Fang,1
 Zhen James Xiang,1
 Zhen Zhou,1
-Zhenchao Lyu,2
+Zhenchao Lyu,3
 Zheng Guo,1
 Zheng Li 0019,2
 Zheng Liu,1
@@ -5143,7 +5088,7 @@ Zoltán K. Nagy,2
 Zoltán Ésik,1
 Zongxing Lu,1
 Zoran Petric,1
-Zoubin Ghahramani,11
+Zoubin Ghahramani,12
 Zsolt Fekete,1
 Zsolt Minier,1
 Zsófia Talyigás,1

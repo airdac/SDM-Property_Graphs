@@ -28,7 +28,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             WITH cj, COUNT(p) AS n_papers
             // Match conferences/journals with database papers
             MATCH (cj)<-[]-(:Edition|Volume)<-[]-(db_p:Paper)<-[]-(:Keyword)-[]->(r:Research_community {name: 'database'})
-            WITH r, cj, n_papers, COUNT(db_p) AS n_db_papers
+            WITH r, cj, n_papers, COUNT(DISTINCT db_p) AS n_db_papers
             WITH r, cj, 1.0 * n_db_papers/ n_papers AS percentage_db_papers
             WHERE percentage_db_papers >= 0.9
             MERGE (cj)-[:Related_to]->(r)
