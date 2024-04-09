@@ -14,6 +14,7 @@ if __name__ == '__main__':
     # Run queries
     with GraphDatabase.driver(URI, auth=AUTH) as driver:
         try:
+            driver.verify_connectivity()
             # 1. Find the top 3 most cited papers of each conference.
             execute_print_save(driver, '''
                 MATCH (conference:Conference)<-[:From_c]-(:Edition)<-[:Published_in_e]-(cited_p:Paper)<-[citation:Cites]-()

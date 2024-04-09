@@ -13,6 +13,7 @@ OUT.mkdir(exist_ok=True)
 # Run queries
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
+        driver.verify_connectivity()
         execute_print(driver, '''
             MERGE(: Research_community {name: 'database'})
                     ''')

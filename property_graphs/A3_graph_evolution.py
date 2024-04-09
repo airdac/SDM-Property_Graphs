@@ -1,9 +1,10 @@
-from neo4j import GraphDatabase
+from neo4j import GraphDatabase, Result
 import pandas as pd
 import numpy.random
 from string import ascii_letters
 import random
 from pathlib import Path, PureWindowsPath
+from query_execution import execute_print
 
 random.seed(123)
 numpy.random.seed(123)
@@ -25,16 +26,15 @@ OUT = Path(OUT)
 # Get number of reviews
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
-
-        record, _, _ = driver.execute_query('''
+        driver.verify_connectivity()
+        result = driver.execute_query('''
             MATCH ()-[:Reviews]->()
             RETURN COUNT(*)
-            ''', database_=db
-                                            )
+            ''', database_=db, result_transformer_=Result.single
+                                      )
     except Exception as e:
         print(e)
 
-result = record[0]
 result = result.data().values()
 n_reviews = next(iter(result))
 
@@ -62,14 +62,15 @@ review_param.to_csv(OUT/'review_param.csv', index=False)
 # Set review descriptions and decisions
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
-        driver.execute_query('''
+        driver.verify_connectivity()
+        execute_print(driver, '''
             LOAD CSV WITH HEADERS FROM 'file:///review_param.csv' AS row
             MATCH (author:Author {name_id: row.reviewer})
             MATCH (paper:Paper {title: row.paper})
             MATCH (author)-[r:Reviews]->(paper)
             SET r.description = row.description
             SET r.decision = row.decision
-            ''', database_=db
+            '''
                              )
     except Exception as e:
         print(e)
@@ -80,7 +81,8 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
-        driver.execute_query('''
+        driver.verify_connectivity()
+        execute_print(driver, '''
             MATCH (paper:Paper)<-[r:Reviews]-()
             WITH paper, collect(r) AS reviews, count(*) as n_total
             WITH paper, n_total, size([review in reviews WHERE review.decision = 'Accepted' | review]) AS n_accepted
@@ -89,7 +91,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
                     WHEN n_accepted >= n_total - n_accepted THEN 'Yes'
                     ELSE 'No'
                 END
-            ''', database_=db
+            '''
                              )
     except Exception as e:
         print(e)
@@ -102,7 +104,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 author_ids = pd.read_csv(OUT/'author_node.csv',
                          usecols=['author_id'], delimiter=',')
 universities = pd.read_csv(
-    'us-colleges-and-universities.csv', usecols=['NAME'], delimiter=';')
+    Path(__file__).parent.parent.absolute()/'us-colleges-and-universities.csv', usecols=['NAME'], delimiter=';')
 universities.rename(columns={'NAME': 'affiliation'}, inplace=True)
 author_ids['affiliation'] = universities.affiliation.sample(
     n=len(author_ids), replace=True).values
@@ -111,11 +113,12 @@ author_ids.to_csv(OUT/'affiliations.csv', index=False)
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:
-        driver.execute_query('''
+        driver.verify_connectivity()
+        execute_print(driver, '''
             LOAD CSV WITH HEADERS FROM 'file:///affiliations.csv' AS row
             MATCH (author:Author {name_id: row.author_id})
             SET author.affiliation = row.affiliation
-            ''', database_=db
+            ''',
                              )
     except Exception as e:
         print('\nException raised:')
