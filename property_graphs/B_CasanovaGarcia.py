@@ -1,14 +1,35 @@
-from neo4j import GraphDatabase
+from neo4j import GraphDatabase, Result
 import pandas as pd
 from pathlib import Path
-from query_execution import execute_print_save
 
-OUT = Path(__file__).parent.parent.absolute()/'B_output'
+OUT = Path(__file__).parent.absolute()/'B_output'
 OUT.mkdir(exist_ok=True)
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
 db = 'neo4j'
+
+
+def df_transformer(result: Result) -> tuple[pd.DataFrame, str, int]:
+    df = result.to_df()
+    summary = result.consume()
+    return df, summary
+
+def execute_print_save(driver, query, path, db='neo4j'):
+    df, summary = driver.execute_query(query, database_=db, result_transformer_=df_transformer
+                                       )
+    df.to_csv(path, index=False)
+
+    # Print out query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(df),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
 
 if __name__ == '__main__':
     # Run queries

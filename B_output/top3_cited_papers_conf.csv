@@ -4,12 +4,12 @@ ACML,"['Multi-label Classification with Error-correcting Codes.', 'Preface.', 'A
 AISTATS,"['Preface.', 'An Information Geometry Approach for Distance Metric Learning.', 'Semi-supervised Clustering with Pairwise Constraints: A Discriminative Approach.']"
 APC 25,"['A Prospectus for Mobile Broadcasting Systems.', 'Discretization of Timed Automata in Timed mu.', 'Bisimulation and Co-induction: Some Problems.']"
 APPIA-GULP-PRODE,"['On the Relations between Disjunctive and Linear Logic Programming.', 'Modeling concurrent systems specified in a temporal concurrent constraint language-I.', 'Preface.']"
-ARSPA@ICALP,"['Deconstructing Alice and Bob.', 'An Automata Based Approach for Verifying Information Flow Properties.', 'Static Validation of a Voting Protocol.']"
+ARSPA@ICALP,"['Deconstructing Alice and Bob.', 'Static Validation of a Voting Protocol.', 'An Automata Based Approach for Verifying Information Flow Properties.']"
 ARSPA@IJCAR,"['Believing the Integrity of a System: (Invited Talk).', 'Attacking Group Multicast Key Management Protocols Using Coral.']"
 ARTS,['Name-passing style GUI programming in the ']
-ATMOS,"['Heuristics for railway infrastructure saturation.', 'Web-Based Integrated Timetable Information System for Railways and Airlines.', 'A Complete Model of the Deutsche Bahn - Prosim and Beyond.']"
+ATMOS,"['Heuristics for railway infrastructure saturation.', 'Web-Based Integrated Timetable Information System for Railways and Airlines.', 'A Case Study in Periodic Timetabling.']"
 AVoCS,"['Finding Extremal Models of Discrete Duration Calculus formulae using Symbolic Search.', 'Model Checking Functional and Performability Properties of Stochastic Fluid Models.', 'Regularity Results for FIFO Channels.']"
-Active Learning and Experimental Design @ AISTATS,"['Results of the Active Learning Challenge.', 'Managing Uncertainty within KTD.', 'Baseline Methods for Active Learning.']"
+Active Learning and Experimental Design @ AISTATS,"['Results of the Active Learning Challenge.', 'Baseline Methods for Active Learning.', 'Managing Uncertainty within KTD.']"
 AfricaNLP,"['Low-Resource Language Modelling of South African Languages.', 'An Amharic News Text classification Dataset.', 'Canonical and Surface Morphological Segmentation for Nguni Languages.']"
 BMC@CAV,"['Exploiting Target Enlargement and Dynamic Abstraction within Mixed BDD and SAT Invariant Checking.', 'SAT-based Induction for Temporal Safety Properties.', 'SAT-based methods for sequential hardware equivalence verification without synchronization.']"
 BMC@FLoC,"['Bounded Model Checking with Parametric Data Structures.', 'Interpolant Learning and Reuse in SAT-Based Model Checking.']"
@@ -19,13 +19,13 @@ Bytecode@ETAPS,"['A Verifier for Region-Annotated Java Bytecodes.', 'Improving t
 CATS,"['An Optimal Family of Bounded-Degree Broadcast Networks.', 'CHR: A Constructive Relevant Natural-deduction Logic.', 'Efficient Algorithms for the Maximum Subarray Problem by Distance Matrix Multiplication.']"
 CCA,"['Computing Uniform Bounds.', 'The Computational Complexity of Some Julia Sets.', 'Real Numbers and BDDs.']"
 CLA,"['Approximation Simply Characterized.', 'Variants of Online Chain Partition Problem of Posets.']"
-CLEI Selected Papers,"['Preface.', 'Quality of Service Conflict During Web Service Monitoring: A Case Study.', 'On the Real-state Processing of Regular Operations and The Sakoda-Sipser Problem.']"
+CLEI Selected Papers,"['Preface.', 'Topology Control in Cooperative Ad Hoc Wireless Networks.', 'An Ontological Rule-Based Approach for Analyzing Dead and False Optional Features in Feature Models.']"
 CLIMA,"['Logics and Multi-agents: towards a new symbolic model of cognition.', 'Maximal Introspection of Agents.']"
 CMCIM/GETCO@CONCUR,"['The Homotopy Branching Space of a Flow.', 'Topological (Bi-)Simulation.', 'Preface.']"
 CMCS,"['(Omega, Xi)-Logic: On the Algebraic Extension of Coalgebraic Specifications.', 'A Coequational Approach to Specifying Behaviours.', 'On coalgebra of real numbers.']"
 COCV@ETAPS,"['Alias verification for Fortran code optimization.', 'A Functional Perspective on SSA Optimisation Algorithms.', 'Memory Requirements of Java Bytecode Verification on Limited Devices.']"
 COLT,"['Preface.', 'Open Problem: Does AdaBoost Always Cycle?', 'Tight Bounds on Proper Equivalence Query Learning of DNF.']"
-COMETA,"['Lazy Logical Semantics.', 'Some Characterization Results for Permutation Algebras.', 'Properties of Set Functors.']"
+COMETA,"['Lazy Logical Semantics.', 'Properties of Set Functors.', 'Some Characterization Results for Permutation Algebras.']"
 CS2Bio,"['Preface.', 'A Comprehensive Web-based Platform For Domain-Specific Biological Models.', 'PMG: Multi-core Metabolite Identification.']"
 CSER,"['Choosing Aggregation Functions for Modeling System of Systems Performance.', 'An Approach to Facilitate Decision Making on Architecture Evolution Strategies.', 'Towards the Design of Complex Evolving Networks with High Robustness and Resilience.']"
 CTCS,"['Non-Uniform Hypercoherences.', 'Induction, Coinduction, and Adjoints.', 'Adjunction Models For Call-By-Push-Value With Stacks.']"
@@ -34,27 +34,27 @@ Calculemus,"['The OMRS project: State of the art.', 'The control component of op
 CoOrg/MTCoord@CCOORDINATION,['Policy-based Coordination in PAGODA: A Case Study.']
 CoOrg@COORDINATION,['Preface.']
 "Computation, Meaning, and Logic",['The Category Theoretic Understanding of Universal Algebra: Lawvere Theories and Monads.']
-ConCoord,"['Modelling Node Connectivity in Dynamically Evolving Networks.', 'Security Issues in Component-based Design.', 'Static Analysis for Stack Inspection.']"
+ConCoord,"['Modelling Node Connectivity in Dynamically Evolving Networks.', 'Static Analysis for Stack Inspection.', 'Security Issues in Component-based Design.']"
 D/PDPAR@IJCAR,"['Reducing Symmetries to Generate Easier SAT Instances.', 'TSAT++: an Open Platform for Satisfiability Modulo Theories.', 'Preface.']"
 DCM@ICALP,['Classically-controlled Quantum Computation.']
 EVOL (Selected Papers),['Formal Model Merging Applied to Class Diagram Integration.']
 EXPRESS,"['Decidability of Plain and Hereditary History-Preserving Bisimilarity for BPP.', 'On The Expressiveness of Timed Concurrent Constraint Programming.', 'Towards Verified Lazy Implementation of Concurrent Value-Passing Languages.']"
-Euler,"['Heterogeneous Reasoning with Euler/Venn Diagrams Containing Named Constants and FOL.', 'Propositional Statecharts for Agent Interaction Protocols.', 'Measuring and Reducing Clutter in Euler Diagrams.']"
+Euler,"['Propositional Statecharts for Agent Interaction Protocols.', 'Heterogeneous Reasoning with Euler/Venn Diagrams Containing Named Constants and FOL.', 'Measuring and Reducing Clutter in Euler Diagrams.']"
 F-WAN@ICALP,"['On the Expressiveness of Movement in Pure Mobile Ambients.', 'Grab and Go Systems: a CPO approach to concurrent web and grid-based computation.', 'Barbs and Congruences for Safe Mobile Ambients.']"
 FAC,['Time Domain Verification of Oscillator Circuit Properties.']
-FACS,"['Proving Component Interoperability with B Refinement.', 'Applications = Components + GLoo.', 'Cooperation-based Invariants for OO Languages.']"
-FBTC@ICALP,"['Spatial Calculus of Looping Sequences.', 'Model Checking Biological Oscillators.', 'Preface.']"
-FESCA@ETAPS,"['Only the Best Can Make It: Optimal Component Selection.', 'A Software Architecture-Based Approach for Formalising Middleware Behaviour.', 'Local Module Checking for CTL Specifications.']"
+FACS,"['Proving Component Interoperability with B Refinement.', 'Applications = Components + GLoo.', 'Component Identification Through Program Slicing.']"
+FBTC@ICALP,"['Spatial Calculus of Looping Sequences.', 'Preface.', 'Model Checking Biological Oscillators.']"
+FESCA@ETAPS,"['A Software Architecture-Based Approach for Formalising Middleware Behaviour.', 'Only the Best Can Make It: Optimal Component Selection.', 'Local Module Checking for CTL Specifications.']"
 FGC,['Ambient Petri nets.']
 FGMOL,"['Chomsky-Schu""tzenberger Type Characterizations of Poly-Slender and Parikh Slender Context-Free Languages.', 'The dynamics of information exchange dialogues.', 'A Model-Theoretic Description of Tree Adjoining Grammars.']"
 FGUC,"['Typechecking Safe Process Synchronization.', 'Security Policies as Membranes in Systems for Global Computing.', 'Preface.']"
 FInCo@ETAPS,"['A Mathematical Model of Dialog.', 'Interactions in Transport Networks.', 'Interaction in Normative Multi-Agent Systems.']"
 FM-Elsewhere@FORTE/PSTV,"['CTML - A Context Transport Mark-up Language for Formalization and Verification of Legal, Medical and Bureaucratic and Safety procedures and Protocols.', 'Formal Verification in the Design of Gestural Interaction.', 'Puzzles for Learning Model Checking, Model Checking for Programming Puzzles, Puzzles for Testing Model Checkers.']"
 FMGALS@DATE,['Adaptive Latency Insensitive Protocols and Elastic Circuits with Early Evaluation: A Comparative Analysis.']
-FMGALS@MEMOCODE,"['Moving from Weakly Endochronous Systems to Delay-Insensitive Circuits.', 'A Survey of Desynchronization in a Polychronous Model of Computation.', 'Multi-Clock Latency-Insensitive Architecture and Wrapper Synthesis.']"
-FMICS,"['UML-based Tool for Constructing Component Systems via Component Behaviour Inheritance.', 'Slicing Event Spaces: Towards a Java Programs Checking Framework.', 'Formal Specification and Verification of Complex Systems.']"
+FMGALS@MEMOCODE,"['Moving from Weakly Endochronous Systems to Delay-Insensitive Circuits.', 'A Verification Approach for GALS Integration of Synchronous Components.', 'A Survey of Desynchronization in a Polychronous Model of Computation.']"
+FMICS,"['UML-based Tool for Constructing Component Systems via Component Behaviour Inheritance.', 'Slicing Event Spaces: Towards a Java Programs Checking Framework.', 'Scalable System-level CTI Testing through Lightweight Coarse-grained Coordination.']"
 FMWS@CONCUR,['Error Analysis and Verification of an IEEE 802.11 OFDM Modem using Theorem Proving.']
-FOCLASA,"['Interfaces: A Game-Theoretic Framework for Reasoning About Component-Based Systems.', 'Coordinating Aspects and Objects.', 'Modeling Component Connectors in Reo by Constraint Automata: (Extended Abstract).']"
+FOCLASA,"['Coordinating Aspects and Objects.', 'Interfaces: A Game-Theoretic Framework for Reasoning About Component-Based Systems.', 'Typing the Behavior of Objects and Component Using Session Types.']"
 FOCLASA@ICALP,['Deconstructing Reo.']
 FSDM,"['Unsupervised Feature Selection for Pattern Discovery in Seismic Wavefields.', 'On the Relationship Between Feature Selection and Classification Accuracy.', 'Approximating Mutual Information by Maximum Likelihood Density Ratio Estimation.']"
 FSEN,"['Formal Verification of the IEEE 802.1D Spanning Tree Protocol Using Extended ', 'Interface Automata with Complex Actions.', 'Validating Behavioral Component Interfaces in Rewriting Logic.']"
@@ -69,21 +69,21 @@ GT-VMT@ICALP,"['Introduction - Graph Transformation and Visual Modeling Techniqu
 GraBaTs,"['Specifying Graph-like Diagrams with DIAGEN.', 'Graph-Based Tools (GraBaTs 2002).', 'The Electronic Tool Integration Platform as a Supplier and User of Graph Based Tools.']"
 GraMoT@GPCE,"['Towards Model Transformation in Generated Eclipse Editor Plug-Ins.', 'Overview of Formal Concepts for Model Transformations Based on Typed Attributed Graph Transformation.', 'Improving the Usability of a Graph Transformation Language.']"
 HLCL,"['A Distributed Pi-Calculus with Local Areas of Communication.', 'Preface.']"
-HOOTS,"['A Foundation for Space-Safe Transformations of Call-by-Need Programs.', 'Monads, Effects and Transformations.', 'On proving syntactic properties of CPS programs.']"
+HOOTS,"['Monads, Effects and Transformations.', 'A Foundation for Space-Safe Transformations of Call-by-Need Programs.', 'On proving syntactic properties of CPS programs.']"
 Haskell,"['Developing High-Performance Server Applications in Haskell - Case Study: A Haskell Web Server.', 'Haskell Server Pages - Functional Programming and the Battle for the Middle Tier.', 'Derivable Type Classes.']"
 HyLo@FLoC,"['A Hybridization of Irreflexive Modal Logics.', 'Testing XML constraint satisfiability.', 'Towards a Hybrid Dynamic Logic for Hybrid Dynamic Systems.']"
 ICC@LICS,"['Iterate, Incrementalize, and Implement: A systematic approach to efficiency improvement and guarantees.']"
 ICE@ICALP,['A Petri Net Model of Handshake Protocols.']
 ICGI,"['Beyond Semilinearity: Distributional Learning of Parallel Multiple Context-free Grammars.', 'A Lattice of Sets of Alignments Built on the Common Subwords in a Finite Language.', 'Inference of k-Testable Directed Acyclic Graph Languages.']"
-ICLR,"['A Test of Relative Similarity For Model Selection in Generative Models.', 'When crowds hold privileges: Bayesian unsupervised representation learning with oracle constraints.', 'Learned versus Hand-Designed Feature Representations for 3d Agglomeration.']"
+ICLR,"['Learned versus Hand-Designed Feature Representations for 3d Agglomeration.', 'GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network Training.', 'A Test of Relative Similarity For Model Selection in Generative Models.']"
 ICLR (Workshop),['On distinguishability criteria for estimating generative models']
 ICML Unsupervised and Transfer Learning,"['Information Theoretic Model Selection for Pattern Analysis.', 'Divide and Transfer: an Exploration of Segmented Transfer to Detect Wikipedia Vandalism.', 'Clustering: Science or Art?']"
 ICS@SYNASC,['General Secret Sharing Based on the Chinese Remainder Theorem with Applications in E-Voting.']
 ICTCS,"['Preface.', 'Exploiting Linearity in Sharing Analysis of Object-oriented Programs.', 'On the Maximum Betweenness Improvement Problem.']"
 IFM Doctoral Symposium,"['Building Verification Condition Generators by Compositional Extension.', 'Frameworks Based on Templates for Rigorous Model-driven Development.']"
 IMLA@UNILOG,"['Preface.', 'J-Calc: A Typed Lambda Calculus for Intuitionistic Justification Logic.', 'Negative Modalities, Consistency and Determinedness.']"
-INFINITY,"['The Affine Hull of a Binary Automaton is Computable in Polynomial Time.', 'Preface.', 'Petri Nets with Non-blocking Arcs are Difficult to Analyze.']"
-ISDT,"['Preface.', 'Reductions and Saturation Reductions of (Abstract) Knowledge Bases.', 'Meet Precontinuous Posets.']"
+INFINITY,"['Preface.', 'The Affine Hull of a Binary Automaton is Computable in Polynomial Time.', 'Petri Nets with Non-blocking Arcs are Difficult to Analyze.']"
+ISDT,"['Preface.', 'Reductions and Saturation Reductions of (Abstract) Knowledge Bases.', 'T']"
 ITRS,"['The Relevance of Semantic Subtyping.', 'Programming Examples Needing Polymorphic Recursion.', 'Expansion: the Crucial Mechanism for Type Inference with Intersection Types: A Survey and Explanation.']"
 IWCIA,"['Spatial pattern discovering by learning the isomorphic subgraph from multiple attributed relation graphs.', 'A new 3D 12-subiteration thinning algorithm based on P-simple points.', 'A practical, globally optimal algorithm for geometric matching under uncertainty.']"
 InterDB@COORDINATION,"['Thematic Schema Building for Mediation-based Peer-to-Peer Architecture.', 'A Calculus for Data Mapping.', 'Preface.']"
@@ -119,8 +119,8 @@ MeCBIC,['Modelling Biological Compartments in Bio-PEPA.']
 MeCBIC@ICALP,"['Encoding Catalytic P Systems in pi@.', 'Translating Mobile Ambients into P Systems.', 'Tissue P Systems and (Mem)Brane Systems with Mate and Drip Operations Working on Strings.']"
 NIPS Causality: Objectives and Assessment,"['TIED: An Artificially Simulated Dataset with Multiple Markov Boundaries.', 'Causality: Objectives and Assessment.', 'Causal Inference.']"
 NIPS Mini-Symposium on Causality in Time Series,"['Causal Time Series Analysis of Functional Magnetic Resonance Imaging Data.', 'Time Series Analysis with the Causality Workbench.']"
-NSAD@SAS,"['Preface.', 'Static Analysis of Embedded Real-Time Concurrent Software with Dynamic Priorities.', 'Fuzzy Set Abstraction.']"
-NSV,"['Preface.', 'Numerical Validation of Compensated Summation Algorithms with Stochastic Arithmetic.', 'AVERIST: An Algorithmic Verifier for Stability.']"
+NSAD@SAS,"['Preface.', 'Experimental Evaluation of Numerical Domains for Inferring Ranges.', 'Fuzzy Set Abstraction.']"
+NSV,"['Preface.', 'AVERIST: An Algorithmic Verifier for Stability.', 'Numerical Validation of Compensated Summation Algorithms with Stochastic Arithmetic.']"
 OCL 2.0 @UML,"['Combining OCL and Programming Languages for UML Model Processing.', 'OCLPrime - Environment and Language for Model Query, Views and Transformations.', 'OCL 2.0 - Implementing the Standard for Multiple Metamodels.']"
 PASM,"['Preface.', 'Performance Models For Master/Slave Parallel Programs.', 'Performance Evaluation of a Real-time Simulation Architecture using Probabilistic Model Checking.']"
 PASM@FM,"['Applying a Stochastic Model to a Dynamic, QoS Enabled Web Services Hosting Environment.']"
@@ -131,7 +131,7 @@ PDPAR/PaUL@FLoC,"['An Abstract Decision Procedure for Satisfiability in the Theo
 PDPAR@CAV,['An Efficient Nelson-Oppen Decision Procedure for Difference Constraints over Rationals.']
 PLACES@DisCoTec,"['Preface.', 'Session-based Choreography with Exceptions.', 'A Symbolic Semantics for a Calculus for Service-Oriented Computing.']"
 PLPV@IJCAR,"['Position Paper: Thoughts on Programming with Proof Assistants.', 'Constructive Membership Predicates as Index Types.', 'Preface.']"
-PROLE,"['Dealing Denotationally With Stream-based Communication.', 'A Tutorial on Specifying Data Structures in Maude.', 'A Coding Rule Conformance Checker Integrated into GCC.']"
+PROLE,"['Dealing Denotationally With Stream-based Communication.', 'A Coding Rule Conformance Checker Integrated into GCC.', 'A Tutorial on Specifying Data Structures in Maude.']"
 PVW,"['Visualizations in Preparing for Programming Exercise Sessions.', 'Visualization of Spatial Data Structures on Different Levels of Abstraction.', 'JHAVÉ - More Visualizers (and Visualizations) Needed.']"
 QAPL,"['Probabilistic Guarded Commands Mechanized in ', 'Trace Machines for Observing Continuous-Time Markov Chains.', 'lambda-calculus and Quantitative Program Analysis: (Extended Abstract).']"
 QPL,"['From Reversible to Irreversible Computations.', 'A Quantum Game Semantics for the Measurement Calculus.', 'Quantum Programs With Classical Output Streams: (Extended Abstract).']"
@@ -159,8 +159,8 @@ SEMAS,"['A Priviledge Management Scheme for Mobile Agent Systems.', 'Enforcing p
 SETra@ICGT,"['Predicting Incompatibility of Transformations in Model-driven Development.', 'Leveraging UML Profiles to Generate Plugins From Visual Model Transformations.', 'An Algebraic Baseline for Automatic Transformations in MDA.']"
 SLA++P@ETAPS,"['Generating Multi-Threaded code from Polychronous Specifications.', 'Interactive Programming of Reactive Systems.']"
 SLAP,['Foreword.']
-SLAP@ETAPS,"['Modifying Esterel Concepts to Model Hybrid Systems.', 'SAXO-RT: Interpreting Esterel Semantic on a Sequential Execution Structure.', 'SOL: A Verifiable Synchronous Language for Reactive Systems.']"
-SMC@FLoC,"['Symbolic State Exploration.', 'Fully Symbolic Model Checking of Timed Systems using Difference Decision Diagrams.', 'Approximate Symbolic Model Checking using Overlapping Projections.']"
+SLAP@ETAPS,"['SAXO-RT: Interpreting Esterel Semantic on a Sequential Execution Structure.', 'Modifying Esterel Concepts to Model Hybrid Systems.', 'SOL: A Verifiable Synchronous Language for Reactive Systems.']"
+SMC@FLoC,"['Symbolic State Exploration.', 'Fully Symbolic Model Checking of Timed Systems using Difference Decision Diagrams.', 'Combining Local and Global Model Checking.']"
 SOS,['Modular Structural Operational Semantics with Strategies.']
 SOS@ICALP,"['Prototyping SOS Meta-theory in Maude.', 'Preface.']"
 SQM@CSMR,['Meta-metric Evaluation of E-Commerce-related Metrics.']
@@ -187,28 +187,28 @@ TV@FLoC,['Modular Checkpointing for Atomicity.']
 Theory and Practice of Timed Systems @ ETAPS,"['Exact Acceleration of Real-Time Model Checking.', 'Verification of Asynchronous Circuits using Timed Automata.', 'Formal Synthesis of Real-Time Embedded Software by Time-Memory Scheduling of Colored Time Petri Nets.']"
 UITP@FLoC,['GeoThms - a Web System for Euclidean Constructive Geometry.']
 UITP@TPHOLs,"['Thoughts on Requirements and Design Issues of User Interfaces for Proof Assistants.', 'TEXmacs as Authoring Tool for Formal Developments.', 'An Interactive Driver for Goal-directed Proof Strategies.']"
-UKPEW,"['Preface.', 'Performance Analysis of Collective Adaptive Behaviour in Time and Space.', 'An Automated Approach to Cloud Performance Benchmarking.']"
+UKPEW,"['Preface.', 'Performance Analysis of Collective Adaptive Behaviour in Time and Space.', 'Time-inhomogeneous Population Models of a Cycle-Stealing Distributed System.']"
 UNCL@ICALP,"['Vague Domains, S-Unification, Logic Programming.', 'A Multi-Adjoint Approach to Similarity-Based Unification.', 'Syntactic Unification as a Geometric Operation in Free Modules over certain Rings.']"
 UNIGRA,"['Visual Design of Software Architecture and Evolution based on Graph Transformation.', 'Towards Common Exchange Formats for Graphs and Graph Transformation Systems.', ""Adding Graph Transformation Concepts to UML's Constraint Language OCL.""]"
-USE@FM,"['Preface.', 'Bound Analysis for Whiley Programs.', 'Symbolic Input-Output Conformance Checking for Model-Based Mutation Testing.']"
+USE@FM,"['Preface.', 'Symbolic Input-Output Conformance Checking for Model-Based Mutation Testing.', 'Bound Analysis for Whiley Programs.']"
 V&D@FLoC,"['Model-Based Debugging - State of the Art And Future Challenges.', 'Where Do Bugs Come From?', 'Automated Techniques for Surviving (Otherwise) Fatal Software Errors.']"
 VEPAS,['Verifying a Network Invariant for All Configurations of the Futurebus+ Cache Coherence Protocol.']
-VISS@ETAPS,"['Specification and Verification using Message Sequence Charts.', 'Formal Techniques for Analysing Scenarios using Message Sequence Charts.', 'Specifying Services with UML and UML-RT: Foundations, Challenges and Limitations.']"
+VISS@ETAPS,"['Formal Techniques for Analysing Scenarios using Message Sequence Charts.', 'Specification and Verification using Message Sequence Charts.', 'Specifying Services with UML and UML-RT: Foundations, Challenges and Limitations.']"
 VLFM,['Investigating Reasoning with Constraint Diagrams.']
 VODCA@FOSAD,"['Soft Constraints for Security.', 'Foundations for Designing Secure Architectures.', 'Component-Based Specification of Collaborative Objects.']"
 VSSE,"['Preface.', 'Towards Incremental Mutation Testing.', 'Formalization and Verification of Behavioral Correctness of Dynamic Software Updates.']"
-WACT,"['Preface.', 'Chaotic Actions of Locally Compact Hausdorff Topological Groups.', 'Freyd categories are Enriched Lawvere Theories.']"
-WAPA,"['Preface.', 'Facial Expression Detection using Filtered Local Binary Pattern Features with ECOC Classifiers and Platt Scaling.', 'O-IPCAC and its Application to EEG Classification.']"
+WACT,"['Preface.', 'Chaotic Actions of Locally Compact Hausdorff Topological Groups.', 'Dualizing Clones as Models of Lawvere Theories.']"
+WAPA,"['Preface.', 'O-IPCAC and its Application to EEG Classification.', 'Gap Between Theory and Practice: Noise Sensitive Word Alignment in Machine Translation.']"
 WCAN@ICALP,"['Algorithmic Techniques for Maintaining Shortest Routes in Dynamic Networks.', 'Design, Analysis and Performance Evaluation of Group Key Establishment in Wireless Sensor Networks.']"
 WCAT@ECOOP,"['An Aspect-Oriented Adaptation Framework for Dynamic Component Evolution.', 'Preface.']"
 WCCI Causation and Prediction Challenge,"['Bernoulli Mixture Models for Markov Blanket Filtering and Classification.', 'Feature Ranking Using Linear SVM.', 'Design and Analysis of the Causation and Prediction Challenge.']"
 WDS@FCT,"['Hierarchy of asynchronous automata.', 'Distributed timed automata.', 'Consistent transformations for software architecture styles of distributed systems.']"
-WEIT,"['Preface.', 'Týr: A Dependent Type System for Spatial Memory Safety in LLVM.', 'A Practical Semi-External Memory Method for Approximate Pattern Matching.']"
+WEIT,"['Preface.', 'A Practical Semi-External Memory Method for Approximate Pattern Matching.', 'Týr: A Dependent Type System for Spatial Memory Safety in LLVM.']"
 WFLP,"['Defining Actions in Concurrent Declarative Programming.', 'A Declarative Debugging System for Lazy Functional Logic Programs.', 'Simulation Reduction as Constraint.']"
 WFLP@RDP,['Inferring Static Non-monotone Size-aware Types Through Testing.']
 WGT@ETAPS,['Generating Functional Implementations of Finite State Automata in C# 3.0.']
 WISP@ICATPN,"['A Formal Approach for the Evaluation of Network Security Mechanisms Based on RBAC Policies.', 'Petri Nets With Persistence.']"
-WMF,"['Class and Capsule Refinement in UML for Real Time.', 'Towards a Rewriting Semantics for a Software Architecture Description Language.', 'Preface.']"
+WMF,"['Towards a Rewriting Semantics for a Software Architecture Description Language.', 'Class and Capsule Refinement in UML for Real Time.', 'Preface.']"
 WOOD,"['Temporal constraints for concurrent object synchronisation.', 'Alias types for ""environment-aware"" computations.', 'Effective and Efficient Compilation of Run-Time Generics in Java.']"
 WRLA,"['Parameterized Theories and Views in Full Maude 2.0.', 'Handling Relations over Finite Domains in the Rule-Based System ELAN.', 'The evaluation strategy for head normal form with and without on-demand flags.']"
 WRS,"['Call-by-need reduction for membership conditional term rewriting Systems.', 'Approximations for Strategies and Termination.', 'Regular Sets of Descendants by Leftmost Strategy.']"
@@ -222,6 +222,6 @@ Workshop on Domains,['Computational Effects and Operations: An Overview.']
 Workshop on Secure Architectures and Information Flow,"['Flexibility and Interoperability in CORBA Security.', 'Electronic Purse Applet Certification: extended abstract.', 'Secrecy in Security Protocols as Non Interference.']"
 Workshop on Software Model Checking@CAV,['Model checking Erlang programs - abstracting the context-free structure.']
 Workshop on Type-Theoretic Languages: Proof Search and Semantics,"['Proof-search and proof nets in Mixed Linear Logic.', 'Writing Constructive Proofs Yielding Efficient Extracted Programs.', 'Long Normal Form Proof Search and Counter-Model Generation.']"
-Yahoo! Learning to Rank Challenge,"['Ranking by calibrated AdaBoost.', ""Winning The Transfer Learning Track of Yahoo!'s Learning To Rank Challenge with YetiRank."", 'Yahoo! Learning to Rank Challenge Overview.']"
+Yahoo! Learning to Rank Challenge,"['Ranking by calibrated AdaBoost.', 'Yahoo! Learning to Rank Challenge Overview.', ""Winning The Transfer Learning Track of Yahoo!'s Learning To Rank Challenge with YetiRank.""]"
 ateM,"['Data Store Models are Different Than Data Interchange Models.', 'A Metamodel for Dynamic Information Generated from Object-Oriented Systems.', 'The Amsterdam Toolkit for Language Archaeology.']"
 eTX,"['OverView: A Framework for Generic Online Visualization of Distributed Systems.', 'Continuous Testing in Eclipse.']"

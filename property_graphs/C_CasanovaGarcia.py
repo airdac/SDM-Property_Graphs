@@ -1,13 +1,22 @@
 from neo4j import GraphDatabase
-from pathlib import Path
-from query_execution import *
+
+def execute_print(driver, query, db='neo4j'):
+    records, summary, _ = driver.execute_query(query, database_=db,
+                                               )
+    # Print out query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
 
 
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
-
-OUT = Path(__file__).parent.parent.absolute()/'C_output'
-OUT.mkdir(exist_ok=True)
 
 # Run queries
 with GraphDatabase.driver(URI, auth=AUTH) as driver:

@@ -29,25 +29,42 @@ from re import findall
 import random
 from datetime import date
 from string import ascii_letters
-from pathlib import Path, PureWindowsPath
+from pathlib import Path
+from neo4j import GraphDatabase, Result
 
 random.seed(123)
 np.random.seed(123)
 
 # Data paths
 # CHANGE IF NEEDED
-# TEMP = PureWindowsPath('C:\\Users\\Airdac\\Documents\\Uni\\UPC\\2nSemestre\\SDM\\Lab Property Graphs\\data&program\\dblp-to-csv-master')
-# TEMP = PureWindowsPath("D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\raw_csv")
-TEMP = '/Users/airdac/Documents/DBLP'
-TEMP = Path(TEMP)
-# OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
-# OUT = PureWindowsPath(
-#    'C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
+SOURCE = '/Users/airdac/Documents/DBLP'
+SOURCE = Path(SOURCE)
 OUT = '/Users/airdac/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-1f900707-234f-4bf5-85f5-df387949b63c/import'
 OUT = Path(OUT)
+
+# Database connection parameters
+URI = "bolt://localhost:7687"
+AUTH = ("neo4j", "123456789")
+
+
 # We only get papers from the last 25 years (current year not included) and we balance the data in each year
 yearf = date.today().year
 n_years = 25
+
+
+def execute_print(driver, query, db='neo4j'):
+    records, summary, _ = driver.execute_query(query, database_=db,
+                                               )
+    # Print out query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
 
 
 def csv_full_read(name_datacsv, name_headers, col_names):
@@ -117,7 +134,7 @@ def article_feature_extraction(name_datacsv, name_headers, col_names, chunksize=
     years = list(range(year0, yearf))
     year_searched = years.pop()
 
-    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv, name_headers=TEMP / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
+    for chunk in csv_chunk_read(name_datacsv=SOURCE / name_datacsv, name_headers=SOURCE / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
                                 ):
 
         chunk = chunk[chunk.year == year_searched]
@@ -140,7 +157,7 @@ def inproc_feature_extraction(name_datacsv, name_headers, col_names, editions, c
     df = pd.DataFrame()
     years = set(range(year0, yearf))
 
-    for chunk in csv_chunk_read(name_datacsv=TEMP / name_datacsv, name_headers=TEMP / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
+    for chunk in csv_chunk_read(name_datacsv=SOURCE / name_datacsv, name_headers=SOURCE / name_headers, n_sample=n_sample, col_names=col_names, chunksize=chunksize
                                 ):
 
         chunk = chunk[chunk.year.isin(years) & chunk.crossref.isin(editions)]
@@ -405,13 +422,13 @@ if __name__ == "__main__":
     col_proc = ["proceedings", "booktitle", "title", "key", "year"]
 
     proc_raw = csv_full_read(          # We read all proceedings because there are less than 10,000
-        TEMP / "dblp_proceedings.csv", TEMP / "dblp_proceedings_header.csv", col_names=col_proc
+        SOURCE / "dblp_proceedings.csv", SOURCE / "dblp_proceedings_header.csv", col_names=col_proc
     )
     inproc_raw = inproc_feature_extraction(
-        TEMP / "dblp_inproceedings.csv", TEMP / "dblp_inproceedings_header.csv", col_inproc, editions=set(proc_raw.key.unique())
+        SOURCE / "dblp_inproceedings.csv", SOURCE / "dblp_inproceedings_header.csv", col_inproc, editions=set(proc_raw.key.unique())
     )
     article_raw = article_feature_extraction(
-        TEMP / "dblp_article.csv", TEMP / "dblp_article_header.csv", col_article
+        SOURCE / "dblp_article.csv", SOURCE / "dblp_article_header.csv", col_article
     )
 
     ############################################################################################################
@@ -633,3 +650,179 @@ if __name__ == "__main__":
         data={"paper": article.title, "volume": article.volume})
     published_in_edge.drop_duplicates(inplace=True)
     published_in_edge.to_csv(OUT/'published_in_v_edge.csv', index=False)
+
+    ###########################################
+    # Data insertion
+    ###########################################
+    with GraphDatabase.driver(URI, auth=AUTH) as driver:
+        try:
+            driver.verify_connectivity()
+            # Clear data
+            execute_print(driver, "MATCH (n) DETACH DELETE n")
+
+            # Remove constraints. ATTENTION: APOC needs to be installed to run this procedure
+            execute_print(driver, "CALL apoc.schema.assert({}, {})")
+
+            # Create constraints
+            execute_print(driver, '''
+                CREATE CONSTRAINT Author_name_id IF NOT EXISTS
+                FOR (a:Author)
+                REQUIRE a.name_id IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Paper_title IF NOT EXISTS
+                FOR (a:Paper) 
+                REQUIRE a.title IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Journal_name IF NOT EXISTS
+                FOR (a:Journal) 
+                REQUIRE a.name IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Volume_title IF NOT EXISTS
+                FOR (a:Volume)
+                REQUIRE a.title IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Conference_title IF NOT EXISTS
+                FOR (a:Conference)
+                REQUIRE a.title IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Edition_title IF NOT EXISTS
+                FOR (a:Edition)
+                REQUIRE a.title IS UNIQUE
+            ''')
+
+            execute_print(driver, '''
+                CREATE CONSTRAINT Keyword_tag IF NOT EXISTS
+                FOR (a:Keyword)
+                REQUIRE a.tag IS UNIQUE
+            ''')
+
+            # Load data
+            # NODES
+            # Author
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///author_node.csv' AS row 
+            MERGE (:Author {name_id: row.author_id, name: row.name, surname: row.surname}) 
+                                """)
+
+            # Papers
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///paper_node.csv' AS row 
+            MERGE (:Paper {title: row.title, DOI: row.DOI, year: toInteger(row.year)
+                                , abstract: row.abstract}) 
+                                """)
+
+            # Journal
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///journal_node.csv' AS row 
+            MERGE (:Journal {title: row.journal, main_editor: row.editor}) 
+                                """)
+
+            # Volume
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///volume_node.csv' AS row 
+            MERGE (:Volume {title: row.volume, year: toInteger(row.year)})
+                                """)
+
+            # Conference
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///conference_node.csv' AS row 
+            MERGE (:Conference {title: row.con_shortname})
+                                """)
+
+            # Edition
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///edition_node.csv' AS row 
+            MERGE (:Edition {title: row.edition_title
+                , year: toInteger(row.edition_year)})
+                                """)
+
+            # Keyword
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///keywords_node.csv' AS row 
+            MERGE (:Keyword {tag: row.keyword})
+                                """)
+
+            # EDGES
+
+            # "Writes"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///writes_edge.csv' AS row 
+            MATCH (author:Author {name_id: row.main_author})
+            MATCH (paper:Paper {title: row.paper})
+            MERGE (author)-[:Writes]->(paper)
+                                """)
+            # "Co_writes"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///co_writes_edge.csv' AS row 
+            MATCH (author:Author {name_id: row.co_author})
+            MATCH (paper:Paper {title: row.paper})
+            MERGE (author)-[:Co_writes]->(paper)
+                                """)
+
+            # "From_c"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///from_c_edge.csv' AS row
+            MATCH (source:Edition {title: row.edition})
+            MATCH (target:Conference {title: row.conference})
+            MERGE (source)-[:From_c]->(target)
+                                """)
+            # "From_j"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///from_j_edge.csv' AS row
+            MATCH (v:Volume {title: row.volume})
+            MATCH (j:Journal {title: row.journal})
+            MERGE (v)-[:From_j]->(j)
+                                """)
+
+            # "Published_in_e"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///published_in_e_edge.csv' AS row
+            MATCH (source: Paper {title: row.paper })
+            MATCH (target: Edition {title: row.edition})
+            MERGE (source)-[:Published_in_e]->(target)
+                                """)
+
+            # "Published_in_v"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///published_in_v_edge.csv' AS row
+            MATCH (source: Paper {title: row.paper })
+            MATCH (target: Volume {title: row.volume})
+            MERGE (source)-[: Published_in_v]->(target)
+                                """)
+
+            # "Reviews"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///reviews_edge.csv' AS row
+            MATCH (author:Author {name_id: row.reviewer})
+            MATCH (paper:Paper {title: row.paper})
+            MERGE (author)-[:Reviews]->(paper)
+                                """)
+
+            # "Cites"
+            execute_print(driver, """
+            LOAD CSV WITH HEADERS FROM 'file:///cites_edge.csv' AS row 
+            MATCH (source:Paper {title: row.paper})
+            MATCH (target:Paper {title: row.cites})
+            MERGE (source)-[:Cites]->(target)
+                                """)
+
+            # "From_p"
+            execute_print(driver, '''
+            LOAD CSV WITH HEADERS FROM 'file:///keywords_node.csv' AS row
+            MATCH (k:Keyword {tag: row.keyword})
+            MATCH (p:Paper {title: row.paper})
+            MERGE (k)-[:From_p]->(p)
+                                ''')
+        except Exception as e:
+            print('\nException raised:')
+            print(e)

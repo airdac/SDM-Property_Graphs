@@ -3,8 +3,7 @@ import pandas as pd
 import numpy.random
 from string import ascii_letters
 import random
-from pathlib import Path, PureWindowsPath
-from query_execution import execute_print
+from pathlib import Path
 
 random.seed(123)
 numpy.random.seed(123)
@@ -13,10 +12,23 @@ URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "123456789")
 db = 'neo4j'
 
-# OUT = PureWindowsPath('D:\\Documents\\Data Science\\Semantic Data Management\\Lab1\\clean_csv')
-# OUT = PureWindowsPath('C:\\Users\\Airdac\\.Neo4jDesktop\\relate-data\\dbmss\\dbms-f41df0b2-56a6-4b46-b1b6-b535211967a8\\import')
-OUT = Path('/Users/airdac/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-1f900707-234f-4bf5-85f5-df387949b63c/import')
-OUT = Path(OUT)
+SOURCE = Path('/Users/airdac/Library/Application Support/Neo4j Desktop/Application/relate-data/dbmss/dbms-1f900707-234f-4bf5-85f5-df387949b63c/import')
+SOURCE = Path(SOURCE)
+
+
+def execute_print(driver, query, db='neo4j'):
+    records, summary, _ = driver.execute_query(query, database_=db,
+                                               )
+    # Print SOURCE query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
 
 
 ######################################
@@ -51,13 +63,13 @@ decision = random.choices(['Accepted', 'Not Accepted'], k=n_reviews)
 
 # Read reviews_edge.csv
 # We match the properties to edges so that the cypher query be faster
-reviews_edge = pd.read_csv(OUT/'reviews_edge.csv',
+reviews_edge = pd.read_csv(SOURCE/'reviews_edge.csv',
                            usecols=['paper', 'reviewer'])
 
 # Write review_param.csv
 review_param = pd.DataFrame({'description': description, 'decision': decision})
 review_param = pd.concat([review_param, reviews_edge], axis=1)
-review_param.to_csv(OUT/'review_param.csv', index=False)
+review_param.to_csv(SOURCE/'review_param.csv', index=False)
 
 # Set review descriptions and decisions
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
@@ -101,7 +113,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 # Set author's affiliation
 ########################################
 
-author_ids = pd.read_csv(OUT/'author_node.csv',
+author_ids = pd.read_csv(SOURCE/'author_node.csv',
                          usecols=['author_id'], delimiter=',')
 universities = pd.read_csv(
     Path(__file__).parent.parent.absolute()/'us-colleges-and-universities.csv', usecols=['NAME'], delimiter=';')
@@ -109,7 +121,7 @@ universities.rename(columns={'NAME': 'affiliation'}, inplace=True)
 author_ids['affiliation'] = universities.affiliation.sample(
     n=len(author_ids), replace=True).values
 
-author_ids.to_csv(OUT/'affiliations.csv', index=False)
+author_ids.to_csv(SOURCE/'affiliations.csv', index=False)
 
 with GraphDatabase.driver(URI, auth=AUTH) as driver:
     try:

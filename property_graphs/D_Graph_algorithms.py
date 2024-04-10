@@ -1,6 +1,44 @@
-from neo4j import GraphDatabase
+from neo4j import GraphDatabase, Result
 from pathlib import Path
-from query_execution import *
+import pandas as pd
+
+
+def df_transformer(result: Result) -> tuple[pd.DataFrame, str, int]:
+    df = result.to_df()
+    summary = result.consume()
+    return df, summary
+
+
+def execute_print(driver, query, db='neo4j'):
+    records, summary, _ = driver.execute_query(query, database_=db,
+                                               )
+    # Print out query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(records),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
+
+
+def execute_print_save(driver, query, path, db='neo4j'):
+    df, summary = driver.execute_query(query, database_=db, result_transformer_=df_transformer
+                                       )
+    df.to_csv(path, index=False)
+
+    # Print out query completion
+    print("The query `{query}` returned {records_count} records in {time} ms.\n".format(
+        query=summary.query, records_count=len(df),
+        time=summary.result_available_after
+    ))
+    counters = summary.counters.__dict__
+    if counters.pop('_contains_updates', None):
+        print(f'Graph asserted with {counters}.\n\n')
+    else:
+        print('The graph has not been modified.\n\n')
 
 
 URI = "bolt://localhost:7687"
@@ -37,7 +75,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
         # Run the algorithm
         execute_print_save(driver, '''
             CALL gds.pageRank.stream(
-                'trainGraph',
+                'pageRank',
                 {nodeLabels: ['Paper'], relationshipTypes: ['Cites']}
             )
             YIELD nodeId, score
