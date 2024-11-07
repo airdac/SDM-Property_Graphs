@@ -1,5 +1,4 @@
 from neo4j import GraphDatabase
-from B_CasanovaGarcia import execute_print_save
 
 def execute_print(driver, query, db='neo4j'):
     records, summary, _ = driver.execute_query(query, database_=db,
@@ -35,7 +34,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
             MERGE(k)-[:From_r] -> (r)
                     ''')
         # Find the database community's conferences and journals and assert the relation
-        execute_print_save(driver, '''
+        execute_print(driver, '''
             // Match conferences/journals with papers
             MATCH (cj:Conference|Journal)<-[:From_c|From_j]-(:Edition|Volume)<-[:Published_in_e|Published_in_v]-(p:Paper)
             WITH cj, COUNT(p) AS n_papers
